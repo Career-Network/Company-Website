@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+:root{
+    /* color */
+    --orange: #FF5722;
+    --darkgreen : #268E9B;
+    --blue : #27C6D9;
+    /* Font Size */
+    /* Desktop Tablet Typography */
+    --h1: 72px;
+    --h2: 48px;
+    --h3: 36px;
+    --h4: 24px;
+    --h5: 20px;
+    --h6: 16px;
+    --h7: 12px;
+    /* Mobile Typography */
+    --b1 : 24px;
+    --b2: 20px;
+    --b3: 16px;
+    --b4: 14px;
+    --b5: 12px;
+    /* Font Weight */
+    --light: 300;
+    --regular: 400;
+    --medium:500;
+    --semibold:600;
+    --bold:700;
+}
+
+.orange{
+    color: var(--orange);
+}
+
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--orange);
+}
+
+.container{
+    max-width: 100%;
+    padding: 30px 72px 30px 76px;
+}
+
+/* navbar */
+
+.navbar{
+    height: 67px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.brand-logo{
+    height: 67px;
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+    margin-top: 23px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    margin-left: 55px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #263238;
+    transition: .6s;
+}
+
+.nav-link a:hover{
+    color: var(--blue);
+}
+
+.dropdown-menu{
+    display: none;
+}
+
+.nav-link li:hover i{
+    transform: rotate(90deg);
+}
+
+.nav-link li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    margin-left: 46px;
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.dropdown-menu ul{
+    display: block;
+    list-style: none;
+    margin: 20px 0 ;
+}
+
+.dropdown-menu ul li{
+    display: block;
+    list-style: none;
+    margin: 25px 0;
+    padding: 0 10px;
+}
+
+.dropdown-menu a {
+    margin-left: 0px;
+    font-size: 24px;
+    color: rgba(196, 196, 196, 1);
+}
+
+.btn-nav{
+    border: 2px solid black;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 5px;
+    transition: .6s;
+}
+
+.btn-primary{
+    background-color: var(--orange);
+    color: white !important;
+}
+
+.btn-primary:hover{
+    background-color: #d84a1e;
+}
+
+.btn-secondary{
+    background-color: #27C6D9;
+    color: #fff !important;
+}
+
+.btn-secondary:hover{
+    background-color: #219fad;
+}
+
+/* Main Components */
+
+.heading-text{
+    text-align: center;
+}
+
+.text-1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: var(--bold);
+    font-size: 22px;
+    color: white;
+}
+
+.text-2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: var(--bold);
+    font-size: 32px;
+    color: white;
+    margin-top: 20px;
+}
+
+form{
+    margin: 35px auto 0;
+    max-width: max-content;
+    height: 200px;
+    width: 425px;
+    /* border: 1px solid black; */
+}
+
+.label-form{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;  
+    text-align: left;
+    margin: 10px 0 10px 20px;
+}
+
+.input-form{
+    transition: .6s;
+    text-align: left !important;
+    height: 60px;
+    width: 420px;
+    border-radius: 20px;
+    background: #EFEFEF;
+    border: 1px solid rgba(0, 0, 0, 0.81);
+}
+
+input{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    padding-left: 20px; 
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+  input:focus{
+    outline: none;;
+}
+
+.btn-form{
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    height: 44px;
+    border-radius: 20px;
+    border-width: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    transition: 1.5s;
+}
+
+.btn-masuk{
+    margin-top: 20px;
+    margin-bottom: 12px;
+    background-color: var(--blue);
+}
+
+.btn-masuk:hover{
+    font-size: 18px;
+}
+
+.btn-daftar{
+    background-color: rgba(39, 198, 217, 0.43);
+}
+
+.btn-daftar:hover{
+    font-size: 18px;
+}
+
+/* responsive media query*/
+
+@media only screen and (max-width: 1225px){
+    .nav-link{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .input-form{
+        text-align: left !important;
+        height: 50px;
+        width: 280px;
+        border-radius: 20px;
+        background: #EFEFEF;
+        border: 1px solid rgba(0, 0, 0, 0.81);
+    }
+}
