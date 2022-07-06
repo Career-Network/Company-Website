@@ -3,18 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Login</title>
+    <title>Register</title>
 
-    <link href="assets/img/favico.png" rel="icon">
-    <link href="assets/img/logo.png" rel="apple-touch-icon">
+    <link href="assets/img/favico.png" rel="icon" />
+    <link href="assets/img/logo.png" rel="apple-touch-icon" />
 
-    <link rel="stylesheet" href="assets/vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/navbar.css" />
-    <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/register.css" />
+    
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
+    />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-white fixed-top d-flex align-items-lg-center">
+    <nav
+      class="navbar navbar-expand-lg bg-white fixed-top d-flex align-items-lg-center"
+    >
       <div class="container">
         <div class="brand">
           <a
@@ -57,7 +66,10 @@
                 aria-expanded="false"
               >
                 Service
-                <i id="toggle-service" class="orange fa-solid fa-angle-down ms-2 mt-1"></i>
+                <i
+                  id="toggle-service"
+                  class="orange fa-solid fa-angle-down ms-2 mt-1"
+                ></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Edu Career</a></li>
@@ -73,7 +85,11 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link btn-nav btn-secondary" href="#" id="btn-secondary">
+              <a
+                class="nav-link btn-nav btn-secondary"
+                href="#"
+                id="btn-secondary"
+              >
                 Get Started
               </a>
             </li>
@@ -85,37 +101,41 @@
     <main>
       <div class="heading" style="margin-top: 170px">
         <p class="title">STAY CONNECTED</p>
-        <p class="sub__title">Ayo Mulai Cari Koneksimu Disini</p>
+        <p class="sub__title">Semua akan menjadi mudah jika terus terhubung</p>
       </div>
-      
-      <div class="form__group">
-        <form action="">
-          <div class="input__group">
-            <label for="email">Email Address</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Masukkan Email Anda"
-            />
-          </div>
-          <div class="input__group">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Masukkan Password Anda"
-            />
-          </div>
-          <div class="button__group">
-            <button type="submit" class="btn__masuk">Masuk</button> <br />
-            <a href="#">
-              <button type="submit" class="btn__daftar">Daftar Sekarang</button>
-            </a>
-          </div>
+      <!-- bener ga bang? -->
+      <div class="container" style="max-width: 912px !important;">
+        <form action="" method="post">
+            <div class="row form__group">
+                <div class="input__group col-lg-12 col-md-12 col-sm-12">
+                    <span class="label">Nama Tim</span>
+                    <input name="nama_tim" type="text" placeholder="Nama Tim" required>
+                </div>
+                <div class="input__group col-sm-6">
+                    <span class="label">Username</span>
+                    <input name="username" type="text" placeholder="Username" required>
+                </div>
+                <div class="input__group col-sm-6">
+                    <span class="label">Password</span>
+                    <input name="password" type="password" placeholder="Password" required>
+                </div>
+                <div class="input__group col-sm-6">
+                    <span class="label">Instansi</span>
+                    <input name="instansi" type="text" placeholder="Instansi" required>
+                </div>
+                <div class="input__group col-sm-6">
+                  <span class="label">Instansi</span>
+                  <input name="instansi" type="text" placeholder="Instansi" required>
+              </div>
+            </div>
+            <div class="button__group">
+              <button type="submit" class="btn__masuk">Daftar</button> <br />
+                <button onclick="location='login.html'" class="btn__daftar">
+                  Kembali Ke Login
+                </button>
+            </div>
         </form>
-      </div>
+    </div>
     </main>
 
     <footer>
@@ -132,7 +152,8 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-<!-- masih ada yang janggal disini -->
+    <!-- masih ada yang janggal disini -->
+    <!-- gatau aku bang, sumpah. moga amana aja -->
     <link
       rel="stylesheet"
       href="assets/vendor/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"
