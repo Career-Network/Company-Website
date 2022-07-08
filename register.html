@@ -107,25 +107,25 @@
       <div class="container" style="max-width: 912px !important;">
         <form action="" method="post">
             <div class="row form__group">
-                <div class="input__group col-lg-12 col-md-12 col-sm-12">
-                    <span class="label">Nama Tim</span>
-                    <input name="nama_tim" type="text" placeholder="Nama Tim" required>
+                <div class="input__group col-lg-12 col-md-12 col-sm-12 order-first">
+                    <span class="label">Nama Lengkap</span>
+                    <input name="name" type="text" placeholder="Masukkan Nama Anda" required>
                 </div>
-                <div class="input__group col-sm-6">
-                    <span class="label">Username</span>
-                    <input name="username" type="text" placeholder="Username" required>
+                <div class="input__group col-sm-6 order-sm-1 order-2">
+                    <span class="label">Email Address</span>
+                    <input name="email" type="email" placeholder="Masukkan Email Anda" required>
                 </div>
-                <div class="input__group col-sm-6">
+                <div class="input__group col-sm-6 order-sm-2 order-1">
+                    <span class="label">No Handphone</span>
+                    <input name="number" type="number" placeholder="Masukkan No Handphone Anda" required>
+                </div>
+                <div class="input__group col-sm-6 order-3">
                     <span class="label">Password</span>
-                    <input name="password" type="password" placeholder="Password" required>
+                    <input name="password" type="password" placeholder="Masukkan Password Anda" required>
                 </div>
-                <div class="input__group col-sm-6">
-                    <span class="label">Instansi</span>
-                    <input name="instansi" type="text" placeholder="Instansi" required>
-                </div>
-                <div class="input__group col-sm-6">
-                  <span class="label">Instansi</span>
-                  <input name="instansi" type="text" placeholder="Instansi" required>
+                <div class="input__group col-sm-6 order-4">
+                  <span class="label">Konfirmasi Password</span>
+                  <input name="confirm_password" type="password" placeholder="Masukkan Password Anda" required>
               </div>
             </div>
             <div class="button__group">
