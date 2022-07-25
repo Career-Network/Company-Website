@@ -114,7 +114,7 @@
     </nav>
 
     <main>
-      <div class="heading" style="margin-top: 170px">
+      <div class="heading">
         <p class="title">STAY CONNECTED</p>
         <p class="sub__title">Ayo Mulai Cari Koneksimu Disini</p>
       </div>

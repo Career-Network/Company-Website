@@ -7,11 +7,13 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
-    public function index(Request $request){
+    public function index(Request $request)
+    {
         return view('login');
     }
-    public function auth(Request $request){
-        
+    public function auth(Request $request)
+    {
+
         $credentials = $request->validate([
             'email' => 'required|email:dns',
             'password' => [
@@ -23,23 +25,22 @@ class LoginController extends Controller
             ],
         ]);
 
-        if(Auth::attempt($credentials)){
+        if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
             return redirect()->intended('/home');
-        }else{
+        } else {
             return back()->withErrors([
                 'email' => 'The provided credentials do not match our records.',
             ])->onlyInput('email');
         }
     }
 
-    public function logout(Request $request){
-        
-            Auth::logout();
-            $request->session()->invalidate();
-            $request->session()->regenerateToken();
-            return redirect('home'); 
-            
-            
+    public function logout(Request $request)
+    {
+
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('home');
     }
 }

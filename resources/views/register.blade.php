@@ -99,7 +99,7 @@
     </nav>
 
     <main>
-      <div class="heading" style="margin-top: 170px">
+      <div class="heading">
         <p class="title">STAY CONNECTED</p>
         <p class="sub__title">Semua akan menjadi mudah jika terus terhubung</p>
       </div>
@@ -161,7 +161,7 @@
                 </a>
             </div>
         </form>
-    </div>
+      </div>
     </main>
 
     <footer>
