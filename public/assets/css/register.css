@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/*sry ga clean bang hehehehe*/
+
 :root {
   /* color */
   --orange: #ff5722;
@@ -9,7 +11,7 @@
   --black: #000;
   --darkgrey: #263238;
   --grey: #cfcfcf;
-  --lightgrey: #F4F4F4;
+  --lightgrey: #f4f4f4;
   --whitebone: #fafafa;
   /* Font Size */
   /* Desktop Tablet Typography */
@@ -68,17 +70,25 @@ body {
   margin-bottom: 0;
 }
 
-.form__group {
+/* PERUBAHAN DISINI */
+
+form .form__group {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0 50px;
+  flex-direction: row;
 }
 
-.input__group {
+form .form__group .input__group:nth-child(2), 
+form .form__group .input__group:nth-child(3), 
+form .form__group .input__group:nth-child(4), 
+form .form__group .input__group:nth-child(5){
   margin-top: 30px;
-  transition: 1s;
 }
 
-.input__group label {
+form .input__group .label {
+  display: block;
   display: block;
   font-family: var(--poppins);
   font-size: var(--b4);
@@ -87,25 +97,31 @@ body {
   margin-bottom: 16px;
 }
 
-.input__group input {
-  width: 420px;
+.form__group .input__group input {
   height: 60px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
   border: none;
   border-radius: 4px;
   padding: 20px;
   font-family: var(--poppins);
-  transition: 1s;
 }
 
-.input__group input:focus {
+.form__group .input__group input:focus,
+.form__group .input__group input:valid {
   outline: none;
 }
 
-.input__group input::placeholder {
+.form__group .input__group input::placeholder {
   font-family: var(--poppins);
   font-size: var(--b5);
   color: var(--grey);
 }
+
+/*  SAMPAI SINI */
 
 .button__group {
   margin-top: 50px;
@@ -121,16 +137,20 @@ body {
   font-weight: var(--medium);
   border: none;
   border-radius: 4px;
+  transition: 1s;
 }
 
 .button__group .btn__masuk {
   background-color: var(--blue);
   margin-bottom: 24px;
+  border: 0;
 }
 
 .button__group .btn__daftar {
   background-color: rgba(255, 255, 255, 0.35);
   margin-bottom: 45px;
+  border: 0;
+
 }
 
 /* footer */
@@ -154,15 +174,20 @@ footer p {
 }
 
 /* Media Query */
-
 /* Tablet Resolution */
-@media only screen and (max-width: 720px) {
+
+@media only screen and (max-width: 864px) {
   .heading {
     margin-top: 46px;
   }
-  .input__group input {
-    width: 310px;
+}
+
+
+@media only screen and (max-width: 668px) {
+  .heading {
+    margin-top: 46px;
   }
+
 }
 
 /* Mobile Resolution */
@@ -171,5 +196,21 @@ footer p {
     width: 275px;
     text-align: center;
     margin-bottom: 0;
+  }
+  .sub__title{
+    text-align: center;
+    padding: 0 70px;
+  }
+}
+
+/* new css mediaquery */
+
+@media only screen and (max-width: 576px) {
+  .row > * {
+    padding: 0 !important;
+  }
+  .container{
+    width: 310px !important;
+    padding: 0 !important;
   }
 }

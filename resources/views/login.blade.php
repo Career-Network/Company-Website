@@ -20,7 +20,7 @@
         <div class="brand">
           <a
             class="navbar-brand"
-            href="http://careernetwork.epizy.com/"
+            href="{{ route('home') }}"
             title="Career Network"
           >
             <img
@@ -45,39 +45,69 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Company</a>
-            </li>
+            
+            
+            @auth
             <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Service
-                <i id="toggle-service" class="orange fa-solid fa-angle-down ms-2 mt-1"></i>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Edu Career</a></li>
-                <li><a class="dropdown-item" href="#">Sonic</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn-nav btn-primary" href="#" id="btn-primary">
-                Contact
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn-nav btn-secondary" href="#" id="btn-secondary">
-                Get Started
-              </a>
-            </li>
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                    {{ Auth::user()->name }}
+                    <i id="toggle-service" class="orange fa-solid fa-angle-down ms-2 mt-1"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <div class="dropdown-divider"></div>
+                    <li>
+                        <form action="{{ route('logout') }}" method="post">
+                            @csrf
+                            <button type="submit" class="dropdown-item">
+                               Logout
+                            </button>
+                        </form>       
+                </ul>
+              </li>
+              @else
+              <li class="nav-item">
+                <a class="nav-link" href="#">Company</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Service
+                  <i id="toggle-service" class="orange fa-solid fa-angle-down ms-2 mt-1"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Edu Career</a></li>
+                  <li><a class="dropdown-item" href="#">Sonic</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-nav btn-primary" href="#" id="btn-primary">
+                  Contact
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-nav btn-secondary" href="#" id="btn-secondary">
+                  Get Started
+                </a>
+              </li>
+              @endauth
+
           </ul>
         </div>
       </div>
@@ -88,19 +118,33 @@
         <p class="title">STAY CONNECTED</p>
         <p class="sub__title">Ayo Mulai Cari Koneksimu Disini</p>
       </div>
-      
-      <div class="form__group">
-        <form action="">
-          <div class="input__group">
+      <div class="form__group ">
+        <form action="{{ route('login') }}" method="post" >
+          @csrf
+          @if(session()->has('success'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+              {{ session('success') }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>    
+          @endif
+          <div class="input__group position-relative">
             <label for="email">Email Address</label>
             <input
               type="email"
               name="email"
               id="email"
+              class="form-control @error('email') is-invalid @enderror"
               placeholder="Masukkan Email Anda"
               required
+              value="{{ old('email') }}"
             />
+            @error('email')
+              <div class="form-control invalid-tooltip">
+                {{ $message }}
+              </div>
+            @enderror
           </div>
+          
           <div class="input__group">
             <label for="password">Password</label>
             <input
@@ -113,9 +157,9 @@
           </div>
           <div class="button__group">
             <button type="submit" class="btn__masuk">Masuk</button> <br />
-              <button onclick="location='register.html'" class="btn__daftar" >
-                Daftar Sekarang
-              </button>
+            <a href="{{ route('register') }}" class="btn btn__daftar">
+              Daftar Sekarang
+            </a>
           </div>
         </form>
       </div>
