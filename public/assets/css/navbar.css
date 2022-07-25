@@ -140,6 +140,14 @@ nav .container {
   color: var(--orange);
 }
 
+/* bug border navbar toogler */
+
+.navbar-toggler{
+  border: none !important;
+}
+
+/* bug border navbar toogler */
+
 .navbar-nav .dropdown-menu {
   margin-left: 38px;
 }

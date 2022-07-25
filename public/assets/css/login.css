@@ -123,6 +123,26 @@ body {
   border-radius: 4px;
 }
 
+.button__group a {
+  width: 310px;
+  height: 45px;
+  color: white;
+  font-family: var(--poppins);
+  font-size: var(--b4);
+  font-weight: var(--medium);
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.button__group a:hover{
+  background-color: rgba(255, 255, 255, 0.35);
+  color: white;
+}
+
 .button__group .btn__masuk {
   background-color: var(--blue);
   margin-bottom: 24px;
