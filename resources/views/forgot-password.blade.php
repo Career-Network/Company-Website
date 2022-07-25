@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Career Network</title>
-</head>
-<body>
+@extends('layouts.navbar_footer',['title'=>'Career Network'])
+@section('content')
+    <h2 class="mt-4 text-light text-center">lupa pass</h2>
+@endsection
     
-</body>
-</html>

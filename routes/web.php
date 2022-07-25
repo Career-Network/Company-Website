@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ForgotPasswordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,15 +18,14 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', [DashboardController::class,'index'])->name('home')->withoutMiddleware('auth');
-Route::get('/home', [DashboardController::class,'index'])->name('home')->withoutMiddleware('auth');
+Route::get('/', [DashboardController::class, 'index'])->name('home')->withoutMiddleware('auth');
+Route::get('/home', [DashboardController::class, 'index'])->name('home')->withoutMiddleware('auth');
 
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'auth'])->name('auth');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::get('/login', [LoginController::class,'index'])->name('login')->middleware('guest');
-Route::post('/login', [LoginController::class,'auth'])->name('auth');
-Route::post('/logout', [LoginController::class,'logout'])->name('logout');
-Route::get('/forgot-password',[LoginController::class,'forgot-password'])->name('forgot-password')->middleware('guest');
+Route::get('/register', [RegisterController::class, 'index'])->name('register')->middleware('guest');
+Route::post('/register', [RegisterController::class, 'store'])->name('store');
 
-Route::get('/register', [RegisterController::class,'index'])->name('register')->middleware('guest');
-Route::post('/register', [RegisterController::class,'store'])->name('store');
-
+Route::get('/forgot-password', [ForgotPasswordController::class, 'index'])->name('forgot-password')->middleware('guest');
