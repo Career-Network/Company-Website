@@ -145,12 +145,13 @@
             @enderror
           </div>
           
-          <div class="input__group">
+          <div class="input__group position-relative">
             <label for="password">Password</label>
             <input
               type="password"
               name="password"
               id="password"
+              class=" @error('password') is-invalid @enderror"
               placeholder="Masukkan Password Anda"
               required
             />
