@@ -122,9 +122,7 @@
       </div>
     </nav>
 
-    <main>
         @yield('content')
-    </main>
 
     <footer>
       <div class="footer__content">
