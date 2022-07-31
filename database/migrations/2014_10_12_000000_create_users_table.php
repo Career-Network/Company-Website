@@ -19,6 +19,7 @@ return new class extends Migration
             $table->bigInteger('number');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('remember_token');
             $table->timestamps();
         });
     }

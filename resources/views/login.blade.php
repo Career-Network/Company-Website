@@ -166,6 +166,9 @@
             <a href="{{ route('register') }}" class="btn btn__daftar">
               Daftar Sekarang
             </a>
+            <a href="{{ route('password_request') }}" class="btn">
+              Forgot password
+            </a>
           </div>
         </form>
       </div>
