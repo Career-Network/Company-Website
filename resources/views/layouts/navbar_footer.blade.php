@@ -80,7 +80,7 @@
               </li>
               @else
               <li class="nav-item">
-                <a class="nav-link" href="#">Company</a>
+                <a class="nav-link" href="#">Perusahaan</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -91,7 +91,7 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Service
+                  Layanan
                   <i id="toggle-service" class="orange fa-solid fa-angle-down ms-2 mt-1"></i>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -103,18 +103,18 @@
                 <a class="nav-link" href="#">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link btn-nav btn-primary" href="#" id="btn-primary">
-                  Contact
+                <a class="nav-link btn-nav btn-primary" href="{{ route('register') }}" id="btn-primary">
+                  Daftar
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link btn-nav btn-secondary" href="#" id="btn-secondary">
-                  Get Started
+                <a class="nav-link btn-nav btn-secondary" href="{{ route('login') }}" id="btn-secondary">
+                  Masuk
                 </a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a class="nav-link" href="{{ route('login') }}">Login</a>
-              </li>
+              </li> --}}
               @endauth
 
           </ul>
