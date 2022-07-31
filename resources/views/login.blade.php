@@ -154,6 +154,11 @@
               placeholder="Masukkan Password Anda"
               required
             />
+            @error('password')
+              <div class="form-control invalid-tooltip">
+                {{ $message }}
+              </div>
+            @enderror
           </div>
           <div class="button__group">
             <button type="submit" class="btn__masuk">Masuk</button> <br />
