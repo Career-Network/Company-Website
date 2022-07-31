@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Password;
 
 class ForgotPasswordController extends Controller
 {
-    public function password_request(){
+    public function forgot_view(){
 
         return view('forgot-password');
     }
@@ -29,6 +30,7 @@ class ForgotPasswordController extends Controller
 
     public function password_update(Request $request){
         $request->validate([
+            'token' => 'required',
             'token' => 'required',
             'email' => 'required|email',
             'password' => 'required|min:8|confirmed',
