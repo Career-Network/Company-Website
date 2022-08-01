@@ -1,5 +1,8 @@
 
-@extends('layouts.navbar_footer',['title'=>'Career Network'])
+@extends('layouts.navbar_footer',[
+  'title'=>'Career Network',
+  'css'=>'assets/css/login.css'
+  ])
 @section('content')
     <main>
       <div class="heading">

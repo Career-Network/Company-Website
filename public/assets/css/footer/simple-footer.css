@@ -1,0 +1,17 @@
+footer {
+    margin-top: auto;
+}
+
+footer p {
+    margin-bottom: 0 !important;
+}
+
+.footer__bottom {
+    background-color: var(--lightgrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    font-size: 12px;
+    position: inherit;
+}

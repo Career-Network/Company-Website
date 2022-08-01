@@ -1,9 +1,8 @@
-@extends('layouts.navbar_footer',['title'=>'Login'])
+@extends('layouts.navbar_footer',[
+  'title'=>'Login',
+  'css'=>'assets/css/register.css'
+  ])
 @section('content')
-
-  {{-- sorry klo ini nyasar berantakan --}}
-  <link rel="stylesheet" href="assets/css/register.css" />
-  {{-- wkwkwk --}}
 
   <main>
     <div class="heading">

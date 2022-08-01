@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ini Design system keknya namanya bang ya ? :v */
+
+:root {
+    /* color */
+    --orange: #ff5722;
+    --darkgreen: #268e9b;
+    --blue: #27c6d9;
+    --white: #fff;
+    --lightgrey: #f4f4f4;
+    --grey: #ccc;
+    --darkgrey: #272727;
+    --black: #111;
+    /* OLD Typography */
+    /* Desktop Tablet Typography */
+    --h1: 72px;
+    --h2: 48px;
+    --h3: 36px;
+    --h4: 24px;
+    --h5: 20px;
+    --h6: 16px;
+    --h7: 12px;
+    /* Mobile Typography */
+    --b1: 24px;
+    --b2: 20px;
+    --b3: 16px;
+    --b4: 14px;
+    --b5: 12px;
+    /* NEW Typography */
+    --h_1: 48px;
+    --h_2: 40px;
+    --h_3: 36px;
+    --sh_1: 32px;
+    --sh_2: 28px;
+    --sh_3: 24px;
+    --bt_1: 22px;
+    --bt_2: 20px;
+    --bt_3: 16px;
+    --bt_4: 14px;
+    --bt_5: 12px;
+    /* Font Weight */
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    /* FONT TYPE */
+    --poppins: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--orange) !important;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: var(--poppins) !important;
+    /* pakai flex biar footernya jatuh dan nempel kebawah */
+    display: flex;
+}
+
+main {
+    margin-top: 120px;
+}
+
+/* Main Components */
+
+/* Utility Components */
+
+/* Text Styles / Typography*/
+
+/* Color */
+
+.text_danger {
+    color: #ef4444;
+}
+
+.text_primary {
+    color: var(--orange);
+}
+
+.text_secondary {
+    color: var(--blue);
+}
+
+.text_tertiary {
+    color: var(--darkgreen);
+}
+
+.text_white {
+    color: var(--darkgreen);
+}
+
+.text_light_grey {
+    color: var(--lightgrey);
+}
+
+.text_grey {
+    color: var(--grey);
+}
+
+.text_dark_grey {
+    color: var(--darkgrey);
+}
+
+.text_black {
+    color: var(--black);
+}
+
+/* font-size */
+
+.h_1 {
+    font-size: 48px;
+}
+
+.h_2 {
+    font-size: 40px;
+}
+
+.h_3 {
+    font-size: 36px;
+}
+
+.sh_1 {
+    font-size: 32px;
+}
+
+.sh_2 {
+    font-size: 28px;
+}
+
+.sh_3 {
+    font-size: 24px;
+}
+
+.bt_1 {
+    font-size: 22px;
+}
+
+.bt_2 {
+    font-size: 20px;
+}
+
+.bt_3 {
+    font-size: 16px;
+}
+
+.bt_4 {
+    font-size: 14px;
+}
+
+.bt_5 {
+    font-size: 12px;
+}
+
+/* font weight */
+
+.fw_bold {
+    font-weight: var(--bold);
+}
+
+.fw_semibold {
+    font-weight: var(--semibold);
+}
+
+.fw_medium {
+    font-weight: var(--medium);
+}
+
+.fw_regular {
+    font-weight: var(--regular);
+}
+
+.fw_light {
+    font-weight: var(--light);
+}

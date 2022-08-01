@@ -1,9 +1,8 @@
-@extends('layouts.navbar_footer',['title'=>'Login'])
+@extends('layouts.navbar_footer',[
+  'title'=>'Login',
+  'css'=> 'assets/css/login.css'
+  ])
 @section('content')
-
-  {{-- sorry klo ini nyasar berantakan --}}
-  <link rel="stylesheet" href="assets/css/login.css" />
-  {{-- wkwkwk --}}
 
   <main>
     <div class="heading">
@@ -29,6 +28,7 @@
             placeholder="Masukkan Email Anda"
             required
             value="{{ old('email') }}"
+            autofocus
           />
           @error('email')
             <div class="form-control invalid-tooltip">
@@ -58,7 +58,7 @@
           <a href="{{ route('register') }}" class="btn btn__daftar">
             Daftar Sekarang
           </a>
-          <a href="{{ route('password_request') }}" class="btn">
+          <a href="{{ route('password_request') }}" class="btn mb-3" style="background-color:#268e9b ">
             Forgot password
           </a>
         </div>

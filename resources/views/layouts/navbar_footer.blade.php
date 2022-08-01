@@ -8,8 +8,10 @@
     <link href="assets/img/favico.png" rel="icon" />
     <link href="assets/img/logo.png" rel="apple-touch-icon" />
 
+    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/navbar.css" />
-    <link rel="stylesheet" href="assets/css/register.css" />
+    <link rel="stylesheet" href={{ "$css" }} />
+    <link rel="stylesheet" href="assets/css/footer/simple-footer.css" />
     
     <link
       rel="stylesheet"

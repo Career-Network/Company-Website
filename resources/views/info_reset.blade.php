@@ -18,8 +18,8 @@
     
     <div class="main__card">
       <div class="heading">
-        <h2 class="sh_1 fw_bold text_primary">Terkirim</h2>
-        <p class="bt_4 fw_regular text_grey">Kami telah mengirimkan link ke email kamu yang dapat digunakan untuk mengatur ulang kata sandi. Jika email tidak ditemukan jangan lupa untuk mencarinya di folder spam dan sampah.</p>
+        <h2 class="sh_1 fw_bold text_primary" style="margin-bottom: 25px;">Kata Sandi <br> Berhasil Diubah !</h2>
+        <a href="{{ route('login') }}" class="btn_primary">Masuk</a>
       </div>
     </div>
   </main>
