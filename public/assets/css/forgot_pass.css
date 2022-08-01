@@ -46,6 +46,7 @@
 
 .form__group button:hover {
     background-color: #ff7d54;
+    color: white;
 }
 
 /* Media Query */
