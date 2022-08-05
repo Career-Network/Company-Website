@@ -20,7 +20,7 @@ class ForgotPasswordController extends Controller
         );
  
         return $status === Password::RESET_LINK_SENT
-            ? view('info_reset')
+            ? view('info_forgot')
             : back()->withErrors(['email' => __($status)]);
     }
 
