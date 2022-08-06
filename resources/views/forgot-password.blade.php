@@ -31,7 +31,7 @@
             {{ $message }}
           </div>
           @enderror
-          <button type="submit" class="btn">Send Password Reset Link</button>
+          <button type="submit" class="btn">Ubah Kata Sandi</button>
         </form>
       </div>
     </div>

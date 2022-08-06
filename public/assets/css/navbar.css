@@ -138,11 +138,15 @@ a.btn-nav {
     background-color: var(--white);
     border: 1px solid var(--orange);
     color: var(--orange) !important;
+    font-weight: var(--medium) !important;
 }
 
 .btn-primary:hover {
-    background-color: #d84a1e;
-    color: var(--white) !important;
+    background-color: #ffc8b7;
+}
+
+.btn-primary:focus {
+    background-color: #ffa285;
 }
 
 #btn-primary,
@@ -153,6 +157,7 @@ a.btn-nav {
 .btn-secondary {
     background-color: #27c6d9;
     color: #fff !important;
+    font-weight: var(--medium) !important;
 }
 
 .btn-secondary:hover {
