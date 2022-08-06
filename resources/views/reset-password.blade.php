@@ -27,9 +27,11 @@
           {{ $message }}
         </div>
         @enderror
+        
         <label class="bt_3 fw_medium mt_20">Kata Sandi Baru <span class="text_danger">*</span> </label>
         <input type="password" name="password" class="form-control @error('password') is-invalid @enderror">
-        <label class="bt_4 fw_regular text_grey mt_8">Minimal 8 karakter dengan kombinasi huruf kecil, huruf besar, dan angka</label>
+        <label class="bt_4 fw_regular text_grey mt_8 mb_0">Minimal 8 karakter dengan kombinasi huruf kecil, huruf besar, dan angka</label>
+
         <label class="bt_3 fw_medium mt_20">Konfirmasi Kata Sandi Baru <span class="text_danger">*</span> </label>
         <input type="password" name="password_confirmation" class="form-control @error('password_confirmation') is-invalid @enderror">
 

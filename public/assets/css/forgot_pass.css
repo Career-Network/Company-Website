@@ -57,6 +57,10 @@
     margin-top: 20px;
 }
 
+.mb_0 {
+    margin-bottom: 0 !important;
+}
+
 /* Media Query */
 
 /* Tablet Resolution */
