@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ $title }}</title>
 
-    <link href="assets/img/favico.png" rel="icon" />
-    <link href="assets/img/logo.png" rel="apple-touch-icon" />
+    <link href="{{ asset('assets/img/favico.png') }}" rel="icon" />
+    <link href="{{ asset('assets/img/logo.png') }}" rel="apple-touch-icon" />
 
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/navbar.css" />
-    <link rel="stylesheet" href={{ "$css" }} />
-    <link rel="stylesheet" href="assets/css/footer/simple-footer.css" />
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" /> 
+    <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}" />
+    <link rel="stylesheet" href="{{ asset($css) }} "/>
+    <link rel="stylesheet" href="{{ asset('assets/css/footer/simple-footer.css') }}" />
     
     <link
       rel="stylesheet"
-      href="assets/vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.css"
+      href="{{ asset('assets/vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.css') }}"
     />
     <link
       rel="stylesheet"
-      href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
+      href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}"
     />
   </head>
   <body>
@@ -32,7 +32,7 @@
             title="Career Network"
           >
             <img
-              src="assets/img/logo.png"
+              src="{{ asset('assets/img/logo.png') }}"
               alt="Career Network"
               class="brand-logo"
             />
@@ -142,8 +142,8 @@
 <!-- masih ada yang janggal disini -->
     <link
       rel="stylesheet"
-      href="assets/vendor/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"
+      href="{{ asset('assets/vendor/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js') }}"
     />
-    <script src="assets/js/script.js"></script>
+    <script src="{{ asset('assets/js/script.js') }}"></script>
   </body>
 </html>
