@@ -29,6 +29,10 @@
     margin: 20px auto 0px;
 }
 
+.form__group .input__group {
+    margin: 20px 0;
+}
+
 .form__group label {
     margin-bottom: 10px;
 }
@@ -46,19 +50,6 @@
 
 .form__group button:hover {
     background-color: #ff7d54;
-    color: white;
-}
-
-.mt_8 {
-    margin-top: 8px;
-}
-
-.mt_20 {
-    margin-top: 20px;
-}
-
-.mb_0 {
-    margin-bottom: 0 !important;
 }
 
 /* Media Query */
