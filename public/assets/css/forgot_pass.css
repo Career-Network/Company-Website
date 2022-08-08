@@ -34,7 +34,7 @@
 }
 
 .form__group button {
-    margin-top: 25px;
+    margin-top: 30px;
     background-color: var(--orange);
     color: var(--white);
     width: -webkit-fill-available;
@@ -47,6 +47,18 @@
 .form__group button:hover {
     background-color: #ff7d54;
     color: white;
+}
+
+.mt_8 {
+    margin-top: 8px;
+}
+
+.mt_20 {
+    margin-top: 20px;
+}
+
+.mb_0 {
+    margin-bottom: 0 !important;
 }
 
 /* Media Query */

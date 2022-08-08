@@ -47,7 +47,13 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-5. run the server maybe??
+5. Migrate
+
+```
+php artisan migrate
+```
+
+6. run the server maybe??
 
 ```
 php artisan serve
