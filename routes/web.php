@@ -43,7 +43,7 @@ Route::get('/reset-password/{token}', function ($token) {
 Route::post('/reset-password', function (Request $request) {
     $request->validate([
         'token' => 'required',
-        'email' => 'required|email',
+        'email' => 'required|email:dns',
         'password' => 'required|min:8|confirmed',
     ]);
 
@@ -60,6 +60,6 @@ Route::post('/reset-password', function (Request $request) {
         }
     );
     return $status === Password::PASSWORD_RESET
-        ? redirect()->route('login')->with('status', __($status))
+        ? view('info_reset')
         : back()->withErrors(['email' => [__($status)]]);
 })->middleware('guest')->name('password_update');

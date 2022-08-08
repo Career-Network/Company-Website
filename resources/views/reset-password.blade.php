@@ -20,8 +20,9 @@
     <div class="form__group">
       <form action="{{ route('password_update') }}" method="post">
         @csrf
-        <label class="bt_3 fw_medium">Alamat Email <span class="text_danger">*</span> </label>
-        <input type="email" name="email" class="form-control @error('email') is-invalid @enderror">
+        <label class="bt_3 fw_medium">Alamat Email <span class="text_danger">*</span> </label>\
+        <input type="hidden" name="token" value="{{ $token }}">
+        <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" >
         @error('email')
         <div class="invalid-feedback">
           {{ $message }}
