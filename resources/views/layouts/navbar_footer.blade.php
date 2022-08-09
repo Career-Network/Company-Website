@@ -105,8 +105,8 @@
                 <a class="nav-link" href="#">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link btn-nav btn-primary" href="{{ route('register') }}" id="btn-primary">
-                  Daftar
+                  <a class="nav-link btn-nav btn-primary" href="{{ route('register') }}" id="btn-primary">
+                    Daftar
                 </a>
               </li>
               <li class="nav-item">

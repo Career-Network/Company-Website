@@ -1,6 +1,6 @@
 @extends('layouts.navbar_footer',[
   'title'=>'Reset Password',
-  'css'=>"assets/css/info_pass.css"
+  'css'=>"assets/css/auth.css"
   ])
 @section('content')
   <main>

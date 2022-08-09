@@ -1,6 +1,6 @@
 @extends('layouts.navbar_footer',[
   'title'=>'Reset Password',
-  'css'=>"assets/css/forgot_pass.css"
+  'css'=>"assets/css/auth.css"
   ])
 @section('content')
   <main>
@@ -24,14 +24,16 @@
       <div class="form__group">
         <form action="{{ route('password_email') }}" method="post">
           @csrf
-          <label class="bt_3 fw_medium">Alamat Email <span class="text_danger">*</span> </label>
-          <input type="email" name="email" class="form-control @error('email') is-invalid @enderror">
-          @error('email')
-          <div class="invalid-feedback">
-            {{ $message }}
+          <div class="input__group">
+            <label class="bt_3 fw_medium">Alamat Email <span class="text_danger">*</span> </label>
+            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror">
+            @error('email')
+            <div class="invalid-feedback">
+              {{ $message }}
+            </div>
+            @enderror
           </div>
-          @enderror
-          <button type="submit" class="btn">Ubah Kata Sandi</button>
+          <button type="submit">Ubah Kata Sandi</button>
         </form>
       </div>
     </div>
