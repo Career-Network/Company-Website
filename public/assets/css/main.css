@@ -138,7 +138,7 @@ input:focus {
 }
 
 .text_white {
-    color: var(--darkgreen);
+    color: var(--white);
 }
 
 .text_light_grey {
@@ -225,7 +225,7 @@ input:focus {
     font-weight: var(--light);
 }
 
-/* Margin */'
+/* Margin */
 
 .mt_8 {
     margin-top: 8px;

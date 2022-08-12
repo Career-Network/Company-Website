@@ -9,7 +9,7 @@
     width: 540px;
     /* height: 400px; */
     padding: 40px 50px 35px;
-    margin: 80px auto 0;
+    margin: 80px auto 80px;
     border-radius: 12px;
     transition: 1s;
 }
@@ -71,7 +71,7 @@
 /* Mobile Resolution */
 @media only screen and (max-width: 576px) {
     .main__card {
-        margin-top: 105px;
+        margin-top: 100px;
         margin-bottom: 100px;
         padding: 40px 20px 48px;
         width: 335px;
