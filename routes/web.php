@@ -44,7 +44,12 @@ Route::post('/reset-password', function (Request $request) {
     $request->validate([
         'token' => 'required',
         'email' => 'required|email:dns',
-        'password' => 'required|min:8|confirmed',
+        'password' => 'required',
+        'min:8',
+        'regex:/[a-z]/',
+        'regex:/[A-Z]/',
+        'regex:/[0-9]/',
+        'confirmed',
     ]);
 
     $status = Password::reset(
