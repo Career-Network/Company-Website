@@ -35,10 +35,10 @@ class ForgotPasswordController extends Controller
             'email' => 'required|email',
             'password' => 'required',
             'min:8',
-            'regex:/[a-z]/',
-            'regex:/[A-Z]/',
-            'regex:/[0-9]/',
-            'confirmed',
+                'regex:/[a-z]/',
+                'regex:/[A-Z]/',
+                'regex:/[0-9]/',
+            'password_confirmation' => 'same:password'
         ]);
      
         $status = Password::reset(
