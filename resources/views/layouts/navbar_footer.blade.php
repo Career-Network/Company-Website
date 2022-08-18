@@ -104,16 +104,16 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item auth-reg">
                   <a class="nav-link btn-nav btn-primary" href="{{ route('register') }}" id="btn-primary">
                     Daftar
                 </a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link btn-nav btn-secondary" href="{{ route('login') }}" id="btn-secondary">
                   Masuk
                 </a>
               </li>
+              {{-- <li class="nav-item">
+              </li> --}}
               {{-- <li class="nav-item">
                 <a class="nav-link" href="{{ route('login') }}">Login</a>
               </li> --}}
