@@ -119,6 +119,10 @@ nav .container {
     border: none !important;
 }
 
+.auth-reg{
+    display: flex;
+}
+
 .btn-nav {
     border: 2px solid black;
     padding: 8px 302px;
@@ -286,9 +290,7 @@ a.btn-nav {
 
     .nav-item a {
         display: block;
-    }
-
-    .nav-item a {
+        margin-left: 0;
         font-size: 16px;
     }
 
@@ -301,14 +303,18 @@ a.btn-nav {
         padding-right: 50px;
     }
 
+    .auth-reg{
+        margin-top: 8px;
+    }
+
     #btn-primary {
-        margin: 6px 29px;
+        /* margin: 6px 29px; */
         padding: 12px 24px;
         width: 105px;
     }
 
     #btn-secondary {
-        margin: 5px 29px;
+        margin-left:12px;
         padding: 12px 24px;
         width: 129px;
     }
