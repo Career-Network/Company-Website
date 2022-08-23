@@ -2,6 +2,11 @@
 
 /* ini Design system keknya namanya bang ya ? :v */
 
+*{
+    box-sizing: border-box;
+    /* untuk debugging css */
+    /* outline: 1px solid red; */
+}
 :root {
     /* color */
     --orange: #ff5722;
@@ -69,8 +74,7 @@ input:focus {
 
 /* Main Components */
 
-.btn_primary {
-    width: 160px;
+.btn_secondary {
     padding: 24px;
     height: 50px;
     color: white;
@@ -83,13 +87,13 @@ input:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    background-color: var(--orange);
+    background-color: var(--blue);
 }
 
-.btn_primary:hover {
+.btn_secondary:hover {
     color: white;
 }
+
 
 .nav__link__primary {
     color: var(--orange);
@@ -231,6 +235,10 @@ input:focus {
     margin-top: 8px;
 }
 
+.mb_12 {
+    margin-bottom: 12px;
+}
+
 .mt_20 {
     margin-top: 20px;
 }
@@ -241,4 +249,8 @@ input:focus {
 
 .mb_0 {
     margin-bottom: 0 !important;
+}
+
+.py_40{
+    padding: 40px 0;
 }

@@ -19,7 +19,7 @@
     <div class="main__card">
       <div class="heading">
         <h2 class="sh_1 fw_bold text_primary" style="margin-bottom: 25px;">Kata Sandi <br> Berhasil Diubah !</h2>
-        <a href="{{ route('login') }}" class="btn_primary">Masuk</a>
+        <a href="{{ route('login') }}" class="btn_info_reset">Masuk</a>
       </div>
     </div>
   </main>
