@@ -1,0 +1,165 @@
+/* Main Components */
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    font-family: var(--poppins);
+    color: var(--white);
+}
+
+.title {
+    font-size: var(--h3);
+    font-weight: var(--bold);
+    transition: 1s;
+}
+
+.sub__title {
+    font-size: var(--b4);
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+/* PERUBAHAN DISINI */
+
+form .form__group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0 50px;
+    flex-direction: row;
+}
+
+form .form__group .input__group:nth-child(2),
+form .form__group .input__group:nth-child(3),
+form .form__group .input__group:nth-child(4),
+form .form__group .input__group:nth-child(5) {
+    margin-top: 30px;
+}
+
+form .input__group .label {
+    display: block;
+    display: block;
+    font-family: var(--poppins);
+    font-size: var(--b4);
+    font-weight: var(--semibold);
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.form__group .input__group input {
+    height: 60px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    font-family: var(--poppins);
+}
+
+.form__group .input__group input:focus,
+.form__group .input__group input:valid {
+    outline: none;
+}
+
+.form__group .input__group input::placeholder {
+    font-family: var(--poppins);
+    font-size: var(--b5);
+    color: var(--grey);
+}
+
+/*  SAMPAI SINI */
+
+.button__group {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.button__group button {
+    width: 310px;
+    height: 45px;
+    color: white;
+    font-family: var(--poppins);
+    font-size: var(--b4);
+    font-weight: var(--medium);
+    border: none;
+    border-radius: 4px;
+    transition: 1s;
+}
+
+.button__group a {
+    width: 310px;
+    height: 45px;
+    color: white;
+    font-family: var(--poppins);
+    font-size: var(--b4);
+    font-weight: var(--medium);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.button__group a:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: white;
+}
+
+.button__group .btn__masuk {
+    background-color: var(--blue);
+    margin-bottom: 24px;
+    border: 0;
+}
+
+.button__group .btn__daftar {
+    background-color: rgba(255, 255, 255, 0.35);
+    margin-bottom: 45px;
+    border: 0;
+}
+
+/* Media Query */
+/* Tablet Resolution */
+
+@media only screen and (max-width: 864px) {
+    .heading {
+        margin-top: 46px;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    .heading {
+        margin-top: 46px;
+    }
+}
+
+/* Mobile Resolution */
+@media only screen and (max-width: 375px) {
+    .title {
+        width: 275px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .sub__title {
+        text-align: center;
+        padding: 0 70px;
+    }
+}
+
+/* new css mediaquery */
+
+@media only screen and (max-width: 576px) {
+    .row > * {
+        padding: 0 !important;
+    }
+    .container {
+        width: 310px !important;
+        padding: 0 !important;
+    }
+}

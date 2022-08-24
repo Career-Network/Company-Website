@@ -1,0 +1,97 @@
+* {
+    transition: 1s;
+    /* untuk debugging css */
+    /* outline: 1px solid red; */
+}
+
+.main__card {
+    background-color: white;
+    width: 540px;
+    /* height: 400px; */
+    padding: 40px 50px 50px;
+    margin: 160px auto 0;
+    border-radius: 12px;
+    transition: 1s;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading p {
+    color: #7a7a7a;
+    width: 350px;
+    margin: auto;
+}
+
+/* tombol info kirim link reset sandi */
+.form__group button {
+    margin-top: 25px;
+    background-color: var(--orange);
+    color: var(--white);
+    width: -webkit-fill-available;
+    border: none;
+    height: 50px;
+    border-radius: 6px;
+    transition: 1s;
+}
+
+.form__group button:hover {
+    background-color: #ff7d54;
+}
+
+/* tombol info reset sandi */
+.btn_primary {
+    width: 160px;
+    padding: 24px;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--poppins);
+    font-size: var(--bt_3);
+    font-weight: var(--medium);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--orange);
+}
+
+.btn_primary:hover {
+    color: white;
+}
+
+/* Media Query */
+
+/* Tablet Resolution */
+@media only screen and (max-width: 991px) {
+    .main__card {
+        margin-top: 56px;
+        padding: 40px 20px 35px;
+    }
+    .heading h2 {
+        font-size: 28px;
+    }
+    .heading p {
+        width: 360px;
+    }
+}
+
+/* Mobile Resolution */
+@media only screen and (max-width: 576px) {
+    .main__card {
+        margin-top: 105px;
+        margin-bottom: 100px;
+        padding: 40px 20px 48px;
+        width: 335px;
+        height: auto;
+    }
+    .heading p {
+        width: 265px;
+    }
+    .form__group {
+        margin-top: 36px;
+    }
+}
