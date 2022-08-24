@@ -3,6 +3,8 @@
   'css'=>'assets/css/lp.css'
   ])
 @section('content')
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <main>
     <section id="hero">
         <div class="row align-items-center">
@@ -46,10 +48,27 @@
         </div>
     </section>
 
+    <section id="carousel">
+        <div class="main-carousel">
+            <div class="cell"><img src="assets/img/landing-page/c-1.png" alt=""></div>
+            <div class="cell"><img src="assets/img/landing-page/c-2.png" alt=""></div>
+            <div class="cell"><img src="assets/img/landing-page/c-3.png" alt=""></div>
+        </div>
+    </section>
+
+
     <section id="strategi">
 
     </section>
 
 </main>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+  $('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    warpAround: true,
+    freeScroll: true
+  });
+  </script>
 @endsection
-    

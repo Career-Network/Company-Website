@@ -33,12 +33,35 @@
     margin-left: 40px;
 } */
 
+
+/* Carousel*/
+.cell{
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    margin: 0 15px;
+    overflow: hidden;
+}
+
+
+.cell img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*bulet-bulet kecilnya carousel*/
+.flickity-page-dots{
+    display: none;
+}
+
 /* ornament */
 
 @media only screen and (max-width: 1050px) {
     .hero_ornament{
         display: none;
-    } 
+    }
 }
 
 /* Media Query */
@@ -65,7 +88,7 @@
     .hero_parag{
         font-size: var(--bt_4);
     }
-    
+
     #about{
         text-align: center;
     }

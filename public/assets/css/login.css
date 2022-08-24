@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Main Components */
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    /* font-family: var(--poppins); */
+    color: var(--white);
+}
+
+.title {
+    font-size: var(--h3);
+    font-weight: var(--bold);
+    transition: 1s;
+}
+
+.sub__title {
+    font-size: var(--b4);
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.form__group {
+    display: flex;
+    justify-content: center;
+}
+
+.input__group {
+    margin-top: 30px;
+    transition: 1s;
+}
+
+.input__group label {
+    display: block;
+    font-family: var(--poppins);
+    font-size: var(--b4);
+    font-weight: var(--semibold);
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.input__group input {
+    width: 420px;
+    height: 60px;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    font-family: var(--poppins);
+    transition: 1s;
+}
+
+.input__group input:focus {
+    outline: none;
+}
+
+.input__group input::placeholder {
+    font-family: var(--poppins);
+    font-size: var(--b5);
+    color: var(--grey);
+}
+
+.button__group {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.button__group button {
+    width: 310px;
+    height: 45px;
+    color: white;
+    font-family: var(--poppins);
+    font-size: var(--b4);
+    font-weight: var(--medium);
+    border: none;
+    border-radius: 4px;
+}
+
+.button__group a {
+    width: 310px;
+    height: 45px;
+    color: white;
+    font-family: var(--poppins);
+    font-size: var(--b4);
+    font-weight: var(--medium);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.button__group a:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: white;
+}
+
+.button__group .btn__masuk {
+    background-color: var(--blue);
+    margin-bottom: 24px;
+    border: 0;
+}
+
+.button__group .btn__daftar {
+    background-color: rgba(255, 255, 255, 0.35);
+    margin-bottom: 45px;
+    border: 0;
+}
+
+/* Media Query */
+
+/* Tablet Resolution */
+@media only screen and (max-width: 720px) {
+    .heading {
+        margin-top: 46px;
+    }
+    .input__group input {
+        width: 310px;
+    }
+}
+
+/* Mobile Resolution */
+@media only screen and (max-width: 375px) {
+    .title {
+        width: 275px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
