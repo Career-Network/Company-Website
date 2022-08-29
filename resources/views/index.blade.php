@@ -5,6 +5,9 @@
 @section('content')
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
 <main>
     <section id="hero">
         <div class="row align-items-center">
@@ -56,12 +59,42 @@
         </div>
     </section>
 
+    <section id="service">
+        <h2 class="h_1 fw_bold hero_title ">
+            Layanan Kami
+        </h2>
+        <div class="carddy">
+            <div class="head-card">
+                <img src="assets/img/landing-page/card-1.png" alt="">
+            </div>
+            <div class="body-card">
+                <h4>Career Network <br>Edu Career</h4>
+                <p>
+                    EduCareer hadir sebagai Paltform pelatihan dengan mentor berpengalaman
+                </p>
+                <button><p>Segera Hadir!</p></button>
+            </div>
+        </div>
+        <div class="carddy">
+            <div class="head-card">
+                <img src="assets/img/landing-page/card-2.png" alt="">
+            </div>
+            <div class="body-card">
+                <h4>Career Network <br>Sonic</h4>
+                <p>
+                    EduCareer hadir sebagai Paltform pelatihan dengan mentor berpengalaman
+                </p>
+                <button><p>Segera Hadir!</p></button>
+            </div>
+        </div>
+    </section>
 
     <section id="strategi">
 
     </section>
 
 </main>
+
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script type="text/javascript">
   $('.main-carousel').flickity({
