@@ -1,5 +1,5 @@
 @extends('layouts.navbar_footer',[
-  'title'=>'Login',
+  'title'=>'Register',
   'css'=>'assets/css/auth.css'
   ])
 @section('content')

@@ -1,0 +1,38 @@
+#mf{
+    background-color: var(--grey);
+}
+
+.mf-left{
+    padding: 30px 0;
+}
+
+.mf-right{
+    padding: 50px 0;
+}
+
+.social-media i {
+    color: #111;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+#mf ul {
+    font-size: var(--b5);
+    color: #0A4E57;
+}
+
+#mf ul li {
+    list-style: none;
+}
+
+#mf ul * {
+    margin: 6px 0px;
+}
+
+@media only screen and (max-width: 576px) {
+    #mf p {
+        font-size: var(--b4);
+    }
+}

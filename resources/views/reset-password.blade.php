@@ -35,11 +35,21 @@
           <label class="bt_3 fw_medium">Kata Sandi Baru <span class="text_danger">*</span> </label>
           <input type="password" name="password" class="form-control @error('password') is-invalid @enderror">
           <label class="bt_4 fw_regular text_grey mt_8 mb_0">Minimal 8 karakter dengan kombinasi huruf kecil, huruf besar, dan angka</label>
+          @error('password')
+            <div class="invalid-feedback">
+              {{ $message }}
+            </div>
+          @enderror
         </div>
 
         <div class="input__group">
           <label class="bt_3 fw_medium">Konfirmasi Kata Sandi Baru <span class="text_danger">*</span> </label>
           <input type="password" name="password_confirmation" class="form-control @error('password_confirmation') is-invalid @enderror">
+          @error('password_confirmation')
+            <div class="invalid-feedback">
+              {{ $message }}
+            </div>
+          @enderror
         </div>
 
         <button type="submit">Ubah Kata Sandi</button>

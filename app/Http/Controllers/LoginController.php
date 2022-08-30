@@ -29,7 +29,7 @@ class LoginController extends Controller
             return redirect()->intended('/home');
         } else {
             return back()->withErrors([
-                'email' => 'The provided credentials do not match our records.',
+                'email' => 'Identitas tersebut tidak cocok dengan data kami.',
             ])->onlyInput('email');
         }
     }
