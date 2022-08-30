@@ -4,9 +4,7 @@
   ])
 @section('content')
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
+<script src="https://code.jquery.com/jquery-3.6.1.js""></script>
 
 <main>
     <section id="hero">
@@ -60,37 +58,81 @@
     </section>
 
     <section id="service" class="pb-5">
-        <h2 class="h_1 fw_bold hero_title ">
-            Layanan Kami
-        </h2>
-        <div class="carddy">
-            <div class="head-card">
-                <img src="assets/img/landing-page/card-1.png" alt="">
+        <div class="text-center">
+            <div class="">
+                <h2>Layanan Kami</h2>
+                <img src="assets/img/landing-page/line-primary.png" alt="">
             </div>
-            <div class="body-card">
-                <h4>Career Network <br>Edu Career</h4>
-                <p>
-                    EduCareer hadir sebagai Paltform pelatihan dengan mentor berpengalaman
-                </p>
-                <button><p>Segera Hadir!</p></button>
+            <div class="carddy">
+                <div class="head-card">
+                    <img src="assets/img/landing-page/card-1.png" alt="">
+                </div>
+                <div class="body-card">
+                    <h4>Career Network <br>Edu Career</h4>
+                    <p>
+                        EduCareer hadir sebagai Paltform pelatihan dengan mentor berpengalaman
+                    </p>
+                    <button><p>Segera Hadir!</p></button>
+                </div>
             </div>
-        </div>
-        <div class="carddy">
-            <div class="head-card">
-                <img src="assets/img/landing-page/card-2.png" alt="">
-            </div>
-            <div class="body-card">
-                <h4>Career Network <br>Sonic</h4>
-                <p>
-                    EduCareer hadir sebagai Paltform pelatihan dengan mentor berpengalaman
-                </p>
-                <button><p>Segera Hadir!</p></button>
+            <div class="carddy">
+                <div class="head-card">
+                    <img src="assets/img/landing-page/card-2.png" alt="">
+                </div>
+                <div class="body-card">
+                    <h4>Career Network <br>Sonic</h4>
+                    <p>
+                        Penyedia jasa Freelancer bagi masyarakat dengan berpegang teguh kepada  Excellent Service.
+                    </p>
+                    <button><p>Segera Hadir!</p></button>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="strategi">
-
+    <section id="berita">
+        <div class="row">
+            <div class="col-sm-5">
+                Blog Terkini
+            </div>
+            <div class="col-sm-7">
+                <div class="slider">
+                    <div class="carddy-1">
+                        <div class="img">
+                            <img src="assets/img/landing-page/s-1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Perbedaan Bekerja di Startup dan Corporate</div>
+                            <div class="sub-title">Networkers sudah tidak asing lagi dengan istilah Startup dan Corporate. Ditambah, saat ini sedang hits...</div>
+                            <div class="name">Falih Rahmat</div>
+                            <div class="date">21 Mei 2022</div>
+                        </div>
+                    </div>
+                    <div class="carddy-1">
+                        <div class="img">
+                            <img src="assets/img/landing-page/s-2.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Berbagai Profesi Dunia Data dan Analitik</div>
+                            <div class="sub-title">Networkers sudah tidak asing lagi dengan istilah Startup dan Corporate. Ditambah, saat ini sedang hits...</div>
+                            <div class="name">Toni Sembiring</div>
+                            <div class="date">23 Mei 2022</div>
+                        </div>
+                    </div>
+                    <div class="carddy-1">
+                        <div class="img">
+                            <img src="assets/img/landing-page/s-3.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Career Network telah luncurkan Website...</div>
+                            <div class="sub-title">Networkers sudah tidak asing lagi dengan istilah Startup dan Corporate. Ditambah, saat ini sedang hits...</div>
+                            <div class="name">Falih Rahmat</div>
+                            <div class="date">17 Mei 2022</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="mf">
@@ -144,5 +186,5 @@
     warpAround: true,
     freeScroll: true
   });
-  </script>
+</script>
 @endsection
