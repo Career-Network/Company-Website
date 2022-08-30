@@ -58,3 +58,9 @@ php artisan migrate
 ```
 php artisan serve
 ```
+
+Yg belum
+- blog terkini
+- card slidernya
+- gambar kotak-kotak di layanan
+- bug garis oren :(
