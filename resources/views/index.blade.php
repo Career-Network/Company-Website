@@ -16,7 +16,7 @@
                     <h2 class="h_1 text_white fw_bold hero_title">
                         Ayo Tumbuh <br> Bersama Kami !
                     </h2>
-                    <img src="assets/img/landing-page/so.png" alt="">
+                    <img src="assets/img/landing-page/line-white.png" alt="">
                     <p class="bt_2 text_white hero_parag">
                         Hadirkan peluang signifikan untuk meningkatkan pertumbuhan pribadi Anda, seperti memberikan Pelatihan Karir dan menghubungkan Freelancer dengan pembuat proyek - Semuanya sesuai dengan kebutuhan Anda.
                     </p>
@@ -59,7 +59,7 @@
         </div>
     </section>
 
-    <section id="service">
+    <section id="service" class="pb-5">
         <h2 class="h_1 fw_bold hero_title ">
             Layanan Kami
         </h2>
@@ -91,6 +91,47 @@
 
     <section id="strategi">
 
+    </section>
+
+    <section id="mf">
+        <div class="row row-eq-height align-items-center justify-content-center">
+            <div class="col-sm-5 bg_dark p-5">
+                <img src="assets/img/landing-page/logo-footer.png" alt="">
+                <p class="bt_3 text_white mt-4">Lorem ipsum dolor sit amet, consectur adipisci elit. Rhoncus sodales pellene tellus eu. Non aenean diam tellus.</p>
+                <label class="bt_3 fw_semibold text_white">Ikuti Kami &nbsp;
+                    <a href="" class="social-media"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="social-media"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="" class="social-media"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="social-media"><i class="fa-brands fa-facebook"></i></a>
+                </label>
+            </div>
+            <div class="col-sm-7 bg_grey mf-right">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-6">
+                        <ul>
+                            <label class="bt_3 fw_semibold">Sumber</label>
+                            <li>Perusahaan</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-6">
+                        <ul>
+                            <label class="bt_3 fw_semibold">Layanan</label>
+                            <li>EduCareer</li>
+                            <li>Sonic</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-6">
+                        <ul>
+                            <label class="bt_3 fw_semibold">Bantuan</label>
+                            <li>Syarat dan Ketentuan</li>
+                            <li>Kebijakan Privasi</li>
+                            <li>Kontak</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 </main>

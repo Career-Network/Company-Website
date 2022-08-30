@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}" />
     <link rel="stylesheet" href="{{ asset($css) }} "/>
     <link rel="stylesheet" href="{{ asset('assets/css/footer/simple-footer.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/footer/main_footer.css') }}" />
     
     <link
       rel="stylesheet"
