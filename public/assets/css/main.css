@@ -121,6 +121,16 @@ input:focus {
 
 /* Utility Components */
 
+/* bg color  */
+
+.bg_dark{
+    background-color: var(--black);
+}
+
+.bg_grey{
+    background-color: var(--grey);
+}
+
 /* Text Styles / Typography*/
 
 /* Color */
@@ -249,6 +259,10 @@ input:focus {
 
 .mb_0 {
     margin-bottom: 0 !important;
+}
+
+.pl_60{
+    padding-left: 60px;
 }
 
 .py_40{
