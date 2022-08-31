@@ -36,7 +36,6 @@
 /* Berita */
 #berita {
     background: #fff;
-    padding: 40px 0;
 }
 
 
@@ -216,6 +215,12 @@
 
 /* ----------------------------------------- */
 /* Berita*/
+.owl-stage-outer {
+    justify-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+}
+
 .slider {
     max-width: 1150px;
     display: flex;

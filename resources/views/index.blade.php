@@ -5,6 +5,8 @@
 @section('content')
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://code.jquery.com/jquery-3.6.1.js""></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
 <main>
     <section id="hero">
@@ -96,7 +98,7 @@
                 Blog Terkini
             </div>
             <div class="col-sm-7">
-                <div class="slider">
+                <div class="slider owl-carousel">
                     <div class="carddy-1">
                         <div class="img">
                             <img src="assets/img/landing-page/s-1.png" alt="">
@@ -178,6 +180,11 @@
 
 </main>
 
+<script type="text/javascript">
+    $('.slider').owlCarousel({
+        autoWidth:true,
+    });
+</script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script type="text/javascript">
   $('.main-carousel').flickity({
