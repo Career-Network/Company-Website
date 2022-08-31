@@ -23,8 +23,7 @@
       href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}"
     />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    
   </head>
 
   <body>
@@ -144,10 +143,7 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-    
-    <script src="https://code.jquery.com/jquery-3.6.1.js""></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    
+
     <!-- masih ada yang janggal disini -->
     <link
       rel="stylesheet"
