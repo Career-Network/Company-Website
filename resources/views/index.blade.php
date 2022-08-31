@@ -3,11 +3,6 @@
   'css'=>'assets/css/lp.css'
   ])
 @section('content')
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<script src="https://code.jquery.com/jquery-3.6.1.js""></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
 <main>
     <section id="hero">
         <div class="row align-items-center">
@@ -16,7 +11,7 @@
                     <h2 class="h_1 text_white fw_bold hero_title">
                         Ayo Tumbuh <br> Bersama Kami !
                     </h2>
-                    <img src="assets/img/landing-page/line-white.png" alt="">
+                    <img src="{{ asset('assets/img/landing-page/line-white.png') }}" alt="">
                     <p class="bt_2 text_white hero_parag">
                         Hadirkan peluang signifikan untuk meningkatkan pertumbuhan pribadi Anda, seperti memberikan Pelatihan Karir dan menghubungkan Freelancer dengan pembuat proyek - Semuanya sesuai dengan kebutuhan Anda.
                     </p>
@@ -24,19 +19,19 @@
             </div>
             <div class="col-sm-6">
                 <div class="hero_img">
-                    <img src="assets/img/landing-page/rocket.png" class="img-fluid" alt="hero">
+                    <img src="{{ asset('assets/img/landing-page/rocket.png') }}" class="img-fluid" alt="hero">
                 </div>
             </div>
         </div>
 
-        <img src="assets/img/landing-page/o.png" class="hero_ornament" alt="">
+        <img src="{{ asset('assets/img/landing-page/o.png') }}" class="hero_ornament" alt="">
     </section>
 
     <section id="about">
         <div class="container">
             <div class="row justify-content-center py_40 align-items-center">
                 <div class="col-sm-6">
-                    <img src="assets/img/landing-page/abt.png" class="img-fluid" alt="about-us">
+                    <img src="{{ asset('assets/img/landing-page/abt.png') }}" class="img-fluid" alt="about-us">
                 </div>
                 <div class="col-sm-6">
                     <div class="about_right">
@@ -53,9 +48,9 @@
 
     <section id="carousel">
         <div class="main-carousel">
-            <div class="cell"><img src="assets/img/landing-page/c-1.png" alt=""></div>
-            <div class="cell"><img src="assets/img/landing-page/c-2.png" alt=""></div>
-            <div class="cell"><img src="assets/img/landing-page/c-3.png" alt=""></div>
+            <div class="cell"><img src="{{ asset('assets/img/landing-page/c-1.png') }}" alt=""></div>
+            <div class="cell"><img src="{{ asset('assets/img/landing-page/c-2.png') }}" alt=""></div>
+            <div class="cell"><img src="{{ asset('assets/img/landing-page/c-3.png') }}" alt=""></div>
         </div>
     </section>
 
@@ -63,11 +58,11 @@
         <div class="text-center">
             <div class="">
                 <h2>Layanan Kami</h2>
-                <img src="assets/img/landing-page/line-primary.png" alt="">
+                <img src="{{ asset('assets/img/landing-page/line-primary.png') }}" alt="">
             </div>
             <div class="carddy">
                 <div class="head-card">
-                    <img src="assets/img/landing-page/card-1.png" alt="">
+                    <img src="{{ asset('assets/img/landing-page/card-1.png') }}" alt="">
                 </div>
                 <div class="body-card">
                     <h4>Career Network <br>Edu Career</h4>
@@ -79,7 +74,7 @@
             </div>
             <div class="carddy">
                 <div class="head-card">
-                    <img src="assets/img/landing-page/card-2.png" alt="">
+                    <img src="{{ asset('assets/img/landing-page/card-2.png') }}" alt="">
                 </div>
                 <div class="body-card">
                     <h4>Career Network <br>Sonic</h4>
@@ -101,7 +96,7 @@
                 <div class="slider owl-carousel">
                     <div class="carddy-1">
                         <div class="img">
-                            <img src="assets/img/landing-page/s-1.png" alt="">
+                            <img src="{{ asset('assets/img/landing-page/s-1.png') }}" alt="">
                         </div>
                         <div class="content">
                             <div class="title">Perbedaan Bekerja di Startup dan Corporate</div>
@@ -112,7 +107,7 @@
                     </div>
                     <div class="carddy-1">
                         <div class="img">
-                            <img src="assets/img/landing-page/s-2.png" alt="">
+                            <img src="{{ asset('assets/img/landing-page/s-2.png') }}" alt="">
                         </div>
                         <div class="content">
                             <div class="title">Berbagai Profesi Dunia Data dan Analitik</div>
@@ -123,7 +118,7 @@
                     </div>
                     <div class="carddy-1">
                         <div class="img">
-                            <img src="assets/img/landing-page/s-3.png" alt="">
+                            <img src="{{ asset('assets/img/landing-page/s-3.png') }}" alt="">
                         </div>
                         <div class="content">
                             <div class="title">Career Network telah luncurkan Website...</div>
@@ -140,7 +135,7 @@
     <section id="mf">
         <div class="row row-eq-height align-items-center justify-content-center">
             <div class="col-sm-5 bg_dark p-5">
-                <img src="assets/img/landing-page/logo-footer.png" alt="">
+                <img src="{{ asset('assets/img/landing-page/logo-footer.png') }}" alt="">
                 <p class="bt_3 text_white mt-4">Lorem ipsum dolor sit amet, consectur adipisci elit. Rhoncus sodales pellene tellus eu. Non aenean diam tellus.</p>
                 <label class="bt_3 fw_semibold text_white">Ikuti Kami &nbsp;
                     <a href="" class="social-media"><i class="fa-brands fa-twitter"></i></a>
