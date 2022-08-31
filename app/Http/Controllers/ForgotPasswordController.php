@@ -31,8 +31,7 @@ class ForgotPasswordController extends Controller
     public function password_update(Request $request){
         $request->validate([
             'token' => 'required',
-            'token' => 'required',
-            'email' => 'required|email',
+            'email' => 'required|email:dns',
             'password' => 'required',
             'min:8',
                 'regex:/[a-z]/',

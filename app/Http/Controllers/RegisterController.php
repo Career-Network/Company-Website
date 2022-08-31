@@ -20,7 +20,7 @@ class RegisterController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|regex:/^[a-zA-Z\s]*$/',
             'email' => 'required|email:dns|unique:users',
-            'number' => 'required',
+            'number' => 'required|max:13',
             'password' => [
                 'required',
                 'min:8',
