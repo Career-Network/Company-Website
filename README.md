@@ -61,6 +61,6 @@ php artisan serve
 
 Yg belum
 - blog terkini
-- card slidernya
+- garis slidernya
 - gambar kotak-kotak di layanan
 - bug garis oren :(
