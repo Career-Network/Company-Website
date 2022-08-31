@@ -144,10 +144,10 @@
                 <img src="{{ asset('assets/img/landing-page/logo-footer.png') }}" alt="">
                 <p class="bt_3 text_white mt-4">Lorem ipsum dolor sit amet, consectur adipisci elit. Rhoncus sodales pellene tellus eu. Non aenean diam tellus.</p>
                 <label class="bt_3 fw_semibold text_white">Ikuti Kami &nbsp;
-                    <a href="" class="social-media"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="" class="social-media"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="" class="social-media"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="" class="social-media"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="social-media"><i class="fa-brands fa-twitter" target="blank"></i></a>
+                    <a href="https://www.linkedin.com/company/career-network-id/" class="social-media" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/careernetwork.id/" class="social-media" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="social-media"><i class="fa-brands fa-facebook" target="blank"></i></a>
                 </label>
             </div>
             <div class="col-sm-7 bg_grey mf-right">
