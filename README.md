@@ -60,7 +60,4 @@ php artisan serve
 ```
 
 Yg belum
-- blog terkini
-- garis slidernya
-- gambar kotak-kotak di layanan
-- bug garis oren :(
+- gambar kotak-kotak di layanan dan blog
