@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Str;
 use App\Http\Controllers\LoginController;
 use Illuminate\Auth\Events\PasswordReset;
 use App\Http\Controllers\RegisterController;
