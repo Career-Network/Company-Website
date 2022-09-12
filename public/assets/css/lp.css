@@ -1,4 +1,4 @@
-/* Hero Section */
+    /* Hero Section */
 
 .hero_text img{
     transform: translateY(-10px);
@@ -82,6 +82,8 @@
     display: none;
 }
 
+
+
 /* ----------------------------------------- */
 /* Card */
 #service h2 {
@@ -140,8 +142,6 @@
     width: 237px;
     height: 80px;
 
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 40px;
@@ -158,8 +158,6 @@
     width: 237px;
     height: 63px;
 
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -200,8 +198,6 @@
     width: 100px;
     height: 21px;
 
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
@@ -405,7 +401,63 @@
 
 /* Tablet Resolution */
 @media only screen and (max-width: 991px) {
+    /* ----------------------------------------- */
+    /* Carousel */
+    #m-carousel {
+        display: none;
+    }
+    #c-carousel {
+        display: block  ;
+    }
+    /* ----------------------------------------- */
 
+    /* ----------------------------------------- */
+    /* Card */
+    .carddy {
+        padding: 34px 20px;
+        width: 225px;
+        height: 283px;
+    }
+
+    .head-card img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .body-card h4 {
+        width: 194px;
+        height: 59px;
+
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .body-card p {
+        width: 185px;
+        height: 45px;
+
+        font-size: 11px;
+    }
+
+    .body-card button {
+
+        margin-top: 22px;
+        padding: 7.2973px 17.5135px;
+        gap: 7.3px;
+
+        width: 105px;
+        height: 35px;
+
+        border-radius: 4px
+
+    }
+
+    .body-card button p {
+        width: 76px;
+        height: 15px;
+        font-size: 11px;
+    }
+    /* ----------------------------------------- */
 }
 
 /* Mobile Resolution */
@@ -451,4 +503,72 @@
     .btn_secondary{
         margin: 30px auto 0;
     }
+
+    /* ----------------------------------------- */
+    /* Carousel */
+    #c-carousel {
+        display: none;
+    }
+
+    #m-carousel {
+        display: block;
+    }
+    /* ----------------------------------------- */
+
+    /* ----------------------------------------- */
+    /* Card */
+
+    #service h2 {
+        font-size: 24px;
+    }
+
+    #service img.garis {
+        width: 157px;
+        height: 4px;
+    }
+
+    .carddy {
+        padding: 34px 26px;
+        width: 270px;
+        height: 320px;
+    }
+
+    .head-card img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .body-card h4 {
+        width: 194px;
+        height: 59px;
+
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .body-card p {
+        width: 185px;
+        height: 59px;
+
+        font-size: 11px;
+    }
+
+    .body-card button {
+
+        margin-top: 22px;
+        padding: 7.2973px 17.5135px;
+        gap: 7.3px;
+
+        width: 105px;
+        height: 35px;
+
+        border-radius: 4px;
+    }
+
+    .body-card button p {
+        width: 76px;
+        height: 15px;
+        font-size: 11px;
+    }
+     /* ----------------------------------------- */
 }

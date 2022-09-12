@@ -51,10 +51,15 @@
     </section>
 
     <section id="carousel">
-        <div class="main-carousel">
+        <div class="main-carousel" id="c-carousel">
             <div class="cell"><img src="{{ asset('assets/img/landing-page/c-1.png') }}" alt=""></div>
             <div class="cell"><img src="{{ asset('assets/img/landing-page/c-2.png') }}" alt=""></div>
             <div class="cell"><img src="{{ asset('assets/img/landing-page/c-3.png') }}" alt=""></div>
+        </div>
+        <div class="main-carousel" id="m-carousel">
+            <div class="cell"><img src="{{ asset('assets/img/landing-page/m-1.png') }}" alt=""></div>
+            <div class="cell"><img src="{{ asset('assets/img/landing-page/m-2.png') }}" alt=""></div>
+            <div class="cell"><img src="{{ asset('assets/img/landing-page/m-3.png') }}" alt=""></div>
         </div>
     </section>
 
@@ -62,7 +67,7 @@
         <div class="text-center">
             <div class="">
                 <h2>Layanan Kami</h2>
-                <img src="{{ asset('assets/img/landing-page/line-primary.png') }}" alt="">
+                <img class="garis" src="{{ asset('assets/img/landing-page/line-primary.png') }}" alt="">
             </div>
             <div class="carddy">
                 <div class="head-card">
