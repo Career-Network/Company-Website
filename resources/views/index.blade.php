@@ -98,7 +98,7 @@
 
     <section id="berita">
         <div class="row">
-            <div class="col-sm-5 px-5">
+            <div class="col-sm-5 px-5 center">
                 <h2 class="h_3 fw_semibold mt-5">Blog Terkini</h2>
                 <p class="bt_3">Nikmati Cerita, Hiburan, Informasi serta Promo menarik dari  blog Career Network. </p>
                 <button><p>Lihat Lebih Banyak</p></button>
