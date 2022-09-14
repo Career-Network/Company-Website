@@ -25,6 +25,9 @@ use App\Http\Controllers\ForgotPasswordController;
 
 Route::get('/', [DashboardController::class, 'index'])->name('home')->withoutMiddleware('auth');
 Route::get('/home', [DashboardController::class, 'index'])->name('home')->withoutMiddleware('auth');
+Route::get('/educareer', function () {
+    return view('list_class');
+})->name('educareer');
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'auth'])->name('auth');
