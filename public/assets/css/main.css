@@ -261,6 +261,10 @@ input:focus {
     margin-bottom: 0 !important;
 }
 
+.py_60 {
+    padding: 60px 0;
+}
+
 .pl_60{
     padding-left: 60px;
 }

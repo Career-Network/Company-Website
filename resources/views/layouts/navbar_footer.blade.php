@@ -101,7 +101,7 @@
                   <i id="toggle-service" class="orange fa-solid fa-angle-down ms-2 mt-1"></i>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Edu Career</a></li>
+                  <li><a class="dropdown-item" href="{{ route('educareer') }}">Edu Career</a></li>
                   <li><a class="dropdown-item" href="#">Sonic</a></li>
                 </ul>
               </li>
