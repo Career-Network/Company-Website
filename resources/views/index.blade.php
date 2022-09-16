@@ -78,7 +78,7 @@
                     <p>
                         EduCareer hadir sebagai Paltform pelatihan dengan mentor berpengalaman
                     </p>
-                    <button><p>Segera Hadir!</p></button>
+                    <a href="{{ route('educareer') }}"><button><p>Layanan</p></button></a>
                 </div>
             </div>
             <div class="carddy">
