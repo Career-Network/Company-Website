@@ -173,7 +173,9 @@
     align-self: stretch;
     flex-grow: 0;
 }
-
+.body-card a{
+    text-decoration: none;
+}
 .body-card button {
 
     box-sizing: border-box;
