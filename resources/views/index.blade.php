@@ -142,7 +142,7 @@
             </div>
         </div>
     </section>
-
+    {{-- footer --}}
     <section id="mf">
         <div class="row row-eq-height align-items-center justify-content-center">
             <div class="col-sm-5 bg_dark p-5">
