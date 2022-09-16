@@ -1,5 +1,5 @@
 @extends('layouts.navbar_footer',[
-  'title'=>'Login',
+  'title'=>'Edu Career',
   'css'=> 'assets/css/list_class.css'
   ])
 @section('content')
