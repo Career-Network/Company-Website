@@ -61,7 +61,7 @@
             
             @auth
             <li class="nav-item">
-              <a class="nav-link" href="#">Perusahaan</a>
+              <a class="nav-link" href=" {{ route('/home') }}">Perusahaan</a>
             </li>
             <li class="nav-item dropdown">
               <a
