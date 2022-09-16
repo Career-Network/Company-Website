@@ -98,6 +98,8 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">My Profile</a></li>
                     <div class="dropdown-divider"></div>
+                    <li><a class="dropdown-item" href=" {{ route('dashboard') }}">Dashboard</a></li>
+                    <div class="dropdown-divider"></div>
                     <li>
                         <form action="{{ route('logout') }}" method="post">
                             @csrf
