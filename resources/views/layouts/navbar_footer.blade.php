@@ -60,6 +60,29 @@
             
             
             @auth
+            <li class="nav-item">
+              <a class="nav-link" href="#">Perusahaan</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Layanan
+                <i id="toggle-service" class="orange fa-solid fa-angle-down ms-2 mt-1"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="{{ route('educareer') }}">Edu Career</a></li>
+                <li><a class="dropdown-item" href="#">Sonic</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
             <li class="nav-item dropdown">
                 <a
                   class="nav-link"
