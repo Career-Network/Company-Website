@@ -1,40 +1,59 @@
-#list-class{
-    background-color: white;
+#list-class {
+    background-image: url("../img/frame-background.png");
+    background-size: cover;
+    background-position: center;
+    /* background-color: white; */
 }
 
-h3{
+h3 {
     margin: 0 !important;
 }
 
-#list-class .card{
+#list-class .card {
     width: 308px;
     margin: 20px auto;
     filter: drop-shadow(0px 11px 20px rgba(5, 16, 55, 0.08));
     border: none;
 }
 
-.discount{
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 30px;
-/* identical to box height, or 188% */
+.discount {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
 
-text-decoration-line: line-through;
+    text-decoration-line: line-through;
 
-/* Grey */
+    /* Grey */
 
-color: #CCCCCC;
+    color: #cccccc;
 }
 
-.btn_primary{
-    background: #FF5722;
-border-radius: 6px;
-color: white;
-padding: 10px 0;
-text-decoration: none;
-}
-
-.btn_primary:hover{
+.btn_primary {
+    background: #ff5722;
+    border-radius: 6px;
     color: white;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.btn_primary:hover {
+    color: white;
+}
+
+@media screen and (max-width: 991px) {
+    #list-class {
+        background-image: url("../img/frame-background-2.png");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #list-class {
+        background-image: url("../img/frame-background-3.png");
+        background-size: cover;
+        background-position: center;
+    }
 }

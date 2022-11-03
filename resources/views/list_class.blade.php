@@ -15,7 +15,7 @@
                     <p class="bt_2 text_white mt-4">EduCareer hadir sebagai Paltform pelatihan dengan mentor berpengalaman</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="assets/img/g8.png" class="img-fluid">
+                    <img src="assets/img/g7.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -23,10 +23,16 @@
 
     <section id="list-class" class="pb-5">
         <div class="container">
-            <h3 class="h_3 fw_semibold py_60">Daftar Pelatihan</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card bg-transparent">
+                        <h3 class="h_3 fw_semibold py_60">Daftar Pelatihan</h3>
+                    </div>
+                </div>
+            </div>
 
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="card" >
                         <img src="assets/img/Image.png" class="card-img-top" alt="">
                         <div class="card-body">
@@ -39,11 +45,11 @@
                           </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="card" >
                         <img src="assets/img/Image.png" class="card-img-top" alt="">
                         <div class="card-body">
-                            <h5 class="bt_1 fw_semibold">Digital Marketing</h5>
+                            <h5 class="bt_1 fw_semibold">Personal Branding</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <p class="bt_2 fw_bold text_danger">Rp  199.000 <span class="discount">Rp  299.000</span></p>
                             <div class="d-grid">
@@ -52,11 +58,11 @@
                           </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="card" >
                         <img src="assets/img/Image.png" class="card-img-top" alt="">
                         <div class="card-body">
-                            <h5 class="bt_1 fw_semibold">Digital Marketing</h5>
+                            <h5 class="bt_1 fw_semibold">Public Speaking</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <p class="bt_2 fw_bold text_danger">Rp  199.000 <span class="discount">Rp  299.000</span></p>
                             <div class="d-grid">
@@ -65,11 +71,11 @@
                           </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="card" >
                         <img src="assets/img/Image.png" class="card-img-top" alt="">
                         <div class="card-body">
-                            <h5 class="bt_1 fw_semibold">Digital Marketing</h5>
+                            <h5 class="bt_1 fw_semibold">Programming</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <p class="bt_2 fw_bold text_danger">Rp  199.000 <span class="discount">Rp  299.000</span></p>
                             <div class="d-grid">
@@ -78,11 +84,11 @@
                           </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="card" >
                         <img src="assets/img/Image.png" class="card-img-top" alt="">
                         <div class="card-body">
-                            <h5 class="bt_1 fw_semibold">Digital Marketing</h5>
+                            <h5 class="bt_1 fw_semibold">English Speaking</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <p class="bt_2 fw_bold text_danger">Rp  199.000 <span class="discount">Rp  299.000</span></p>
                             <div class="d-grid">
@@ -91,11 +97,11 @@
                           </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="card" >
                         <img src="assets/img/Image.png" class="card-img-top" alt="">
                         <div class="card-body">
-                            <h5 class="bt_1 fw_semibold">Digital Marketing</h5>
+                            <h5 class="bt_1 fw_semibold">Product Management</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <p class="bt_2 fw_bold text_danger">Rp  199.000 <span class="discount">Rp  299.000</span></p>
                             <div class="d-grid">
@@ -104,11 +110,11 @@
                           </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="card" >
                         <img src="assets/img/Image.png" class="card-img-top" alt="">
                         <div class="card-body">
-                            <h5 class="bt_1 fw_semibold">Digital Marketing</h5>
+                            <h5 class="bt_1 fw_semibold">UI/UX Designer</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <p class="bt_2 fw_bold text_danger">Rp  199.000 <span class="discount">Rp  299.000</span></p>
                             <div class="d-grid">
@@ -117,11 +123,11 @@
                           </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="card" >
                         <img src="assets/img/Image.png" class="card-img-top" alt="">
                         <div class="card-body">
-                            <h5 class="bt_1 fw_semibold">Digital Marketing</h5>
+                            <h5 class="bt_1 fw_semibold">Graphics Design</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <p class="bt_2 fw_bold text_danger">Rp  199.000 <span class="discount">Rp  299.000</span></p>
                             <div class="d-grid">
