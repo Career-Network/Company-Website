@@ -1,0 +1,382 @@
+.content-class-blok{
+    background-color: white;
+}
+
+.banner-class, .content-class,
+.banner-class .content-banner-class{
+    display: flex;
+}
+.banner-class{
+    background-color: #27C6D9;
+}
+.banner-class .content-banner-class{
+    margin: auto;
+    padding: 5%;
+    max-width: calc(1080px + 10%);
+}
+.banner-class .content-banner-class .text-banner-class{
+    display: block;
+    height: fit-content;
+    margin: auto 2.5% auto 0;
+}
+.banner-class .content-banner-class .text-banner-class .title-banner-class{
+    margin-bottom: 16px;
+}
+.banner-class .content-banner-class .text-banner-class .title-banner-class h2{
+    text-transform: capitalize;
+    color: #F4F4F4;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+.banner-class .content-banner-class .text-banner-class .desc-banner-class h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    margin-bottom: 22px;
+}
+.banner-class .content-banner-class .text-banner-class .btn-banner-class button{
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+.btn-banner-class #btn-ds{
+    background-color: #FF5722;
+    border: #FF5722 1px solid;
+    padding: 10px 24px;
+}
+.btn-banner-class #btn-dw{
+    background-color: #27C6D9;
+    border: 1px solid #FFFFFF;
+    padding: 10px 24px;
+    margin-top: 10px;
+}
+.banner-class .content-banner-class .image-banner-class{
+    /* margin: auto 2.5%; */
+    margin: auto 0 auto 2.5%;
+}
+.banner-class .content-banner-class .image-banner-class img{
+    width: 469px;
+    height: 324px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.content-class{
+    max-width: calc(1080px + 10%);
+    margin: auto;
+    padding: 5%;
+}
+.content-class .nav-class{
+    display: block;
+    width: 225px;
+    min-width: fit-content;
+    border: 1px solid #E0E0E0;
+    padding: 24px 26px;
+    box-shadow: 0px 2px 10px rgba(5, 16, 55, 0.08);
+    border-radius: 8px;
+    /* margin: 0 2.5%; */
+    height: fit-content;
+}
+.content-class .nav-class a,
+.bottom-banner-class .btn-daftar a{
+    text-decoration: none;
+}
+.content-class .nav-class h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: black;
+}
+.content-class .nav-class h4.active{
+    color: #FF5722;
+}
+.content-class .nav-class hr{
+    margin: 12px 0;
+    border: 1px solid #E0E0E0;
+}
+.content-class .list-content-class{
+    /* max-width: calc(1080px - 225px - 5%); */
+    width: calc(100% - 225px);
+    /* margin: 0 0 2.5%; */
+}
+#tentang-kelas, #metode-belajar, #jadwal-kelas, #testimoni, .bottom-banner-class{
+    box-shadow: 0px 2px 10px rgba(5, 16, 55, 0.08);
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    margin: 20px 0 0 2.5%;
+}
+#tentang-kelas{
+    margin-top: 0;
+}
+.content-class .list-content-class .cc-title{
+    padding: 16px 24px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.content-class .list-content-class .cc-title h4,
+.mb-card .mb-top .mb-title h4,
+.tm-card .tm-username{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.content-class .list-content-class .cc-desc{
+    padding: 20px 24px;
+}
+.content-class .list-content-class .cc-desc p{
+/* .mb-card .mb-desc p, .jk-card .content-jk p{ */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+#metode-belajar .cc-desc{
+    padding: 8px 12px;
+}
+#metode-belajar .cc-desc ul{
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#metode-belajar .cc-desc ul li{
+    list-style: none;
+    width: calc(319px - 12px - 16px - 12px);
+    flex-grow: 1;
+    padding: 12px 16px;
+    box-shadow: 0px 2px 10px rgba(5, 16, 55, 0.08);
+    border-radius: 8px;
+    margin: 12px;
+}
+#metode-belajar .cc-desc .mb-top{
+    display: flex;
+}
+#metode-belajar .cc-desc .mb-top .mb-icon{
+    width: 40px;
+    height: 40px;
+    background-color: #FF5722;
+    border-radius: 8px;
+    padding: 8px;
+}
+#metode-belajar .mb-card .mb-top .mb-title{
+    margin: auto;
+    margin-left: 10px;
+}
+#metode-belajar .mb-card .mb-top .mb-title span.low{
+    text-transform: lowercase;
+}
+#metode-belajar .mb-card .mb-desc{
+    margin-top: 10px;
+}
+#jadwal-kelas .cc-desc{
+    padding: 20px 18.5px;
+}
+#jadwal-kelas .cc-desc ul{
+    padding-left: 0;
+    display: flex;
+}
+#jadwal-kelas .cc-desc ul li{
+    list-style: none;
+    width: 100%;
+    margin: 16px 12px;
+}
+#jadwal-kelas .cc-desc .jk-card{
+    display: flex;
+}
+#jadwal-kelas .cc-desc .jk-card .mb-icon{
+    min-width: 40px;
+    height: 40px;
+    background-color: #FF5722;
+    border-radius: 8px;
+    padding: 8px;
+}
+#jadwal-kelas .cc-desc .jk-card .content-jk{
+    margin-left: 16px;
+    display: flex;
+}
+#jadwal-kelas .cc-desc .jk-card .content-jk p{
+    margin: auto;
+}
+#testimoni .tm-content{
+    display: flex;
+    padding: 20px 24px;
+}
+#testimoni .tm-content .tm-card{
+    display: block;
+    padding: 0 75.5px;
+}
+#testimoni .tm-content .tm-card .tm-card-img,
+#testimoni .tm-content .tm-card .tm-username,
+#testimoni .tm-content .tm-card .cc-desc
+{
+    margin: 6px auto;
+    text-align: center;
+    padding: 0 5px;
+}
+#testimoni .tm-content .tm-card .tm-card-img img{
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    object-position: center;
+}
+.nav-tm-btn{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #268E9B;;
+}
+.nav-tm-btn::after,
+.nav-tm-btn::before{
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+}
+.bottom-banner-class{
+    display: flex;
+    background-color: #FF5722;
+    padding: 32px 40px;
+    box-shadow: 0px 2px 10px rgba(5, 16, 55, 0.08);
+    border-radius: 8px;
+}
+.bottom-banner-class .text-banner-bottom h3{
+    color: #F4F4F4;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+}
+.bottom-banner-class .btn-daftar{
+    margin: auto;
+    height: fit-content;
+    margin-left: 23px;
+}
+.bottom-banner-class .btn-daftar button{
+    background: #27C6D9;
+    border-radius: 6px;
+    border: 1px solid #27C6D9;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 24px;
+    min-width: max-content;
+    text-transform: capitalize;
+}
+@media screen and (max-width: 1068px) {
+    .content-class .nav-class{
+        display: none;
+    }
+    .content-class .list-content-class{
+        width: 100%;
+    }
+    #tentang-kelas, #metode-belajar, #jadwal-kelas, #testimoni, .bottom-banner-class{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .banner-class .content-banner-class .image-banner-class img{
+        width: 285px;
+        height: 290px;
+        border-radius: 24px;
+    }
+    .banner-class .content-banner-class .text-banner-class .title-banner-class h2{
+        font-size: 36px;
+        line-height: 54px;
+    }
+    .banner-class .content-banner-class .text-banner-class .desc-banner-class h3{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .content-class .list-content-class .cc-desc p,
+    .content-class .list-content-class .cc-title h4, 
+    .mb-card .mb-top .mb-title h4, .tm-card .tm-username{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #jadwal-kelas .cc-desc{
+        padding: 30px 60px;
+    }
+    #jadwal-kelas .cc-desc ul{
+        flex-direction: column;
+    }
+    #jadwal-kelas .cc-desc ul li{
+        width: fit-content;
+    }
+    #jadwal-kelas .cc-desc .jk-card .content-jk{
+        margin: auto 16px;
+    }
+    .banner-class .content-banner-class .text-banner-class .btn-banner-class button,
+    .bottom-banner-class .btn-daftar button{
+        font-size: 12px;
+    }
+    .bottom-banner-class .text-banner-bottom h3{
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .banner-class .content-banner-class{
+        flex-direction: column;
+    }
+    .banner-class .content-banner-class .text-banner-class{
+        margin: 0 auto 2.5%;
+        text-align: center;
+    }
+    .banner-class .content-banner-class .image-banner-class{
+        margin: 2.5% auto;
+        width: 100%;
+    }
+    .banner-class .content-banner-class .image-banner-class img{
+        width: 100%;
+        border-radius: 48px;
+    }
+    .banner-class .content-banner-class .text-banner-class .btn-banner-class button{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .bottom-banner-class{
+        flex-direction: column;
+        text-align: center;
+    }
+    .bottom-banner-class .btn-daftar{
+        margin-left: auto;
+        margin-top: 24px;
+    }
+}
+@media screen and (max-width: 450px) {
+    #jadwal-kelas .cc-desc{
+        padding: 20px 0px;
+    }
+    #testimoni .tm-content .tm-card{
+        padding: 0 25px;
+    }
+    .swiper-button-next{
+        right: 0px;
+    }
+    .swiper-button-prev{
+        left: 0px;
+    }
+}
