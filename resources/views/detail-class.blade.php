@@ -2,11 +2,6 @@
   'title'=>'Edu Career',
   'css'=> 'assets/css/detail-class.css'
   ])
-  <!-- <style>
-    .swiper-backface-hidden .swiper-slide{
-        width: fit-content;
-    }
-  </style> -->
 @section('content')
 <main>
     <section class="banner-class">
@@ -26,7 +21,7 @@
                 </div>
             </div>
             <div class="image-banner-class">
-                <img src="./Rectangle 282.png" alt="gambar">
+                <img src="{{ asset('assets/img/banner_class.png') }}" alt="gambar">
             </div>
         </div>
     </section>
@@ -167,7 +162,7 @@
                                 <div class="swiper-slide">
                                     <div class="tm-card">
                                         <div class="tm-card-img">
-                                            <img src="./Ellipse 1.png" alt="testimonial-img">
+                                            <img src="{{ asset('assets/img/testimoni.png') }}" alt="testimonial-img">
                                         </div>
                                         <div class="tm-username">
                                             <h4>saiful arifin</h4>
@@ -182,7 +177,7 @@
                                 <div class="swiper-slide">
                                     <div class="tm-card">
                                         <div class="tm-card-img">
-                                            <img src="./Ellipse 1.png" alt="testimonial-img">
+                                            <img src="{{ asset('assets/img/testimoni.png') }}" alt="testimonial-img">
                                         </div>
                                         <div class="tm-username">
                                             <h4>ferry irawan</h4>
@@ -197,7 +192,7 @@
                                 <div class="swiper-slide">
                                     <div class="tm-card">
                                         <div class="tm-card-img">
-                                            <img src="./Ellipse 1.png" alt="testimonial-img">
+                                            <img src="{{ asset('assets/img/testimoni.png') }}" alt="testimonial-img">
                                         </div>
                                         <div class="tm-username">
                                             <h4>leny susanto</h4>
@@ -212,7 +207,7 @@
                                 <div class="swiper-slide">
                                     <div class="tm-card">
                                         <div class="tm-card-img">
-                                            <img src="./Ellipse 1.png" alt="testimonial-img">
+                                            <img src="{{ asset('assets/img/testimoni.png') }}" alt="testimonial-img">
                                         </div>
                                         <div class="tm-username">
                                             <h4>tini anjayani</h4>
@@ -227,7 +222,7 @@
                                 <div class="swiper-slide">
                                     <div class="tm-card">
                                         <div class="tm-card-img">
-                                            <img src="./Ellipse 1.png" alt="testimonial-img">
+                                            <img src="{{ asset('assets/img/testimoni.png') }}" alt="testimonial-img">
                                         </div>
                                         <div class="tm-username">
                                             <h4>budi sutyono</h4>
@@ -261,20 +256,6 @@
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-    </script>
+    <script src="{{ asset('assets/js/swipper-testimoni.js') }}"></script>
 </main>
 @endsection
