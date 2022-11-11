@@ -1,0 +1,61 @@
+* {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .navbar {
+    height: 70px;
+  }
+  
+  .navbar .container .collapse .nav-item {
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  
+  .navbar .container .collapse .nav-item .active {
+    color: #FF5722;
+    font-size: 18px;
+  }
+  
+  .navbar .container .collapse .nav-item :hover {
+    color: #FF5722;
+  }
+  
+  .navbar .container .collapse .btn-auth .btn-success {
+    background-color: rgb(73, 73, 250);
+    width: 130px;
+  }
+  
+  .navbar .container .collapse .btn-auth .btn-sign-in {
+    border-color: #cde5d0;
+    color: #FF5722;
+    width: 130px;
+    font-size: medium;
+    margin-right: 12px;
+    border-color: #FF5722;
+  }
+  
+  @media (max-width: 931px) {
+    .navbar .container .collapse {
+      margin-top: 25px;
+    }
+  }
+  .hero-section {
+    margin-top: 80px;
+    margin-bottom: 128px;
+    background-color: #FF5722;
+    color: white;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+  .hero-section .container .section {
+    text-align: center !important;
+  }
+  .hero-section .container .section h4 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .hero-section .container .section .text {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }/*# sourceMappingURL=main.css.map */
