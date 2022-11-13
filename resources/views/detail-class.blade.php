@@ -1,6 +1,7 @@
 @extends('layouts.navbar_footer',[
   'title'=>'Edu Career',
-  'css'=> 'assets/css/detail-class.css'
+  'css'=> 'assets/css/detail-class.css',
+  'footer'=> true
   ])
 @section('content')
 <main>
@@ -129,7 +130,9 @@
                         <ul>
                             <li>
                                 <div class="jk-card">
-                                    <div class="mb-icon"></div>
+                                    <div class="mb-icon">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                    </div>
                                     <div class="content-jk">
                                         <p>
                                             28 Agustus - 7 September 2022
@@ -139,7 +142,9 @@
                             </li>
                             <li>
                                 <div class="jk-card">
-                                    <div class="mb-icon"></div>
+                                    <div class="mb-icon">
+                                        <i class="fa-solid fa-clock"></i>
+                                    </div>
                                     <div class="content-jk">
                                         <p>
                                             Setiap hari Jum’at, 19.00 - 21.00 WIB
@@ -149,7 +154,9 @@
                             </li>
                             <li>
                                 <div class="jk-card">
-                                    <div class="mb-icon"></div>
+                                    <div class="mb-icon">
+                                            <i class="fa-solid fa-video"></i>
+                                    </div>
                                     <div class="content-jk">
                                         <p>
                                             Dilakukan secara online via Google Meet

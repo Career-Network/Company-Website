@@ -27,6 +27,11 @@
     list-style: none;
 }
 
+#mf ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+
 #mf ul * {
     margin: 6px 0px;
 }
@@ -35,4 +40,7 @@
     #mf p {
         font-size: var(--b4);
     }
+}
+.foll_btn{
+    margin-top: 1rem !important;
 }
