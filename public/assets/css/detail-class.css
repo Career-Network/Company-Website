@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css");
+
 .content-class-blok{
     background-color: white;
 }
@@ -165,6 +167,7 @@
     display: flex;
 }
 #metode-belajar .cc-desc .mb-top .mb-icon{
+    display: flex;
     width: 40px;
     height: 40px;
     background-color: #FF5722;
@@ -174,6 +177,9 @@
 #metode-belajar .mb-card .mb-top .mb-title{
     margin: auto;
     margin-left: 10px;
+}
+#metode-belajar .mb-card .mb-top .mb-title h4{
+    margin: auto;
 }
 #metode-belajar .mb-card .mb-top .mb-title span.low{
     text-transform: lowercase;
@@ -383,4 +389,9 @@
     .swiper-button-prev{
         left: 0px;
     }
+}
+.fa-solid{
+    color: white;
+    font-size: x-large;
+    margin: auto;
 }

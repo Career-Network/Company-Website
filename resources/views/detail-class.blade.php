@@ -17,7 +17,7 @@
                 </div>
                 <div class="btn-banner-class">
                     <a href=""><button id="btn-ds">daftar sekarang</button></a>
-                    <a href=""><button id="btn-dw">unduh silabus</button></a>
+                    <a href=""><button id="btn-dw"><i class="fa-solid fa-file-arrow-down"></i> unduh silabus</button></a>
                 </div>
             </div>
             <div class="image-banner-class">
@@ -53,7 +53,9 @@
                             <li>
                                 <div class="mb-card">
                                     <div class="mb-top">
-                                        <div class="mb-icon"></div>
+                                        <div class="mb-icon">
+                                            <i class="fa-solid fa-paper-plane"></i>
+                                        </div>
                                         <div class="mb-title">
                                             <h4>gabung grup diskusi</h4>
                                         </div>
@@ -68,7 +70,9 @@
                             <li>
                                 <div class="mb-card">
                                     <div class="mb-top">
-                                        <div class="mb-icon"></div>
+                                        <div class="mb-icon">
+                                            <i class="fa-solid fa-video"></i>
+                                        </div>
                                         <div class="mb-title">
                                             <h4>live class via zoom</h4>
                                         </div>
@@ -83,7 +87,9 @@
                             <li>
                                 <div class="mb-card">
                                     <div class="mb-top">
-                                        <div class="mb-icon"></div>
+                                        <div class="mb-icon">
+                                            <i class="fa-solid fa-file-lines"></i>
+                                        </div>
                                         <div class="mb-title">
                                             <h4>penilaian <span class="low">dan</span> sertifikat</h4>
                                         </div>
@@ -98,7 +104,9 @@
                             <li>
                                 <div class="mb-card">
                                     <div class="mb-top">
-                                        <div class="mb-icon"></div>
+                                        <div class="mb-icon">
+                                            <i class="fa-solid fa-comment-dots"></i>
+                                        </div>
                                         <div class="mb-title">
                                             <h4>tanya mentor</h4>
                                         </div>
