@@ -1,44 +1,7 @@
 * {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   
-  .navbar {
-    height: 70px;
-  }
-  
-  .navbar .container .collapse .nav-item {
-    margin-right: 20px;
-    font-size: 16px;
-  }
-  
-  .navbar .container .collapse .nav-item .active {
-    color: #FF5722;
-    font-size: 18px;
-  }
-  
-  .navbar .container .collapse .nav-item :hover {
-    color: #FF5722;
-  }
-  
-  .navbar .container .collapse .btn-auth .btn-success {
-    background-color: rgb(73, 73, 250);
-    width: 130px;
-  }
-  
-  .navbar .container .collapse .btn-auth .btn-sign-in {
-    border-color: #cde5d0;
-    color: #FF5722;
-    width: 130px;
-    font-size: medium;
-    margin-right: 12px;
-    border-color: #FF5722;
-  }
-  
-  @media (max-width: 931px) {
-    .navbar .container .collapse {
-      margin-top: 25px;
-    }
-  }
   .hero-section {
     margin-top: 80px;
     margin-bottom: 128px;
@@ -58,4 +21,54 @@
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
+  }
+  
+  .service {
+    margin-top: 80px;
+    margin-bottom: 128px;
+  }
+  .service .container .row .gambar {
+    margin-top: 80px;
+    text-align: center;
+  }
+  .service .container .row .gambar .img-mentor {
+    border-radius: 15px;
+  }
+  .service .container .row .keteragan {
+    padding-left: 25px;
+    text-align: center;
+  }
+  .service .container .row .keteragan .nama {
+    font-weight: bold;
+  }
+  .service .container .row .keteragan .bidang-pekerjaan {
+    color: #ff5722;
+  }
+  .service .container .row .keteragan .desc {
+    font-size: 16px;
+  }
+  .service .container .tombol {
+    text-align: center;
+    padding: auto;
+  }
+  .service .container .tombol .btn-success {
+    background-color: #27C6D9;
+    width: 130px;
+    margin-right: 12px;
   }/*# sourceMappingURL=main.css.map */
+
+  @media screen and (max-width: 991px) {
+    #list-class {
+        background-image: url("../img/frame-background-2.png");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #list-class {
+        background-image: url("../img/frame-background-3.png");
+        background-size: cover;
+        background-position: center;
+    }
+}
