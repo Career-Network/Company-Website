@@ -33,6 +33,9 @@ Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashb
 Route::get('/educareer', function () {
     return view('list_class');
 })->name('educareer');
+Route::get('/mentor', function () {
+    return view('pilih_mentor');
+})->name('mentor');
 
 //Login feature
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
