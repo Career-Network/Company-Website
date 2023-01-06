@@ -43,7 +43,7 @@
                             Buat tujuan karirmu dan tumbuh bersama kami!
                         </h2>
                         <p class="bt_3">Dibentuk karena kesenjangan skill, kurangnya daya saing serta ketidakmerataan informasi yang dimiliki mahasiswa.  Platform penyedia pelatihan online secara 1 on 1 dan kelompok dengan para mentor yang ahli di bidangnya.  Serta layanan pemesanan Freelance untuk membantu kebutuhan masyarakat, terutama UMKM di Indonesia.</p>
-                        <button class="btn_secondary">Tentang Kami</button>
+                        <button class="btn_secondary" onclick="window.location='{{ route('about') }}'">Tentang Kami</button>
                     </div>
                 </div>
             </div>
@@ -147,7 +147,7 @@
         <div class="row row-eq-height align-items-center justify-content-center">
             <div class="col-sm-5 bg_dark p-5">
                 <img src="{{ asset('assets/img/landing-page/logo-footer.png') }}" alt="">
-                <p class="bt_3 text_white mt-4">Lorem ipsum dolor sit amet, consectur adipisci elit. Rhoncus sodales pellene tellus eu. Non aenean diam tellus.</p>
+                <p class="bt_3 text_white mt-4">Tingkatkan Keterampilan Anda Dengan Mentor. <br/>Tingkatkan Keterampilan Anda.</p>
                 <label class="bt_3 fw_semibold text_white">Ikuti Kami &nbsp;
                     <a href="" class="social-media"><i class="fa-brands fa-twitter" target="blank"></i></a>
                     <a href="https://www.linkedin.com/company/career-network-id/" class="social-media" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
