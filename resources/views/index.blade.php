@@ -86,9 +86,9 @@
                     <img src="{{ asset('assets/img/landing-page/card-2.png') }}" alt="">
                 </div>
                 <div class="body-card">
-                    <h4>Career Network <br>Sonic</h4>
+                    <h4>Career Network <br>FLAP</h4>
                     <p>
-                        Penyedia jasa Freelancer bagi masyarakat dengan berpegang teguh kepada  Excellent Service.
+                        Program internship yang berfokus pada work-based learning.
                     </p>
                     <button><p>Segera Hadir!</p></button>
                 </div>
@@ -168,7 +168,7 @@
                         <ul>
                             <label class="bt_3 fw_semibold">Layanan</label>
                             <li>EduCareer</li>
-                            <li>Sonic</li>
+                            <li>FLAP</li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-4 col-6">

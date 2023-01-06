@@ -139,7 +139,7 @@
                         <ul>
                             <label class="bt_3 fw_semibold">Layanan</label>
                             <li>EduCareer</li>
-                            <li>Sonic</li>
+                            <li>FLAP</li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-4 col-6">
