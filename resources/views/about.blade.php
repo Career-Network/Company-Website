@@ -17,7 +17,10 @@
         <div class="desc">
           <h4>tentang kami</h4>
           <div class="underLn-1"></div>
-          <p class="text">Career Network merupakan startup yang menyediakan pelatihan online bagi mahasiswa/i secara 1 on 1 dan kelompok degan para mentor yang ahli di berbagai bidang ilmu. Selain itu, Career Network juga memiliki layanan pemesanan jasa Freelance untuk membantu kebutuhan masyarakat.</p> 
+          <p class="text">
+            Career Network merupakan perusahaan yang menyediakan layanan kelas pelatihan online (Online Training Class) dengan dibimbing oleh para mentor yang expert dibidangnya.
+            Career Network akan meningkatkan skill kamu dengan kelas pelatihan yang dibutuhkan oleh dunia industri dan menambah portofolio dengan real project secara langsung yang akan membantu kamu di dalam mendapatkan pekerjaan.
+          </p> 
           </div>
       </div>
   </section>
@@ -26,7 +29,19 @@
         <div class="row">         
           <div class="col-md-7">
             <h4>Semua berawal di 2021</h4>
-            <p class="text">Berawal dengan tujuan untuk membantu pemerintah dalam meningkatkan sumber daya manusia yang unggul. Serta memecahkan masalah kesenjangan keterampilan yang disebabkan oleh ketidaksetaraan dalam akses pendidikan. Maka dari itu, Zaki Udin Fauzi bersama rekan dari berbagai universitas yang satu tujuan untuk bersinergi membangun sarana pemberdayaan talenta bangsa yang berkualitas. Dengan ini, mencetak generasi bangsa yang berkompeten di bidangnya. Didirikan di Semarang, Jawa Tengah pada 17 Januari 2022 sebagai awal dari Career Network. Dengan memiliki tim dari beragam latar belakang menjadikan Career Network terus berkembang dengan inovasi baru. Dengan harapan dapat berkontribusi dalam mewujudkan Indonesia Emas 2045.</p> 
+            <p class="text">
+              Melihat pertumbuhan angkatan kerja yang semakin meningkat setiap tahunnya, namun tidak sebanding dengan penyerapan ke dunia kerja. 
+              Kami melakukan riset terkait permasalahan yang membuat para lulusan dari instansi pendidikan yang banyak  mengalami kegagalan masuk ke dunia kerja, 
+              bahkan ketika ditahap seleksi awal.
+            </p> 
+            <p class="text">
+              Permasalahan yang yang kami temukan salah satunya karena tidak memiliki sertifikasi kompetensi ataupun portofolio project yang sangat berguna menambah 
+              point plus bagi kandidat dimata perusahaan. 
+            </p>
+            <p class="text">
+              Maka dari kondisi tersebut, berdirilah Career Network. Kami hadir untuk membantu anak muda di indonesia mendapatkan pekerjaan dengan meningkatkan skill 
+              mereka agar mampu bersaing melalui portofolio project dan memiliki sertifikat dari kelas pelatihan yang kami sediakan.  
+            </p>
           </div>
           <div class="col-md-5">
             <img src="{{ asset('assets/img/Illustration-2.png') }}" alt="">
@@ -147,9 +162,10 @@
           <p class="text">Jl. Gondang Raya, No 27, Kelurahan Bulusan, Kecamatan Tembalang,
             Kota Semarang.</p>
           <h4>Hubungi Kami</h4>
-          <p class="text">careernetwork.id@gmail.com
-            +62 8820 - 0622 - 7165</p>
-          </div>
+          <p class="text">
+            careernetwork.id@gmail.com <br/>
+            +62 895 - 1319 - 0531
+          </p>
       </div>
     </div>
   </section>
