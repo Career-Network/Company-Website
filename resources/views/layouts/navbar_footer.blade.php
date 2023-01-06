@@ -77,7 +77,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="{{ route('educareer') }}">Edu Career</a></li>
-                <li><a class="dropdown-item" href="#">Sonic</a></li>
+                <li><a class="dropdown-item" href="#">FLAP</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -127,7 +127,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="{{ route('educareer') }}">Edu Career</a></li>
-                  <li><a class="dropdown-item" href="#">Sonic</a></li>
+                  <li><a class="dropdown-item" href="#">FLAP</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -196,7 +196,7 @@
                           <ul>
                               <label class="bt_3 fw_semibold">Layanan</label>
                               <li><a href="{{ route('educareer') }}">EduCareer</a></li>
-                              <li><a href="">Sonic</a></li>
+                              <li><a href="">FLAP</a></li>
                           </ul>
                       </div>
                       <div class="col-sm-6 col-md-4 col-lg-4 col-6">
