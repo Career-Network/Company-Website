@@ -159,12 +159,13 @@
         </div>
         <div class="col-md-6 box-locate">
           <h4>Alamat</h4>
-          <p class="text">Jl. Gondang Raya, No 27, Kelurahan Bulusan, Kecamatan Tembalang,
-            Kota Semarang.</p>
+          <p class="text">
+            Diponegoro Space, Gedung Serbaguna, BCA. Lt. 2, 50275, Kota Semarang, Jawa Tengah, Indonesia.
+          </p>
           <h4>Hubungi Kami</h4>
           <p class="text">
             careernetwork.id@gmail.com <br/>
-            +62 895 - 1319 - 0531
+            <a href="https://api.whatsapp.com/send?phone=6289513190531">+62 895 - 1319 - 0531</a>
           </p>
       </div>
     </div>
