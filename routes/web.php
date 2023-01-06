@@ -10,6 +10,7 @@ use App\Http\Controllers\LoginController;
 use Illuminate\Auth\Events\PasswordReset;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\EducareerController;
 use App\Http\Controllers\ForgotPasswordController;
 
 /*
@@ -26,16 +27,10 @@ use App\Http\Controllers\ForgotPasswordController;
 //Pages
 Route::get('/', [DashboardController::class, 'index'])->name('home')->withoutMiddleware('auth');
 Route::get('/home', [DashboardController::class, 'index'])->name('home')->withoutMiddleware('auth');
-Route::get('/detail-class', function() {
-    return view('detail-class');
-});
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard')->middleware('auth');
-Route::get('/educareer', function () {
-    return view('list_class');
-})->name('educareer');
-Route::get('/mentor', function () {
-    return view('pilih_mentor');
-})->name('mentor');
+Route::get('/educareer', [EducareerController::class, 'index'])->name('educareer');
+Route::get('/mentor', [EducareerController::class, 'mentor'])->name('mentor');
+Route::get('/kelas', [EducareerController::class, 'kelas'])->name('kelas');
 
 //Login feature
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');

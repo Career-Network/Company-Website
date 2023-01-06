@@ -1,74 +1,121 @@
-* {
-    font-family: "Poppins", sans-serif;
-  }
-  
+.container p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.service{
+  background-color: white;
+}
+
+.hero-section {
+  display: flex;
+  color: white;
+  height: 280px;
+}
+.hero-section .container{
+  height: fit-content;
+  margin: auto;
+}
+.hero-section .container .section {
+  text-align: center;
+}
+.hero-section .container .section h4 {
+  font-weight: 700;
+  font-size: 48px;
+}
+.hero-section .container .section .text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.service .container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.service .container .col-md-4 {
+  width: 300px;
+  height: fit-content;
+  margin: 20px auto;
+  box-shadow: 0px 12.5px 20px rgba(5, 16, 55, 0.08), 0px -5px 20px rgba(5, 16, 55, 0.08);
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.service .container .row .gambar img {
+  width: 100%;
+  height: 175px;
+  object-fit: contain;
+  object-position: center;
+}
+.service .container .row .keteragan {
+  margin-top: 12px;
+  text-align: center;
+}
+.service .container .row .keteragan .nama {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 2px;
+}
+.service .container .row .keteragan .bidang-pekerjaan {
+  color: #ff5722;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 6px;
+}
+.service .container .row .keteragan .desc {
+  font-size: 12px;
+  color: #7A7A7A;
+  font-weight: 400;
+  text-align: justify;
+}
+.service .container .tombol .btn {
+  width: 100%;
+  border: none;
+  background-color: #27C6D9;
+  border-radius: 7.5px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 0;
+}
+.service .container .tombol .btn:hover{
+  background: none;
+  color: #27C6D9;
+}
+
+@media screen and (max-width: 991px) {
   .hero-section {
-    margin-top: 80px;
-    margin-bottom: 128px;
-    background-color: #FF5722;
-    color: white;
-    padding-bottom: 70px;
-    padding-top: 70px;
-  }
-  .hero-section .container .section {
-    text-align: center !important;
+    height: 250px;
   }
   .hero-section .container .section h4 {
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 36px;
   }
   .hero-section .container .section .text {
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  
-  .service {
-    margin-top: 80px;
-    margin-bottom: 128px;
-  }
-  .service .container .row .gambar {
-    margin-top: 80px;
-    text-align: center;
-  }
-  .service .container .row .gambar .img-mentor {
-    border-radius: 15px;
-  }
-  .service .container .row .keteragan {
-    padding-left: 25px;
-    text-align: center;
-  }
-  .service .container .row .keteragan .nama {
-    font-weight: bold;
-  }
-  .service .container .row .keteragan .bidang-pekerjaan {
-    color: #ff5722;
-  }
-  .service .container .row .keteragan .desc {
-    font-size: 16px;
-  }
-  .service .container .tombol {
-    text-align: center;
-    padding: auto;
-  }
-  .service .container .tombol .btn-success {
-    background-color: #27C6D9;
-    width: 130px;
-    margin-right: 12px;
-  }/*# sourceMappingURL=main.css.map */
-
-  @media screen and (max-width: 991px) {
-    #list-class {
-        background-image: url("../img/frame-background-2.png");
-        background-size: cover;
-        background-position: center;
-    }
+    font-size: 14px;
+  } 
 }
 
 @media screen and (max-width: 767px) {
-    #list-class {
-        background-image: url("../img/frame-background-3.png");
-        background-size: cover;
-        background-position: center;
-    }
+  .hero-section {
+    height: 240px;
+  }
+  .hero-section .container .section h4 {
+    font-size: 36px;
+  }
+  .hero-section .container .section .text {
+    font-size: 14px;
+  } 
+}
+
+.hidden {
+  display: none;
+}
+.moreBtn{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.moreBtn:hover{
+  color: #ff5722;
 }
