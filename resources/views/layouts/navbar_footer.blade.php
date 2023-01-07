@@ -77,7 +77,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="{{ route('educareer') }}">Edu Career</a></li>
-                <li><a class="dropdown-item" href="#">FLAP</a></li>
+                <li><a class="dropdown-item" href="#">Sonic</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -127,7 +127,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="{{ route('educareer') }}">Edu Career</a></li>
-                  <li><a class="dropdown-item" href="#">FLAP</a></li>
+                  <li><a class="dropdown-item" href="#">Sonic</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -175,11 +175,12 @@
                       />
                     </a>
                   </div>
-                  <p class="bt_3 text_white mt-4">Tingkatkan Keterampilan Anda Dengan Mentor. <br/>Tingkatkan Keterampilan Anda.</p>
+                  <p class="bt_3 text_white mt-4">Lorem ipsum dolor sit amet, consectur adipisci elit. Rhoncus sodales pellene tellus eu. Non aenean diam tellus.</p>
                   <label class="bt_3 fw_semibold text_white foll_btn">Ikuti Kami &nbsp;
+                      <a href="" class="social-media"><i class="fa-brands fa-twitter" target="blank"></i></a>
                       <a href="https://www.linkedin.com/company/career-network-id/" class="social-media" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
                       <a href="https://www.instagram.com/careernetwork.id/" class="social-media" target="blank"><i class="fa-brands fa-instagram"></i></a>
-                      <a href="" class="social-media"><i class="fa-brands fa-tiktok" target="blank"></i></a>
+                      <a href="" class="social-media"><i class="fa-brands fa-facebook" target="blank"></i></a>
                   </label>
               </div>
               <div class="col-sm-7 bg_grey mf-right">
@@ -195,7 +196,7 @@
                           <ul>
                               <label class="bt_3 fw_semibold">Layanan</label>
                               <li><a href="{{ route('educareer') }}">EduCareer</a></li>
-                              <li><a href="">FLAP</a></li>
+                              <li><a href="">Sonic</a></li>
                           </ul>
                       </div>
                       <div class="col-sm-6 col-md-4 col-lg-4 col-6">
