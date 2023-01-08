@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/cars8636/public_html/
-    - /bin/cp * $DEPLOYPATH
