@@ -194,6 +194,9 @@
     border-radius: 10px 10px 5px 10px;
     clip-path: polygon(0 0, 100% 0, 100% 37.5%, 0 100%);
 }
+.hide {
+  display: block;
+}
 
 @media screen and (max-width: 1000px) {
   .hero-section {
@@ -429,6 +432,9 @@
   }
   .service .location .box-locate .text:last-child{
     margin-bottom: 0px;
+  }
+  .hide{
+    display: none !important;
   }
 }
 @media screen and (max-width: 415px) {

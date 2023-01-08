@@ -118,7 +118,7 @@
             </div>
           </div>          
           <div class="col-md-3">
-            <div class="card d-none">
+            <div class="card hide">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Adam Virgiansa.webP') }}" alt="">
               </div>
@@ -129,7 +129,7 @@
             </div>
           </div> 
           <div class="col-md-3">
-            <div class="card d-none">
+            <div class="card hide">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Jeremy Sisto Manurung.webP') }}" alt="">
               </div>
@@ -140,7 +140,7 @@
             </div>
           </div> 
           <div class="col-md-3">
-            <div class="card d-none">
+            <div class="card hide">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Amanda Prasanti.webP') }}" alt="">
               </div>
