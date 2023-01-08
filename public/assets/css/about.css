@@ -36,6 +36,7 @@
   }
   .service{
     background-color: white;
+    overflow: hidden;
   }
   .service .container{
     position: relative;
@@ -142,7 +143,9 @@
   .organisasi .card .photocard img.default{
     display: none;
   }
-
+  .show-btn{
+    display: none;
+  }
   .location{
     padding-bottom: 190px;
   }
@@ -184,7 +187,7 @@
     margin-bottom: 35px;
 }
 
-.underLn-2{
+.underLn-2, .underLn-3{
     width: 299.01px;
     height: 8px;
     background: linear-gradient(180deg, #FF5722 0%, #ED4A17 100%);
@@ -328,16 +331,20 @@
   .service .visiMisi .col-md-6:first-child {
     margin-bottom: 50px;
   }
-  
+  .container.organisasi{
+    margin-bottom: 133px;
+  }
   .organisasi .title{
-    margin-bottom: 64px;
+    margin-bottom: 30px;
+  }
+  .organisasi .title h4{
+    font-size: 20px;
   }
   .organisasi .card{
     display: flex;
     flex-direction: row;
-    /* width: 160px; */
-    width: 100%;
-    margin-bottom: 28px;
+    width: 375px;
+    margin-bottom: 22px;
   }
   .organisasi .card .photocard{
     width: 100px;
@@ -353,18 +360,59 @@
     margin-left: 17px;
   }
   .organisasi .card h4{
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 8px;
   }
   .organisasi .card .text{
-    font-size: 14px;
+    font-size: 10.5px;
+  }
+  .show-btn{
+    margin-top: 23px;
+    display: block;
+  }
+  .show-btn .button-txt{
+    margin: auto;
+    display: flex;
+    width: fit-content;
+    cursor: pointer;
+  }
+  .show-btn .button-txt h4{
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+  .show-btn .button-txt h4::after{
+    content: 'lihat semua';
+  }
+  .show-btn .button-txt h4.active::after{
+    content: 'lihat sedikit';
+  }
+  .show-btn .button-txt .row-btn{
+    width: 14px;
+    height: 14px;
+    border-bottom: 3.5px solid black;
+    border-right: 3.5px solid black;
+    rotate: 45deg;
+    transition: 1s;
+    margin-left: 13px;
+    margin-top: 2.5px;
+  }
+  .show-btn .button-txt .row-btn.active{
+    margin-top: 7.5px;
+    rotate: 225deg;
+  }
+  .underLn-3{
+    margin: auto;
+    width: 160px;
   }
   .location {
-    padding-bottom: 97px;
+    padding-bottom: 145px;
   }
   .service .location h4{
     text-align: center;
     margin-bottom: 8px;
+  }
+  .location .row .col-md-6{
+    padding-right: 0;
   }
   .service .location .text{
     text-align: center;
@@ -381,5 +429,12 @@
   }
   .service .location .box-locate .text:last-child{
     margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .organisasi .card{
+    width: fit-content;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
