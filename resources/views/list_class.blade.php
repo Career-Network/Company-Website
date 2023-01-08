@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="card" >
-                        <img src="assets/img/Image.png" class="card-img-top" alt="">
+                        <img src="{{ asset('assets/img/kelas-educareer/Human Resources.webp') }}" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="bt_1 fw_semibold">Human Resources</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card" >
-                        <img src="assets/img/Image.png" class="card-img-top" alt="">
+                        <img src="{{ asset('assets/img/kelas-educareer/Graphic-Designer.webp') }}" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="bt_1 fw_semibold">Graphic Design</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card" >
-                        <img src="assets/img/Image.png" class="card-img-top" alt="">
+                        <img src="{{ asset('assets/img/kelas-educareer/Excel.webp') }}" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="bt_1 fw_semibold">Microsoft Office Excel</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card" >
-                        <img src="assets/img/Image.png" class="card-img-top" alt="">
+                        <img src="{{ asset('assets/img/kelas-educareer/Digital-Marketing.webp') }}" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="bt_1 fw_semibold">Digital Marketing</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card" >
-                        <img src="assets/img/Image.png" class="card-img-top" alt="">
+                        <img src="{{ asset('assets/img/kelas-educareer/Finance.webp') }}" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="bt_1 fw_semibold">Finance</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card" >
-                        <img src="assets/img/Image.png" class="card-img-top" alt="">
+                        <img src="{{ asset('assets/img/kelas-educareer/Export_Import.webp') }}" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="bt_1 fw_semibold">Export and Import</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
