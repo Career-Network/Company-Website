@@ -224,10 +224,6 @@
       crossorigin="anonymous"
     ></script>
 
-    @if(isset($jsScript))
-      <script src="{{ asset($jsScript) }}"></script>
-    @endif
-
     <!-- masih ada yang janggal disini -->
     <link
       rel="stylesheet"
