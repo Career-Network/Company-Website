@@ -144,7 +144,7 @@
         <div class="row row-eq-height align-items-center justify-content-center">
             <div class="col-sm-5 bg_dark p-5">
                 <img src="{{ asset('assets/img/landing-page/logo-footer.png') }}" alt="">
-                <p class="bt_3 text_white mt-4">Tingkatkan Keterampilan Anda Dengan Mentor. <br/>Tingkatkan Keterampilan Anda.</p>
+                <p class="bt_3 text_white mt-4">Tingkatkan Keterampilan Anda Dengan Mentor. Tingkatkan Keterampilan Anda Bersama Kami.</p>
                 <label class="bt_3 fw_semibold text_white">Ikuti Kami &nbsp;
                     <a href="" class="social-media"><i class="fa-brands fa-twitter" target="blank"></i></a>
                     <a href="https://www.linkedin.com/company/career-network-id/" class="social-media" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
