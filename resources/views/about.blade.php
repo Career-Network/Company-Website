@@ -5,13 +5,6 @@
   ])
 
 @section('content')
-  <style>
-  @media screen and (max-width: 767px) {
-    .col-md-3 {
-      width: 50%;
-    }
-  }
-  </style>
 <main>
   <section class="hero-section"> 
       <div class="container">
@@ -85,8 +78,10 @@
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Mokhaman Wildan M.webP') }}" alt="">
               </div>
-              <h4>Mokhaman Wildan M</h4>
-              <p class="text">Comissioner</p> 
+              <div class="desc">
+                <h4>Mokhaman Wildan M</h4>
+                <p class="text">Comissioner</p> 
+              </div>
             </div>
           </div>         
           <div class="col-md-3">
@@ -94,8 +89,10 @@
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Zaki Udin Fauzi Br Utoyo.webP') }}" alt="">
               </div>
-              <h4>Zaki Udin Fauzi Br Utoyo, S.M</h4>
-              <p class="text">Chief Executive Officer</p> 
+              <div class="desc">
+                <h4>Zaki Udin Fauzi Br Utoyo, S.M</h4>
+                <p class="text">Chief Executive Officer</p> 
+              </div>
             </div>
           </div>          
           <div class="col-md-3">
@@ -103,8 +100,10 @@
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/M Farhan Perwira Nasution.webP') }}" alt="">
               </div>
-              <h4>M Farhan Perwira Nasution, S.Stat</h4>
-              <p class="text">Vice Chief Executive Officer</p> 
+              <div class="desc">
+                <h4>M Farhan Perwira Nasution, S.Stat</h4>
+                <p class="text">Vice Chief Executive Officer</p> 
+              </div>
             </div>
           </div>          
           <div class="col-md-3">
@@ -112,8 +111,10 @@
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/I Putu Bagus Widia Predana.webP') }}" alt="">
               </div>
-              <h4>I Putu Bagus Widia Predana</h4>
-              <p class="text">Chief Technology Officer</p> 
+              <div class="desc">
+                <h4>I Putu Bagus Widia Predana</h4>
+                <p class="text">Chief Technology Officer</p> 
+              </div>
             </div>
           </div>          
           <div class="col-md-3">
@@ -121,8 +122,10 @@
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Adam Virgiansa.webP') }}" alt="">
               </div>
-              <h4>Adam Virgiansa, S.Kom</h4>
-              <p class="text">Chief Marketing Officer</p> 
+              <div class="desc">
+                <h4>Adam Virgiansa, S.Kom</h4>
+                <p class="text">Chief Marketing Officer</p> 
+              </div>
             </div>
           </div> 
           <div class="col-md-3">
@@ -130,8 +133,10 @@
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Jeremy Sisto Manurung.webP') }}" alt="">
               </div>
-              <h4>Jeremy Sisto Manurung</h4>
-              <p class="text">Chief Creative Officer</p> 
+              <div class="desc">
+                <h4>Jeremy Sisto Manurung</h4>
+                <p class="text">Chief Creative Officer</p> 
+              </div>
             </div>
           </div> 
           <div class="col-md-3">
@@ -139,8 +144,10 @@
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Amanda Prasanti.webP') }}" alt="">
               </div>
-              <h4>Amanda Prasanti, S.E</h4>
-              <p class="text">Chief Human Resources Officer</p> 
+              <div class="desc">
+                <h4>Amanda Prasanti, S.E</h4>
+                <p class="text">Chief Human Resources Officer</p> 
+              </div>
             </div>
           </div>  
         </div>
