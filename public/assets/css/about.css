@@ -333,18 +333,25 @@
     margin-bottom: 64px;
   }
   .organisasi .card{
-    width: 160px;
+    display: flex;
+    flex-direction: row;
+    /* width: 160px; */
+    width: 100%;
     margin-bottom: 28px;
   }
   .organisasi .card .photocard{
-    width: 160px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
   }
   .organisasi .card .photocard img{
-    width: 160px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
   }
-  
+  .organisasi .card .desc{
+    height: fit-content;
+    margin: auto 0;
+    margin-left: 17px;
+  }
   .organisasi .card h4{
     font-size: 14px;
     margin-bottom: 8px;
