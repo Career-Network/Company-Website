@@ -76,7 +76,7 @@
         <div class="col-md-3">
             <div class="card">
               <div class="photocard">
-                <img src="{{ asset('assets/img/chief/Mokhaman Wildan M.webP') }}" alt="">
+                <img src="{{ asset('assets/img/chief/Mokhaman Wildan M.webp') }}" alt="">
               </div>
               <div class="desc">
                 <h4>Mokhaman Wildan M</h4>
@@ -87,7 +87,7 @@
           <div class="col-md-3">
             <div class="card">
               <div class="photocard">
-                <img src="{{ asset('assets/img/chief/Zaki Udin Fauzi Br Utoyo.webP') }}" alt="">
+                <img src="{{ asset('assets/img/chief/Zaki Udin Fauzi Br Utoyo.webp') }}" alt="">
               </div>
               <div class="desc">
                 <h4>Zaki Udin Fauzi Br Utoyo, S.M</h4>
@@ -98,7 +98,7 @@
           <div class="col-md-3">
             <div class="card">
               <div class="photocard">
-                <img src="{{ asset('assets/img/chief/M Farhan Perwira Nasution.webP') }}" alt="">
+                <img src="{{ asset('assets/img/chief/M Farhan Perwira Nasution.webp') }}" alt="">
               </div>
               <div class="desc">
                 <h4>M Farhan Perwira Nasution, S.Stat</h4>
@@ -109,7 +109,7 @@
           <div class="col-md-3">
             <div class="card">
               <div class="photocard">
-                <img src="{{ asset('assets/img/chief/I Putu Bagus Widia Predana.webP') }}" alt="">
+                <img src="{{ asset('assets/img/chief/I Putu Bagus Widia Predana.webp') }}" alt="">
               </div>
               <div class="desc">
                 <h4>I Putu Bagus Widia Predana</h4>
@@ -120,7 +120,7 @@
           <div class="col-md-3">
             <div class="card hide">
               <div class="photocard">
-                <img src="{{ asset('assets/img/chief/Adam Virgiansa.webP') }}" alt="">
+                <img src="{{ asset('assets/img/chief/Adam Virgiansa.webp') }}" alt="">
               </div>
               <div class="desc">
                 <h4>Adam Virgiansa, S.Kom</h4>
@@ -131,7 +131,7 @@
           <div class="col-md-3">
             <div class="card hide">
               <div class="photocard">
-                <img src="{{ asset('assets/img/chief/Jeremy Sisto Manurung.webP') }}" alt="">
+                <img src="{{ asset('assets/img/chief/Jeremy Sisto Manurung.webp') }}" alt="">
               </div>
               <div class="desc">
                 <h4>Jeremy Sisto Manurung</h4>
@@ -142,7 +142,7 @@
           <div class="col-md-3">
             <div class="card hide">
               <div class="photocard">
-                <img src="{{ asset('assets/img/chief/Amanda Prasanti.webP') }}" alt="">
+                <img src="{{ asset('assets/img/chief/Amanda Prasanti.webp') }}" alt="">
               </div>
               <div class="desc">
                 <h4>Amanda Prasanti, S.E</h4>
