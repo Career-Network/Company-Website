@@ -44,7 +44,7 @@
     font-weight: 600;
     font-size: 36px;
   }
-  .service .container .text{
+  .service .container .text, .service .container ol *{
     font-weight: 400;
     font-size: 16px;
   }
@@ -170,6 +170,10 @@
   .location .box-locate h4:nth-child(2){
     margin-top: 40px;
   }
+  .location .box-locate .text a{
+    color: white;
+    text-decoration: none;
+  }
 
 .underLn-1{
     width: 299.01px;
@@ -186,4 +190,185 @@
     background: linear-gradient(180deg, #FF5722 0%, #ED4A17 100%);
     border-radius: 10px 10px 5px 10px;
     clip-path: polygon(0 0, 100% 0, 100% 37.5%, 0 100%);
+}
+
+@media screen and (max-width: 1000px) {
+  .hero-section {
+    height: 360px;
+  }
+  .hero-section .container .banner img{
+    max-width: 280px;
+  }  
+  .hero-section .container .desc h4 {
+    font-size: 36px;
+  }
+  .hero-section .container .desc .text {
+    font-size: 14px;
+  }
+  .service .container h4{
+    font-size: 24px;
+  }
+  .service .container .text, .service .container ol *{
+    font-size: 14px;
+  }
+  .service .identity h4{
+    margin-bottom: 12px;
+  }
+  .service .identity .col-md-7 {
+    padding-right: 15px;
+  }
+  .service .identity{
+    padding-top: 41px;
+    padding-bottom: 92px;
+  }
+  .service .visiMisi h4{
+    margin-bottom: 12px;
+  }
+  .service .visiMisi{
+    padding: 45px 20px;
+    margin-bottom: 79px;
+  }
+  .service .visiMisi .col-md-6{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .organisasi .title{
+    margin-bottom: 40px;
+  }
+  .organisasi .title h4{
+    text-align: center;
+    margin: auto;
+    width: 310px;
+    margin-bottom: 8px;
+  }
+  .organisasi .card{
+    width: 144px;
+    margin-bottom: 17px;
+  }
+  .organisasi .card h4{
+    font-size: 16px;
+    margin-bottom: 5.25px;
+  }
+  .organisasi .card .text{
+    font-size: 10.5px;
+  }
+  .organisasi .card .photocard{
+    width: 144px;
+    height: 144px;
+  }
+  .organisasi .card .photocard img{
+    width: 144px;
+    height: 144px;
+  }
+  .container.organisasi{
+    margin-bottom: 85px;
+  }
+  .location{
+    padding-bottom: 110px;
+  }
+  .location .row .col-md-6{
+    padding-right: 37px;
+  }
+  .location .box-locate h4 {
+    font-size: 20px;
+  }
+  .location .box-locate{
+    padding: 32px;
+  }
+  .underLn-1{
+    width: 199.01px;
+  }
+  .underLn-2{
+    margin: auto;
+    width: 310px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-section {
+    height: fit-content;
+  }
+  .hero-section .container {
+    flex-direction: column-reverse;
+    padding-top: 42px;
+    padding-bottom: 37px;
+  }
+  .hero-section .container h4,
+  .hero-section .container .text
+  {
+    text-align: center;
+  }
+  .hero-section .container .banner,
+  .hero-section .container .desc{
+    margin: auto;
+  }
+  .underLn-1{
+    width: 137px;
+    margin: auto;
+    margin-bottom: 32px;
+  }
+  .service .identity{
+    text-align: center;
+    padding-top: 46px;
+    padding-bottom: 120px;
+  }
+  .service .identity img{
+    max-width: 372px;
+  }
+  .service .visiMisi{
+    padding: 54px 37px;
+    margin-bottom: 70px;
+  }
+  .service .visiMisi .col-md-6 {
+    padding: 0;
+  }
+  .service .visiMisi .col-md-6:first-child {
+    margin-bottom: 50px;
+  }
+  
+  .organisasi .title{
+    margin-bottom: 64px;
+  }
+  .organisasi .card{
+    width: 160px;
+    margin-bottom: 28px;
+  }
+  .organisasi .card .photocard{
+    width: 160px;
+    height: 180px;
+  }
+  .organisasi .card .photocard img{
+    width: 160px;
+    height: 180px;
+  }
+  
+  .organisasi .card h4{
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .organisasi .card .text{
+    font-size: 14px;
+  }
+  .location {
+    padding-bottom: 97px;
+  }
+  .service .location h4{
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .service .location .text{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .service .location .box-locate{
+    padding: 28px 34px;
+  }
+  .service .location .box-locate *{
+    text-align: left;
+  }
+  .service .location .box-locate .text{
+    margin-bottom: 16px;
+  }
+  .service .location .box-locate .text:last-child{
+    margin-bottom: 0px;
+  }
 }

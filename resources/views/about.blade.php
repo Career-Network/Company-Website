@@ -4,10 +4,14 @@
   'footer'=> true
   ])
 
-{{-- @extends('layouts.mainlayout') --}}
-{{-- @section('title', 'About') --}}
-
 @section('content')
+  <style>
+  @media screen and (max-width: 767px) {
+    .col-md-3 {
+      width: 50%;
+    }
+  }
+  </style>
 <main>
   <section class="hero-section"> 
       <div class="container">
@@ -75,79 +79,70 @@
         <h4>kenali para pemimpin career network</h4>
         <div class="underLn-2"></div>
       </div>
-      <div class="row">         
+      <div class="row">  
+        <div class="col-md-3">
+            <div class="card">
+              <div class="photocard">
+                <img src="{{ asset('assets/img/chief/Mokhaman Wildan M.webP') }}" alt="">
+              </div>
+              <h4>Mokhaman Wildan M</h4>
+              <p class="text">Comissioner</p> 
+            </div>
+          </div>         
           <div class="col-md-3">
             <div class="card">
               <div class="photocard">
-                <img src="{{ asset('assets/img/chief/zaki.png') }}" alt="">
+                <img src="{{ asset('assets/img/chief/Zaki Udin Fauzi Br Utoyo.webP') }}" alt="">
               </div>
-              <h4>Zaki Udin Fauzi</h4>
+              <h4>Zaki Udin Fauzi Br Utoyo, S.M</h4>
               <p class="text">Chief Executive Officer</p> 
             </div>
           </div>          
           <div class="col-md-3">
             <div class="card">
               <div class="photocard">
-                <img src="{{ asset('assets/img/chief/Rizky Al.png') }}" alt="">
+                <img src="{{ asset('assets/img/chief/M Farhan Perwira Nasution.webP') }}" alt="">
               </div>
-              <h4>Rizky Alfiansyah</h4>
-              <p class="text">Vice CEO</p> 
+              <h4>M Farhan Perwira Nasution, S.Stat</h4>
+              <p class="text">Vice Chief Executive Officer</p> 
             </div>
           </div>          
           <div class="col-md-3">
             <div class="card">
               <div class="photocard">
-                <img src="{{ asset('assets/img/chief/eggar.png') }}" alt="">
+                <img src="{{ asset('assets/img/chief/I Putu Bagus Widia Predana.webP') }}" alt="">
               </div>
-              <h4>Widhiyanto Enggartyasto</h4>
-              <p class="text">CTO</p> 
+              <h4>I Putu Bagus Widia Predana</h4>
+              <p class="text">Chief Technology Officer</p> 
             </div>
           </div>          
           <div class="col-md-3">
             <div class="card">
               <div class="photocard">
-                <img src="{{ asset('assets/img/chief/Adam Virgiansa.png') }}" alt="">
+                <img src="{{ asset('assets/img/chief/Adam Virgiansa.webP') }}" alt="">
               </div>
-              <h4>Adam Virgiansa</h4>
-              <p class="text">COO</p> 
+              <h4>Adam Virgiansa, S.Kom</h4>
+              <p class="text">Chief Marketing Officer</p> 
             </div>
           </div> 
           <div class="col-md-3">
             <div class="card">
               <div class="photocard">
-                <img src="{{ asset('assets/img/chief/Jeremy Sisto Manurung.png') }}" alt="">
+                <img src="{{ asset('assets/img/chief/Jeremy Sisto Manurung.webP') }}" alt="">
               </div>
-              <h4>Jeremy Sinto Manurung</h4>
-              <p class="text">CCO</p> 
+              <h4>Jeremy Sisto Manurung</h4>
+              <p class="text">Chief Creative Officer</p> 
             </div>
           </div> 
           <div class="col-md-3">
             <div class="card">
               <div class="photocard">
-                <img class="default" src="" alt="">
+                <img src="{{ asset('assets/img/chief/Amanda Prasanti.webP') }}" alt="">
               </div>
-              <h4>Basri Wijaya Pakpahan</h4>
-              <p class="text">CEO OFFICE</p> 
+              <h4>Amanda Prasanti, S.E</h4>
+              <p class="text">Chief Human Resources Officer</p> 
             </div>
-          </div> 
-          <div class="col-md-3">
-            <div class="card">
-              <div class="photocard">
-                <img src="{{ asset('assets/img/chief/Hasyim Aldi Kalla.png') }}" alt="">
-              </div>
-              <h4>Hasyim Aldi Kalla</h4>
-              <p class="text">CMO</p> 
-            </div>
-          </div> 
-          <div class="col-md-3">
-            <div class="card">
-              <div class="photocard">
-                <img class="default" src="" alt="">
-              </div>
-              <h4>Mokhaman Wildan M</h4>
-              <p class="text">Penasihat</p> 
-            </div>
-          </div> 
+          </div>  
         </div>
       </div>
     </div>
@@ -171,7 +166,3 @@
     </div>
   </section>
   @endsection
-  
-  {{-- <div class="container mt-5">
-    <h1>Ini adalah halaman About</h1>
-  </div> --}}
