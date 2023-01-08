@@ -311,6 +311,10 @@
     padding-top: 46px;
     padding-bottom: 120px;
   }
+  .service .identity .col-md-7 {
+    padding-right: 0px;
+    margin-bottom: 40px;
+  }
   .service .identity img{
     max-width: 372px;
   }
