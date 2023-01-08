@@ -118,7 +118,7 @@
             </div>
           </div>          
           <div class="col-md-3">
-            <div class="card">
+            <div class="card d-none">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Adam Virgiansa.webP') }}" alt="">
               </div>
@@ -129,7 +129,7 @@
             </div>
           </div> 
           <div class="col-md-3">
-            <div class="card">
+            <div class="card d-none">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Jeremy Sisto Manurung.webP') }}" alt="">
               </div>
@@ -140,7 +140,7 @@
             </div>
           </div> 
           <div class="col-md-3">
-            <div class="card">
+            <div class="card d-none">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Amanda Prasanti.webP') }}" alt="">
               </div>
@@ -150,6 +150,13 @@
               </div>
             </div>
           </div>  
+        </div>
+        <div class="show-btn">
+          <div class="button-txt" onclick="showChief()">
+            <h4></h4>
+            <div class="row-btn"></div>
+          </div>
+          <div class="underLn-3"></div>
         </div>
       </div>
     </div>
@@ -171,5 +178,6 @@
           </p>
       </div>
     </div>
+    <script src="{{ asset('assets/js/chief-hidden.js') }}"></script>
   </section>
   @endsection
