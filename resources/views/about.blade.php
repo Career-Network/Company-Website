@@ -32,7 +32,7 @@
               bahkan ketika ditahap seleksi awal.
             </p> 
             <p class="text">
-              Permasalahan yang yang kami temukan salah satunya karena tidak memiliki sertifikasi kompetensi ataupun portofolio project yang sangat berguna menambah 
+              Permasalahan yang kami temukan salah satunya karena tidak memiliki sertifikasi kompetensi ataupun portofolio project yang sangat berguna menambah 
               point plus bagi kandidat dimata perusahaan. 
             </p>
             <p class="text">
@@ -73,18 +73,7 @@
         <div class="underLn-2"></div>
       </div>
       <div class="row">  
-        <div class="col-md-3">
-            <div class="card">
-              <div class="photocard">
-                <img src="{{ asset('assets/img/chief/Mokhaman Wildan M.webp') }}" alt="">
-              </div>
-              <div class="desc">
-                <h4>Mokhaman Wildan M</h4>
-                <p class="text">Comissioner</p> 
-              </div>
-            </div>
-          </div>         
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="card">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Zaki Udin Fauzi Br Utoyo.webp') }}" alt="">
@@ -95,7 +84,7 @@
               </div>
             </div>
           </div>          
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="card">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/M Farhan Perwira Nasution.webp') }}" alt="">
@@ -106,7 +95,7 @@
               </div>
             </div>
           </div>          
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="card">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/I Putu Bagus Widia Predana.webp') }}" alt="">
@@ -117,7 +106,7 @@
               </div>
             </div>
           </div>          
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="card hide">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Adam Virgiansa.webp') }}" alt="">
@@ -128,7 +117,7 @@
               </div>
             </div>
           </div> 
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="card hide">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Jeremy Sisto Manurung.webp') }}" alt="">
@@ -139,7 +128,7 @@
               </div>
             </div>
           </div> 
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="card hide">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Amanda Prasanti.webp') }}" alt="">
