@@ -215,7 +215,7 @@
       
       </div>
       <div class="footer__bottom">
-        <p>Copyright @2022 Career Network All Rights Reserved</p>
+        <p>Copyright &copy;{{date('Y')}} Career Network All Rights Reserved</p>
       </div>
     </footer>
     <script
