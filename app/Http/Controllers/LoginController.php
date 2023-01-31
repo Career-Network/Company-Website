@@ -11,6 +11,7 @@ class LoginController extends Controller
     {
         return view('login');
     }
+
     public function auth(Request $request)
     {
         $credentials = $request->validate([
@@ -36,7 +37,6 @@ class LoginController extends Controller
 
     public function logout(Request $request)
     {
-
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();

@@ -1,0 +1,52 @@
+.container-cs {
+  background: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-soon-container {
+  display: flex;
+  position: relative;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
+}
+
+.cs-frame {
+  z-index: 2;
+  width: 893px;
+  position: absolute;
+}
+
+.cs-illustration {
+  z-index: 3;
+  width: 447px;
+  position: absolute;
+}
+
+.desc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 96px;
+}
+
+.heading {
+  color: #273339;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 0.1rem;
+}
+
+.sub-heading {
+  color: #1c1c1c;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}

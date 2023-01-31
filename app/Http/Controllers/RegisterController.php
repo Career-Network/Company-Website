@@ -16,7 +16,6 @@ class RegisterController extends Controller
 
     public function store(Request $request){
         
-        
         $validatedData = $request->validate([
             'name' => 'required|regex:/^[a-zA-Z\s]*$/',
             'email' => 'required|email:dns|unique:users',

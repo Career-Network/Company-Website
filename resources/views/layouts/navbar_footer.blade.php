@@ -127,11 +127,11 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="{{ route('educareer') }}">Edu Career</a></li>
-                  <li><a class="dropdown-item" href="#">FLAP</a></li>
+                  <li><a class="dropdown-item" href="{{ route('flap') }}">FLAP</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="{{ route('blog') }}">Blog</a>
               </li>
               <li class="nav-item auth-reg">
                   <a class="nav-link btn-nav btn-primary" href="{{ route('register') }}" id="btn-primary">

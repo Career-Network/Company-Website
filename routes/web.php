@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
@@ -32,6 +33,8 @@ Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashb
 Route::get('/educareer', [EducareerController::class, 'index'])->name('educareer');
 Route::get('/mentor', [EducareerController::class, 'mentor'])->name('mentor');
 Route::get('/kelas', [EducareerController::class, 'kelas'])->name('kelas');
+Route::get('/flap', [EducareerController::class, 'flap'])->name('flap');
+Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 
 //Login feature
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
