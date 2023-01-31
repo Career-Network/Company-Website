@@ -18,4 +18,8 @@ class EducareerController extends Controller
     {
         return view('detail-class');
     }
+    public function flap()
+    {
+        return view('flap');
+    }
 }
