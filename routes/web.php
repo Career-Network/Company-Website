@@ -51,3 +51,7 @@ Route::post('/forgot-password', [ForgotPasswordController::class, 'password_emai
 Route::get('/reset-password{token}',[ForgotPasswordController::class, 'password_reset'])->name('password.reset')->middleware('guest');
 Route::post('/reset-password', [ForgotPasswordController::class, 'password_update'])->name('password_update')->middleware('guest');
 
+// comming soon 
+Route::get('/comming-soon', function () {
+    return view('layouts.comingsoon');
+});

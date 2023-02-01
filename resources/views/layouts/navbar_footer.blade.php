@@ -189,7 +189,7 @@
                           <ul>
                               <label class="bt_3 fw_semibold">Sumber</label>
                               <li><a href="{{ route('home') }}">Perusahaan</a></li>
-                              <li><a href="">Blog</a></li>
+                              <li><a href="$">Blog</a></li>
                           </ul>
                       </div>
                       <div class="col-sm-6 col-md-4 col-lg-4 col-6">
@@ -202,9 +202,9 @@
                       <div class="col-sm-6 col-md-4 col-lg-4 col-6">
                           <ul>
                               <label class="bt_3 fw_semibold">Bantuan</label>
-                              <li><a href="">Syarat dan Ketentuan</a></li>
-                              <li><a href="">Kebijakan Privasi</a></li>
-                              <li><a href="">Kontak</a></li>
+                              <li><a href="#" class="disabled">Syarat dan Ketentuan</a></li>
+                              <li><a href="#">Kebijakan Privasi</a></li>
+                              <li><a href="#">Kontak</a></li>
                           </ul>
                       </div>
                   </div>

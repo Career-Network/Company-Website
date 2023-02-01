@@ -78,7 +78,8 @@
                     <p>
                         EduCareer hadir sebagai Paltform pelatihan dengan mentor berpengalaman
                     </p>
-                    <a href="{{ route('educareer') }}"><button><p>Layanan</p></button></a>
+                    {{-- <a href="{{ route('educareer') }}"><button><p>Layanan</p></button></a> --}}
+                    <a href="{{ route('educareer') }}"><button><p>Segera Hadir !</p></button></a>
                 </div>
             </div>
             <div class="carddy">
@@ -87,10 +88,11 @@
                 </div>
                 <div class="body-card">
                     <h4>Career Network <br>FLAP</h4>
+                    {{-- <h4>Career Network <br>Sonic</h4> --}}
                     <p>
                         Program internship yang berfokus pada work-based learning.
                     </p>
-                    <button><p>Segera Hadir!</p></button>
+                    <button><p>Segera Hadir !</p></button>
                 </div>
             </div>
         </div>
