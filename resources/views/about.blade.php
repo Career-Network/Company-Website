@@ -92,7 +92,7 @@
               </div>
               <div class="desc">
                 <h4>M Farhan Perwira Nasution, S.Stat</h4>
-                <p class="text">Vice Chief Executive Officer</p> 
+                <p class="text">President of Commissioner</p> 
               </div>
             </div>
           </div>           
