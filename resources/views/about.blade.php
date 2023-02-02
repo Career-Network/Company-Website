@@ -51,7 +51,7 @@
         <div class="decor-1"></div>
       </div> 
     <div class="container visiMisi">
-      <div class="row">         
+      <div class="row ">         
         <div class="col-md-6">
           <h4>Visi</h4>
           <p class="text">Menjadi Platform Pemesanan Pelatihan Berbasis Online No 1 di Indonesia yang mempertemukan para ahli di berbagai bidang secara langsung dengan mentee.</p> 
@@ -72,8 +72,9 @@
         <h4>kenali para pemimpin career network</h4>
         <div class="underLn-2"></div>
       </div>
-      <div class="row">  
-          <div class=" col-md-4">
+      <div class="row justify-content-center"> 
+          <div class="row justify-content-center">
+            <div class="col-md-3">
             <div class="card">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Zaki Udin Fauzi Br Utoyo.webp') }}" alt="">
@@ -84,7 +85,7 @@
               </div>
             </div>
           </div>          
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="card">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/M Farhan Perwira Nasution.webp') }}" alt="">
@@ -94,8 +95,8 @@
                 <p class="text">Vice Chief Executive Officer</p> 
               </div>
             </div>
-          </div>          
-          <div class=" col-md-4">
+          </div>           
+          <div class=" col-md-3 ">
             <div class="card">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/I Putu Bagus Widia Predana.webp') }}" alt="">
@@ -105,8 +106,10 @@
                 <p class="text">Chief Technology Officer</p> 
               </div>
             </div>
-          </div>          
-          <div class="col-md-6">
+          </div>  
+          </div>
+           <div class="row justify-content-center">
+              <div class="col-md-3">
             <div class="card hide">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Adam Virgiansa.webp') }}" alt="">
@@ -117,7 +120,7 @@
               </div>
             </div>
           </div> 
-          <div class="col-md-6">
+          <div class="col-md-3">
             <div class="card hide">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Amanda Prasanti.webp') }}" alt="">
@@ -127,7 +130,9 @@
                 <p class="text">Chief Human Resources Officer</p> 
               </div>
             </div>
-          </div>  
+          </div>
+          </div>   
+          
         </div>
         <div class="show-btn">
           <div class="button-txt" onclick="showChief()">
