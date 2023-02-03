@@ -5,6 +5,8 @@
 @section('content')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <main>
@@ -50,7 +52,7 @@
         </div>
     </section>
 
-    <section id="carousel">
+    {{-- <section id="carousel">
         <div class="main-carousel" id="c-carousel">
             <div class="cell"><img src="{{ asset('assets/img/landing-page/c-1.png') }}" alt=""></div>
             <div class="cell"><img src="{{ asset('assets/img/landing-page/c-2.png') }}" alt=""></div>
@@ -61,7 +63,47 @@
             <div class="cell"><img src="{{ asset('assets/img/landing-page/m-2.png') }}" alt=""></div>
             <div class="cell"><img src="{{ asset('assets/img/landing-page/m-3.png') }}" alt=""></div>
         </div>
-    </section>
+    </section> --}}
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{asset('assets/img/landing-page/c-1.jpg')}}" class="d-block w-100" height="600px" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p >Strategi Kami</p>
+              <h3 style="background-color: rgb(8, 207, 207);width: 450px;padding: 3px 5px 5px 3px;" class="text-start">Strategi kami untuk perusahaan</h3>
+              <p class="text-start">Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan yang terencana dengan tepat, mengoptimalkan fleksibilitas target perusahaan, dan menciptakan nilai berkelanjutan untuk semua  yang kami lakukan.  </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{{asset('assets/img/landing-page/c-2.jpg')}}" class="d-block w-100" height="600px" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 style="background-color: aqua;width: 380px; padding: 3px 5px 5px 3px;"class="text-start">Strategi kami untuk Klien</h3>
+              <p class="text-start">Kami berkomitmen untuk memahami setiap nuansa kebutuhan mereka, menggunakan semua energi pribadi dan  kreatifitas kami untuk membuat kesepakatan terbaik dan melakukan sepenuh daya kami untuk membantu mencapai tujuan mereka.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{{asset('assets/img/landing-page/c-3.jpg')}}" class="d-block w-100"height="600px" alt="...">
+            <div class="carousel-caption d-none d-md-block ">
+    
+              <h3 style="background-color: aqua;width: 400px; padding: 3px 5px 5px 3px;" class="text-start">Strategi kami untuk Tim</h3>
+              <p class="text-start"> Kami berkomitmen untuk mendorong sebuah pendekatan kolaboratif untuk memecahkan masalah klien, untuk menumbuhkan lingkungan kerja yang inklusif, sehat dan memberikan kesempatan yang memungkinkan orang untuk belajar,mencapai,dan mempertahakan kesemimbangan kerja/kehidupan yang memuaskan.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
     <section id="service" class="pb-5">
         <div class="text-center">
