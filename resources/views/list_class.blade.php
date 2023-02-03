@@ -40,7 +40,8 @@
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <p class="bt_2 fw_bold text_danger">Rp  199.000 <span class="discount">Rp  299.000</span></p>
                             <div class="d-grid">
-                                <a href="#" class="btn_primary text_white text-center">Lihat Detail</a>
+                                {{-- <a href="#" class="btn_primary text_white text-center">Lihat Detail</a> --}}
+                                <a href="#" class="btn_primary text_white text-center">Segera Hadir !</a>
                             </div>
                           </div>
                     </div>
@@ -53,7 +54,8 @@
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <p class="bt_2 fw_bold text_danger">Rp  199.000 <span class="discount">Rp  299.000</span></p>
                             <div class="d-grid">
-                                <a href="#" class="btn_primary text_white text-center">Lihat Detail</a>
+                                {{-- <a href="#" class="btn_primary text_white text-center">Lihat Detail</a> --}}
+                                <a href="#" class="btn_primary text_white text-center">Segera Hadir !</a>
                             </div>
                           </div>
                     </div>
@@ -66,7 +68,8 @@
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <p class="bt_2 fw_bold text_danger">Rp  199.000 <span class="discount">Rp  299.000</span></p>
                             <div class="d-grid">
-                                <a href="#" class="btn_primary text_white text-center">Lihat Detail</a>
+                                {{-- <a href="#" class="btn_primary text_white text-center">Lihat Detail</a> --}}
+                                <a href="#" class="btn_primary text_white text-center">Segera Hadir !</a>
                             </div>
                           </div>
                     </div>
@@ -79,7 +82,7 @@
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <p class="bt_2 fw_bold text_danger">Rp  199.000 <span class="discount">Rp  299.000</span></p>
                             <div class="d-grid">
-                                <a href="#" class="btn_primary text_white text-center">Lihat Detail</a>
+                                <a href="#" class="btn_primary text_white text-center">Segera Hadir !</a>
                             </div>
                           </div>
                     </div>
@@ -92,7 +95,7 @@
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <p class="bt_2 fw_bold text_danger">Rp  199.000 <span class="discount">Rp  299.000</span></p>
                             <div class="d-grid">
-                                <a href="#" class="btn_primary text_white text-center">Lihat Detail</a>
+                                <a href="#" class="btn_primary text_white text-center">Segera Hadir !</a>
                             </div>
                           </div>
                     </div>
@@ -105,7 +108,7 @@
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <p class="bt_2 fw_bold text_danger">Rp  199.000 <span class="discount">Rp  299.000</span></p>
                             <div class="d-grid">
-                                <a href="#" class="btn_primary text_white text-center">Lihat Detail</a>
+                                <a href="#" class="btn_primary text_white text-center">Segera Hadir !</a>
                             </div>
                           </div>
                     </div>

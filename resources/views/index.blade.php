@@ -92,7 +92,7 @@
                     <p>
                         Program internship yang berfokus pada work-based learning.
                     </p>
-                    <button><p>Segera Hadir !</p></button>
+                    <a href="{{ route('flap') }}"><button><p>Segera Hadir !</p></button></a>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
             <div class="col-sm-5 px-5 center">
                 <h2 class="h_3 fw_semibold mt-5">Blog Terkini</h2>
                 <p class="bt_3">Nikmati Cerita, Hiburan, Informasi serta Promo menarik dari  blog Career Network. </p>
-                <button><a href="{{ route('blog') }}" class="link">Lihat Lebih Banyak</a></button>
+                <button><a href="{{ route('blog') }}" class="link">Segera Hadir !</a></button>
             </div>
             <div class="col-sm-7">
                 <div class="slider owl-carousel">
