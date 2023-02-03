@@ -420,7 +420,7 @@
 /* ornament */
 
 @media only screen and (max-width: 1050px) {
-  /*strategi kami */
+  /*strategi kami */ 
     .ball-strategi {
   width: 160px;
   height: 80px;
@@ -428,8 +428,6 @@
    border-bottom-right-radius:160px;
   line-height:2.5rem;
   font-size:0.875rem;
-
-
 }
 
 .ball-strategi p {
@@ -704,9 +702,6 @@
 
 }
 
-.ball-strategi p {
-  
-}
   /* ----------------------------------------- */
 }
 

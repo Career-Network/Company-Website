@@ -81,7 +81,7 @@
             </div>
           </div>
           <div class="carousel-item">
-               <div class="ball-strategi"><p>Strategi Kami</p></div>
+        <div class="ball-strategi"><p>Strategi Kami</p></div>
             <img src="{{asset('assets/img/landing-page/c-2.jpg')}}" class="d-block w-100" height="600px" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h3 style="background-color: aqua;width: 380px; padding: 3px 5px 5px 3px;"class="text-start">Strategi kami untuk Klien</h3>
