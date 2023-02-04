@@ -75,7 +75,6 @@
             <div class="ball-strategi"><p>Strategi Kami</p></div>
             <img src="{{asset('assets/img/landing-page/c-1.jpg')}}" class="d-block w-100" height="600px" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <p >Strategi Kami</p>
               <h3 style="background-color: rgb(8, 207, 207);width: 450px;padding: 3px 5px 5px 3px;" class="text-start">Strategi kami untuk perusahaan</h3>
               <p class="text-start">Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan yang terencana dengan tepat, mengoptimalkan fleksibilitas target perusahaan, dan menciptakan nilai berkelanjutan untuk semua  yang kami lakukan.  </p>
             </div>
@@ -92,7 +91,7 @@
                <div class="ball-strategi"><p>Strategi Kami</p></div>
             <img src="{{asset('assets/img/landing-page/c-3.jpg')}}" class="d-block w-100"height="600px" alt="...">
             <div class="carousel-caption d-none d-md-block ">
-    
+
               <h3 style="background-color: aqua;width: 400px; padding: 3px 5px 5px 3px;" class="text-start">Strategi kami untuk Tim</h3>
               <p class="text-start"> Kami berkomitmen untuk mendorong sebuah pendekatan kolaboratif untuk memecahkan masalah klien, untuk menumbuhkan lingkungan kerja yang inklusif, sehat dan memberikan kesempatan yang memungkinkan orang untuk belajar,mencapai,dan mempertahakan kesemimbangan kerja/kehidupan yang memuaskan.</p>
             </div>
