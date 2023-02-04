@@ -189,14 +189,14 @@
                           <ul>
                               <label class="bt_3 fw_semibold">Sumber</label>
                               <li><a href="{{ route('home') }}">Perusahaan</a></li>
-                              <li><a href="">Blog</a></li>
+                              <li><a href="{{ route('blog') }}">Blog</a></li>
                           </ul>
                       </div>
                       <div class="col-sm-6 col-md-4 col-lg-4 col-6">
                           <ul>
                               <label class="bt_3 fw_semibold">Layanan</label>
                               <li><a href="{{ route('educareer') }}">EduCareer</a></li>
-                              <li><a href="">FLAP</a></li>
+                              <li><a href="{{ route('flap') }}">FLAP</a></li>
                           </ul>
                       </div>
                       <div class="col-sm-6 col-md-4 col-lg-4 col-6">
