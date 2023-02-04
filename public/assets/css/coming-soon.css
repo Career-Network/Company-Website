@@ -13,7 +13,7 @@
   align-items: end;
   justify-content: center;
   width: 100%;
-  height: 75vh;
+  height: 70vh;
   overflow: hidden;
 }
 
@@ -51,10 +51,9 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
-  text-align: center;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 576px) {
   .heading {
     font-size: 36px;
     line-height: 54px;
@@ -68,27 +67,5 @@
 
   .desc-container {
     padding: 96px 0;
-  }
-
-  .cs-illustration {
-    width: 327.87px;
-  }
-
-  .cs-frame {
-    width: 655px;
-  }
-
-  .coming-soon-container {
-    height: 427.87px;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .cs-frame {
-    height: 327.87px;
-  }
-
-  .coming-soon-container {
-    height: 427.87px;
   }
 }

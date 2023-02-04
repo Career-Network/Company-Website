@@ -73,7 +73,7 @@
         <div class="underLn-2"></div>
       </div>
       <div class="row">  
-          <div class=" col-md-4">
+          <div class="col-md-4">
             <div class="card">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Zaki Udin Fauzi Br Utoyo.webp') }}" alt="">
@@ -95,7 +95,7 @@
               </div>
             </div>
           </div>          
-          <div class=" col-md-4">
+          <div class="col-md-4">
             <div class="card">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/I Putu Bagus Widia Predana.webp') }}" alt="">
@@ -106,7 +106,7 @@
               </div>
             </div>
           </div>          
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="card hide">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Adam Virgiansa.webp') }}" alt="">
@@ -117,7 +117,18 @@
               </div>
             </div>
           </div> 
-          <div class="col-md-6">
+          <div class="col-md-4">
+            <div class="card hide">
+              <div class="photocard">
+                <img src="{{ asset('assets/img/chief/Jeremy Sisto Manurung.webp') }}" alt="">
+              </div>
+              <div class="desc">
+                <h4>Jeremy Sisto Manurung</h4>
+                <p class="text">Chief Creative Officer</p> 
+              </div>
+            </div>
+          </div> 
+          <div class="col-md-4">
             <div class="card hide">
               <div class="photocard">
                 <img src="{{ asset('assets/img/chief/Amanda Prasanti.webp') }}" alt="">
@@ -152,7 +163,7 @@
           <h4>Hubungi Kami</h4>
           <p class="text">
             careernetwork.id@gmail.com <br/>
-            <a href="https://api.whatsapp.com/send?phone=6289513190531">+62 895 - 1319 - 0531</a>
+            <a href="https://api.whatsapp.com/send?phone=6289513190531" target="_blank">+62 895 - 1319 - 0531</a>
           </p>
       </div>
     </div>

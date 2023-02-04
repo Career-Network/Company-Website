@@ -61,7 +61,7 @@
             
             @auth
             <li class="nav-item">
-              <a class="nav-link" href=" {{ route('home') }}">Perusahaan</a>
+              <a class="nav-link" href=" {{ route('about') }}">Perusahaan</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -111,7 +111,7 @@
               </li>
               @else
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('home') }}">Perusahaan</a>
+                <a class="nav-link" href="{{ route('about') }}">Perusahaan</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -177,38 +177,37 @@
                   </div>
                   <p class="bt_3 text_white mt-4">Tingkatkan Keterampilan Anda Dengan Mentor. Tingkatkan Keterampilan Anda Bersama Kami.</p>
                   <label class="bt_3 fw_semibold text_white foll_btn">Ikuti Kami &nbsp;
-                      <a href="" class="social-media"><i class="fa-brands fa-twitter" target="blank"></i></a>
+                      <a href="https://www.tiktok.com/@career.network" class="social-media" target="blank"><i class="fa-brands fa-tiktok"></i></a>
                       <a href="https://www.linkedin.com/company/career-network-id/" class="social-media" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
                       <a href="https://www.instagram.com/careernetwork.id/" class="social-media" target="blank"><i class="fa-brands fa-instagram"></i></a>
-                      <a href="" class="social-media"><i class="fa-brands fa-facebook" target="blank"></i></a>
                   </label>
               </div>
               <div class="col-sm-7 bg_grey mf-right">
-                  <div class="row">
-                      <div class="col-sm-6 col-md-4 col-lg-4 col-6">
-                          <ul>
-                              <label class="bt_3 fw_semibold">Sumber</label>
-                              <li><a href="{{ route('home') }}">Perusahaan</a></li>
-                              <li><a href="{{ route('blog') }}">Blog</a></li>
-                          </ul>
-                      </div>
-                      <div class="col-sm-6 col-md-4 col-lg-4 col-6">
-                          <ul>
-                              <label class="bt_3 fw_semibold">Layanan</label>
-                              <li><a href="{{ route('educareer') }}">EduCareer</a></li>
-                              <li><a href="{{ route('flap') }}">FLAP</a></li>
-                          </ul>
-                      </div>
-                      <div class="col-sm-6 col-md-4 col-lg-4 col-6">
-                          <ul>
-                              <label class="bt_3 fw_semibold">Bantuan</label>
-                              <li><a href="">Syarat dan Ketentuan</a></li>
-                              <li><a href="">Kebijakan Privasi</a></li>
-                              <li><a href="">Kontak</a></li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-6">
+                        <ul>
+                            <label class="bt_3 fw_semibold">Sumber</label>
+                            <li><a href=" {{ route('about') }}">Perusahaan</a></li>
+                            <li><a href=" {{ route('blog') }}">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-6">
+                        <ul>
+                            <label class="bt_3 fw_semibold">Layanan</label>
+                            <li><a href=" {{ route('educareer') }}">EduCareer</a></li>
+                            <li><a href=" {{ route('flap') }}">FLAP</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-6">
+                        <ul>
+                            <label class="bt_3 fw_semibold">Bantuan</label>
+                            <li><a href=" {{ route('TnC') }}">Syarat dan Ketentuan</a></li>
+                            <li><a href=" {{ route('privacy_policy') }}">Kebijakan Privasi</a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=6289513190531" target="_blank">Kontak</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
           </div>
       </section>
       @endif

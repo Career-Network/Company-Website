@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\BlogController;
+use App\Http\Controllers\FeatureController;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
@@ -34,7 +34,9 @@ Route::get('/educareer', [EducareerController::class, 'index'])->name('educareer
 Route::get('/mentor', [EducareerController::class, 'mentor'])->name('mentor');
 Route::get('/kelas', [EducareerController::class, 'kelas'])->name('kelas');
 Route::get('/flap', [EducareerController::class, 'flap'])->name('flap');
-Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+Route::get('/blog', [FeatureController::class, 'blog'])->name('blog');
+Route::get('/syarat-dan-ketentuan', [FeatureController::class, 'tnc'])->name('TnC');
+Route::get('/kebijakan-privasi', [FeatureController::class, 'privacy'])->name('privacy_policy');
 
 //Login feature
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');

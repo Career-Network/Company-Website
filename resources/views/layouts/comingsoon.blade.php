@@ -1,3 +1,7 @@
+<head>
+    <link href="{{ asset('assets/img/favico.png') }}" rel="icon" />
+</head>
+
 <section class="container-cs">
     <div class="coming-soon-container" style="background: url({{  asset('assets/img/coming-soon/bg-coming-soon.png') }})">
         <img class="cs-frame" src='{{ asset('assets/img/coming-soon/frame-coming-soon.png') }}' alt="Coming soon frame" />

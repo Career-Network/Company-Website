@@ -176,7 +176,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 24px;
+  padding: 12px 24px;
   gap: 10px;
 
   width: 144px;
@@ -189,23 +189,6 @@
 
   flex: none;
   order: 3;
-  flex-grow: 0;
-}
-
-.body-card button {
-  width: 40%;
-  height: 3em;
-  
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 2em;
-
-  text-align: center;
-
-  color: #ffffff;
-
-  flex: none;
-  order: 0;
   flex-grow: 0;
 }
 
@@ -384,56 +367,9 @@
 }
 /* ----------------------------------------- */
 
-/* strategi kami */
-.carousel-inner {
-  background-color:green;
-}
-.carousel-item {
-  position:relative;
-  background-color:red;
-}
-.ball-strategi {
-  position:absolute;
-    left: 0;
-  right: 0;
-  background-color:orange;
-  width: 320px;
-  height: 160px;
-  border-bottom-left-radius:320px;
-   border-bottom-right-radius:320px;
-  color:white;
-  font-weight:400;
-  line-height:2.5rem;
-  font-size:2rem;
-  margin:auto;
-  padding:30px;
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-  justify-content:center;
-}
-.ball-strategi p{
-  text-align:center;
-  margin-top:-40px;
-
-}
 /* ornament */
 
 @media only screen and (max-width: 1050px) {
-  /*strategi kami */ 
-    .ball-strategi {
-  width: 160px;
-  height: 80px;
-  border-bottom-left-radius:160px;
-   border-bottom-right-radius:160px;
-  line-height:2.5rem;
-  font-size:0.875rem;
-}
-
-.ball-strategi p {
-  margin-top:0;
-}
-
   .hero_ornament {
     display: none;
   }
@@ -443,9 +379,6 @@
 
 /* Tablet Resolution */
 @media only screen and (max-width: 991px) {
-  /*strategi kami */
-
-
   /* ----------------------------------------- */
   /* Carousel */
   #m-carousel {
@@ -634,11 +567,12 @@
     height: 59px;
 
     font-size: 11px;
+    
   }
 
   .body-card button {
     margin-top: 22px;
-    padding: 7.2973px 17.5135px;
+    padding: 6px 17.5135px;
     gap: 7.3px;
 
     width: 105px;
@@ -651,6 +585,7 @@
     width: 76px;
     height: 15px;
     font-size: 11px;
+    padding-top: 0px;
   }
   /* ----------------------------------------- */
 
@@ -688,20 +623,5 @@
     line-height: 21px;
     text-align: center;
   }
-  
- /*strategi kami */
-.ball-strategi {
-  width: 120px;
-  height: 60px;
-  border-bottom-left-radius:120px;
-   border-bottom-right-radius:140px;
-  line-height:2.5rem;
-  font-size:10px;
-  padding:0px;
-
-
-}
-
   /* ----------------------------------------- */
 }
-
