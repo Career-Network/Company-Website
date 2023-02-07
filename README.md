@@ -47,13 +47,13 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-5. Migrate
+5. Migrate (Make sure your database is running)
 
 ```
 php artisan migrate
 ```
 
-6. run the server maybe??
+6. run the server
 
 ```
 php artisan serve
