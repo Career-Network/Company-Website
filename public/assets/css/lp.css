@@ -112,7 +112,7 @@
   width: 309px;
   height: 387px;
 
-  background: #ff5722;
+  background: #FF5722;
   border-radius: 8px;
 
   margin: 24px;
@@ -195,7 +195,7 @@
 .body-card button {
   width: 40%;
   height: 3em;
-  
+
   font-weight: 500;
   font-size: 14px;
   line-height: 2em;
@@ -396,7 +396,7 @@
   position:absolute;
     left: 0;
   right: 0;
-  background-color:orange;
+  background-color:#FF5722;
   width: 320px;
   height: 160px;
   border-bottom-left-radius:320px;
@@ -420,7 +420,7 @@
 /* ornament */
 
 @media only screen and (max-width: 1050px) {
-  /*strategi kami */ 
+  /*strategi kami */
     .ball-strategi {
   width: 160px;
   height: 80px;
@@ -688,7 +688,7 @@
     line-height: 21px;
     text-align: center;
   }
-  
+
  /*strategi kami */
 .ball-strategi {
   width: 120px;

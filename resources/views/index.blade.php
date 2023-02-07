@@ -66,43 +66,43 @@
     </section> --}}
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="border-radius:50%;width:18px;height:20px"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" style="border-radius:50%;width:18px;height:20px"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" style="border-radius:50%;width:18px;height:20px"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/c-1.jpg')}}" class="d-block w-100" height="600px" alt="...">
+            <img src="{{asset('assets/img/landing-page/c-1.jpg')}}" class="d-block w-100" height="900px" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h3 style="background-color: rgb(8, 207, 207);width: 450px;padding: 3px 5px 5px 3px;" class="text-start">Strategi kami untuk perusahaan</h3>
-              <p class="text-start">Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan yang terencana dengan tepat, mengoptimalkan fleksibilitas target perusahaan, dan menciptakan nilai berkelanjutan untuk semua  yang kami lakukan.  </p>
+              <h3 style="background-color: #27C6D9;width: 641px;height:74px;padding: 3px 5px 5px 3px;margin-top:-430px;font-size:36px;font-weight:600;line-height:54px;" class="text-start">Strategi kami untuk perusahaan</h3>
+              <p class="text-start" style="line-height: 30px;font-weight:400">Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan <br>yang terencana dengan tepat, mengoptimalkan fleksibilitas target perusahaan, dan <br> menciptakan nilai berkelanjutan untuk semua  yang kami lakukan.  </p>
             </div>
           </div>
           <div class="carousel-item">
         <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/c-2.jpg')}}" class="d-block w-100" height="600px" alt="...">
+            <img src="{{asset('assets/img/landing-page/c-2.jpg')}}" class="d-block w-100" height="900px" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h3 style="background-color: aqua;width: 380px; padding: 3px 5px 5px 3px;"class="text-start">Strategi kami untuk Klien</h3>
-              <p class="text-start">Kami berkomitmen untuk memahami setiap nuansa kebutuhan mereka, menggunakan semua energi pribadi dan  kreatifitas kami untuk membuat kesepakatan terbaik dan melakukan sepenuh daya kami untuk membantu mencapai tujuan mereka.</p>
+              <h3 style="background-color: #27C6D9;width: 481px;height:74px; padding: 3px 5px 5px 3px;margin-top:-430px;font-size:36px;font-weight:600;line-height:54px;"class="text-start">Strategi kami untuk Klien</h3>
+              <p class="text-start" style="line-height: 30px">Kami berkomitmen untuk memahami setiap nuansa kebutuhan mereka, menggunakan <br> semua energi pribadi dan  kreatifitas kami untuk membuat kesepakatan terbaik dan <br> melakukan sepenuh daya kami untuk membantu mencapai tujuan mereka.</p>
             </div>
           </div>
           <div class="carousel-item">
                <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/c-3.jpg')}}" class="d-block w-100"height="600px" alt="...">
+            <img src="{{asset('assets/img/landing-page/c-3.jpg')}}" class="d-block w-100"height="900px" alt="...">
             <div class="carousel-caption d-none d-md-block ">
 
-              <h3 style="background-color: aqua;width: 400px; padding: 3px 5px 5px 3px;" class="text-start">Strategi kami untuk Tim</h3>
-              <p class="text-start"> Kami berkomitmen untuk mendorong sebuah pendekatan kolaboratif untuk memecahkan masalah klien, untuk menumbuhkan lingkungan kerja yang inklusif, sehat dan memberikan kesempatan yang memungkinkan orang untuk belajar,mencapai,dan mempertahakan kesemimbangan kerja/kehidupan yang memuaskan.</p>
+              <h3 style="background-color: #27C6D9;width: 460px;height:74px; padding: 3px 5px 5px 3px;margin-top:-430px;font-size:36px;font-weight:600;line-height:54px" class="text-start">Strategi kami untuk Tim</h3>
+              <p class="text-start" style="line-height: 30px"> Kami berkomitmen untuk mendorong sebuah pendekatan kolaboratif untuk memecahkan <br> masalah klien, untuk menumbuhkan lingkungan kerja yang inklusif, sehat dan memberikan <br> kesempatan yang memungkinkan orang untuk belajar,mencapai,dan mempertahakan <br> kesemimbangan kerja/kehidupan yang memuaskan.</p>
             </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon" aria-hidden="true" style=" border-style: solid;border-color: white;border-width: 1px;border-radius:30px;width:40px;height:40px;"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon" aria-hidden="true" style=" border-style: solid;border-color: white;border-width: 1px;border-radius:30px;width:40px;height:40px;"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
