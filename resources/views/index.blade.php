@@ -73,7 +73,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/c-1.jpg')}}" class="d-block w-100" height="900px" alt="...">
+            <img src="{{asset('assets/img/landing-page/c-2.jpg')}}" class="d-block w-100" height="900px" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h3 style="background-color: #27C6D9;width: 641px;height:74px;padding: 3px 5px 5px 3px;margin-top:-430px;font-size:36px;font-weight:600;line-height:54px;" class="text-start">Strategi kami untuk perusahaan</h3>
               <p class="text-start" style="line-height: 30px;font-weight:400">Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan <br>yang terencana dengan tepat, mengoptimalkan fleksibilitas target perusahaan, dan <br> menciptakan nilai berkelanjutan untuk semua  yang kami lakukan.  </p>
@@ -81,7 +81,7 @@
           </div>
           <div class="carousel-item">
         <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/c-2.jpg')}}" class="d-block w-100" height="900px" alt="...">
+            <img src="{{asset('assets/img/landing-page/c-3.jpg')}}" class="d-block w-100" height="900px" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h3 style="background-color: #27C6D9;width: 481px;height:74px; padding: 3px 5px 5px 3px;margin-top:-430px;font-size:36px;font-weight:600;line-height:54px;"class="text-start">Strategi kami untuk Klien</h3>
               <p class="text-start" style="line-height: 30px">Kami berkomitmen untuk memahami setiap nuansa kebutuhan mereka, menggunakan <br> semua energi pribadi dan  kreatifitas kami untuk membuat kesepakatan terbaik dan <br> melakukan sepenuh daya kami untuk membantu mencapai tujuan mereka.</p>
@@ -89,7 +89,7 @@
           </div>
           <div class="carousel-item">
                <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/c-3.jpg')}}" class="d-block w-100"height="900px" alt="...">
+            <img src="{{asset('assets/img/landing-page/c-1.jpg')}}" class="d-block w-100"height="900px" alt="...">
             <div class="carousel-caption d-none d-md-block ">
 
               <h3 style="background-color: #27C6D9;width: 460px;height:74px; padding: 3px 5px 5px 3px;margin-top:-430px;font-size:36px;font-weight:600;line-height:54px" class="text-start">Strategi kami untuk Tim</h3>
