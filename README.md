@@ -59,7 +59,3 @@ php artisan migrate
 php artisan serve
 ```
 
-Yg belum
-- gambar kotak-kotak di layanan dan blog
-- bug navbar-toggler meresahkan
-- responsive di hero dan about (tablet mode 720px)
