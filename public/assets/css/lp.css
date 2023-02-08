@@ -408,7 +408,7 @@
 
 .carousel-item .carousel-title {
 background-color: #27C6D9;
-font-size:36px;
+font-size:46px;
 width:75%;
 font-weight:600;
 line-height:54px;
@@ -417,8 +417,9 @@ line-height:54px;
 }
 
 .carousel-item .carousel-text {
+
   line-height: 30px;
-  font-size:20px;
+  font-size:30px;
   font-weight:400;
  
 }
@@ -582,6 +583,7 @@ line-height:54px;
   .carousel-item .mt-change{
   margin-top:10rem!important;
 }
+
   /* ----------------------------------------- */
 }
 
