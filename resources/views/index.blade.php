@@ -76,7 +76,9 @@
             <img src="{{asset('assets/img/landing-page/c-2.jpg')}}" class="d-block w-100" height="900px" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h3 style="background-color: #27C6D9;width: 641px;height:74px;padding: 3px 5px 5px 3px;margin-top:-430px;font-size:36px;font-weight:600;line-height:54px;" class="text-start">Strategi kami untuk perusahaan</h3>
-              <p class="text-start" style="line-height: 30px;font-weight:400">Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan <br>yang terencana dengan tepat, mengoptimalkan fleksibilitas target perusahaan, dan <br> menciptakan nilai berkelanjutan untuk semua  yang kami lakukan.  </p>
+              <p class="text-start" style="line-height: 30px;font-weight:400">Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan  </p>
+              <p class="text-start" style="line-height: 30px;font-weight:400">yang terencana dengan tepat, mengoptimalkan fleksibilitas target perusahaan, dan</p>
+              <p class="text-start" style="line-height: 30px;font-weight:400"> menciptakan nilai berkelanjutan untuk semua  yang kami lakukan. </p>
             </div>
           </div>
           <div class="carousel-item">
