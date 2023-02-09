@@ -35,6 +35,7 @@ Route::get('/mentor', [EducareerController::class, 'mentor'])->name('mentor');
 Route::get('/kelas', [EducareerController::class, 'kelas'])->name('kelas');
 Route::get('/flap', [EducareerController::class, 'flap'])->name('flap');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+Route::get('/blog/detailBlog', [BlogController::class, 'detailBlog'])->name('detail-blog');
 
 //Login feature
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
