@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Login Writer Container */
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  padding: 21px 22px;
+}
+
+/* Login Writer Form */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 80px 92px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 24px 0;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.sub-header {
+  color: #7a7a7a;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  margin-bottom: 12px;
+}
+
+.label-input {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+}
+
+input {
+  padding: 10px 16px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 100%;
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+::placeholder {
+  color: #7a7a7a;
+}
+
+.remember-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-btn {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #ff5722;
+  border-radius: 8px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: 1s;
+  margin: 24px 0 0 0;
+}
+
+.login-btn:hover {
+  background: #fe4322;
+}
+
+.account-link {
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  color: #000;
+}
+
+.sign-up {
+  color: #ff5722;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 46px;
+}
+
+.socials-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.socials-link img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+/* Login Writer Hero */
+
+.login-hero {
+  background: #ff5722;
+  width: 100%;
+  flex: 1;
+  padding: 108px 67px 145px 67px;
+  border-radius: 35px;
+}
+
+.img-up {
+  width: 517px;
+  heigth: 390px;
+  margin: 2rem 0;
+}
+
+.header-hero,
+.subheader-hero,
+.slogan-text {
+  color: #ffffff;
+  text-align: center;
+}
+
+.header-hero {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 48px;
+}
+
+.subheader-hero,
+.slogan-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}

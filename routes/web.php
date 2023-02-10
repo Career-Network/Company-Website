@@ -13,6 +13,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EducareerController;
 use App\Http\Controllers\ForgotPasswordController;
+use App\Models\Feature;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +38,10 @@ Route::get('/flap', [EducareerController::class, 'flap'])->name('flap');
 Route::get('/blog', [FeatureController::class, 'blog'])->name('blog');
 Route::get('/syarat-dan-ketentuan', [FeatureController::class, 'tnc'])->name('TnC');
 Route::get('/kebijakan-privasi', [FeatureController::class, 'privacy'])->name('privacy_policy');
+
+//Blog
+//Writer Login feature
+Route::get('/blog/login', [FeatureController::class, 'writer'])->name('login_writer');
 
 //Login feature
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');

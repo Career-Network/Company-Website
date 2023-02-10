@@ -11,6 +11,9 @@ class FeatureController extends Controller
     {
         return view('blog');
     }
+    public function writer() {
+        return view('login-writer');
+    }
     public function tnc()
     {
         return view('TnC');
