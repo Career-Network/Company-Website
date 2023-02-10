@@ -49,11 +49,11 @@
             {{-- Socials Media --}}
             <div class="socials">
                 <p>Ikuti Kami</p>
-                <div class="socials-link">
-                    <img alt="" src="{{ asset('assets/img/login-writer/socials/Twitter.svg') }}" />
-                    <img alt="" src="{{ asset('assets/img/login-writer/socials/Linkedin.svg') }}" />
-                    <img alt="" src="{{ asset('assets/img/login-writer/socials/Instagram.svg') }}" />
-                    <img alt="" src="{{ asset('assets/img/login-writer/socials/Facebook.svg') }}" />
+                <div class="socials-link">    
+                    <a href=""><img alt="" src="{{ asset('assets/img/login-writer/socials/Twitter.svg') }}" /></a>
+                    <a href="https://www.linkedin.com/company/career-network-id/"><img alt="" src="{{ asset('assets/img/login-writer/socials/Linkedin.svg') }}" /></a>
+                    <a href="https://www.instagram.com/careernetwork.id/"><img alt="" src="{{ asset('assets/img/login-writer/socials/Instagram.svg') }}" /></a>
+                    <a href=""><img alt="" src="{{ asset('assets/img/login-writer/socials/Facebook.svg') }}" /></a>
                 </div>
             </div>
         </div>
