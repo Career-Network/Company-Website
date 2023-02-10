@@ -37,7 +37,8 @@
                 </div>
                 {{-- Remember Me --}}
                 <div class="remember-me">
-
+                    <span class="checkbox-input"><input type="checkbox" name="remember-me" id="remember-me">Remember Me</span>
+                    <a href="">Forgot Password?</a>
                 </div>
                 {{-- Login Button --}}
                 <button class="login-btn">
