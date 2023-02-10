@@ -101,8 +101,8 @@ input {
 
 input[type='checkbox'] {
   accent-color: #ff5722;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   margin-right: 0.85rem;
 }
 
@@ -200,7 +200,7 @@ input[type='checkbox'] {
 
 @media only screen and (max-width: 810px) {
   .login-form {
-    padding: 80px 34px;
+    padding: 70px 15px !important;
   }
 
   .header {
@@ -259,6 +259,6 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1200px) {
   .login-form {
-    padding: 80px 90px;
+    padding: 60px 90px;
   }
 }
