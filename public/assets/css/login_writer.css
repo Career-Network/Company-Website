@@ -177,6 +177,7 @@ input[type='checkbox'] {
   background: #ff5722;
   width: 100%;
   flex: 1;
+  height: fit-content;
   padding: 90px 67px;
   border-radius: 35px;
 }
@@ -225,7 +226,7 @@ input[type='checkbox'] {
   }
 
   .login-form {
-    padding: 40px 30px;
+    padding: 40px 20px;
   }
 
   .socials-link img {
