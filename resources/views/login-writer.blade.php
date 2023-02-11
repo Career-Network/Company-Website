@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('assets/css/login_writer.css') }}">
     <title>
-        Login Writer
+        Login Writer | Blog
     </title>
 </head>
 <body>

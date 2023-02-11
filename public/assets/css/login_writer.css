@@ -177,9 +177,13 @@ input[type='checkbox'] {
   background: #ff5722;
   width: 100%;
   flex: 1;
+  -webkit-flex: 1;
   height: fit-content;
   padding: 90px 67px;
   border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .img-up {
