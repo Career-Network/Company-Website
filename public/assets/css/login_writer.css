@@ -71,12 +71,15 @@ form {
 }
 
 input {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+
   padding: 10px 16px;
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.5);
   width: 100%;
   color: #000;
-  border-radius: 8px;
+  
   font-size: 18px;
   line-height: 27px;
   transition: border 1.5s;
