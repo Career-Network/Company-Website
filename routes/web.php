@@ -42,6 +42,7 @@ Route::get('/kebijakan-privasi', [FeatureController::class, 'privacy'])->name('p
 //Blog
 //Writer Login feature
 Route::get('/blog/login', [FeatureController::class, 'writer'])->name('login_writer');
+Route::get('/blog/dashboard', [FeatureController::class, 'dashboard'])->name('dashboard-writer');
 
 //Login feature
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');

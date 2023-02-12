@@ -14,6 +14,9 @@ class FeatureController extends Controller
     public function writer() {
         return view('login-writer');
     }
+    public function dashboard() {
+        return view('dashboard-writer');
+    }
     public function tnc()
     {
         return view('TnC');

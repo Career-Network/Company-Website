@@ -1,8 +1,8 @@
-
 @extends('layouts.navbar_footer',[
   'title'=>'Dashboard',
   'css'=>'assets/css/auth.css'
   ])
+  
 @section('content')
     <main>
       <div class="heading">
