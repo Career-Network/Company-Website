@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" /> 
     <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}" />
     <link rel="stylesheet" href="{{ asset($css) }} "/>
+    @if (isset($cssblog))
+      <link rel="stylesheet" href="{{ asset($cssblog) }} "/>
+    @endif
     <link rel="stylesheet" href="{{ asset('assets/css/footer/simple-footer.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/footer/main_footer.css') }}" />
     

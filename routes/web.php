@@ -67,6 +67,10 @@ Route::get('/blog/uploaded', [FeatureController::class, 'uploaded'])->name(
 Route::get('/blog/schedule', [FeatureController::class, 'schedule'])->name(
     'schedule-writer'
 );
+Route::get('/blog/career-network-telah-luncurkan-website-company', [
+    FeatureController::class,
+    'detail',
+]);
 
 //Login feature
 Route::get('/login', [LoginController::class, 'index'])

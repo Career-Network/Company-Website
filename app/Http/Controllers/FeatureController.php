@@ -23,6 +23,9 @@ class FeatureController extends Controller
     public function schedule() {
         return view('schedule-writer');
     }
+    public function detail() {
+        return view('detail-blog');
+    }
     public function tnc()
     {
         return view('TnC');

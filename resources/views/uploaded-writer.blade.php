@@ -1,6 +1,7 @@
 @extends('layouts.writer-system.mainlayout',[
   'title'=>'Blogs',
-  'css'=>'assets/css/dashboard-writer.css'
+  'css'=>'assets/css/dashboard-writer.css',
+  'active' => 'Blogs'
   ])
 
 @section('content')
@@ -15,7 +16,7 @@
         <p class="blog-desc-card mb-16">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
         </p>
-        <a href="" class="blog-see-more-btn">
+        <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
           Lihat Selengkapnya
         </a>
       </div>
@@ -30,7 +31,7 @@
         <p class="blog-desc-card mb-16">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
         </p>
-        <a href="" class="blog-see-more-btn">
+        <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
           Lihat Selengkapnya
         </a>
       </div>
@@ -45,7 +46,7 @@
         <p class="blog-desc-card mb-16">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
         </p>
-        <a href="" class="blog-see-more-btn">
+        <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
           Lihat Selengkapnya
         </a>
       </div>
@@ -60,7 +61,7 @@
         <p class="blog-desc-card mb-16">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
         </p>
-        <a href="" class="blog-see-more-btn">
+        <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
           Lihat Selengkapnya
         </a>
       </div>
@@ -75,7 +76,7 @@
           <p class="blog-desc-card mb-16">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
           </p>
-          <a href="" class="blog-see-more-btn">
+          <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
             Lihat Selengkapnya
           </a>
       </div>
@@ -90,7 +91,7 @@
         <p class="blog-desc-card mb-16">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
         </p>
-        <a href="" class="blog-see-more-btn">
+        <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
           Lihat Selengkapnya
         </a>
       </div>
@@ -105,7 +106,7 @@
         <p class="blog-desc-card mb-16">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
         </p>
-        <a href="" class="blog-see-more-btn">
+        <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
           Lihat Selengkapnya
         </a>
       </div>
@@ -120,7 +121,7 @@
         <p class="blog-desc-card mb-16">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
         </p>
-        <a href="" class="blog-see-more-btn">
+        <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
           Lihat Selengkapnya
         </a>
       </div>
