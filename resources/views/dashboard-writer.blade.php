@@ -1,5 +1,5 @@
 @extends('layouts.writer-system.mainlayout',[
-  'title'=>'Home',
+  'title'=>'Dashboard',
   'css'=>'assets/css/dashboard-writer.css',
   'active' => 'Home'
   ])
