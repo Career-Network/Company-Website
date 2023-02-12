@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #000;
+  color: #111111;
   text-decoration: none !important;
 }
 
@@ -30,7 +30,7 @@ aside {
 
   display: flex;
   flex-direction: column;
-  flex: 0.7;
+  flex: 0.6;
 
   height: 100vh;
   position: relative;
@@ -156,7 +156,8 @@ main {
 }
 
 form,
-.option-item {
+.option-item,
+.blog-see-more-btn {
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 12px;
@@ -194,12 +195,15 @@ form input {
   justify-content: space-between;
 
   margin-top: 35px;
+  margin-bottom: 20px;
 }
 
 .heading {
   font-size: 1.9rem;
   font-weight: 500;
   line-height: 40px;
+
+  color: #111111;
 }
 
 .profile {
@@ -211,6 +215,8 @@ form input {
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+
+  color: #111111;
 
   margin-top: 1rem;
 }
@@ -230,7 +236,7 @@ form input {
   display: flex;
   justify-content: space-between;
 
-  margin-right: -1rem;
+  margin-right: -0.5rem;
 }
 
 .option-item {
@@ -239,7 +245,7 @@ form input {
 
   cursor: pointer;
 
-  padding: 10px 15px 10px 15px;
+  padding: 8px 24px 8px 24px;
 
   margin-right: 1rem;
 }
@@ -265,4 +271,82 @@ form input {
   margin-right: 0.7rem;
 
   line-height: 30px;
+}
+
+.dropdown-menu {
+  margin-top: 1.2rem !important;
+}
+
+/* Blogs */
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 1rem;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 12px;
+  width: 270px;
+
+  padding: 20px;
+}
+
+.blog-img {
+  width: 230px;
+  height: 107px;
+
+  object-fit: cover;
+
+  border-radius: 6px;
+
+  margin-bottom: 12px;
+}
+
+.blog-author-date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #ff7d54;
+}
+
+.blog-header-card {
+  font-weight: 600;
+  font-size: 1.6rem;
+
+  color: #111111;
+}
+
+.blog-desc-card {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #687083;
+}
+
+.blog-see-more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  cursor: pointer;
+
+  padding: 8px 24px 8px 24px;
+
+  color: #111;
+}
+
+.blog-see-more-btn:hover {
+  color: #111 !important;
+}
+
+/* UTILITIAS */
+
+.mb-16 {
+  margin-bottom: 1rem;
 }
