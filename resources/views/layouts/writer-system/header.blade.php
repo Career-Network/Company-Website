@@ -17,10 +17,10 @@
         </form>
 
         {{-- Profile Section --}}
-        <div class="profile">
+        <a class="profile" href="{{ route('login_writer') }}">
             <img alt="" src="{{ asset('assets/img/profile.png') }}" class="profile-picture" />
             <p>Rifky Chirmansyah</p>
-        </div>
+        </a>
     </section>
 
     {{-- Header Dynamic & Menu Options --}}
