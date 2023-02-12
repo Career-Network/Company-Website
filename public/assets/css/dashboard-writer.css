@@ -169,6 +169,19 @@ main {
   padding: 10px 0px 10px 24px;
 }
 
+.preview {
+  background: inherit;
+  border: 1px solid #ff5722;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+
+  color: #ff5722 !important;
+
+  padding: 10px 0px 10px 24px;
+}
+
 .save {
   background: #fff;
   border: 1px solid #ff5722;
