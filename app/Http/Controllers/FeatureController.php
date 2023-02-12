@@ -17,6 +17,12 @@ class FeatureController extends Controller
     public function dashboard() {
         return view('dashboard-writer');
     }
+    public function uploaded() {
+        return view('uploaded-writer');
+    }
+    public function schedule() {
+        return view('schedule-writer');
+    }
     public function tnc()
     {
         return view('TnC');

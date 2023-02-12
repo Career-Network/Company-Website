@@ -26,7 +26,7 @@
     @include('layouts.writer-system.sidebar')
 
     <main>
-
+      @yield('content')
     </main>
 
     <script

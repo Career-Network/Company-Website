@@ -1,0 +1,143 @@
+/* CSS Reset */
+
+* {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f6faff;
+
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  color: #000;
+  text-decoration: none !important;
+}
+
+/* Sidebar */
+
+aside {
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+
+  height: 100vh;
+  position: relative;
+
+  padding: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-logo {
+  width: 119px;
+  height: 68px;
+}
+
+.menus {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 50px;
+}
+
+.menu-item {
+  border-radius: 6px 0 0 6px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  padding: 12px 40px 12px 12px;
+  margin-bottom: 12px;
+
+  transition: 1s;
+}
+
+.menu-item:hover {
+  background: #ffeee9;
+}
+
+.menu-item:hover .menu-text {
+  color: #ff5722;
+}
+
+.menu-item:hover svg path {
+  fill: #ff5722;
+}
+
+.menu-item svg {
+  margin-right: 0.8rem;
+}
+
+.menu-text {
+  color: #d2d2d2;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.active {
+  background: #ffeee9;
+  color: #ff5722;
+  fill: #ff5722;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: center;
+
+  position: absolute;
+  bottom: 2.5rem;
+  margin-right: 1rem;
+
+  color: #27c6d9;
+  font-weight: 600;
+}
+
+.socials-link {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 0.3rem;
+  margin-left: 1rem;
+}
+
+.social p {
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.socials-link img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+/* Main Area */
+
+main {
+  background: #f6faff;
+
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+
+  height: 100vh;
+
+  overflow: scroll;
+}
