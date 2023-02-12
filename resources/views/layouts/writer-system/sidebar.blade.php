@@ -31,7 +31,6 @@
                 </svg>
 
                 <span class="menu-text {{ $active == "Schedule"? "active" : "" }}">Schedule</span>
-
             </a>
         </div>
     </section>
