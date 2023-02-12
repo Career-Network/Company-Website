@@ -101,8 +101,5 @@
     ></script>
 
     <script src="{{ asset('assets/js/script.js') }}"></script>
-    <script>
-      const btnSidebar = document.getElementsByClassName("sidebar-btn")[0];
-    </script>
   </body>
 </html>
