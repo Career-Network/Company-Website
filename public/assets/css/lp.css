@@ -280,7 +280,7 @@
   justify-items: center;
   justify-content: center;
   padding: 40px 30px;
- 
+
 }
 
 .slider {
@@ -779,3 +779,56 @@ padding:10px;
     }
 }
 
+#judul{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+color: #111111;
+}
+#des{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+color: #7A7A7A;
+
+}
+.name{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+color: #FF5722;
+
+}
+.date{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+color: #111111;
+}
+
+.pagination {
+    display: inline-block;
+  }
+
+  .pagination a {
+    color: #FF5722;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .pagination a.active {
+    background: #FF5722;
+    color: white;
+  }
+
+  .pagination a:hover:not(.active) {background: #FF5722;color:whitesmoke;}
