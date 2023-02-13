@@ -142,7 +142,7 @@
                 <p class="bt_3">Nikmati Cerita, Hiburan, Informasi serta Promo menarik dari  blog Career Network. </p>
                 <button><a href="{{ route('blog') }}" class="link">Lihat Lebih Banyak</a></button>
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-7">  
                 <div class="slider owl-carousel">
                     <div class="carddy-1">
                         <div class="img">

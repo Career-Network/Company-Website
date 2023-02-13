@@ -35,6 +35,8 @@ Route::get('/mentor', [EducareerController::class, 'mentor'])->name('mentor');
 Route::get('/kelas', [EducareerController::class, 'kelas'])->name('kelas');
 Route::get('/flap', [EducareerController::class, 'flap'])->name('flap');
 Route::get('/blog', [FeatureController::class, 'blog'])->name('blog');
+Route::get('/slicing_blog', [EducareerController::class, 'slicing'])->name('slcing');
+
 Route::get('/syarat-dan-ketentuan', [FeatureController::class, 'tnc'])->name('TnC');
 Route::get('/kebijakan-privasi', [FeatureController::class, 'privacy'])->name('privacy_policy');
 
