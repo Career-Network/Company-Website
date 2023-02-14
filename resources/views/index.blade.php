@@ -75,7 +75,7 @@
         <div class="carousel-inner  ">
           <div class="carousel-item active" >
             <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/c-2.jpg')}}" class="d-block w-100" height="900px" alt="...">
+            <img src="{{asset('assets/img/landing-page/c-2.png')}}" class="d-block w-100" height="900px" alt="...">
                   <div class="carousel-caption" >
               <h3 class="carousel-title" class="text-start" >Strategi kami untuk perusahaan</h3>
               <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan </p>
@@ -86,7 +86,7 @@
           </div>
           <div class="carousel-item ">
         <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/c-3.jpg')}}" class="d-block w-100" height="900px" alt="...">
+            <img src="{{asset('assets/img/landing-page/c-3.png')}}" class="d-block w-100" height="900px" alt="...">
             <div class="carousel-caption">
               <h3 class="carousel-title" class="text-start">Strategi kami untuk Klien</h3>
               <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">Kami berkomitmen untuk memahami setiap nuansa kebutuhan mereka, menggunakan
@@ -96,7 +96,7 @@
           </div>
           <div class="carousel-item">
                <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/c-1.jpg')}}" class="d-block w-100"height="900px" alt="...">
+            <img src="{{asset('assets/img/landing-page/c-1.png')}}" class="d-block w-100"height="900px" alt="...">
             <div class="carousel-caption mt-change">
 
               <h3 class="text-start carousel-title mt-change-title">Strategi kami untuk Tim</h3>
