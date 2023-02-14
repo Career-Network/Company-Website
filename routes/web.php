@@ -56,7 +56,7 @@ Route::get('/kebijakan-privasi', [FeatureController::class, 'privacy'])->name(
 //Blog
 //Writer Login feature
 Route::get('/blog/login', [FeatureController::class, 'writer'])->name(
-    'login_writer'c
+    'login_writer'
 );
 Route::get('/blog/dashboard', [FeatureController::class, 'dashboard'])->name(
     'dashboard-writer'
