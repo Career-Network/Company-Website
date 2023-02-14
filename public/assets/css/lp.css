@@ -282,13 +282,13 @@
   justify-items: center;
   justify-content: center;
   padding: 40px 30px;
-  background-color:blue !important;
+  /* background-color:blue !important; */
 }
 
 .slider {
   max-width: 1150px;
   display: flex;
-  background-color:pink !important;
+  /* background-color:pink !important; */
 }
 
 .slider .carddy-1 {
@@ -500,7 +500,7 @@ padding:10px;
   /* Card */
   .carddy {
     padding: 34px 20px;
-    background-color:blue !important;
+    /* background-color:blue !important; */
     width: 225px;
     height: 283px;
   }
