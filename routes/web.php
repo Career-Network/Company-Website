@@ -46,6 +46,7 @@ Route::get('/mentor', [EducareerController::class, 'mentor'])->name('mentor');
 Route::get('/kelas', [EducareerController::class, 'kelas'])->name('kelas');
 Route::get('/flap', [EducareerController::class, 'flap'])->name('flap');
 Route::get('/blog', [FeatureController::class, 'blog'])->name('blog');
+Route::get('/blog/detail-blog', [FeatureController::class, 'detailBlog'])->name('detail-blog');
 Route::get('/syarat-dan-ketentuan', [FeatureController::class, 'tnc'])->name(
     'TnC'
 );

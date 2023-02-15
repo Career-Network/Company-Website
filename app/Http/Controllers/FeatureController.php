@@ -11,6 +11,10 @@ class FeatureController extends Controller
     {
         return view('blog');
     }
+    public function detailBlog()
+    {
+        return view('detail-bigBlog');
+    }
     public function writer() {
         return view('login-writer');
     }
