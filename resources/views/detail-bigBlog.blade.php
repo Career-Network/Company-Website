@@ -1,6 +1,6 @@
 @extends('layouts.navbar_footer',[
   'title'=>'Detail Blog',
-  'css'=>'assets/css/detail-blog.css',
+  'css'=>'assets/css/detail-bigBlog.css',
   'footer'=> true
   ])
 
