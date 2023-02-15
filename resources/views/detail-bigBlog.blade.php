@@ -36,7 +36,7 @@
                             <div class="share-button-modal" id="share-button-modal">
                                 <div class="modal-title">
                                     <div class="modal-title-text">
-                                        <h3>Judul Artikel</h3>
+                                        <h6>Career Network telah luncurkan Website Company</h6>
                                     </div>
                                     <div class="modal-title-button">
                                         <button class="close">
@@ -50,16 +50,21 @@
                                 <div class="modal-icon">
                                     <ul>
                                         <li>
-                                            <div class="icon-img">
+                                            <div class="rounded" id="myTooltip" hidden>
+                                                <span class="tooltiptext text-white" >Copy to clipboard</span>
+                                            </div>
+                                            <div class="icon-img clipboard" id="clipboard" onclick="copyToClipboard()" onmouseout="outfunc()">
                                                 <img src="{{ asset('assets/img/detail-blog/Copy.svg') }}" alt="gambar" />
                                             </div>
                                             <div class="icon-text">
                                                 <h4>Copy link</h4>
                                             </div>
                                         </li>
-                                           <li>
+                                        <li>
                                             <div class="icon-img">
-                                                <img src="{{ asset('assets/img/detail-blog/Facebook.svg') }}" alt="gambar" />
+                                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ url()->current() }}" target="_blank">
+                                                    <img src="{{ asset('assets/img/detail-blog/Facebook.svg') }}" alt="gambar" />
+                                                </a>
                                             </div>
                                             <div class="icon-text">
                                                 <h4>Facebook</h4>
@@ -67,7 +72,10 @@
                                         </li>
                                          <li>
                                             <div class="icon-img">
-                                                <img src="{{ asset('assets/img/detail-blog/Twitter.svg') }}" alt="gambar" />
+                                                <a href="https://twitter.com/intent/tweet?url={{ url()->current() }}&text='Hallo Career Network'
+                                                    ">
+                                                    <img src="{{ asset('assets/img/detail-blog/Twitter.svg') }}" alt="gambar" />
+                                                </a>
                                             </div>
                                             <div class="icon-text">
                                                 <h4>Twitter</h4>
@@ -75,7 +83,9 @@
                                         </li>
                                          <li>
                                             <div class="icon-img">
-                                                <img src="{{ asset('assets/img/detail-blog/Whatsapp.svg') }}" alt="gambar" />
+                                                <a href="https://wa.me/?text={{ url()->current() }}">
+                                                    <img src="{{ asset('assets/img/detail-blog/Whatsapp.svg') }}" alt="gambar" />
+                                                </a>
                                             </div>
                                             <div class="icon-text">
                                                 <h4>Whatsapp</h4>
@@ -222,9 +232,9 @@
 
 
     {{-- </section> --}}
-  {{-- <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script>
-    $(document).ready(function() {
+     $(document).ready(function() {
         $("#share-button-bagikan").click(function() {
             $("#share-button-modal").css("display", "flex");
         })
@@ -232,5 +242,14 @@
              $("#share-button-modal").css("display", "none");
         })
     })
-  </script> --}}
+
+    function copyToClipboard() {
+       var copyText = "{{ url()->current() }}";
+       navigator.clipboard.writeText(copyText);
+      // ketika di klik id myTooltip properti html hiddennya remove dan tambahkan lagi setelah 4 detik
+        document.getElementById("myTooltip").hidden = false;
+        setTimeout(function(){ document.getElementById("myTooltip").hidden = true; }, 1500);
+    }
+    
+  </script>
   @endsection
