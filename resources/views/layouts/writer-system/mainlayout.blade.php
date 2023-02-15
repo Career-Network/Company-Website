@@ -27,7 +27,9 @@
 
     <main>
       @include('layouts.writer-system.header')
-      @yield('content')
+      <div class="content">
+        @yield('content')
+      </div>
     </main>
 
     <script
