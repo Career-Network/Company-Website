@@ -314,6 +314,7 @@ form input {
 
 .notification-section {
   position: relative;
+  cursor: pointer;
 }
 
 .notification-count {
@@ -616,6 +617,10 @@ textarea {
 
 .btn-section {
   display: flex;
+}
+
+.controller {
+  cursor: pointer;
 }
 
 .schedule-section h2 {

@@ -13,7 +13,7 @@
         <div class="controller-day-section">
 
           {{-- Button Prev Day --}}
-          <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="controller btn-prev" width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.81516 1.06564C10.4002 1.65064 10.4002 2.59564 9.81516 3.18064L3.99516 9.00064L9.81516 14.8206C10.4002 15.4056 10.4002 16.3506 9.81516 16.9356C9.23016 17.5206 8.28516 17.5206 7.70016 16.9356L0.815155 10.0506C0.230155 9.46564 0.230155 8.52064 0.815155 7.93564L7.70016 1.05064C8.27016 0.480643 9.23016 0.480643 9.81516 1.06564Z" fill="black"/>
           </svg>
           {{-- End of Button Prev Day --}}
@@ -21,7 +21,7 @@
           <p>Hari Ini</p>
 
           {{-- Button Next Day --}}
-          <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="controller btn-next" width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.739531 1.06564C0.154531 1.65064 0.154531 2.59564 0.739531 3.18064L6.55953 9.00064L0.739531 14.8206C0.154531 15.4056 0.154531 16.3506 0.739531 16.9356C1.32453 17.5206 2.26953 17.5206 2.85453 16.9356L9.73953 10.0506C10.3245 9.46564 10.3245 8.52064 9.73953 7.93564L2.85453 1.05064C2.28453 0.480643 1.32453 0.480643 0.739531 1.06564Z" fill="black"/>
           </svg>
           {{-- End of Button Next Day --}}
