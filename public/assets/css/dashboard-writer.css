@@ -179,10 +179,6 @@ header {
   position: relative;
 }
 
-.header-dynamic-options {
-  padding: 0 1rem;
-}
-
 .search-profile-bar {
   display: flex;
   flex-direction: row;
@@ -422,6 +418,23 @@ form input {
   line-height: 30px;
 
   transition: 1s;
+}
+
+.lihat-blog {
+  background: #c0f8ff;
+  color: #004851;
+
+  border: none;
+
+  font-weight: 700 !important;
+  font-size: 16px;
+  line-height: 30px;
+
+  transition: 1s;
+}
+
+.lihat-blog:hover {
+  color: #004851 !important;
 }
 
 .create-blog:hover {
@@ -1052,6 +1065,148 @@ form input {
   border-radius: 5px;
   height: 40px;
   width: 40px;
+}
+
+/* DASHBOARD */
+
+.artikel-kamu {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.heading-dashboard {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+
+  color: #111111;
+}
+
+.heading-dashboard.jadwal {
+  color: #ff5722;
+}
+
+.card-blog-terdekat img {
+  width: 100%;
+  height: 200px;
+
+  border-radius: 8px;
+
+  object-fit: cover;
+}
+
+.card-blog-terdekat h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #111111;
+}
+
+.card-blog-terdekat p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #cccccc;
+}
+
+.artikel-terbaik {
+  background: #fff;
+  border-radius: 16px;
+
+  height: fit-content;
+
+  flex: 5;
+
+  padding: 1.5rem;
+}
+
+.artikel-terbaik .blog-see-more-btn {
+  font-weight: 500;
+}
+
+.artikel-terbaik .blog-see-more-btn:hover {
+  background: #fff;
+  color: #ff5722 !important;
+}
+
+.artikel-terbaik .card-blog-terdekat {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+
+  border-bottom: 0.5px solid #d2d2d2;
+}
+
+.artikel-terbaik .card-blog-terdekat img {
+  width: 80px;
+  height: 80px;
+}
+
+.jadwal-terdekat {
+  background: #fff;
+  border-radius: 16px;
+
+  height: fit-content;
+
+  flex: 2.5;
+
+  padding: 1.5rem;
+}
+
+.kelola-postingan .header-blogs {
+  margin: 0 !important;
+  padding: 1.5rem 0 1rem 0;
+
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.kelola-postingan .header-blogs h1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #16a6b7;
+}
+
+.kelola-postingan {
+  background: #fff;
+  border-radius: 16px;
+
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.kelola-postingan .blogs {
+  padding: 1.5rem 0;
+
+  grid-template-columns: repeat(4, auto);
+}
+
+.kelola-postingan img {
+  width: 100%;
+  height: 150px;
+
+  object-fit: cover;
+}
+
+.kelola-postingan .blog-author-date {
+  color: #111;
+}
+
+.kelola-postingan .blog-header-card,
+.kelola-postingan .blog-see-more-btn {
+  font-size: 1rem;
+}
+
+.kelola-postingan .option-item {
+  justify-content: center;
 }
 
 /* MOBILE */
