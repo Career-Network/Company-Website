@@ -197,7 +197,6 @@ header {
   padding: 1.5rem 0.5rem;
 }
 
-.form-header,
 .option-item,
 .blog-see-more-btn {
   background: #fff;
@@ -208,6 +207,29 @@ header {
   align-items: center;
 
   padding: 15px 0px 15px 24px;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #f4f4f4;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 12px;
+
+  width: 40%;
+
+  padding: 12px 24px 12px 24px;
+}
+
+.form-header input {
+  background: #f4f4f4;
+
+  margin-top: -0.1rem;
 }
 
 .option-item span {
@@ -227,6 +249,10 @@ header {
   color: #ff5722 !important;
 
   padding: 10px 0px 10px 24px;
+}
+
+.preview span {
+  font-weight: 500;
 }
 
 .save {
@@ -249,10 +275,6 @@ header {
   margin-top: 88px;
 }
 
-.form-header svg {
-  margin-top: -5px;
-}
-
 form input {
   margin-left: 1rem;
   margin-top: 4px;
@@ -264,10 +286,10 @@ form input {
 }
 
 ::placeholder {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
 
-  color: #ccc;
+  color: #bebebe;
 }
 
 .header-dynamic-options {
@@ -419,6 +441,8 @@ form input {
   display: flex;
   flex-direction: column;
 
+  border-radius: 16px;
+
   background: #fff;
 }
 
@@ -445,7 +469,7 @@ form input {
 
   background: #fff;
 
-  padding: 0 1.5rem 0 1.5rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .blog-card {
@@ -812,8 +836,16 @@ textarea {
   color: #a3a3a3;
 }
 
+.breadcrums:hover a {
+  color: #a3a3a3 !important;
+}
+
 .breadcrums a:nth-child(1) {
   color: #16a6b7;
+}
+
+.breadcrums:hover a:nth-child(1) {
+  color: #16a6b7 !important;
 }
 
 .breadcrums a:nth-child(2n + 1) {
@@ -869,6 +901,92 @@ textarea {
   font-weight: 700;
 }
 
+.modal {
+  top: 15rem !important;
+}
+
+.modal-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding: 1rem;
+}
+
+.modal-head p {
+  text-align: left !important;
+}
+
+.modal-content {
+  width: 100%;
+
+  margin-top: -1.5rem;
+
+  border: none !important;
+  outline: none;
+
+  padding: 1rem;
+}
+
+.modal-content button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.modal-content button span {
+  text-align: center !important;
+}
+
+.form-edit {
+  display: none;
+
+  padding: 1.5rem;
+}
+
+.form-edit label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+
+  margin-bottom: 8px;
+
+  color: #111111;
+}
+
+form input {
+  margin-left: 0 !important;
+  position: relative;
+
+  font-weight: 500;
+}
+
+.input-container {
+  margin-bottom: 1rem;
+}
+
+.col:nth-child(1) {
+  margin-right: 3rem !important;
+}
+
+.button-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  margin-right: -3rem;
+}
+
+/* input[type='date' i]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -20%;
+} */
 /* RESPONSIVE */
 
 @media (min-width: 600px) {

@@ -65,7 +65,7 @@
         <span>Hapus</span>
       </a>
       {{-- End of Button Delete --}} {{-- Button Edit --}}
-      <button class="option-item edit" id="edit">
+      <a href="" class="option-item edit">
         <svg
           width="24"
           height="24"
@@ -91,7 +91,7 @@
         </svg>
 
         <span>Edit</span>
-      </>
+      </a>
       {{-- End of Button Edit --}}
     </div>
   </section>
@@ -105,55 +105,9 @@
     <div class="content-blog">
       <span class="bold">Career Network</span> - Dalam pertama kali Career Network mengeluarkan website company resmi. Dengan mengusung tema “Accelerate your growth with us” memberikan sentuhan gabungan antara formal dan interaktif. Sehingga dapat beradaptasi dengan perkembangan zaman, terutama anak muda. Sebagai wujud komitmen terhadap client dan investor, website company hadir untuk memberikan informasi perusahaan secara jelas, ringkas dan valid. Dengan harapan sebagai awalan untuk meningkatkan promosi brand yang dikenal luas dan menjalin koneksi dengan client potensial. <br /><br />
       Terdapat berbagai ilustrasi yang ada di website untuk membantu pengguna untuk memahami dan membayangkan suatu informasi agar lebih baik. Selain itu, membangun daya tarik emosional yang kuat turut menjadi tujuan dalam membangun website. Ditambah keunikan warna yang selaras antara orange yang menjadi identitas perusahaan dengan perpaduan warna biru. <br /><br />
-      Career Network memiliki dua produk, yaitu Career Network EduCareer untuk memberikan pelatihan online bagi mahasiswa/i secara 1 on 1 dan kelompok dengan mentor yang expert di bidangnya dan kurikulum terstruktur. Selain itu, terdapat produk lain yaitu Career Network Sonic sebagai layanan pemesanan jasa Freelance untuk membantu kebutuhan masyarakat. Kedua produk ini masih pada tahap pengembangan dan akan diluncurkan pada beberapa bulan kedepan. Stay tune!l.</p>
+      Career Network memiliki dua produk, yaitu Career Network EduCareer untuk memberikan pelatihan online bagi mahasiswa/i secara 1 on 1 dan kelompok dengan mentor yang expert di bidangnya dan kurikulum terstruktur. Selain itu, terdapat produk lain yaitu Career Network Sonic sebagai layanan pemesanan jasa Freelance untuk membantu kebutuhan masyarakat. Kedua produk ini masih pada tahap pengembangan dan akan diluncurkan pada beberapa bulan kedepan. Stay tune!l.
     </div>
   </section>
-  
-  <form method="" action="" class="form-edit">
-      <div class="input-container">
-        <label class="form-check-label" for="judul">Judul Artikel</label>
-        <input class="form-control" type="text" id="judul" value="Career Network telah Luncurkan Website Company">
-      </div>
-
-      <div class="row input-container justify-content-between">
-        <div class="col mr-3">
-          <label class="form-check-label" for="author">Author</label>
-          <input type="text" class="form-control" id="author" aria-label="First name" value="Indah Mariana"> 
-        </div>
-        <div class="col">
-          <label class="form-check-label" for="tanggal_update">Tanggal Update</label>
-          <input type="date" class="form-control"  aria-label="Last name">
-        </div>
-      </div>
-
-      <div class="input-container">
-        <label class="form-check-label" for="tagar">Tagar</label>
-        <input class="form-control" type="text" id="tagar" value="#CareerNetwork">
-      </div>
-
-      <div class="input-container">
-        <label class="form-check-label" for="thumbnail">Thumbnail</label>
-        <input class="form-control" type="file" id="thumbnail">
-      </div>
-
-      <div class="input-container">
-        <label class="form-check-label" for="detail">Detail Artikel</label>
-        <textarea id="detail">
-          <b>Career Network</b> - Dalam pertama kali Career Network mengeluarkan website company resmi. Dengan mengusung tema “Accelerate your growth with us” memberikan sentuhan gabungan antara formal dan interaktif. Sehingga dapat beradaptasi dengan perkembangan zaman, terutama anak muda. Sebagai wujud komitmen terhadap client dan investor, website company hadir untuk memberikan informasi perusahaan secara jelas, ringkas dan valid. Dengan harapan sebagai awalan untuk meningkatkan promosi brand yang dikenal luas dan menjalin koneksi dengan client potensial. <br /><br />
-          Terdapat berbagai ilustrasi yang ada di website untuk membantu pengguna untuk memahami dan membayangkan suatu informasi agar lebih baik. Selain itu, membangun daya tarik emosional yang kuat turut menjadi tujuan dalam membangun website. Ditambah keunikan warna yang selaras antara orange yang menjadi identitas perusahaan dengan perpaduan warna biru. <br /><br />
-          Career Network memiliki dua produk, yaitu Career Network EduCareer untuk memberikan pelatihan online bagi mahasiswa/i secara 1 on 1 dan kelompok dengan mentor yang expert di bidangnya dan kurikulum terstruktur. Selain itu, terdapat produk lain yaitu Career Network Sonic sebagai layanan pemesanan jasa Freelance untuk membantu kebutuhan masyarakat. Kedua produk ini masih pada tahap pengembangan dan akan diluncurkan pada beberapa bulan kedepan. Stay tune!l.
-        </textarea>
-      </div>
-
-      <div class="button-section">
-        <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-            <span>Batalkan</span>
-        </button>
-        <button href="" class="option-item create-blog mt-3" data-bs-dismiss="modal" aria-label="Close">
-            <span>Simpan Perubahan</span>
-        </button>
-      </div>
-  </form>
 </div>
 
 <!-- Modal -->
@@ -175,47 +129,4 @@
     </div>
   </div>
 </div>
-
-<style>
-  * { font-family: 'Poppins', sans-serif !important; }
-</style>
-<script src="https://cdn.tiny.cloud/1/zhf194pj9ma6yja8lros9l6orpka9f1dvnj5zhbtfk3m26lf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-<script>
-  tinymce.init({
-    selector: 'textarea',
-    height: 500,
-    plugins: [
-      'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
-      'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
-      'insertdatetime', 'media', 'table', 'help', 'wordcount', 'image code'
-    ],
-    toolbar: 'undo redo | blocks | ' +
-    'bold italic backcolor | alignleft aligncenter ' +
-    'alignright alignjustify | bullist numlist outdent indent | ' +
-    'removeformat | help | image code',
-    /* without images_upload_url set, Upload tab won't show up*/
-    images_upload_url: 'postAcceptor.php',
-
-    /* we override default upload handler to simulate successful upload*/
-    images_upload_handler: function (blobInfo, success, failure) {
-      setTimeout(function () {
-        /* no matter what you upload, we will turn it into TinyMCE logo :)*/
-        success('http://moxiecode.cachefly.net/tinymce/v9/images/logo.png');
-      }, 2000);
-    },
-    content_style: 'body { font-family:Poppins,Arial,sans-serif; font-size:16px }'
-  });
-
-  const btnEdit     = document.getElementById("edit");
-  const headerBlog  = document.getElementsByClassName("header-blogs")[0];
-  const blogsDetail = document.getElementsByClassName("blogs-detail")[0];
-  const formEdit    = document.getElementsByClassName("form-edit")[0]
-
-  btnEdit.addEventListener('click', () => {
-    headerBlog.style.display  = "none";
-    blogsDetail.style.display = "none";
-    formEdit.style.display    = "flex";
-    formEdit.style.flexDirection = "column";
-  })
-</script>
 @endsection
