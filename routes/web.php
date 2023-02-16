@@ -73,7 +73,7 @@ Route::get('/blog/create', [FeatureController::class, 'create'])->name(
 Route::get('/blog/career-network-telah-luncurkan-website-company', [
     FeatureController::class,
     'detail',
-]);
+])->name('detail-blog-writer');
 
 //Login feature
 Route::get('/login', [LoginController::class, 'index'])

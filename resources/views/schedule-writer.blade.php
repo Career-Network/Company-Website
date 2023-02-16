@@ -35,7 +35,7 @@
         <div class="btn-section">
           {{-- Button Refresh --}}
           <span class="option-item">
-              <span>Refresh</span>
+              <span>Segarkan</span>
               <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.10547 1.66406V5.66511H5.10652" stroke="#272727" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M15.7745 12.335V8.33398H11.7734" stroke="#272727" stroke-linecap="round" stroke-linejoin="round"/>
