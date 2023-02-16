@@ -37,6 +37,10 @@
                     <p>Anda dapat menjadwalkan setiap artikel yang dibuat melalui halaman ini</p>
                 @endif
 
+                @if ($title === "Dashboard")
+                    <h1 class="heading">Selamat Datang, Rifky Chirmansyah</h1>
+                @endif
+
                 @if ($title === "Blogs")
                     <h1 class="heading">Blog</h1>
                     <p>Semua Artikel</p>
@@ -81,7 +85,7 @@
                             </ul>
                         </span> --}}
 
-                        @if ($title === "Blogs" && !isset($detail))
+                        @if ($title === "Blogs" || $title === "Dashboard" && !isset($detail))
                             <a href="{{ route('create-writer') }}" class="option-item create-blog">
                                 <span>Buat Blog</span>
                                 <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">

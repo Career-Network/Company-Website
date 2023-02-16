@@ -39,120 +39,184 @@
 
     <section class="blogs">
       <div class="blog-card">
-        <div class="blog-thumbnail mb-16">
-          <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
-          <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+        <div class="blog-content">
+            <div class="blog-thumbnail mb-16">
+              <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
+            </div>
+
+            <div class="blog-desc">
+              <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+              <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
+              <p class="blog-desc-card mb-16 mobile-desc">
+                Lorem ipsum dolor sit amet, consectetur,  ...
+              </p>
+              <p class="blog-desc-card mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
+              </p>
+            </div>
         </div>
         
-        <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
-        <p class="blog-desc-card mb-16">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
-        </p>
         <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
           Lihat Selengkapnya
         </a>
       </div>
 
       <div class="blog-card">
-        <div class="blog-thumbnail mb-16">
-          <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
-          <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+        <div class="blog-content">
+            <div class="blog-thumbnail mb-16">
+              <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
+            </div>
+
+            <div class="blog-desc">
+              <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+              <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
+              <p class="blog-desc-card mb-16 mobile-desc">
+                Lorem ipsum dolor sit amet, consectetur,  ...
+              </p>
+              <p class="blog-desc-card mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
+              </p>
+            </div>
         </div>
         
-        <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
-        <p class="blog-desc-card mb-16">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
-        </p>
+        <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
+          Lihat Selengkapnya
+        </a>
+      </div>
+      
+      <div class="blog-card">
+        <div class="blog-content">
+            <div class="blog-thumbnail mb-16">
+              <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
+            </div>
+
+            <div class="blog-desc">
+              <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+              <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
+              <p class="blog-desc-card mb-16 mobile-desc">
+                Lorem ipsum dolor sit amet, consectetur,  ...
+              </p>
+              <p class="blog-desc-card mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
+              </p>
+            </div>
+        </div>
+        
         <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
           Lihat Selengkapnya
         </a>
       </div>
 
       <div class="blog-card">
-        <div class="blog-thumbnail mb-16">
-          <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
-          <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+        <div class="blog-content">
+            <div class="blog-thumbnail mb-16">
+              <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
+            </div>
+
+            <div class="blog-desc">
+              <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+              <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
+              <p class="blog-desc-card mb-16 mobile-desc">
+                Lorem ipsum dolor sit amet, consectetur,  ...
+              </p>
+              <p class="blog-desc-card mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
+              </p>
+            </div>
         </div>
         
-        <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
-        <p class="blog-desc-card mb-16">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
-        </p>
         <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
           Lihat Selengkapnya
         </a>
       </div>
 
       <div class="blog-card">
-        <div class="blog-thumbnail mb-16">
-          <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
-          <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+        <div class="blog-content">
+            <div class="blog-thumbnail mb-16">
+              <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
+            </div>
+
+            <div class="blog-desc">
+              <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+              <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
+              <p class="blog-desc-card mb-16 mobile-desc">
+                Lorem ipsum dolor sit amet, consectetur,  ...
+              </p>
+              <p class="blog-desc-card mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
+              </p>
+            </div>
         </div>
         
-        <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
-        <p class="blog-desc-card mb-16">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
-        </p>
         <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
           Lihat Selengkapnya
         </a>
       </div>
 
       <div class="blog-card">
-          <div class="blog-thumbnail mb-16">
-            <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
-            <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
-          </div>
-          
-          <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
-          <p class="blog-desc-card mb-16">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
-          </p>
-          <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
-            Lihat Selengkapnya
-          </a>
-      </div>
+        <div class="blog-content">
+            <div class="blog-thumbnail mb-16">
+              <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
+            </div>
 
-      <div class="blog-card">
-        <div class="blog-thumbnail mb-16">
-          <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
-          <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+            <div class="blog-desc">
+              <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+              <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
+              <p class="blog-desc-card mb-16 mobile-desc">
+                Lorem ipsum dolor sit amet, consectetur,  ...
+              </p>
+              <p class="blog-desc-card mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
+              </p>
+            </div>
         </div>
         
-        <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
-        <p class="blog-desc-card mb-16">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
-        </p>
         <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
           Lihat Selengkapnya
         </a>
       </div>
 
       <div class="blog-card">
-        <div class="blog-thumbnail mb-16">
-          <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
-          <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+        <div class="blog-content">
+            <div class="blog-thumbnail mb-16">
+              <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
+            </div>
+
+            <div class="blog-desc">
+              <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+              <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
+              <p class="blog-desc-card mb-16 mobile-desc">
+                Lorem ipsum dolor sit amet, consectetur,  ...
+              </p>
+              <p class="blog-desc-card mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
+              </p>
+            </div>
         </div>
         
-        <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
-        <p class="blog-desc-card mb-16">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
-        </p>
         <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
           Lihat Selengkapnya
         </a>
       </div>
 
       <div class="blog-card">
-        <div class="blog-thumbnail mb-16">
-          <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
-          <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+        <div class="blog-content">
+            <div class="blog-thumbnail mb-16">
+              <img alt="" src="{{ asset('assets/img/blog-cover.png') }}" class="blog-img" />
+            </div>
+
+            <div class="blog-desc">
+              <p class="blog-author-date">Indah Mariana, 17 Desember 2025</p>
+              <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
+              <p class="blog-desc-card mb-16 mobile-desc">
+                Lorem ipsum dolor sit amet, consectetur,  ...
+              </p>
+              <p class="blog-desc-card mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
+              </p>
+            </div>
         </div>
         
-        <h1 class="blog-header-card mb-16">Career Network telah luncurkan...</h1>
-        <p class="blog-desc-card mb-16">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...
-        </p>
         <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
           Lihat Selengkapnya
         </a>

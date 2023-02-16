@@ -8,13 +8,13 @@
 ]) 
 
 @section('content')
-<div class="blog-section">
+<div class="blog-section detail-page">
   <section class="header-blogs">
     <h1 class="heading">Detail Artikel</h1>
 
     <div class="btn-section">
       {{-- Button Refresh --}}
-      <span class="option-item">
+      <span class="option-item refresh-btn">
         <span>Segarkan</span>
         <svg
           width="17"
@@ -154,23 +154,23 @@
         </button>
       </div>
   </form>
-</div>
 
-<!-- Modal -->
-<div class="modal fade" id="item-delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-head">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda yakin akan menghapus artikel ini?</h1>
-        <p>Semua data akan hilang</p>
-      </div>
+  <!-- Modal -->
+  <div class="modal fade" id="item-delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
       <div class="modal-content">
-         <button href="" class="option-item delete">
-            <span>Hapus</span>
-        </button>
-        <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-            <span>Batalkan</span>
-        </button>
+        <div class="modal-head">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda yakin akan menghapus artikel ini?</h1>
+          <p>Semua data akan hilang</p>
+        </div>
+        <div class="modal-content">
+          <button href="" class="option-item delete">
+              <span>Hapus</span>
+          </button>
+          <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+              <span>Batalkan</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
