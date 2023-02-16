@@ -1036,6 +1036,8 @@ form input {
   justify-content: center;
 
   margin-right: 1rem;
+
+  cursor: pointer;
 }
 
 .btn-wrapper:nth-child(1) {
@@ -1085,8 +1087,29 @@ form input {
     width: 100%;
   }
 
+  .offcanvas {
+    width: 80% !important;
+  }
+
   .profile-section-container {
     display: none;
+  }
+
+  .offcanvas .profile-section-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .offcanvas .menus {
+    margin-top: -1rem;
+  }
+
+  .offcanvas .profile {
+    margin-left: -2px;
+  }
+
+  .offcanvas .profile p {
+    font-size: 16px;
   }
 
   .search-profile-bar {
@@ -1102,8 +1125,8 @@ form input {
   }
 
   .mobile-section-header img {
-    width: 69.46px;
-    height: 42px;
+    width: 98.46px;
+    height: 62px;
   }
 
   /* NAVBAR */
@@ -1167,20 +1190,8 @@ form input {
     padding: 8px 16px;
   }
 
-  .heading-container .heading {
-    font-size: 24px;
-  }
-
-  .heading-container p {
-    font-size: 15px;
-  }
-
   .breadcrums {
-    font-size: 12px;
-  }
-
-  .preview span {
-    font-size: 12px;
+    display: block;
   }
 
   .form-edit label {
@@ -1188,7 +1199,8 @@ form input {
     line-height: 21px;
   }
 
-  .header-dynamic-options {
+  .schedule-page.header-dynamic-options,
+  .dashboard-page.header-dynamic-options {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -1307,7 +1319,7 @@ form input {
     font-size: 14px;
   }
 
-  .header-dynamic-options {
+  .schedule-page.header-dynamic-options {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
