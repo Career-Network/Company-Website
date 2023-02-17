@@ -1208,6 +1208,10 @@ form input {
   justify-content: center;
 }
 
+.btn-search {
+    cursor: pointer !important;
+  }
+
 /* MOBILE */
 @media screen and (max-width: 620px) {
   /* SIDEBAR */
@@ -1264,6 +1268,10 @@ form input {
 
   .offcanvas .profile p {
     font-size: 16px;
+  }
+
+  .btn-search {
+    cursor: pointer !important;
   }
 
   .search-profile-bar {
