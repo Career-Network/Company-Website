@@ -80,7 +80,7 @@ form {
 .input-edit{
   background-color:white;
   padding: 4px;
-  width: 95%;
+  width: 85%;
   border:none;
   
 }
@@ -92,7 +92,7 @@ form {
 .icon-edit{
   /* background-color: green; */
   padding: 4px;
-  width: 5%;
+  width: 15%;
   text-align: center;
 
 }

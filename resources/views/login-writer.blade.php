@@ -37,7 +37,7 @@
                 <div class="form-input">
                     <p class="label-input">Kata Sandi</p>
                     <div class="password-input">
-                        <input class="input-edit" type="password" name="password" id="password" placeholder="Ketik kata sandi" ><i toggle="#password-field" class="icon-edit fa-solid fa-eye"></i>
+                        <input class="input-edit" type="password" name="password" id="password" placeholder="Ketik kata sandi" ><i toggle="#password-field" class="icon-edit fa-solid fa-eye-slash"></i>
                     </div>
                 </div>
                 {{-- Remember Me --}}
