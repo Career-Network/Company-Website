@@ -25,16 +25,16 @@
 
 #about {
   background-color: #fff;
-  /* padding: 40px 0; */
+  padding: 40px 0;
 }
 
 #about img {
-  /* padding-right: 40px; */
+  padding-right: 40px;
 }
 
-/* .about_right{
+.about_right{
     margin-left: 40px;
-} */
+}
 
 /* Berita */
 #berita {

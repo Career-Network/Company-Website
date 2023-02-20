@@ -6,8 +6,6 @@
 @section('content')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <main>
@@ -194,49 +192,6 @@
             </div>
         </div>
     </section>
-    {{-- footer --}}
-    {{-- <section id="mf">
-        <div class="row row-eq-height align-items-center justify-content-center">
-            <div class="col-sm-5 bg_dark p-5">
-                <img src="{{ asset('assets/img/landing-page/logo-footer.png') }}" alt="">
-                <p class="bt_3 text_white mt-4">Tingkatkan Keterampilan Anda Dengan Mentor. Tingkatkan Keterampilan Anda Bersama Kami.</p>
-                <label class="bt_3 fw_semibold text_white">Ikuti Kami &nbsp;
-                    <a href="" class="social-media"><i class="fa-brands fa-twitter" target="blank"></i></a>
-                    <a href="https://www.linkedin.com/company/career-network-id/" class="social-media" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/careernetwork.id/" class="social-media" target="blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="" class="social-media"><i class="fa-brands fa-facebook" target="blank"></i></a>
-                </label>
-            </div>
-            <div class="col-sm-7 bg_grey mf-right">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-6">
-                        <ul>
-                            <label class="bt_3 fw_semibold">Sumber</label>
-                            <li>Perusahaan</li>
-                            <li>Blog</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-6">
-                        <ul>
-                            <label class="bt_3 fw_semibold">Layanan</label>
-                            <li>EduCareer</li>
-                            <li>FLAP</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-6">
-                        <ul>
-                            <label class="bt_3 fw_semibold">Bantuan</label>
-                            <li>Syarat dan Ketentuan</li>
-                            <li>Kebijakan Privasi</li>
-                            <li>Kontak</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
-
 </main>
 
 <script type="text/javascript">
