@@ -3,7 +3,12 @@
     <section class="navigation">
 
         {{-- Company Logo --}}
-        <img src="{{ asset('assets/img/logo.png') }}" alt="Career Network's Logo" class="company-logo" />
+        <div class="header-sidebar">
+            <img src="{{ asset('assets/img/logo.png') }}" alt="Career Network's Logo" class="company-logo" />
+            <svg class="sidebar-btn" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.52734 1.25H18.0273M1.52734 6.5H18.0273M1.52734 11.75H18.0273" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
 
         <div class="menus">
             {{-- Home Menu --}}
@@ -36,7 +41,7 @@
     </section>
     
     {{-- Socials Media --}}
-     <section class="socials">
+     {{-- <section class="socials">
         <p>Ikuti Kami</p>
 
         <div class="socials-link">    
@@ -48,5 +53,5 @@
 
             <a href=""><img alt="" src="{{ asset('assets/img/login-writer/socials/Facebook.svg') }}" /></a>
          </div>
-    </section>
+    </section> --}}
 </aside>
