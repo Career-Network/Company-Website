@@ -62,7 +62,7 @@
                                         </li>
                                         <li>
                                             <div class="icon-img">
-                                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ url()->current() }}" target="_blank">
+                                                <a href="https://www.facebook.com/sharer/sharer.php?href={{ url()->current() }}" target="_blank">
                                                     <img src="{{ asset('assets/img/detail-blog/Facebook.svg') }}" alt="gambar" />
                                                 </a>
                                             </div>
