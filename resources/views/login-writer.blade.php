@@ -31,7 +31,9 @@
                 <p class="sub-header">Selamat datang di Career Network! </p>
             </div>
             {{-- Form --}}
-            <form action="" method="post">
+            <!-- <form action="" method="post"> -->
+            <!-- get method only for temporary integration, change to post to develope -->
+            <form action="/blog/dashboard" method="get">
                 {{-- Email --}}
                 <div class="form-input">
                     <p class="label-input">Nama Pengguna</p>
