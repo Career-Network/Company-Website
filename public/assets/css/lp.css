@@ -25,7 +25,7 @@
 
 #about {
   background-color: #fff;
-  padding: 40px 0;
+  /* padding: 40px 0; */
 }
 
 #about img {
@@ -282,13 +282,11 @@
   justify-items: center;
   justify-content: center;
   padding: 40px 30px;
-  /* background-color:blue !important; */
 }
 
 .slider {
   max-width: 1150px;
   display: flex;
-  /* background-color:pink !important; */
 }
 
 .slider .carddy-1 {
@@ -393,9 +391,6 @@
 
 
   width:100%;
-}
-.carousel-inner {
-
 }
 .carousel-item .carousel-caption {
 
@@ -738,7 +733,7 @@ padding:10px;
  /*strategi kami */
  .carousel-caption {
   margin-bottom:24rem !important;
-  widht:80% !important;
+  width:80% !important;
  }
   .carousel-caption h3 {
   font-size:20px !important;
@@ -765,8 +760,68 @@ padding:10px;
 
 
 }
+#text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    width: 346px;
+}
+
 
 
   /* ----------------------------------------- */
 }
 
+#judul{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+color: #111111;
+}
+#des{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+color: #7A7A7A;
+
+}
+.name{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+color: #FF5722;
+
+}
+.date{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+color: #111111;
+}
+
+.pagination {
+    display: inline-block;
+  }
+
+  .pagination a {
+    color: #FF5722;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .pagination a.active {
+    background: #FF5722;
+    color: white;
+  }
+
+  .pagination a:hover:not(.active) {background: #FF5722;color:whitesmoke;}

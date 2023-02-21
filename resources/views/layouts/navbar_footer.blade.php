@@ -172,7 +172,7 @@
                       title="Career Network"
                     >
                       <img
-                        src="{{ asset('assets/img/landing-page/logo-footer.png') }}"
+                        src="{{ asset('assets/img/logo.png') }}"
                         alt="Career Network"
                         class="brand-logo"
                       />

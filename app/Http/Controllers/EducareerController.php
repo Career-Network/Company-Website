@@ -22,4 +22,7 @@ class EducareerController extends Controller
     {
         return view('flap');
     }
+    public function slicing(){
+        return view('slicing_blog');
+    }
 }

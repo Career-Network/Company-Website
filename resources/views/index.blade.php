@@ -51,18 +51,8 @@
         </div>
     </section>
 
-    {{-- <section id="carousel">
-        <div class="main-carousel" id="c-carousel">
-            <div class="cell"><img src="{{ asset('assets/img/landing-page/c-1.png') }}" alt=""></div>
-            <div class="cell"><img src="{{ asset('assets/img/landing-page/c-2.png') }}" alt=""></div>
-            <div class="cell"><img src="{{ asset('assets/img/landing-page/c-3.png') }}" alt=""></div>
-        </div>
-        <div class="main-carousel" id="m-carousel">
-            <div class="cell"><img src="{{ asset('assets/img/landing-page/m-1.png') }}" alt=""></div>
-            <div class="cell"><img src="{{ asset('assets/img/landing-page/m-2.png') }}" alt=""></div>
-            <div class="cell"><img src="{{ asset('assets/img/landing-page/m-3.png') }}" alt=""></div>
-        </div>
-    </section> --}}
+    <!-- main branch -->
+        <!-- Another branch -->
      <section id="caraousel" class="">
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
@@ -70,35 +60,34 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" style="border-radius:50%;width:18px;height:20px"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" style="border-radius:50%;width:18px;height:20px"></button>
         </div>
-        <div class="carousel-inner  ">
-          <div class="carousel-item active" >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
             <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/c-2.png')}}" class="d-block w-100" height="900px" alt="...">
-                  <div class="carousel-caption" >
-              <h3 class="carousel-title" class="text-start" >Strategi kami untuk perusahaan</h3>
+            <img src="{{asset('assets/img/landing-page/B-1.webp')}}" class="d-block w-100" height="900px" alt="...">
+                  <div class="carousel-caption">
+              <h3 class="carousel-title" class="text-start" id="text" >Strategi kami untuk perusahaan</h3>
               <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan </p>
                 <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">yang terencana dengan tepat, mengoptimalkan fleksibilitas target perusahaan, dan </p>
                 <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">menciptakan nilai berkelanjutan untuk semua  yang kami lakukan.  </p>
-
             </div>
           </div>
           <div class="carousel-item ">
         <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/c-3.png')}}" class="d-block w-100" height="900px" alt="...">
+            <img src="{{asset('assets/img/landing-page/B-2.webp')}}" class="d-block w-100" height="900px" alt="...">
             <div class="carousel-caption">
               <h3 class="carousel-title" class="text-start">Strategi kami untuk Klien</h3>
               <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">Kami berkomitmen untuk memahami setiap nuansa kebutuhan mereka, menggunakan
-                 semua energi pribadi dan  kreatifitas kami untuk membuat kesepakatan terbaik dan
-                   melakukan sepenuh daya kami untuk membantu mencapai tujuan mereka.</p>
+                semua energi pribadi dan  kreatifitas kami untuk membuat kesepakatan terbaik dan
+                melakukan sepenuh daya kami untuk membantu mencapai tujuan mereka.</p>
             </div>
           </div>
           <div class="carousel-item">
                <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/c-1.png')}}" class="d-block w-100"height="900px" alt="...">
+            <img src="{{asset('assets/img/landing-page/B-3.webp')}}" class="d-block w-100"height="900px" alt="...">
             <div class="carousel-caption mt-change">
 
               <h3 class="text-start carousel-title mt-change-title">Strategi kami untuk Tim</h3>
-              <p class="text-start carousel-text mt-change-text "style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;"> Kami berkomitmen untuk mendorong sebuah pendekatan kolaboratif untuk memecahkan <br> masalah klien, untuk menumbuhkan lingkungan kerja yang inklusif, sehat dan memberikan <br> kesempatan yang memungkinkan orang untuk belajar,mencapai,dan mempertahakan <br> kesemimbangan kerja/kehidupan yang memuaskan.</p>
+              <p class="text-start carousel-text mt-change-text "style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">Kami berkomitmen untuk mendorong sebuah pendekatan kolaboratif untuk memecahkan <br> masalah klien, untuk menumbuhkan lingkungan kerja yang inklusif, sehat dan memberikan <br> kesempatan yang memungkinkan orang untuk belajar,mencapai,dan mempertahakan <br> kesemimbangan kerja/kehidupan yang memuaskan.</p>
             </div>
           </div>
         </div>
@@ -153,11 +142,11 @@
                 <p class="bt_3">Nikmati Cerita, Hiburan, Informasi serta Promo menarik dari  blog Career Network. </p>
                 <button><a href="{{ route('blog') }}" class="link">Lihat Lebih Banyak</a></button>
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-7">  
                 <div class="slider owl-carousel">
                     <div class="carddy-1">
                         <div class="img">
-                            <img src="{{ asset('assets/img/landing-page/s-1.png') }}" alt="">
+                            <img src="{{ asset('assets/img/landing-page/s-1.webp') }}" alt="">
                         </div>
                         <div class="content">
                             <div class="title">Perbedaan Bekerja di Startup dan Corporate</div>
@@ -168,7 +157,7 @@
                     </div>
                     <div class="carddy-1">
                         <div class="img">
-                            <img src="{{ asset('assets/img/landing-page/s-2.png') }}" alt="">
+                            <img src="{{ asset('assets/img/landing-page/s-2.webp') }}" alt="">
                         </div>
                         <div class="content">
                             <div class="title">Berbagai Profesi Dunia Data dan Analitik</div>
@@ -179,7 +168,7 @@
                     </div>
                     <div class="carddy-1">
                         <div class="img">
-                            <img src="{{ asset('assets/img/landing-page/s-3.png') }}" alt="">
+                            <img src="{{ asset('assets/img/landing-page/s-3.webp') }}" alt="">
                         </div>
                         <div class="content">
                             <div class="title">Career Network telah luncurkan Website...</div>
@@ -191,50 +180,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    {{-- footer --}}
-    {{-- <section id="mf">
-        <div class="row row-eq-height align-items-center justify-content-center">
-            <div class="col-sm-5 bg_dark p-5">
-                <img src="{{ asset('assets/img/landing-page/logo-footer.png') }}" alt="">
-                <p class="bt_3 text_white mt-4">Tingkatkan Keterampilan Anda Dengan Mentor. Tingkatkan Keterampilan Anda Bersama Kami.</p>
-                <label class="bt_3 fw_semibold text_white">Ikuti Kami &nbsp;
-                    <a href="" class="social-media"><i class="fa-brands fa-twitter" target="blank"></i></a>
-                    <a href="https://www.linkedin.com/company/career-network-id/" class="social-media" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/careernetwork.id/" class="social-media" target="blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="" class="social-media"><i class="fa-brands fa-facebook" target="blank"></i></a>
-                </label>
-            </div>
-            <div class="col-sm-7 bg_grey mf-right">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-6">
-                        <ul>
-                            <label class="bt_3 fw_semibold">Sumber</label>
-                            <li>Perusahaan</li>
-                            <li>Blog</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-6">
-                        <ul>
-                            <label class="bt_3 fw_semibold">Layanan</label>
-                            <li>EduCareer</li>
-                            <li>FLAP</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-6">
-                        <ul>
-                            <label class="bt_3 fw_semibold">Bantuan</label>
-                            <li>Syarat dan Ketentuan</li>
-                            <li>Kebijakan Privasi</li>
-                            <li>Kontak</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
-
 </main>
 
 <script type="text/javascript">

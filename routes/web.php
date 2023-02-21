@@ -75,6 +75,7 @@ Route::get('/blog/career-network-telah-luncurkan-website-company', [
     FeatureController::class,
     'detail',
 ])->name('detail-blog-writer');
+Route::get('/slicing_blog', [EducareerController::class, 'slicing'])->name('slcing');
 
 //Login feature
 Route::get('/login', [LoginController::class, 'index'])

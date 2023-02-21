@@ -24,7 +24,7 @@
         {{-- Login Form --}}
         <div class="login-form">
             {{-- Logo Career Network --}}
-            <img class="logo" src="{{ asset('assets/img/logo.png') }}" alt="" width="174" height="93" />
+            <img class="logo" src="{{ asset('assets/img/logo.png') }}" alt="" width="240" height="93" />
             {{-- Heading Form --}}
             <div class="heading">
                 <h1 class="header">Masuk</h1>
