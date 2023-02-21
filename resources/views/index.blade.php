@@ -43,7 +43,7 @@
                         <h2 class="h_3 fw_semibold mb_12">
                             Buat tujuan karirmu dan tumbuh bersama kami!
                         </h2>
-                        <p class="bt_3">Dibentuk karena kesenjangan skill, kurangnya daya saing serta ketidakmerataan informasi yang dimiliki mahasiswa.  Platform penyedia pelatihan online secara 1 on 1 dan kelompok dengan para mentor yang ahli di bidangnya.  Serta layanan pemesanan Freelance untuk membantu kebutuhan masyarakat, terutama UMKM di Indonesia.</p>
+                        <p class="bt_3">Dibentuk karena kesenjangan skill, kurangnya daya saing serta ketidakmerataan informasi yang dimiliki mahasiswa.  Platform penyedia pelatihan online secara 1 on 1 dan kelompok dengan para mentor yang ahli di bidangnya.</p>
                         <button class="btn_secondary" onclick="window.location='{{ route('about') }}'">Tentang Kami</button>
                     </div>
                 </div>
