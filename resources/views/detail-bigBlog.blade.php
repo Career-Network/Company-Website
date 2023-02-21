@@ -47,7 +47,7 @@
                                 <div class="modal-text">
                                     <h4>Bagikan artikel ini melalui</h4>
                                 </div>
-                                <div class="modal-icon">
+                                <div class="modal-icon" id="modal-icon-sosmed">
                                     <ul>
                                         <li>
                                             <div class="rounded" id="myTooltip" hidden>
@@ -56,8 +56,9 @@
                                             <div class="icon-img clipboard" id="clipboard" onclick="copyToClipboard()" onmouseout="outfunc()">
                                                 <img src="{{ asset('assets/img/detail-blog/Copy.svg') }}" alt="gambar" />
                                             </div>
-                                            <div class="icon-text">
-                                                <h4>Copy link</h4>
+                                            {{-- jika ukurannya tablet atau hp --}}
+                                            <div class="icon-text" >
+                                                <h4 id="icon-text-sosmed">Copy link</h4>
                                             </div>
                                         </li>
                                         <li>
@@ -66,8 +67,8 @@
                                                     <img src="{{ asset('assets/img/detail-blog/Facebook.svg') }}" alt="gambar" />
                                                 </a>
                                             </div>
-                                            <div class="icon-text">
-                                                <h4>Facebook</h4>
+                                            <div class="icon-text" id="icon-text">
+                                                <h4 id="icon-text-sosmed">Facebook</h4>
                                             </div>
                                         </li>
                                          <li>
@@ -77,8 +78,8 @@
                                                     <img src="{{ asset('assets/img/detail-blog/Twitter.svg') }}" alt="gambar" />
                                                 </a>
                                             </div>
-                                            <div class="icon-text">
-                                                <h4>Twitter</h4>
+                                            <div class="icon-text" id="icon-text">
+                                                <h4 id="icon-text-sosmed">Twitter</h4>
                                             </div>
                                         </li>
                                          <li>
@@ -87,8 +88,8 @@
                                                     <img src="{{ asset('assets/img/detail-blog/Whatsapp.svg') }}" alt="gambar" />
                                                 </a>
                                             </div>
-                                            <div class="icon-text">
-                                                <h4>Whatsapp</h4>
+                                            <div class="icon-text" id="icon-text">
+                                                <h4 id="icon-text-sosmed">Whatsapp</h4>
                                             </div>
                                         </li>
                                     </ul>
