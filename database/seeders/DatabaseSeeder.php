@@ -20,5 +20,13 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        //create 10 users
+        \App\Models\User::factory()->count(5)->create()->each(function ($user) {
+            //create 5 posts for each user
+            \App\Models\Blog::factory()->count(2)->create(['user_id'=>$user->id])->each(function ($blog) {
+                \App\Models\Schedule::factory()->count(2)->create(['blog_id'=>$blog->id]);
+            });
+        });
     }
 }
