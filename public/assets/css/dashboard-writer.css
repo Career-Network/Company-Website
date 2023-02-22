@@ -578,6 +578,13 @@ form input {
   border: 1px solid #ef4444;
 }
 
+.save-modal-btn {
+  background: #ff5722;
+  color: #fff;
+
+  border: 1px solid #ff5722;
+}
+
 .edit {
   font-weight: 400;
   font-size: 16px;
