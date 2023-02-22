@@ -20,16 +20,22 @@ class Blog extends Model
         'hastags',
     ];
 
-    // protected function getIdAttribute($value)
-    // {
-    //     return 'BGS' . str_pad($value, 6, '0', STR_PAD_LEFT);
-    // }
+    protected function getIdAttribute($value)
+    {
+        return 'BGS' . str_pad($value, 6, '0', STR_PAD_LEFT);
+    }
 
-    // protected function getUserIdAttribute($value)
-    // {
-    //     return 'RE' . str_pad($value, 3, '0', STR_PAD_LEFT);
-    // }
+    protected function getUserIdAttribute($value)
+    {
+        return 'RE' . str_pad($value, 3, '0', STR_PAD_LEFT);
+    }
 
+    protected function setUserIdAttribute($value)
+    {
+        $id = substr($value, 2);
+        $this->attributes['user_id'] = intval(ltrim($id, '0'));
+    }
+    
     protected function getUpdateDateAttribute($value)
     {
         return date("d M Y",  strtotime($value));

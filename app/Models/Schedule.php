@@ -15,15 +15,21 @@ class Schedule extends Model
         'status',
     ];
 
-    // protected function getIdAttribute($value)
-    // {
-    //     return 'SCE' . str_pad($value, 6, '0', STR_PAD_LEFT);
-    // }
+    protected function getIdAttribute($value)
+    {
+        return 'SCE' . str_pad($value, 6, '0', STR_PAD_LEFT);
+    }
 
-    // protected function getBlogIdAttribute($value)
-    // {
-    //     return 'BGS' . str_pad($value, 6, '0', STR_PAD_LEFT);
-    // }
+    protected function getBlogIdAttribute($value)
+    {
+        return 'BGS' . str_pad($value, 6, '0', STR_PAD_LEFT);
+    }
+    
+    protected function setBlogIdAttribute($value)
+    {
+        $id = substr($value, 3);
+        $this->attributes['blog_id'] = intval(ltrim($id, '0'));
+    }
 
     public function blog()
     {
