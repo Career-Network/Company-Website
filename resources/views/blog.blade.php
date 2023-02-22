@@ -8,13 +8,18 @@
 <main>
     <section id="hero" >
         <div class="row align-items-center">
-
+   <div class="col-sm-6">
+                <div class="hero_img">
+                    <img src="{{ asset('assets/img/landing-page/slicing.webp') }}" class="img-fluid" alt="hero">
+                </div>
+            </div>
             <div class="col-sm-6">
                 <div class="hero_text">
                     <h2 class="h_1 text_white fw_bold hero_title">
                         Cek Berita Terbaru <br> Disini !
                     </h2>
-                    <img src="{{ asset('assets/img/landing-page/line-white.png') }}" alt="">
+                    <img src="{{ asset('assets/img/landing-page/line-white.png') }}" alt="" style="width: 284.06px;
+                    height: 8px;margin-left:22.19px">
                     <p class="bt_2 text_white hero_parag">
                                 Nikmati Cerita,Hiburan,Informasi serta Promo, <br>
                                 menarik dari blog kami. Ciptakan masa depan <br>
@@ -22,11 +27,7 @@
                     </p>
                 </div>
             </div>
-             <div class="col-sm-6">
-                <div class="hero_img">
-                    <img src="{{ asset('assets/img/landing-page/slicing.webp') }}" class="img-fluid" alt="hero">
-                </div>
-            </div>
+
         </div>
 
         <img src="{{ asset('assets/img/landing-page/o.png') }}" class="hero_ornament" alt="">

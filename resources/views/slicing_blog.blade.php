@@ -8,7 +8,11 @@
 <main>
     <section id="hero" >
         <div class="row align-items-center">
-
+        <div class="col-sm-6">
+                <div class="hero_img">
+                    <img src="{{ asset('assets/img/landing-page/slicing.webp') }}" class="img-fluid" alt="hero">
+                </div>
+            </div>
             <div class="col-sm-6">
                 <div class="hero_text">
                     <h2 class="h_1 text_white fw_bold hero_title">
@@ -26,11 +30,7 @@
                     </p>
                 </div>
             </div>
-             <div class="col-sm-6">
-                <div class="hero_img">
-                    <img src="{{ asset('assets/img/landing-page/slicing.webp') }}" class="img-fluid" alt="hero">
-                </div>
-            </div>
+
         </div>
 
         <img src="{{ asset('assets/img/landing-page/o.png') }}" class="hero_ornament" alt="">
