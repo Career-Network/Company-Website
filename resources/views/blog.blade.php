@@ -8,19 +8,18 @@
 <main>
     <section id="hero" >
         <div class="row align-items-center">
-   <div class="col-sm-6">
+   <div class="col-sm-6" id="batas">
                 <div class="hero_img">
                     <img src="{{ asset('assets/img/landing-page/slicing.webp') }}" class="img-fluid" alt="hero">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="hero_text">
-                    <h2 class="h_1 text_white fw_bold hero_title">
-                        Cek Berita Terbaru <br> Disini !
+                    <h2 class="h_1 text_white fw_bold hero_title" id="jtablet">
+                        Cek Berita Terbaru  Disini !
                     </h2>
-                    <img src="{{ asset('assets/img/landing-page/line-white.png') }}" alt="" style="width: 284.06px;
-                    height: 8px;margin-left:22.19px">
-                    <p class="bt_2 text_white hero_parag">
+                    <img src="{{ asset('assets/img/landing-page/line-white.png') }}" style="width:284.06px; height:8px;margin-left:22.19px" class="white">
+                    <p class="bt_2 text_white hero_parag" id="test">
                                 Nikmati Cerita,Hiburan,Informasi serta Promo, <br>
                                 menarik dari blog kami. Ciptakan masa depan <br>
                                 bersama Career Network!x

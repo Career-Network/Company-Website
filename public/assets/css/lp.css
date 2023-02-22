@@ -831,3 +831,31 @@ padding-bottom: 30px;
     width: 284.06px;
 height: 8px;
   }
+
+  @media only screen and (max-width: 820px){
+    #test{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    #jtablet{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        padding-right:4.5px;
+    }
+    .white{
+    width: 120px !important;
+    height: 7px !important;
+    margin-top:-10px !important;
+    margin-left:155px !important;
+
+    }
+  #batas{
+    width: 400px;
+   }
+  }
