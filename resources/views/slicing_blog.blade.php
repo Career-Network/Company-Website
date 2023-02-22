@@ -14,8 +14,12 @@
                     <h2 class="h_1 text_white fw_bold hero_title">
                         Cek Berita Terbaru <br> Disini !
                     </h2>
-                    <img src="{{ asset('assets/img/landing-page/line-white.png') }}" alt="">
-                    <p class="bt_2 text_white hero_parag">
+                    <img src="{{ asset('assets/img/landing-page/line-white.png') }}" id="white">
+                    <p class="bt_2 text_white hero_parag" style="font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;">
                                 Nikmati Cerita,Hiburan,Informasi serta Promo, <br>
                                 menarik dari blog kami. Ciptakan masa depan <br>
                                 bersama Career Network!x

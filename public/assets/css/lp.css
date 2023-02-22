@@ -125,7 +125,6 @@
 .head-card img {
   width: 80px;
   height: 80px;
-
   background: #ffffff;
   border-radius: 4px;
 
@@ -790,21 +789,23 @@ color: #7A7A7A;
 
 }
 .name{
-    font-family: 'Poppins';
+font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 21px;
 color: #FF5722;
 
+
 }
 .date{
-    font-family: 'Poppins';
+font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
 font-size: 12px;
-line-height: 18px;
+line-height: 0px;
 color: #111111;
+padding-bottom: 30px;
 }
 
 .pagination {
@@ -825,3 +826,8 @@ color: #111111;
   }
 
   .pagination a:hover:not(.active) {background: #FF5722;color:whitesmoke;}
+
+  #white{
+    width: 284.06px;
+height: 8px;
+  }
