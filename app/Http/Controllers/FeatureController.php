@@ -21,6 +21,9 @@ class FeatureController extends Controller
     public function dashboard() {
         return view('dashboard-writer');
     }
+    public function create() {
+        return view('create-blog-writer');
+    }
     public function uploaded() {
         return view('uploaded-writer');
     }
