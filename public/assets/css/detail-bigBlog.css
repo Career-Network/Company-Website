@@ -71,7 +71,6 @@ main {
 .modal-title-text h3 {
     font-size:21px;
     font-weight:600;
-    line-height:30px;
 }
 
 .modal-title-button {
@@ -146,7 +145,6 @@ main {
 
 .title-container .title-text h2{
     padding:10px;
-    word-spacing:15px;
     font-size:60px;
     font-weight:600;
     line-height:80px;
@@ -250,6 +248,8 @@ main {
 
 .desc-title {
     width:100%;
+    line-height:150%;
+    margin-bottom: -5px;
     /* border:1px solid black; */
 }
 
@@ -259,11 +259,11 @@ main {
 
 .desc-text h4, .desc-date h4 {
     font-size:12px;
+    line-height: 18px;
 }
 
 .desc-text h4{
     color: #FF5722;
-
 }
 
 .desc-date {
@@ -310,7 +310,6 @@ main {
      background-color:white;
      font-size:18px;
      line-height:40px;
-     word-spacing:6px;
      font-weight:400px;
      color:black;
 }
@@ -403,7 +402,7 @@ main {
 }
 
 .share-title{
-    /* border:4px solid pink; */
+    margin-bottom: 3.5rem;
 }
 
 .share-title h4{
