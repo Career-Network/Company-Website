@@ -65,18 +65,19 @@
             <div class="ball-strategi"><p>Strategi Kami</p></div>
             <img src="{{asset('assets/img/landing-page/B-1.webp')}}" class="d-block w-100" height="900px" alt="...">
                   <div class="carousel-caption">
-              <h3 class="carousel-title" class="text-start" id="text" >Strategi kami untuk perusahaan</h3>
-              <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan </p>
-                <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">yang terencana dengan tepat, mengoptimalkan fleksibilitas target perusahaan, dan </p>
-                <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">menciptakan nilai berkelanjutan untuk semua  yang kami lakukan.  </p>
+              <h3 class="carousel-title" class="text-start" id="subjudul" >Strategi kami untuk perusahaan</h3>
+              <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan yang terencana dengan tepat, mengoptimalkan fleksibilitas target perusahaan, dan menciptakan nilai berkelanjutan untuk semua  yang kami lakukan.</p>
+
+
             </div>
           </div>
           <div class="carousel-item ">
         <div class="ball-strategi"><p>Strategi Kami</p></div>
             <img src="{{asset('assets/img/landing-page/B-2.webp')}}" class="d-block w-100" height="900px" alt="...">
             <div class="carousel-caption">
-              <h3 class="carousel-title" class="text-start">Strategi kami untuk Klien</h3>
-              <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">Kami berkomitmen untuk memahami setiap nuansa kebutuhan mereka, menggunakan
+              <h3 class="carousel-title" class="text-start" id="blok2">Strategi kami untuk Klien</h3>
+              <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">
+                Kami berkomitmen untuk memahami setiap nuansa kebutuhan mereka, menggunakan
                 semua energi pribadi dan  kreatifitas kami untuk membuat kesepakatan terbaik dan
                 melakukan sepenuh daya kami untuk membantu mencapai tujuan mereka.</p>
             </div>
@@ -84,10 +85,14 @@
           <div class="carousel-item">
                <div class="ball-strategi"><p>Strategi Kami</p></div>
             <img src="{{asset('assets/img/landing-page/B-3.webp')}}" class="d-block w-100"height="900px" alt="...">
-            <div class="carousel-caption mt-change">
+            <div class="carousel-caption ">
 
-              <h3 class="text-start carousel-title mt-change-title">Strategi kami untuk Tim</h3>
-              <p class="text-start carousel-text mt-change-text "style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">Kami berkomitmen untuk mendorong sebuah pendekatan kolaboratif untuk memecahkan <br> masalah klien, untuk menumbuhkan lingkungan kerja yang inklusif, sehat dan memberikan <br> kesempatan yang memungkinkan orang untuk belajar,mencapai,dan mempertahakan <br> kesemimbangan kerja/kehidupan yang memuaskan.</p>
+              <h3 class="text-start carousel-title " id="blok3">Strategi kami untuk Tim</h3>
+              <p class="text-start carousel-text "style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">
+                Kami berkomitmen untuk mendorong sebuah pendekatan kolaboratif untuk memecahkan
+                masalah klien, untuk menumbuhkan lingkungan kerja yang inklusif, sehat dan memberikan
+                kesempatan yang memungkinkan orang untuk belajar,mencapai,dan mempertahakan
+                kesemimbangan kerja/kehidupan yang memuaskan.</p>
             </div>
           </div>
         </div>
@@ -142,7 +147,7 @@
                 <p class="bt_3">Nikmati Cerita, Hiburan, Informasi serta Promo menarik dari  blog Career Network. </p>
                 <button><a href="{{ route('blog') }}" class="link">Lihat Lebih Banyak</a></button>
             </div>
-            <div class="col-sm-7">  
+            <div class="col-sm-7">
                 <div class="slider owl-carousel">
                     <div class="carddy-1">
                         <div class="img">

@@ -403,8 +403,8 @@
 
 .carousel-item .carousel-title {
 background-color: #27C6D9;
-font-size:30px;
-width:614px;
+font-size:36px;
+width:620px;
 font-style: normal;
 height: 74px;
 font-weight:600;
@@ -415,11 +415,44 @@ padding:10px;
 
 .carousel-item .carousel-text {
 
-  line-height: 30px;
-  font-size:30px;
-  font-weight:400;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    padding-right: 240px;
 
 }
+
+#blok2{
+    background-color: #27C6D9;
+font-size:36px;
+width:482px;
+font-style: normal;
+height: 74px;
+font-weight:600;
+line-height:54px;
+text-align:left;
+padding:10px;
+}
+
+#blok3{
+    background-color: #27C6D9;
+font-size:36px;
+width:460px;
+font-style: normal;
+height: 74px;
+font-weight:600;
+line-height:54px;
+text-align:left;
+padding:10px;
+}
+
+
+
+
+
+
 .carousel-item {
   position:relative;
 
@@ -825,3 +858,6 @@ color: #111111;
   }
 
   .pagination a:hover:not(.active) {background: #FF5722;color:whitesmoke;}
+
+  /*webdev1*/
+
