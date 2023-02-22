@@ -7,7 +7,7 @@
 @section('content')
 <main>
     <section id="hero" >
-        <div class="row align-items-center">
+        <div class="row align-items-center flex-row-reverse container-hero">
 
             <div class="col-sm-6">
                 <div class="hero_text">
@@ -22,6 +22,7 @@
                     </p>
                 </div>
             </div>
+
              <div class="col-sm-6">
                 <div class="hero_img">
                     <img src="{{ asset('assets/img/landing-page/slicing.webp') }}" class="img-fluid" alt="hero">
@@ -31,8 +32,8 @@
 
         <img src="{{ asset('assets/img/landing-page/o.png') }}" class="hero_ornament" alt="">
     </section>
-    <section style="background-color: white">
-        <div class="row container pt-5 pb-5">
+    <section class="container-cards-wrapper" style="background-color: white">
+        <div class="row container container-cards">
             <div class="col-sm p-3">
                 <div class="card shadow rounded">
                     <img src="{{ asset('assets/img/landing-page/s-1.webp') }}" class="card-img-top" alt="...">
@@ -68,7 +69,7 @@
                   </div>
             </div>
         </div>
-        <div class="row container  pb-5">
+        <div class="row container container-cards">
             <div class="col-sm p-3">
                 <div class="card shadow rounded">
                     <img src="{{ asset('assets/img/landing-page/s-1.webp') }}" class="card-img-top" alt="...">
