@@ -63,7 +63,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/B-1.webp')}}" class="d-block w-100" height="900px" alt="...">
+            <img src="{{asset('assets/img/landing-page/B-1.webp')}}" width="100%" height="900px" alt="...">
                   <div class="carousel-caption">
               <h3 class="carousel-title" class="text-start" id="subjudul" >Strategi kami untuk perusahaan</h3>
               <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan yang terencana dengan tepat, mengoptimalkan fleksibilitas target perusahaan, dan menciptakan nilai berkelanjutan untuk semua  yang kami lakukan.</p>
