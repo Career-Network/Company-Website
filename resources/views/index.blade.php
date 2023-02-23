@@ -61,22 +61,24 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" style="border-radius:50%;width:18px;height:20px"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" id="des">
             <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/B-1.webp')}}" width="100%" height="900px" alt="...">
+            <img src="{{asset('assets/img/landing-page/B-1.webp')}}" width="100%" height="900px" alt="..." id="image">
                   <div class="carousel-caption">
               <h3 class="carousel-title" class="text-start" id="subjudul" >Strategi kami untuk perusahaan</h3>
-              <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan yang terencana dengan tepat, mengoptimalkan fleksibilitas target perusahaan, dan menciptakan nilai berkelanjutan untuk semua  yang kami lakukan.</p>
+              <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;" id="note1">
+                Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan yang terencana dengan tepat,
+                mengoptimalkan fleksibilitas target perusahaan, dan menciptakan nilai berkelanjutan untuk semua  yang kami lakukan.</p>
 
 
             </div>
           </div>
           <div class="carousel-item ">
         <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/B-2.webp')}}" class="d-block w-100" height="900px" alt="...">
+            <img src="{{asset('assets/img/landing-page/B-2.webp')}}" class="d-block w-100" height="900px" alt="..." id="image">
             <div class="carousel-caption">
               <h3 class="carousel-title" class="text-start" id="blok2">Strategi kami untuk Klien</h3>
-              <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">
+              <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;" id="note2">
                 Kami berkomitmen untuk memahami setiap nuansa kebutuhan mereka, menggunakan
                 semua energi pribadi dan  kreatifitas kami untuk membuat kesepakatan terbaik dan
                 melakukan sepenuh daya kami untuk membantu mencapai tujuan mereka.</p>
@@ -84,11 +86,11 @@
           </div>
           <div class="carousel-item">
                <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/B-3.webp')}}" class="d-block w-100"height="900px" alt="...">
+            <img src="{{asset('assets/img/landing-page/B-3.webp')}}" class="d-block w-100"height="900px" alt="..." id="image">
             <div class="carousel-caption ">
 
               <h3 class="text-start carousel-title " id="blok3">Strategi kami untuk Tim</h3>
-              <p class="text-start carousel-text "style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">
+              <p class="text-start carousel-text "style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;" id="note3">
                 Kami berkomitmen untuk mendorong sebuah pendekatan kolaboratif untuk memecahkan
                 masalah klien, untuk menumbuhkan lingkungan kerja yang inklusif, sehat dan memberikan
                 kesempatan yang memungkinkan orang untuk belajar,mencapai,dan mempertahakan
