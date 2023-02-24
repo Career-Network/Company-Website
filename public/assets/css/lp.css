@@ -459,7 +459,7 @@ padding:10px;
         width: 405px;
         height: 44px;
         padding: 2px 4px 2px 4px;
-            
+
     }
    #note1{
     font-family: 'Poppins';
@@ -514,11 +514,6 @@ padding:10px;
 
 
 }
-
-
-
-
-
 
 
 .carousel-item {
@@ -810,11 +805,9 @@ padding:10px;
     height: 36px;
     left: 68px;
     top: 40px;
-
     font-weight: 500;
     font-size: 24px;
     line-height: 40px;
-
     text-align: center;
   }
 
@@ -833,18 +826,58 @@ padding:10px;
 
  /*strategi kami */
  .carousel-caption {
-  margin-bottom:24rem !important;
+  margin-bottom:17rem !important;
   width:80% !important;
+
  }
-  .carousel-caption h3 {
-  font-size:20px !important;
-  width:auto !important;
-  text-align:left !important;
-}
+ #note1{
+   width: 530px !important;
+ }
+ #note2{
+    width: 530px !important;
+ }
+ #note3{
+    width: 520px !important;
+ }
+
+ #subjudul{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    width: 350px;
+    height: 50px;
+    background: #27C6D9;
+margin-left:-25px !important;
+padding: 10px;
+
+ }
+ #blok2{
+    font-size: 20px;
+    width: 272px;
+height: 50px;
+padding: 3px 10px 10px 10px;
+ }
+ #blok3{
+    font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+width: 261px;
+height: 50px;
+padding: 10px;margin-left: 15px;
+ }
+ #image{
+
+height: 707px;
+ }
 
 .carousel-caption p {
   font-size: 14px !important;
   padding:2px;
+  text-align: center !important;
+  width: 500px !important;
+  align-items: center;
+  margin-left: 0px;
+
 }
 .carousel-item .mt-change{
   margin-top:8rem!important;

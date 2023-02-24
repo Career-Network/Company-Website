@@ -98,12 +98,12 @@
             </div>
           </div>
         </div>
-        <button  class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true" style=" border-style: solid;border-color: white;border-width: 1px;border-radius:30px;width:40px;height:40px;"></span>
+        <button  class="carousel-control-prev d-none d-sm-block" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon d-none d-sm-block" aria-hidden="true" style=" border-style: solid;border-color: white;border-width: 1px;border-radius:30px;width:40px;height:40px;"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button  class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true" style=" border-style: solid;border-color: white;border-width: 1px;border-radius:30px;width:40px;height:40px;"></span>
+        <button  class="carousel-control-next d-none d-sm-block " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon d-none d-sm-block" aria-hidden="true" style=" border-style: solid;border-color: white;border-width: 1px;border-radius:30px;width:40px;height:40px;"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
