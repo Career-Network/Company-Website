@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Feature;
 use Illuminate\Http\Request;
 
@@ -15,22 +16,34 @@ class FeatureController extends Controller
     {
         return view('detail-bigBlog');
     }
-    public function writer() {
+    public function writer()
+    {
         return view('login-writer');
     }
-    public function dashboard() {
-        return view('dashboard-writer');
+    public function dashboard()
+    {
+        $blogs = collect(Blog::where('user_id', '=', 1)->get());
+        return view('dashboard-writer', [
+            'blogs' => $blogs,
+        ]);
     }
-    public function create() {
+    public function create()
+    {
         return view('create-blog-writer');
     }
-    public function uploaded() {
-        return view('uploaded-writer');
+    public function uploaded()
+    {
+        $blogs = collect(Blog::where('user_id', '=', 1)->get());
+        return view('uploaded-writer', [
+            'blogs' => $blogs,
+        ]);
     }
-    public function schedule() {
+    public function schedule()
+    {
         return view('schedule-writer');
     }
-    public function detail() {
+    public function detail()
+    {
         return view('detail-blog');
     }
     public function tnc()

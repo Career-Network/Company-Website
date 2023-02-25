@@ -213,9 +213,6 @@ header {
 
   background: #f4f4f4;
 
-  display: flex;
-  align-items: center;
-
   border-radius: 12px;
 
   width: 40%;
@@ -1209,8 +1206,8 @@ form input {
 }
 
 .btn-search {
-    cursor: pointer !important;
-  }
+  cursor: pointer !important;
+}
 
 /* MOBILE */
 @media screen and (max-width: 620px) {
@@ -1315,6 +1312,7 @@ form input {
   .blog-img {
     width: 100px;
     height: 100px;
+    margin-top: 0.5rem;
   }
 
   .blogs .blog-author-date {
@@ -1503,4 +1501,8 @@ form input {
 
     grid-template-columns: repeat(2, auto);
   }
+}
+
+.text-justify {
+  text-align: justify !important;
 }
