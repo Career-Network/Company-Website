@@ -110,36 +110,34 @@
   <form method="" action="" class="form-edit">
       <div class="input-container">
         <label class="form-check-label" for="judul">Judul Artikel</label>
-        <input class="form-control" type="text" id="judul" value="Career Network telah Luncurkan Website Company">
+        <input class="form-control" type="text" id="judul" value="{{ $blog->title }}">
       </div>
 
       <div class="row input-container justify-content-between">
         <div class="col mr-3">
           <label class="form-check-label" for="author">Author</label>
-          <input type="text" class="form-control" id="author" aria-label="First name" value="Indah Mariana"> 
+          <input type="text" class="form-control" id="author" aria-label="First name" value="{{ $blog->author }}"> 
         </div>
         <div class="col">
           <label class="form-check-label" for="tanggal_update">Tanggal Update</label>
-          <input type="date" class="form-control"  aria-label="Last name">
+          <input type="date" class="form-control"  aria-label="Last name" value="{{ $blog->update_date }}">
         </div>
       </div>
 
       <div class="input-container">
-        <label class="form-check-label" for="tagar"></label>
-        <input class="form-control" type="text" id="tagar" value="#CareerNetwork">
+        <label class="form-check-label" for="tagar">Tagar</label>
+        <input class="form-control" type="text" id="tagar" value="{{ $blog->hastags }}">
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="thumbnail">Thumbnail</label>
-        <input class="form-control" type="file" id="thumbnail">
+        <input class="form-control" type="file" id="thumbnail" value='{{ asset("assets/img/$blog->image") }}'>
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="detail">Detail Artikel</label>
         <textarea id="detail">
-          <b>Career Network</b> - Dalam pertama kali Career Network mengeluarkan website company resmi. Dengan mengusung tema “Accelerate your growth with us” memberikan sentuhan gabungan antara formal dan interaktif. Sehingga dapat beradaptasi dengan perkembangan zaman, terutama anak muda. Sebagai wujud komitmen terhadap client dan investor, website company hadir untuk memberikan informasi perusahaan secara jelas, ringkas dan valid. Dengan harapan sebagai awalan untuk meningkatkan promosi brand yang dikenal luas dan menjalin koneksi dengan client potensial. <br /><br />
-          Terdapat berbagai ilustrasi yang ada di website untuk membantu pengguna untuk memahami dan membayangkan suatu informasi agar lebih baik. Selain itu, membangun daya tarik emosional yang kuat turut menjadi tujuan dalam membangun website. Ditambah keunikan warna yang selaras antara orange yang menjadi identitas perusahaan dengan perpaduan warna biru. <br /><br />
-          Career Network memiliki dua produk, yaitu Career Network EduCareer untuk memberikan pelatihan online bagi mahasiswa/i secara 1 on 1 dan kelompok dengan mentor yang expert di bidangnya dan kurikulum terstruktur. Selain itu, terdapat produk lain yaitu Career Network Sonic sebagai layanan pemesanan jasa Freelance untuk membantu kebutuhan masyarakat. Kedua produk ini masih pada tahap pengembangan dan akan diluncurkan pada beberapa bulan kedepan. Stay tune!.
+         {{ $blog->body }}
         </textarea>
       </div>
 
@@ -156,20 +154,22 @@
   <!-- Modal -->
   <div class="modal fade" id="item-delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <form method="POST" action="{{ route('destroy-blog') }}" class="modal-content">
+        @csrf
         <div class="modal-head">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda yakin akan menghapus artikel ini?</h1>
           <p>Semua data akan hilang</p>
         </div>
+        <input type="hidden" name="id" value="{{ $blog->id }}">
         <div class="modal-content">
-          <button href="" class="option-item delete">
+          <button type="submit" class="option-item delete">
               <span>Hapus</span>
           </button>
-          <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+          <button class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
               <span>Batalkan</span>
           </button>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </div>

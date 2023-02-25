@@ -13,43 +13,44 @@
     <h1 class="heading">Buat Artikel Baru</h1>
   </section>
 
-  <form method="" action="" class="form-edit d-flex flex-column">
+  <form method="POST" action="{{ route('store-blog') }}" class="form-edit d-flex flex-column" enctype="multipart/form-data">
+      @csrf
       <div class="input-container">
         <label class="form-check-label" for="judul">Judul Artikel</label>
-        <input class="form-control" type="text" id="judul" value="">
+        <input class="form-control" type="text" id="judul" name="title" required>
       </div>
 
       <div class="row input-container justify-content-between">
         <div class="col mr-3">
           <label class="form-check-label" for="author">Author</label>
-          <input type="text" class="form-control" id="author" aria-label="First name" value=""> 
+          <input type="text" class="form-control" id="author" aria-label="First name" name="author"> 
         </div>
         <div class="col">
           <label class="form-check-label" for="tanggal_update">Tanggal Update</label>
-          <input type="date" class="form-control"  aria-label="Last name">
+          <input type="date" class="form-control"  aria-label="Last name" name="update_date">
         </div>
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="tagar">Tagar</label>
-        <input class="form-control" type="text" id="tagar" value="">
+        <input class="form-control" type="text" id="tagar" name="hastags">
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="thumbnail">Thumbnail</label>
-        <input class="form-control" type="file" id="thumbnail">
+        <input class="form-control" type="file" id="thumbnail" name="image">
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="detail">Detail Artikel</label>
-        <textarea id="detail"></textarea>
+        <textarea id="detail" name="body"></textarea>
       </div>
 
       <div class="button-section">
-        <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+        <button class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
             <span>Batalkan</span>
         </button>
-        <button href="" class="option-item create-blog mt-3" data-bs-dismiss="modal" aria-label="Close">
+        <button class="option-item create-blog mt-3" type="submit">
             <span>Simpan Perubahan</span>
         </button>
       </div>
