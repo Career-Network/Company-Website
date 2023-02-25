@@ -10,14 +10,15 @@
     <section id="hero" class="py_40">
         <div class="container">
 
-            <div class="row align-items-center">
+            <div class="row align-items-center ">
+                <div class="col-md-6">
+                    <img src="assets/img/g7.png" class="img-fluid">
+            </div>
                 <div class="col-md-6">
                     <h2 class="h_2 fw_bold text_white">Belajar hal baru dengan biaya terjangkau dan berkualitas</h2>
                     <p class="bt_2 text_white mt-4">EduCareer hadir sebagai Paltform pelatihan dengan mentor berpengalaman</p>
                 </div>
-                <div class="col-md-6">
-                    <img src="assets/img/g7.png" class="img-fluid">
-                </div>
+
             </div>
         </div>
     </section>

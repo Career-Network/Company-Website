@@ -9,6 +9,10 @@ h3 {
     margin: 0 !important;
 }
 
+#hero{
+    margin-left: 0px !important;
+}
+
 #list-class .card {
     width: 308px;
     margin: 20px auto;

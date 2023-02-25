@@ -8,7 +8,7 @@ class EducareerController extends Controller
 {
     public function index()
     {
-        return view('list_class');
+        return view('educareer_listclass');
     }
     public function mentor()
     {

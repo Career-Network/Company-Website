@@ -1,0 +1,55 @@
+body
+{
+    background-color: #FFFFFF !important;
+}
+
+.edu
+{
+background: #FF5722;
+border-radius: 20px;
+width: 1200px;
+
+margin-top: 130px !important;
+margin-left: 33px;
+margin-bottom: 20px;
+}
+.h_2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 111%;
+align-items: center;
+color: #FFFFFF;
+}
+.img-fluid{
+
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 50px;
+}
+.bt_2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+display: flex;
+align-items: center;
+}
+
+#kursus{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 42px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* 2 */
+
+color: #FF5722;
+}
