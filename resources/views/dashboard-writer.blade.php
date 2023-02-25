@@ -10,35 +10,17 @@
       <div class="artikel-kamu">
         <div class="artikel-terbaik">
           <h1 class="heading-dashboard mb-4">Artikel terbaik kamu</h1>
-           <div class="card-blog-terdekat">
-            <img src="{{ asset('assets/img/jadwal-terdekat.png') }}" alt="" class="card-blog-terdekat-img">
-            <div class="desc-blog-card-container mt-3">
-              <h1 class="heading-dashboard">Career Network telah luncurkan website...</h1>
-              <p>
-                13 Februari 2023 • 13.00 WIB
-              </p>
-            </div>
-          </div>
-
-          <div class="card-blog-terdekat">
-            <img src="{{ asset('assets/img/jadwal-terdekat.png') }}" alt="" class="card-blog-terdekat-img">
-            <div class="desc-blog-card-container mt-3">
-              <h1 class="heading-dashboard">Career Network telah luncurkan website...</h1>
-              <p>
-                13 Februari 2023 • 13.00 WIB
-              </p>
-            </div>
-          </div>
-
-          <div class="card-blog-terdekat">
-            <img src="{{ asset('assets/img/jadwal-terdekat.png') }}" alt="" class="card-blog-terdekat-img">
-            <div class="desc-blog-card-container mt-3">
-              <h1 class="heading-dashboard">Career Network telah luncurkan website...</h1>
-              <p>
-                13 Februari 2023 • 13.00 WIB
-              </p>
-            </div>
-          </div>
+          @foreach ($blogs as $blog)
+              <a href='{{ "/blog/uploaded/$blog->id" }}' class="card-blog-terdekat">
+                <img src='{{ asset("storage/$blog->image") }}' alt="" class="card-blog-terdekat-img">
+                <div class="desc-blog-card-container mt-3">
+                  <h1 class="heading-dashboard">{{ substr($blog->title, 0, 40) }} ...</h1>
+                  <p>
+                    {{ date('d F Y', strtotime($blog->update_date)) }} • 13.00 WIB
+                  </p>
+                </div>
+              </a>
+          @endforeach
 
           <a href="/blog/uploaded" class="blog-see-more-btn border-0 font-semibold justify-content-end">
                 Lihat Semua

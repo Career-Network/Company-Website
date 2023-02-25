@@ -11,14 +11,14 @@
 
       <div class="btn-section">
           {{-- Button Refresh --}}
-          <span class="option-item">
+          <a href="" class="option-item refresh-btn">
               <span>Segarkan</span>
               <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.10547 1.66406V5.66511H5.10652" stroke="#272727" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M15.7745 12.335V8.33398H11.7734" stroke="#272727" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M14.1022 4.99947C13.764 4.04375 13.1892 3.18927 12.4315 2.51577C11.6737 1.84227 10.7577 1.3717 9.76889 1.14797C8.78008 0.924237 7.75071 0.954638 6.77683 1.23633C5.80295 1.51803 4.9163 2.04184 4.19962 2.75889L1.10547 5.66632M15.776 8.33368L12.6818 11.2411C11.9652 11.9582 11.0785 12.482 10.1046 12.7637C9.13075 13.0454 8.10138 13.0758 7.11257 12.852C6.12376 12.6283 5.20775 12.1577 4.44999 11.4842C3.69224 10.8107 3.11744 9.95625 2.77924 9.00053" stroke="#272727" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-          </span>
+          </a>
           {{-- End of Button Refresh --}}
 
           {{-- Dropdown Daily, Monthly, Year --}}
