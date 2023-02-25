@@ -60,4 +60,8 @@ class User extends Authenticatable
     protected $casts = [
 
     ];
+
+    public function blogs() {
+        return $this->hasMany(Blog::class);
+    }
 }
