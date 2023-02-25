@@ -78,6 +78,7 @@ Route::get('/blog/uploaded/{blogs:id}', [
 Route::get('/slicing_blog', [EducareerController::class, 'slicing'])->name('slicing');
 Route::post('/blog/uploaded', [FeatureController::class, 'storeBlog'])->name('store-blog');
 Route::post('/blog/uploaded/delete', [FeatureController::class, 'destroyBlog'])->name('destroy-blog');
+Route::post('/blog/uploaded/update', [FeatureController::class, 'updateBlog'])->name('update-blog');
 
 //Login feature
 Route::get('/login', [LoginController::class, 'index'])

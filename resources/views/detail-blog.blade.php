@@ -14,7 +14,7 @@
 
     <div class="btn-section">
       {{-- Button Refresh --}}
-      <span class="option-item refresh-btn">
+      <a href="" class="option-item refresh-btn">
         <span>Segarkan</span>
         <svg
           width="17"
@@ -42,7 +42,7 @@
             stroke-linejoin="round"
           />
         </svg>
-      </span>
+      </a>
       {{-- End of Button Refresh --}} 
       
       {{-- Button Delete --}}
@@ -100,52 +100,55 @@
     <h1 class="title-blog">{{ $blog->title }}</h1>
     <p class="blog-author-date">{{ $blog->author }}, {{ date('d F Y', strtotime($blog->update_date)) }} </p>
 
-    <img src='{{ asset("assets/img/$blog->image") }}' class="thumbnail-detail" alt="{{ $blog->title }}'s Image">
+    <img src='{{ asset("storage/$blog->image") }}' class="thumbnail-detail" alt="{{ $blog->title }}'s Image">
 
     <div class="content-blog">
       {!! html_entity_decode($blog->body) !!}
     </div>
   </section>
   
-  <form method="" action="" class="form-edit">
+  <form method="POST" action="{{ route('update-blog') }}" class="form-edit" enctype="multipart/form-data">
+      @csrf
       <div class="input-container">
         <label class="form-check-label" for="judul">Judul Artikel</label>
-        <input class="form-control" type="text" id="judul" value="{{ $blog->title }}">
+        <input class="form-control" name="title" type="text" id="judul" value="{{ $blog->title }}">
       </div>
 
       <div class="row input-container justify-content-between">
         <div class="col mr-3">
           <label class="form-check-label" for="author">Author</label>
-          <input type="text" class="form-control" id="author" aria-label="First name" value="{{ $blog->author }}"> 
+          <input type="text" name="author" class="form-control" id="author" aria-label="First name" value="{{ $blog->author }}"> 
         </div>
         <div class="col">
           <label class="form-check-label" for="tanggal_update">Tanggal Update</label>
-          <input type="date" class="form-control"  aria-label="Last name" value="{{ $blog->update_date }}">
+          <input type="date" name="update_date" class="form-control"  aria-label="Last name" value="{{ $blog->update_date }}">
         </div>
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="tagar">Tagar</label>
-        <input class="form-control" type="text" id="tagar" value="{{ $blog->hastags }}">
+        <input class="form-control" name="hastags" type="text" id="tagar" value="{{ $blog->hastags }}">
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="thumbnail">Thumbnail</label>
-        <input class="form-control" type="file" id="thumbnail" value='{{ asset("assets/img/$blog->image") }}'>
+        <img src='{{ asset("storage/$blog->image") }}' class="thumbnail-detail" alt="{{ $blog->title }}'s Image">
+        <input class="form-control" type="file" name="image" id="thumbnail" value='{{ asset("assets/img/$blog->image") }}'>
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="detail">Detail Artikel</label>
-        <textarea id="detail">
+        <textarea id="detail" name="body">
          {{ $blog->body }}
         </textarea>
       </div>
 
       <div class="button-section">
-        <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+        <button type="button" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
             <span>Batalkan</span>
         </button>
-        <button href="" class="option-item create-blog mt-3" data-bs-dismiss="modal" aria-label="Close">
+        <input type="hidden" name="id" value="{{ $blog->id }}">
+        <button type="submit" class="option-item create-blog mt-3">
             <span>Simpan Perubahan</span>
         </button>
       </div>
@@ -165,7 +168,7 @@
           <button type="submit" class="option-item delete">
               <span>Hapus</span>
           </button>
-          <button class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+          <button type="button" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
               <span>Batalkan</span>
           </button>
         </div>

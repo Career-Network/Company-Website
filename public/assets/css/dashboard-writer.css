@@ -1182,7 +1182,7 @@ form input {
 .kelola-postingan .blogs {
   padding: 1.5rem 0;
 
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(3, auto);
 }
 
 .kelola-postingan img {
@@ -1505,4 +1505,12 @@ form input {
 
 .text-justify {
   text-align: justify !important;
+}
+
+.option-item.refresh-btn {
+  color: #000;
+}
+
+.refresh-btn:hover {
+  color: #000 !important;
 }

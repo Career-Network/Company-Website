@@ -75,17 +75,17 @@
                 <div class="blog-card">
                   <div class="blog-content">
                       <div class="blog-thumbnail mb-16">
-                        <img alt="{{ $blog->title }}'s Image" src='{{ asset("assets/img/$blog->image") }}' class="blog-img" />
+                        <img alt="{{ $blog->title }}'s Image" src='{{ asset("storage/$blog->image") }}' class="blog-img" />
                       </div>
 
                       <div class="blog-desc">
                         <p class="blog-author-date">{{ substr($blog->author, 0, 13) }}, {{ date('d F Y', strtotime($blog->update_date)) }}</p>
                         <h1 class="blog-header-card mb-16">{{ substr($blog->title, 0, 30) }} ...</h1>
                         <p class="blog-desc-card mb-16 mobile-desc">
-                          {{ strip_tags(substr($blog->body, 0, 95)) }}  ...
+                          {!! strip_tags(substr($blog->body, 0, 90)) !!}  ...
                         </p>
                         <p class="blog-desc-card mb-16" style="text-align: justify;">
-                          {{ strip_tags(substr($blog->body, 0, 95)) }}  ...
+                          {!! strip_tags(substr($blog->body, 0, 150)) !!}  ...
                         </p>
                       </div>
                   </div>

@@ -62,10 +62,11 @@ class FeatureController extends Controller
             ->route('dashboard-writer')
             ->with(['success' => 'Blog berhasil diupload!']);
     }
-    public function destroyBlog(Request $request) {
+    public function destroyBlog(Request $request)
+    {
         // get id
         $id = $request->id;
-        
+
         // get blog
         $blog = Blog::find($id);
         Storage::delete($blog->image);
@@ -74,6 +75,41 @@ class FeatureController extends Controller
         return redirect()
             ->route('dashboard-writer')
             ->with(['success' => 'Blog berhasil dihapus!']);
+    }
+    public function updateBlog(Request $request)
+    {
+        // get id
+        $id = $request->id;
+
+        // dd($request);
+
+        // validate form
+        $this->validate($request, [
+            'title' => 'required|max:100',
+            'author' => 'required',
+            'body' => 'required',
+            'update_date' => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:5000',
+            'hastags' => 'required',
+        ]);
+
+        // upload image
+        $image = $request->file('image')->store('thumbnails');
+
+        // get blog
+        $blog = Blog::where('id', '=', (int) $id)->update([
+            'user_id' => 1,
+            'title' => $request->title,
+            'author' => $request->author,
+            'update_date' => $request->update_date,
+            'body' => $request->body,
+            'image' => $image,
+            'hastags' => $request->hastags,
+        ]);
+
+        return redirect()
+            ->route('blog-writer')
+            ->with(['success' => 'Blog berhasil diupdate!']);
     }
     public function uploaded()
     {
