@@ -75,7 +75,7 @@
                 <div class="blog-card">
                   <div class="blog-content">
                       <div class="blog-thumbnail mb-16">
-                        <img alt="" src='{{ asset("assets/img/$blog->image") }}' class="blog-img" />
+                        <img alt="{{ $blog->title }}'s Image" src='{{ asset("assets/img/$blog->image") }}' class="blog-img" />
                       </div>
 
                       <div class="blog-desc">
@@ -90,7 +90,7 @@
                       </div>
                   </div>
                   
-                  <a href="/blog/career-network-telah-luncurkan-website-company" class="blog-see-more-btn">
+                  <a href="/blog/uploaded/{{ $blog->id }}" class="blog-see-more-btn">
                     Lihat Selengkapnya
                   </a>
                 </div>

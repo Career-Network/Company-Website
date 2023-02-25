@@ -48,7 +48,7 @@
                   @if (isset($detail) && $detail)
                       <h1 class="heading">Blog</h1>
                       <div class="breadcrums">
-                        <a href="{{ route('blog-writer') }}">Semua Artikel</a>/<a href="{{ route('detail-blog-writer') }}">Detail Artikel</a>
+                        <a href="{{ route('blog-writer') }}">Semua Artikel</a>/<a href="">Detail Artikel</a>
                       </div>
                   @endif
                 @endif

@@ -42,9 +42,12 @@ class FeatureController extends Controller
     {
         return view('schedule-writer');
     }
-    public function detail()
+    public function detail($id)
     {
-        return view('detail-blog');
+        $blog = Blog::find($id)->first();
+        return view('detail-blog', [
+            'blog' => $blog,
+        ]);
     }
     public function tnc()
     {

@@ -71,7 +71,7 @@ Route::get('/blog/schedule', [FeatureController::class, 'schedule'])->name(
 Route::get('/blog/create', [FeatureController::class, 'create'])->name(
     'create-writer'
 );
-Route::get('/blog/career-network-telah-luncurkan-website-company', [
+Route::get('/blog/uploaded/{blogs:id}', [
     FeatureController::class,
     'detail',
 ])->name('detail-blog-writer');

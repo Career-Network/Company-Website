@@ -97,15 +97,13 @@
   </section>
 
   <section class="blogs-detail">
-    <h1 class="title-blog">Career Network telah luncurkan Website Company</h1>
-    <p class="blog-author-date">Indah Mariana, 17 Desember 2025 </p>
+    <h1 class="title-blog">{{ $blog->title }}</h1>
+    <p class="blog-author-date">{{ $blog->author }}, {{ date('d F Y', strtotime($blog->update_date)) }} </p>
 
-    <img src="{{ asset('assets/img/thumbnail-detail.png') }}" class="thumbnail-detail" alt="">
+    <img src='{{ asset("assets/img/$blog->image") }}' class="thumbnail-detail" alt="{{ $blog->title }}'s Image">
 
     <div class="content-blog">
-      <span class="bold">Career Network</span> - Dalam pertama kali Career Network mengeluarkan website company resmi. Dengan mengusung tema “Accelerate your growth with us” memberikan sentuhan gabungan antara formal dan interaktif. Sehingga dapat beradaptasi dengan perkembangan zaman, terutama anak muda. Sebagai wujud komitmen terhadap client dan investor, website company hadir untuk memberikan informasi perusahaan secara jelas, ringkas dan valid. Dengan harapan sebagai awalan untuk meningkatkan promosi brand yang dikenal luas dan menjalin koneksi dengan client potensial. <br /><br />
-      Terdapat berbagai ilustrasi yang ada di website untuk membantu pengguna untuk memahami dan membayangkan suatu informasi agar lebih baik. Selain itu, membangun daya tarik emosional yang kuat turut menjadi tujuan dalam membangun website. Ditambah keunikan warna yang selaras antara orange yang menjadi identitas perusahaan dengan perpaduan warna biru. <br /><br />
-      Career Network memiliki dua produk, yaitu Career Network EduCareer untuk memberikan pelatihan online bagi mahasiswa/i secara 1 on 1 dan kelompok dengan mentor yang expert di bidangnya dan kurikulum terstruktur. Selain itu, terdapat produk lain yaitu Career Network Sonic sebagai layanan pemesanan jasa Freelance untuk membantu kebutuhan masyarakat. Kedua produk ini masih pada tahap pengembangan dan akan diluncurkan pada beberapa bulan kedepan. Stay tune!l.</p>
+      {!! html_entity_decode($blog->body) !!}
     </div>
   </section>
   
@@ -127,7 +125,7 @@
       </div>
 
       <div class="input-container">
-        <label class="form-check-label" for="tagar">Tagar</label>
+        <label class="form-check-label" for="tagar"></label>
         <input class="form-control" type="text" id="tagar" value="#CareerNetwork">
       </div>
 
