@@ -21,17 +21,10 @@ class User extends Authenticatable
      */
 
     protected $table = 'users';
-    protected $primaryKey = 'user_id';
     protected $keyType = 'string';
     public $incrementing = false;
-   
-    protected $fillable = [
-        'user_id',
-        'name',
-        'email',
-        'number',
-        'password',
-    ];
+    public $timestamps = false;
+    protected $guarded = ['id'];
     
     protected static function boot() {
         parent::boot();
