@@ -1234,7 +1234,7 @@ form input {
 .kelola-postingan .blogs {
   padding: 1.5rem 0;
 
-  grid-template-columns: repeat(3, auto);
+  /* grid-template-columns: repeat(3, auto); */
 }
 
 /* .kelola-postingan img {
@@ -1448,11 +1448,11 @@ form input {
     flex-direction: column;
   }
 
-  .kelola-postingan .blogs {
+  /* .kelola-postingan .blogs {
     padding: 1.5rem 0;
 
     grid-template-columns: repeat(1, auto);
-  }
+  } */
 
   .artikel-kamu {
     flex-direction: column;
@@ -1552,11 +1552,11 @@ form input {
     justify-content: flex-start;
   }
 
-  .kelola-postingan .blogs {
+  /* .kelola-postingan .blogs {
     padding: 1.5rem 0;
 
     grid-template-columns: repeat(2, auto);
-  }
+  } */
 }
 
 .text-justify {
