@@ -25,34 +25,69 @@
 
     <div class="container">
         <h2 id="kursus">Semua Kursus</h2>
-        <div class="row container">
+        <div class="row container pb-5">
             <div class="col-md-4" id="card">
                     <div class="card container" id="kartu">
                         <img src="{{ asset('assets/img/kelas-educareer/HR.webp') }}" class="card-img" id="kartu-image">
                         <div class="card-body">
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
-                            <a href="#">Lihat Detail </a>
+                            <a href="#" class="detail">Lihat Detail &#8594; </a>
                         </div>
 
                     </div>
                 </div>
             <div class="col-md-4">
                 <div class="card container" id="kartu">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{{ asset('assets/img/kelas-educareer/UI_UX.webp') }}" class="card-img" id="kartu-image">
                     <div class="card-body">
-
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
+                            <a href="#" class="detail">Lihat Detail &#8594; </a>
                     </div>
                 </div>
 
             </div>
             <div class="col-md-4">
                 <div class="card container" id="kartu">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="{{ asset('assets/img/kelas-educareer/GD.webp') }}" class="card-img" id="kartu-image" >
                     <div class="card-body">
-
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
+                        <a href="#" class="detail">Lihat Detail &#8594; </a>
                     </div>
                 </div>
             </div>
+
+        </div>
+        <div class="row container pb-5">
+            <div class="col-md-4" id="card">
+                    <div class="card container" id="kartu">
+                        <img src="{{ asset('assets/img/kelas-educareer/HR.webp') }}" class="card-img" id="kartu-image">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
+                            <a href="#" class="detail">Lihat Detail &#8594; </a>
+                        </div>
+
+                    </div>
+                </div>
+            <div class="col-md-4">
+                <div class="card container" id="kartu">
+                    <img src="{{ asset('assets/img/kelas-educareer/UI_UX.webp') }}" class="card-img" id="kartu-image">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
+                            <a href="#" class="detail">Lihat Detail &#8594; </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="card container" id="kartu">
+                    <img src="{{ asset('assets/img/kelas-educareer/GD.webp') }}" class="card-img" id="kartu-image" >
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
+                        <a href="#" class="detail">Lihat Detail &#8594; </a>
+                    </div>
+                </div>
+            </div>
+            <br>
         </div>
     </div>
 
