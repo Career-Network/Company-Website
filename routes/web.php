@@ -79,6 +79,7 @@ Route::get('/slicing_blog', [EducareerController::class, 'slicing'])->name('slic
 Route::post('/blog/uploaded', [FeatureController::class, 'storeBlog'])->name('store-blog');
 Route::post('/blog/uploaded/delete', [FeatureController::class, 'destroyBlog'])->name('destroy-blog');
 Route::post('/blog/uploaded/update', [FeatureController::class, 'updateBlog'])->name('update-blog');
+Route::post('/blog/upload-image', [FeatureController::class, 'uploadImage']);
 
 //Login feature
 Route::get('/login', [LoginController::class, 'index'])

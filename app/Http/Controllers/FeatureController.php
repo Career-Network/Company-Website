@@ -6,6 +6,7 @@ use App\Models\Blog;
 use App\Models\Feature;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use League\CommonMark\Util\UrlEncoder;
 
 class FeatureController extends Controller
 {
@@ -94,10 +95,17 @@ class FeatureController extends Controller
         ]);
 
         // upload image
-        $image = $request->file('image')->store('thumbnails');
+        $image = $request
+            ->file('image')
+            ->storeAs(
+                'thumbnails',
+                uuid_create() .
+                    '.' .
+                    $request->file('image')->getClientOriginalExtension()
+            );
 
         // get blog
-        $blog = Blog::where('id', '=', (int) $id)->update([
+        Blog::where('id', '=', (int) $id)->update([
             'user_id' => 1,
             'title' => $request->title,
             'author' => $request->author,
@@ -110,6 +118,11 @@ class FeatureController extends Controller
         return redirect()
             ->route('blog-writer')
             ->with(['success' => 'Blog berhasil diupdate!']);
+    }
+    public function uploadImage()
+    {
+        $imgpath = request()->file('file')->store('uploads', 'public');
+        return response()->json(['location'=> url("../../storage/$imgpath")]);
     }
     public function uploaded()
     {

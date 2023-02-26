@@ -146,12 +146,33 @@
       </div>
 
       <div class="button-section">
-        <a class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+        <a href="{{ "/blog/uploaded/$blog->id" }}" class="option-item preview mt-3">
             <span>Batalkan</span>
         </a>
         <a class="option-item create-blog mt-3" data-bs-toggle="modal" data-bs-target="#item-edit">
             <span>Simpan Perubahan</span>
         </a>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="item-edit" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-head">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan Perubahan?</h1>
+              <p>Artikel yang sudah diubah tidak akan hilang ketika anda kembali</p>
+            </div>
+            <div class="modal-content">
+              <input type="hidden" name="id" value="{{ $blog->id }}">
+              <button type="submit" class="option-item save-modal-btn">
+                  <span>Simpan</span>
+              </button>
+              <button type="button" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+                  <span>Batalkan</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
   </form>
 
@@ -176,26 +197,6 @@
       </form>
     </div>
   </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="item-edit" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-head">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan Perubahan?</h1>
-          <p>Artikel yang sudah diubah tidak akan hilang ketika anda kembali</p>
-        </div>
-        <div class="modal-content">
-          <button href="" class="option-item save-modal-btn">
-              <span>Simpan</span>
-          </button>
-          <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-              <span>Batalkan</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 
 <style>
@@ -204,26 +205,46 @@
 <script src="https://cdn.tiny.cloud/1/zhf194pj9ma6yja8lros9l6orpka9f1dvnj5zhbtfk3m26lf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
   tinymce.init({
-    selector: 'textarea',
-    height: 500,
-    plugins: [
-      'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
-      'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
-      'insertdatetime', 'media', 'table', 'help', 'wordcount', 'image code'
-    ],
+      selector: 'textarea',
+      height: 300,
+      setup: function (editor) {
+            editor.on('init change', function () {
+            editor.save();
+          });
+      },
+      plugins: [
+        'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
+        'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+        'insertdatetime', 'media', 'table', 'help', 'wordcount', 'image code'
+      ],
     toolbar: 'undo redo | blocks | ' +
-    'bold italic backcolor | alignleft aligncenter ' +
-    'alignright alignjustify | bullist numlist outdent indent | ' +
-    'removeformat | help | image code',
-    /* without images_upload_url set, Upload tab won't show up*/
-    images_upload_url: 'postAcceptor.php',
+      'bold italic backcolor | alignleft aligncenter ' +
+      'alignright alignjustify | bullist numlist outdent indent | ' +
+      'removeformat | help | image code | insertfile undo redo',
+    image_title: true,
+    automatic_uploads: true,
+    images_upload_url: '/blog/upload-image',
+    file_picker_types: 'image',
+    file_picker_callback: function(cb, value, meta) {
 
-    /* we override default upload handler to simulate successful upload*/
-    images_upload_handler: function (blobInfo, success, failure) {
-      setTimeout(function () {
-        /* no matter what you upload, we will turn it into TinyMCE logo :)*/
-        success('http://moxiecode.cachefly.net/tinymce/v9/images/logo.png');
-      }, 2000);
+      var input = document.createElement('input');
+      input.setAttribute('type', 'file');
+      input.setAttribute('accept', 'image/*');
+      input.onchange = function() {
+        var file = this.files[0];
+
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function () {
+          var id = 'blobid' + (new Date()).getTime();
+          var blobCache =  tinymce.activeEditor.editorUpload.blobCache;
+          var base64 = reader.result.split(',')[1];
+          var blobInfo = blobCache.create(id, file, base64);
+          blobCache.add(blobInfo);
+          cb(blobInfo.blobUri(), { title: file.name });
+        };
+      };
+      input.click();
     },
     content_style: 'body { font-family:Poppins,Arial,sans-serif; font-size:16px }'
   });
