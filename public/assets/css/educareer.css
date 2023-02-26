@@ -53,3 +53,34 @@ align-items: center;
 
 color: #FF5722;
 }
+
+#kartu{
+    width: 310px;
+    height: 386px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(5, 16, 55, 0.08);
+    border-radius: 20px;
+    justify-content: center !important;
+    align-items: center;
+}
+
+#kartu-image{
+width: 274px;
+height: 204px;
+border-radius: 17px;
+padding: 10px;;
+}
+
+.card-text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+text-align: justify;
+
+/* Neutral/70 */
+
+color: #7A7A7A;
+    
+}

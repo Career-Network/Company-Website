@@ -36,7 +36,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="card" >
-                        <img src="{{ asset('assets/img/kelas-educareer/Human Resources.webp') }}" class="card-img-top" alt="">
+                        <img src="{{ asset('assets/img/kelas-educareer/HR.webp') }}" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="bt_1 fw_semibold">Human Resources</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
