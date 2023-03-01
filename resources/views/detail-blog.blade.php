@@ -134,7 +134,7 @@
 
       <div class="input-container">
         <label class="form-check-label" for="thumbnail">Thumbnail</label>
-        <img src='{{ asset("storage/$blog->image") }}' class="thumbnail-detail" alt="{{ $blog->title }}'s Image">
+        <img src='{{ asset("storage/$blog->image") }}' id="thumbnailPreview" class="thumbnail-detail" alt="{{ $blog->title }}'s Image">
         <input class="form-control" type="file" name="image" id="thumbnail" value='{{ asset("assets/img/$blog->image") }}'>
       </div>
 
@@ -204,6 +204,17 @@
 </style>
 <script src="https://cdn.tiny.cloud/1/zhf194pj9ma6yja8lros9l6orpka9f1dvnj5zhbtfk3m26lf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
+  // Setting up thumbnail preview when uploading blog
+  const thumbnail = document.getElementById("thumbnail");
+  const thumbnailPreview = document.getElementById("thumbnailPreview");
+
+  thumbnail.onchange = evt => {
+    const [file] = thumbnail.files
+    if (file) {
+      thumbnailPreview.src = URL.createObjectURL(file)
+    }
+  }
+
   tinymce.init({
       selector: 'textarea',
       height: 300,

@@ -17,7 +17,7 @@
       @csrf
       <div class="input-container">
         <label class="form-check-label" for="judul">Judul Artikel</label>
-        <input class="form-control" type="text" id="judul" name="title" required>
+        <input class="form-control" type="text" id="title" name="title" required>
       </div>
 
       <div class="row input-container justify-content-between">
@@ -27,13 +27,13 @@
         </div>
         <div class="col">
           <label class="form-check-label" for="tanggal_update">Tanggal Update</label>
-          <input type="date" class="form-control"  aria-label="Last name" name="update_date">
+          <input type="date" class="form-control"  aria-label="Last name" id="update_date" name="update_date">
         </div>
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="tagar">Tagar</label>
-        <input class="form-control" type="text" id="tagar" name="hastags">
+        <input class="form-control" type="text" id="hastags" name="hastags">
       </div>
 
       <div class="input-container">
@@ -86,7 +86,7 @@
           <p>Anda dapat melanjutkan di lain waktu tanpa menghapus</p>
         </div>
         <div class="modal-content">
-          <button href="" class="option-item save-modal-btn">
+          <button id="btnSaveDraft" class="option-item save-modal-btn">
               <span>Simpan Draf</span>
           </button>
           <button class="option-item preview mt-3 hapus-create">
@@ -150,6 +150,50 @@
       thumbnailPreview.src = URL.createObjectURL(file)
     }
   }
+
+  // draft default variable
+  const draft = {
+    title: "Title",
+    author: "Author",
+    update_date: "Update Date",
+    hastags: "Hastags",
+    image: [],
+    body: "Body Blog",
+  };
+
+  const drafts = [];
+
+  // save as draft
+  const btnSaveDraft = document.getElementById("btnSaveDraft");
+  btnSaveDraft.addEventListener('click', () => {
+    // get value input
+    const title      = document.getElementById("title").value;
+    const author     = document.getElementById("author").value;
+    const updateDate = document.getElementById("update_date").value;
+    const hastags    = document.getElementById("hastags").value;
+    const image      = document.getElementById("thumbnail").value;
+    const body       = document.getElementById("detail").value;
+
+    // set value to draft object
+    draft.title       = title;
+    draft.author      = author;
+    draft.update_date = updateDate;
+    draft.hastags     = hastags;
+    draft.image       = image;
+    draft.body        = body;
+
+    // save to localstorage
+    if(localStorage.getItem("drafts")) {
+      const draftStorage = JSON.parse(localStorage.getItem("drafts"));
+      draftStorage.push(draft);
+      localStorage.setItem("drafts", JSON.stringify(draftStorage));
+    } else {
+      drafts.push(draft);
+      localStorage.setItem("drafts", JSON.stringify(drafts));
+    }
+  })
+
+  console.log(localStorage.getItem("drafts"))
 
   // Initialize tinymce editor
   tinymce.init({
