@@ -113,29 +113,55 @@
       @csrf
       <div class="input-container">
         <label class="form-check-label" for="judul">Judul Artikel</label>
-        <input class="form-control" name="title" type="text" id="judul" value="{{ $blog->title }}">
+        <input class="form-control @error('title') is-invalid @enderror" name="title" type="text" id="judul" value="{{ $blog->title }}">
+        @error('title')
+            <div class="invalid-feedback">
+              Please fill the title for your blog.
+            </div>
+        @enderror
       </div>
 
       <div class="row input-container justify-content-between">
         <div class="col mr-3">
           <label class="form-check-label" for="author">Author</label>
-          <input type="text" name="author" class="form-control" id="author" aria-label="First name" value="{{ $blog->author }}"> 
+          <input type="text" name="author" class="form-control @error('author') is-invalid @enderror" id="author" aria-label="First name" value="{{ $blog->author }}"> 
+          @error('author')
+            <div class="invalid-feedback">
+              Please fill the author of the blog.
+            </div>
+          @enderror
         </div>
         <div class="col">
           <label class="form-check-label" for="tanggal_update">Tanggal Update</label>
-          <input type="date" name="update_date" class="form-control"  aria-label="Last name" value="{{ $blog->update_date }}">
+          <input type="date" name="update_date" class="form-control @error('update_date') is-invalid @enderror"  aria-label="Last name" value="{{ $blog->update_date }}">
+          @error('update_date')
+            <div class="invalid-feedback">
+              Please fill the date uploaded for your blog.
+            </div>
+          @enderror
         </div>
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="tagar">Tagar</label>
-        <input class="form-control" name="hastags" type="text" id="tagar" value="{{ $blog->hastags }}">
+        <input class="form-control @error('hastags') is-invalid @enderror" name="hastags" type="text" id="tagar" value="{{ $blog->hastags }}">
+        @error('hastags')
+            <div class="invalid-feedback">
+              Please fill the hastags uploaded for your blog.
+            </div>
+        @enderror
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="thumbnail">Thumbnail</label>
         <img src='{{ asset("storage/$blog->image") }}' id="thumbnailPreview" class="thumbnail-detail" alt="{{ $blog->title }}'s Image">
-        <input class="form-control" type="file" name="image" id="thumbnail" value='{{ asset("assets/img/$blog->image") }}'>
+        <input type="hidden" name="imageOld" value="{{ $blog->image }}">
+        <input class="form-control @error('image') is-invalid @enderror" type="file" name="image" id="thumbnail" value='{{ asset("assets/img/$blog->image") }}'>
+        @error('image')
+            <div class="invalid-feedback">
+              Please upload the thumbnail for your blog.
+            </div>
+        @enderror
       </div>
 
       <div class="input-container">

@@ -19,11 +19,17 @@
       href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}"
     />
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      .swal2-confirm.swal2-styled {
+        background: #ff5722 !important;
+      }
+    </style>
 
   </head>
 
   <body>
+
+    @include('sweetalert::alert')
 
     @include('layouts.writer-system.sidebar')
 

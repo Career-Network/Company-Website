@@ -4,12 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Feature;
+use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use League\CommonMark\Util\UrlEncoder;
+use Exception;
+
+use function PHPUnit\Framework\isEmpty;
+use function PHPUnit\Framework\isNull;
 
 class FeatureController extends Controller
 {
@@ -49,26 +54,38 @@ class FeatureController extends Controller
         ]);
 
         if ($validation->fails()) {
-            return redirect()->back()->withInput()->withErrors($validation);
+            toast('Your blog does not uploaded!','error');
+            return redirect()
+                ->back()
+                ->withInput()
+                ->withErrors($validation);
         }
 
         // upload image
         $image = $request->file('image')->store('thumbnails');
 
         // store blog
-        $blog = Blog::create([
-            'user_id' => 1,
-            'title' => $request->title,
-            'author' => $request->author,
-            'update_date' => $request->update_date,
-            'body' => $request->body,
-            'image' => $image,
-            'hastags' => $request->hastags,
-        ]);
+        try {
+            Blog::create([
+                'user_id' => 1,
+                'title' => $request->title,
+                'author' => $request->author,
+                'update_date' => $request->update_date,
+                'body' => $request->body,
+                'image' => $image,
+                'hastags' => $request->hastags,
+            ]);
+        } catch (Exception $e) {
+            toast('There is Internal Server Error!','error');
+            return redirect()
+                ->route('blog-writer')
+                ->with(['error' => 'Blog berhasil diupload!']);
+        }
 
+        toast('You\'ve Successfully Uploaded Your Blog!','success');
         return redirect()
-            ->route('dashboard-writer')
-            ->with(['success' => 'Blog berhasil diupload!']);
+            ->route('blog-writer')
+            ->with(['error' => 'Blog gagal diupload!']);
     }
     public function destroyBlog(Request $request)
     {
@@ -80,48 +97,70 @@ class FeatureController extends Controller
         Storage::delete($blog->image);
         $blog->delete();
 
+        toast('You\'ve Successfully Deleted Your Blog!','success');
         return redirect()
-            ->route('dashboard-writer')
-            ->with(['success' => 'Blog berhasil dihapus!']);
+            ->route('blog-writer')
+            ->with(['success' => 'Blog successfully deleted!']);
     }
     public function updateBlog(Request $request)
     {
         // get id
         $id = $request->id;
 
-        // dd($request);
-
         // validate form
-        $this->validate($request, [
+        $validation = Validator::make($request->all(), [
             'title' => 'required|max:100',
             'author' => 'required',
             'body' => 'required',
             'update_date' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:5000',
+            'image' => 'image|mimes:jpeg,png,jpg,gif|max:5000',
             'hastags' => 'required',
         ]);
 
-        // upload image
-        $image = $request
-            ->file('image')
-            ->storeAs(
-                'thumbnails',
-                uuid_create() .
-                    '.' .
-                    $request->file('image')->getClientOriginalExtension()
-            );
+        if ($validation->fails()) {
+            toast('Your blog does not uploaded!','error');
+            return redirect()
+                ->back()
+                ->withInput()
+                ->withErrors($validation);
+        }
+
+        $image = '';
+
+        if ($request->file('image')) {
+            // upload image
+            $image = $request
+                ->file('image')
+                ->storeAs(
+                    'thumbnails',
+                    uuid_create() .
+                        '.' .
+                        $request->file('image')->getClientOriginalExtension()
+                );
+            Storage::delete($request->imageOld);
+        } else {
+            $image = $request->imageOld;
+        }
 
         // get blog
-        Blog::where('id', '=', (int) $id)->update([
-            'user_id' => 1,
-            'title' => $request->title,
-            'author' => $request->author,
-            'update_date' => $request->update_date,
-            'body' => $request->body,
-            'image' => $image,
-            'hastags' => $request->hastags,
-        ]);
+        try {
+            Blog::where('id', '=', (int) $id)->update([
+                'user_id' => 1,
+                'title' => $request->title,
+                'author' => $request->author,
+                'update_date' => $request->update_date,
+                'body' => $request->body,
+                'image' => $image,
+                'hastags' => $request->hastags,
+            ]);
+        } catch (Exception $e) {
+            toast('There is Internal Server Error!','error');
+            return redirect()
+                ->route('blog-writer')
+                ->with(['error' => 'Blog berhasil diupload!']);
+        }
 
+        toast('You\'ve Successfully Updated Your Blog!','success');
         return redirect()
             ->route('blog-writer')
             ->with(['success' => 'Blog berhasil diupdate!']);

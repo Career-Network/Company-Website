@@ -22,7 +22,7 @@
         @enderror
       <div class="input-container">
         <label class="form-check-label" for="judul">Judul Artikel</label>
-        <input class="form-control @error('title') is-invalid @enderror" type="text" id="title" name="title">
+        <input class="form-control @error('title') is-invalid @enderror" type="text" id="title" value="{{ old("title") }}" name="title">
         @error('title')
             <div class="invalid-feedback">
               Please fill the title for your blog.
@@ -33,7 +33,7 @@
       <div class="row input-container justify-content-between">
         <div class="col mr-3">
           <label class="form-check-label" for="author">Author</label>
-          <input type="text" class="form-control @error('author') is-invalid @enderror" id="author" aria-label="First name" name="author"> 
+          <input type="text" class="form-control @error('author') is-invalid @enderror" id="author" aria-label="First name" value="{{ old("author") }}" name="author"> 
           @error('author')
             <div class="invalid-feedback">
               Please fill the author of the blog.
@@ -42,7 +42,7 @@
         </div>
         <div class="col">
           <label class="form-check-label" for="tanggal_update">Tanggal Upload</label>
-          <input type="date" class="form-control @error('update_date') is-invalid @enderror"  aria-label="Last name" id="update_date" name="update_date">
+          <input type="date" class="form-control @error('update_date') is-invalid @enderror" value="{{ old("update_date") }}" aria-label="Last name" id="update_date" name="update_date">
           @error('update_date')
             <div class="invalid-feedback">
               Please fill the date uploaded for your blog.
@@ -53,7 +53,7 @@
 
       <div class="input-container">
         <label class="form-check-label" for="tagar">Tagar</label>
-        <input placeholder="#self-improvement #extraordinary" class="form-control @error('hastags') is-invalid @enderror" type="text" id="hastags" name="hastags">
+        <input placeholder="#self-improvement #extraordinary" class="form-control @error('hastags') is-invalid @enderror" type="text" id="hastags" value="{{ old("hastags") }}" name="hastags">
         @error('hastags')
             <div class="invalid-feedback">
               Please fill the hastags uploaded for your blog.
@@ -64,7 +64,7 @@
       <div class="input-container">
         <label class="form-check-label" for="thumbnail">Thumbnail</label>
         <img src="#" id="thumbnailPreview" class="thumbnail-detail" alt="Image Preview" />
-        <input class="form-control @error('image') is-invalid @enderror" type="file" id="thumbnail" name="image">
+        <input class="form-control @error('image') is-invalid @enderror" type="file" id="thumbnail" value="{{ old("image") }}" name="image">
         @error('image')
             <div class="invalid-feedback">
               Please upload the thumbnail for your blog.
@@ -74,7 +74,7 @@
 
       <div class="input-container">
         <label class="form-check-label" for="detail">Detail Artikel</label>
-        <textarea id="detail" name="body"></textarea>
+        <textarea id="detail" name="body">{{ old("body") }}</textarea>
       </div>
 
       <div class="button-section">

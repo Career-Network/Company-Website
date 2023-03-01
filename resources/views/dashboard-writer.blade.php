@@ -45,7 +45,7 @@
       <h1 class="heading-dashboard">Kelola postingan artikel anda</h1>
       <div class="kelola-postingan">
         <section class="header-blogs">
-          <a href="{{ route('create-writer') }}" class="option-item lihat-blog">
+          <a href="{{ route('blog-writer') }}" class="option-item lihat-blog">
               <span>Lihat Artikel</span>
           </a>
 
@@ -82,5 +82,6 @@
        <div class="option-item">Lihat Semua Artikel</div>
       </div>
     </div>
+    
 @endsection
     

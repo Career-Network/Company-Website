@@ -29,7 +29,7 @@
         </div>
 
         {{-- Header Calendar  --}}
-        <h2>Februari 2023</h2>
+        <h2>{{ date('F Y') }}</h2>
         {{-- End of Header Calendar  --}}
 
         <div class="btn-section">
