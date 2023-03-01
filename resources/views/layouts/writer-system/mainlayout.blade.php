@@ -19,6 +19,8 @@
       href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}"
     />
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   </head>
 
   <body>

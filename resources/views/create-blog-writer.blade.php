@@ -15,31 +15,61 @@
 
   <form method="POST" action="{{ route('store-blog') }}" class="form-edit d-flex flex-column" enctype="multipart/form-data">
       @csrf
+      @error('title')
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+        @enderror
       <div class="input-container">
         <label class="form-check-label" for="judul">Judul Artikel</label>
-        <input class="form-control" type="text" id="title" name="title" required>
+        <input class="form-control @error('title') is-invalid @enderror" type="text" id="title" name="title">
+        @error('title')
+            <div class="invalid-feedback">
+              Please fill the title for your blog.
+            </div>
+        @enderror
       </div>
 
       <div class="row input-container justify-content-between">
         <div class="col mr-3">
           <label class="form-check-label" for="author">Author</label>
-          <input type="text" class="form-control" id="author" aria-label="First name" name="author"> 
+          <input type="text" class="form-control @error('author') is-invalid @enderror" id="author" aria-label="First name" name="author"> 
+          @error('author')
+            <div class="invalid-feedback">
+              Please fill the author of the blog.
+            </div>
+          @enderror
         </div>
         <div class="col">
-          <label class="form-check-label" for="tanggal_update">Tanggal Update</label>
-          <input type="date" class="form-control"  aria-label="Last name" id="update_date" name="update_date">
+          <label class="form-check-label" for="tanggal_update">Tanggal Upload</label>
+          <input type="date" class="form-control @error('update_date') is-invalid @enderror"  aria-label="Last name" id="update_date" name="update_date">
+          @error('update_date')
+            <div class="invalid-feedback">
+              Please fill the date uploaded for your blog.
+            </div>
+          @enderror
         </div>
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="tagar">Tagar</label>
-        <input class="form-control" type="text" id="hastags" name="hastags">
+        <input placeholder="#self-improvement #extraordinary" class="form-control @error('hastags') is-invalid @enderror" type="text" id="hastags" name="hastags">
+        @error('hastags')
+            <div class="invalid-feedback">
+              Please fill the hastags uploaded for your blog.
+            </div>
+        @enderror
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="thumbnail">Thumbnail</label>
         <img src="#" id="thumbnailPreview" class="thumbnail-detail" alt="Image Preview" />
-        <input class="form-control" type="file" id="thumbnail" name="image">
+        <input class="form-control @error('image') is-invalid @enderror" type="file" id="thumbnail" name="image">
+        @error('image')
+            <div class="invalid-feedback">
+              Please upload the thumbnail for your blog.
+            </div>
+        @enderror
       </div>
 
       <div class="input-container">
@@ -187,13 +217,13 @@
       const draftStorage = JSON.parse(localStorage.getItem("drafts"));
       draftStorage.push(draft);
       localStorage.setItem("drafts", JSON.stringify(draftStorage));
+      window.location.href = "/blog/schedule";
     } else {
       drafts.push(draft);
       localStorage.setItem("drafts", JSON.stringify(drafts));
+      window.location.href = "/blog/schedule";
     }
   })
-
-  console.log(localStorage.getItem("drafts"))
 
   // Initialize tinymce editor
   tinymce.init({

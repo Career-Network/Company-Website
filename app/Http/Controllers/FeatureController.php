@@ -4,8 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Feature;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 use League\CommonMark\Util\UrlEncoder;
 
 class FeatureController extends Controller
@@ -33,10 +36,10 @@ class FeatureController extends Controller
     {
         return view('create-blog-writer');
     }
-    public function storeBlog(Request $request)
+    public function storeBlog(Request $request): RedirectResponse
     {
         // validate form
-        $this->validate($request, [
+        $validation = Validator::make($request->all(), [
             'title' => 'required|max:100',
             'author' => 'required',
             'body' => 'required',
@@ -44,6 +47,10 @@ class FeatureController extends Controller
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:5000',
             'hastags' => 'required',
         ]);
+
+        if ($validation->fails()) {
+            return redirect()->back()->withInput()->withErrors($validation);
+        }
 
         // upload image
         $image = $request->file('image')->store('thumbnails');
@@ -121,8 +128,10 @@ class FeatureController extends Controller
     }
     public function uploadImage()
     {
-        $imgpath = request()->file('file')->store('uploads', 'public');
-        return response()->json(['location'=> url("../../storage/$imgpath")]);
+        $imgpath = request()
+            ->file('file')
+            ->store('uploads', 'public');
+        return response()->json(['location' => url("../../storage/$imgpath")]);
     }
     public function uploaded()
     {
