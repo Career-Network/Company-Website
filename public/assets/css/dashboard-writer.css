@@ -1570,3 +1570,21 @@ form input {
 .refresh-btn:hover {
   color: #000 !important;
 }
+
+.hapus-create {
+  transition: .8s;
+}
+
+.hapus-create a {
+  color: #ff5722;
+  width: 100%;
+}
+
+.hapus-create:hover {
+  background: #ff5722;
+}
+
+.hapus-create:hover a,
+.hapus-create a:hover {
+  color: #fff !important;
+}

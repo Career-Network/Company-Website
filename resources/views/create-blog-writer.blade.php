@@ -38,6 +38,7 @@
 
       <div class="input-container">
         <label class="form-check-label" for="thumbnail">Thumbnail</label>
+        <img src="#" id="thumbnailPreview" class="thumbnail-detail" alt="Image Preview" />
         <input class="form-control" type="file" id="thumbnail" name="image">
       </div>
 
@@ -67,7 +68,7 @@
               <button type="submit" class="option-item save-modal-btn">
                   <span>Terbitkan Sekarang</span>
               </button>
-              <button href="" class="option-item preview mt-3" data-bs-toggle="modal" data-bs-target="#item-jadwal">
+              <button type="button" class="option-item preview mt-3" data-bs-toggle="modal" data-bs-target="#item-jadwal">
                   <span>Jadwalkan Postingan</span>
               </button>
             </div>
@@ -88,8 +89,8 @@
           <button href="" class="option-item save-modal-btn">
               <span>Simpan Draf</span>
           </button>
-          <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-              <span>Hapus</span>
+          <button class="option-item preview mt-3 hapus-create">
+              <a href="{{ route('dashboard-writer') }}">Hapus</a>
           </button>
         </div>
       </div>
@@ -103,12 +104,9 @@
         <div class="modal-head">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Pilih tanggal dan waktu untuk mempublikasikan artikel ini</h1>
           <div class="buttons-modal">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Choose date</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
+            <div class="col-md-6">
+              <input type="date" class="form-control"  aria-label="Last name" name="update_date">
+            </div>
 
             <select class="form-select " aria-label="Default select example">
               <option selected>Choose time</option>
@@ -137,6 +135,23 @@
 </style>
 <script src="https://cdn.tiny.cloud/1/zhf194pj9ma6yja8lros9l6orpka9f1dvnj5zhbtfk3m26lf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
+  // Setting up thumbnail preview when uploading blog
+  const thumbnail = document.getElementById("thumbnail");
+  const thumbnailPreview = document.getElementById("thumbnailPreview");
+
+  thumbnailPreview.style.display = "none";
+  thumbnail.addEventListener('click', () => {
+    thumbnailPreview.style.display = "block";
+  })
+
+  thumbnail.onchange = evt => {
+    const [file] = thumbnail.files
+    if (file) {
+      thumbnailPreview.src = URL.createObjectURL(file)
+    }
+  }
+
+  // Initialize tinymce editor
   tinymce.init({
             selector: 'textarea',
             height: 300,
