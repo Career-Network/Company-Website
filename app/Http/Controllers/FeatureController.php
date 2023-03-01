@@ -79,7 +79,7 @@ class FeatureController extends Controller
             toast('There is Internal Server Error!','error');
             return redirect()
                 ->route('blog-writer')
-                ->with(['error' => 'Blog berhasil diupload!']);
+                ->with(['error' => 'Blog gagal diupload!']);
         }
 
         toast('You\'ve Successfully Uploaded Your Blog!','success');
@@ -94,8 +94,16 @@ class FeatureController extends Controller
 
         // get blog
         $blog = Blog::find($id);
-        Storage::delete($blog->image);
-        $blog->delete();
+
+        try {
+            Storage::delete($blog->image);
+            $blog->delete();
+        } catch (Exception $e) {
+            toast('There is Internal Server Error!','error');
+            return redirect()
+                ->route('blog-writer')
+                ->with(['error' => 'Blog gagal dihapus!']);
+        }
 
         toast('You\'ve Successfully Deleted Your Blog!','success');
         return redirect()

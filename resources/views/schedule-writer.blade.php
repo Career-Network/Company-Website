@@ -125,8 +125,7 @@
         {{-- End of Content Empty --}}
       </div>
 
-      <section class="blogs" id="blogContainer">
-        TEST
+      <section class="blogs mt-5" id="blogContainer">
        {{-- @foreach ($blogs as $blog)
           <div class="blog-card">
             <div class="blog-content">
@@ -166,7 +165,7 @@
     // loop through storage element
     const drafts = JSON.parse(localStorage.getItem("drafts"));
     drafts.map((draft, index) => {
-      console.log(draft)
+      
     })
   } else {
     blogContainer.style.display  = "none";
