@@ -7,7 +7,6 @@ body
 {
 background: #FF5722;
 border-radius: 20px;
-width: 1200px;
 
 margin-top: 130px !important;
 margin-left: 33px;
@@ -56,7 +55,7 @@ color: #FF5722;
 
 #kartu{
     width: 300px;
-    height: 366px;
+    height: 386px;
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(5, 16, 55, 0.08);
     border-radius: 20px;
@@ -100,4 +99,172 @@ align-items: center;
 
 color: #FF5722;
 
+}
+.mentor{
+    background-color: #FFEBE5;
+    width: 1440px;
+height: 60px;
+    ;
+}
+#mentor{
+    margin-top:123px ;
+}
+#ui{
+    padding:30px;
+    border-radius: 54px !important;
+}
+
+#judul{
+    font-weight: 600;
+font-size: 24px;
+line-height: 111%;color: #111111;
+
+}
+
+#gambar{
+    width: 340px;
+    height: 475px;
+    border-radius: 14px;
+}
+
+#judul_course
+{
+    position: absolute;
+    bottom: 150px;
+    width: 200px;
+    left: 100px;
+    color:#FFFFFF;
+}
+#company{
+    position: absolute;
+    bottom: 150px;
+    left: 350px;
+    background: #FF5722;
+    border-radius: 10px;
+    width: 125px;
+    height: 35px;
+    padding: 7px;
+    color: #FFFFFF;
+}
+
+#course_name{
+    position: absolute;
+    bottom: 160px;
+    background: #EBFDFF;
+    color: #268E9B;
+    width: 180px;
+height: 48px;
+padding: 10px;
+border-radius: 10px;
+}
+#des_course{
+    position: absolute;
+    bottom: 100px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+text-align: justify;
+color: #111111;
+width: 500px;
+}
+
+.data
+{
+    position: absolute;
+    text-align: center;
+    top: 1000px;
+    justify-content: center;
+    left: 170px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+font-style: normal;
+display: block;
+
+}
+#detail{
+    margin-top: 0px;
+}
+#vbox{
+    margin-top:200px;
+}
+#price{
+    margin-top:0px ;
+}
+#detail_kelas{
+    width: 600px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #ffffff;
+  }
+
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+#ikon{
+    border-radius: 70px;
 }

@@ -30,6 +30,7 @@
                     <div class="card container" id="kartu">
                         <img src="{{ asset('assets/img/kelas-educareer/HR.webp') }}" class="card-img" id="kartu-image">
                         <div class="card-body">
+                            <p id="judul"> Human Resources</p>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <a href="#" class="detail">Lihat Detail &#8594; </a>
                         </div>
@@ -40,6 +41,7 @@
                 <div class="card container" id="kartu">
                     <img src="{{ asset('assets/img/kelas-educareer/UI_UX.webp') }}" class="card-img" id="kartu-image">
                     <div class="card-body">
+                        <p id="judul"> Graphic Design</p>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <a href="#" class="detail">Lihat Detail &#8594; </a>
                     </div>
@@ -50,6 +52,7 @@
                 <div class="card container" id="kartu">
                     <img src="{{ asset('assets/img/kelas-educareer/GD.webp') }}" class="card-img" id="kartu-image" >
                     <div class="card-body">
+                        <p id="judul">UI / UX Designer</p>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                         <a href="#" class="detail">Lihat Detail &#8594; </a>
                     </div>
@@ -62,6 +65,7 @@
                     <div class="card container" id="kartu">
                         <img src="{{ asset('assets/img/kelas-educareer/HR.webp') }}" class="card-img" id="kartu-image">
                         <div class="card-body">
+                            <p id="judul"> Human Resources</p>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <a href="#" class="detail">Lihat Detail &#8594; </a>
                         </div>
@@ -72,6 +76,7 @@
                 <div class="card container" id="kartu">
                     <img src="{{ asset('assets/img/kelas-educareer/UI_UX.webp') }}" class="card-img" id="kartu-image">
                     <div class="card-body">
+                        <p id="judul"> Human Resources</p>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <a href="#" class="detail">Lihat Detail &#8594; </a>
                     </div>
@@ -82,6 +87,7 @@
                 <div class="card container" id="kartu">
                     <img src="{{ asset('assets/img/kelas-educareer/GD.webp') }}" class="card-img" id="kartu-image" >
                     <div class="card-body">
+                        <p id="judul"> Human Resources</p>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                         <a href="#" class="detail">Lihat Detail &#8594; </a>
                     </div>

@@ -12,11 +12,11 @@ class EducareerController extends Controller
     }
     public function mentor()
     {
-        return view('pilih_mentor');
+        return view('educareer_mentor');
     }
     public function kelas()
     {
-        return view('detail-class');
+        return view('educareer_detail_kelas');
     }
     public function flap()
     {
