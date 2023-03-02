@@ -102,7 +102,7 @@
     <h1 class="title-blog">{{ $blog->title }}</h1>
     <p class="blog-author-date">{{ $blog->author }}, {{ date('d F Y', strtotime($blog->update_date)) }} </p>
 
-    <img src='{{ asset("storage/$blog->image") }}' class="thumbnail-detail" alt="{{ $blog->title }}'s Image">
+    <img src='@if(substr($blog->image, 0, 10) == "thumbnails") {{ asset("storage/$blog->image") }} @else {{ $blog->image }} @endif' class="thumbnail-detail" alt="{{ $blog->title }}'s Image">
 
     <div class="content-blog">
       {!! html_entity_decode($blog->body) !!}
@@ -154,7 +154,7 @@
 
       <div class="input-container">
         <label class="form-check-label" for="thumbnail">Thumbnail</label>
-        <img src='{{ asset("storage/$blog->image") }}' id="thumbnailPreview" class="thumbnail-detail" alt="{{ $blog->title }}'s Image">
+        <img src='@if(substr($blog->image, 0, 10) == "thumbnails") {{ asset("storage/$blog->image") }} @else {{ $blog->image }} @endif' id="thumbnailPreview" class="thumbnail-detail" alt="{{ $blog->title }}'s Image">
         <input type="hidden" name="imageOld" value="{{ $blog->image }}">
         <input class="form-control @error('image') is-invalid @enderror" type="file" name="image" id="thumbnail" value='{{ asset("assets/img/$blog->image") }}'>
         @error('image')

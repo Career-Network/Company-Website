@@ -12,7 +12,7 @@
           <h1 class="heading-dashboard mb-4">Artikel terbaik kamu</h1>
           @foreach ($blogs as $blog)
               <a href='{{ "/blog/uploaded/$blog->id" }}' class="card-blog-terdekat">
-                <img src='{{ asset("storage/$blog->image") }}' alt="" class="card-blog-terdekat-img">
+                <img src='@if(substr($blog->image, 0, 10) == "thumbnails") {{ asset("storage/$blog->image") }} @else {{ $blog->image }} @endif' alt="" class="card-blog-terdekat-img">
                 <div class="desc-blog-card-container mt-3">
                   <h1 class="heading-dashboard">{{ substr($blog->title, 0, 40) }} ...</h1>
                   <p>
@@ -57,7 +57,7 @@
                 <div class="blog-card">
                   <div class="blog-content">
                       <div class="blog-thumbnail mb-16">
-                        <img alt="{{ $blog->title }}'s Image" src='{{ asset("storage/$blog->image") }}' class="blog-img" />
+                        <img alt="{{ $blog->title }}'s Image" src='@if(substr($blog->image, 0, 10) == "thumbnails") {{ asset("storage/$blog->image") }} @else {{ $blog->image }} @endif' class="blog-img" />
                       </div>
 
                       <div class="blog-desc">

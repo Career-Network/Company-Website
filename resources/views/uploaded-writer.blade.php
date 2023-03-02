@@ -42,7 +42,7 @@
           <div class="blog-card">
             <div class="blog-content">
                 <div class="blog-thumbnail mb-16">
-                  <img alt="{{ $blog->title }}'s Image" src='{{ asset("storage/$blog->image") }}' class="blog-img" />
+                  <img alt="{{ $blog->title }}'s Image" src='@if(substr($blog->image, 0, 10) == "thumbnails") {{ asset("storage/$blog->image") }} @else {{ $blog->image }} @endif' class="blog-img" />
                 </div>
 
                 <div class="blog-desc">
