@@ -49,7 +49,7 @@ class FeatureController extends Controller
             'author' => 'required',
             'body' => 'required',
             'update_date' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:5000',
+            'image' => 'required|image|mimes:webp,png,jpg|max:5000',
             'hastags' => 'required',
         ]);
 
@@ -121,7 +121,7 @@ class FeatureController extends Controller
             'author' => 'required',
             'body' => 'required',
             'update_date' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg,gif|max:5000',
+            'image' => 'image|mimes:webp,png,jpg|max:5000',
             'hastags' => 'required',
         ]);
 
