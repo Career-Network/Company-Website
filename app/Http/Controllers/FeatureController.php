@@ -41,4 +41,7 @@ class FeatureController extends Controller
     {
         return view('privacy_policy');
     }
+    public function testimoni() {
+        return view('testimoni-writer');
+    }
 }
