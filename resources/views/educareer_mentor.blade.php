@@ -6,14 +6,49 @@
 @section('content')
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <div  id="mentor">
-    <nav class="mentor " style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-        <ol class="breadcrumb container pt-3">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Library</li>
-        </ol>
-      </nav>
-    </div>
+<body class="hm-gradient">
+
+    <main>
+
+        <!--MDB -->
+        <div class="" >
+
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12">
+
+                    <div class="card p-3"style=" background: #FFEBE5;
+                    backdrop-filter: blur(5px);" >
+                        <div class="card-block" >
+                            <div class="bc-icons-2"style="color: #FF5722;" >
+
+                                <ol class="breadcrumb container indigo lighten-4">
+                                    <li class="breadcrumb-item" ><a class="black-text" href="#" style="color: #FF5722;text-decoration:none;">Home</a><i class="fa fa-caret-right mx-2" aria-hidden="true"></i></li>
+                                    <li class="breadcrumb-item" style="color: #FF5722;"><a class="black-text" href="#" style="color: #FF5722;text-decoration:none;">Library</a><i class="fa fa-caret-right mx-2" aria-hidden="true"></i></li>
+                                    <li class="breadcrumb-item active" style="color: #FF5722;">Data</li>
+                                </ol>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+
+
+        </div>
+        <!--MDB -->
+
+    </main>
+
+</body>
     <div class="row container">
         <div class="col-md-6 container">
             <img src="{{ asset('assets/img/ui.webp') }}" width="500px"  class="rounded mx-auto d-block" id="ui">

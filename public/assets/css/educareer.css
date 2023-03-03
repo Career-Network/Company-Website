@@ -1,6 +1,8 @@
 body
 {
     background-color: #FFFFFF !important;
+    font-family: 'Poppins';
+font-style: normal;
 }
 
 .edu
@@ -102,9 +104,15 @@ color: #FF5722;
 }
 .mentor{
     background-color: #FFEBE5;
-    width: 1440px;
-height: 60px;
-    ;
+    width: 100%;
+    height: 60px;
+    color: #FFA285 !important;
+
+
+}
+ol  li .breadcrumb-item{
+    list-style: none;
+    text-decoration: none !important;
 }
 #mentor{
     margin-top:123px ;
@@ -184,12 +192,16 @@ display: block;
 }
 #detail{
     margin-top: 0px;
+    border-radius:30px;
+    width:700px;
 }
 #vbox{
-    margin-top:200px;
+    margin-top:10px;
 }
 #price{
     margin-top:0px ;
+    font-family: 'Poppins';
+    font-style: normal;
 }
 #detail_kelas{
     width: 600px;
@@ -198,7 +210,7 @@ display: block;
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    background: #f1f1f1f1;
+
   }
 
   /* Slides */
@@ -221,13 +233,16 @@ display: block;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color:#118484;
+    border-radius: 40px;
+
   }
 
   /* Position the "next button" to the right */
   .next {
     position: absolute;
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 40px;
   }
 
   /* On hover, add a black background color with a little bit see-through */
@@ -256,15 +271,179 @@ display: block;
   }
 
   /* Add a background color to the active dot/circle */
-  .active, .dot:hover {
-    background-color: #ffffff;
-  }
+
 
   /* Add an italic font style to all quotes */
-  q {font-style: italic;}
+  q {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 188% */
+
+    text-align: center;
+
+
+
+}
+h5{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 30px
+}
+.status{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #666666;
+}
 
   /* Add a blue color to the author */
-  .author {color: cornflowerblue;}
+
 #ikon{
     border-radius: 70px;
+}
+
+.hm-gradient {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+.darken-grey-text {
+    color: #2E2E2E;
+}
+.bc-icons .breadcrumb-item + .breadcrumb-item::before {
+    content: none; }
+.bc-icons .breadcrumb-item.active {
+    color: #eeeeee; }
+
+.bc-icons-2 .breadcrumb-item + .breadcrumb-item::before {
+    content: none; }
+.bc-icons-2 .breadcrumb-item.active {
+    color: #455a64; }
+
+
+.light-font .breadcrumb-item + .breadcrumb-item::before {
+    color: #fff; }
+.light-font .breadcrumb-item.active {
+    color: #cfd8dc; }
+
+.dark-font .breadcrumb-item + .breadcrumb-item::before {
+    color: #000; }
+.dark-font .breadcrumb-item.active {
+    color: #455a64; }
+
+    #judul_kelas
+{
+    position: absolute;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    bottom: 70px;
+    width: 350px;
+    left: 100px;
+    color:#FFFFFF;
+}
+#company_kelas{
+    position: absolute;
+    bottom: 70px;
+    left: 450px;
+    background: #FF5722;
+    border-radius: 10px;
+    width: 220px;
+    height: 40px;
+    padding: 2px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+}
+#card1{
+    width: 769px;
+height: 160px;
+
+background: #FFFFFF;
+border-radius: 0px 0px 8px 8px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+padding: 5px;
+
+color: #272727;
+}
+#card2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+padding: 10px;
+
+color: #272727;
+
+}
+#card3{
+    padding: 10px;
+}
+
+#date_kelas{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+/* or 188% */
+
+
+color: #000000;
+
+}
+
+b{
+    align-items: center;
+padding: 8px 16px;
+gap: 10px;
+
+width: 51px;
+height: 32px;
+background: #166E79;
+border-radius: 4px;
+color: #ffffff;
+}
+
+#reg{
+    width: 330px;
+    height: 48px;
+    background: #FF5722;
+    border-radius: 4px;
+    color: white;
+
+}
+
+#card_price{
+    width: 360px;
+    height: 450px;
+    list-style: none;
+}
+li{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #222222;
 }
