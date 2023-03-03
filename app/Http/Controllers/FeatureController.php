@@ -33,6 +33,10 @@ class FeatureController extends Controller
     public function detail() {
         return view('detail-blog');
     }
+    public function detailMentor()
+    {
+        return view('detail-mentor');
+    }
     public function tnc()
     {
         return view('TnC');
