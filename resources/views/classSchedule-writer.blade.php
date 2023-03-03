@@ -7,8 +7,9 @@
 @section('content')
     {{-- CALENDAR SECTION --}}
     <section class="schedule-section">
-
+      
       <div class="header-schedule-section calendar-header-schedule-section">
+        <h1 class="heading-kelas">Semua Kelas</h1>
 
         <div class="controller-day-section">
 
@@ -64,7 +65,7 @@
       <div class="date-calendar-section">
         {{-- List Date --}}
         <ul class="date-list">
-          <li class="active-date-selected">
+          <li >
             <h2>Nama Kelas</h2>
           </li>
           <li>

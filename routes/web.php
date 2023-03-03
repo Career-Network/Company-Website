@@ -80,7 +80,7 @@ Route::get('/slicing_blog', [EducareerController::class, 'slicing'])->name('slci
 Route::get('/blog/classSchedule', [FeatureController::class, 'classSchedule'])->name(
     'classSchedule-writer'
 );
-Route::get('/blog/classSchedule/Create', [FeatureController::class, 'create_schedule'])->name(
+Route::get('/blog/classSchedule/Create', [FeatureController::class, 'createClassSchedule'])->name(
     'create-class-schedule-writer'
 );
 
