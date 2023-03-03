@@ -77,11 +77,11 @@ Route::get('/blog/career-network-telah-luncurkan-website-company', [
 ])->name('detail-blog-writer');
 Route::get('/slicing_blog', [EducareerController::class, 'slicing'])->name('slcing');
 
-Route::get('/blog/testimoni', [FeatureController::class, 'testimoni'])->name(
-    'testimoni-writer'
+Route::get('/blog/classSchedule', [FeatureController::class, 'classSchedule'])->name(
+    'classSchedule-writer'
 );
-Route::get('/blog/create-schedule', [FeatureController::class, 'create_schedule'])->name(
-    'create-schedule-writer'
+Route::get('/blog/classSchedule/Create', [FeatureController::class, 'create_schedule'])->name(
+    'create-class-schedule-writer'
 );
 
 //Login feature
