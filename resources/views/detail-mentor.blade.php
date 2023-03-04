@@ -178,7 +178,7 @@
             // Tambahkan search input dengan lebar 500px
             var searchInput = $('.dataTables_filter input[type=search]');
             searchInput.attr('style',
-                'width: 80%; padding-right: 320px; background-image: url("/assets/img/detail-mentor/search.png"); background-repeat: no-repeat; background-position: right 10px center;'
+                'width: 80%; padding-right: 100px; background-image: url("/assets/img/detail-mentor/search-icon.svg"); background-repeat: no-repeat; background-position: right 10px center; background-size: 16px;'
             );
 
 
