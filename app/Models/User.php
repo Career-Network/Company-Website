@@ -20,16 +20,19 @@ class User extends Authenticatable
      * @var array<int, string>
      */
 
-    protected $table = 'users';
-    protected $primaryKey = 'id';
-    protected $keyType = 'string';
-    public $incrementing = false;
-   
-    protected $fillable = [
-        'id',
-        'username',
-        'password',
-    ];
+    
+     protected $table = 'users';
+     protected $primaryKey = 'user_id';
+     protected $keyType = 'string';
+     public $incrementing = false;
+ 
+     protected $fillable = [
+         'user_id',
+         'name',
+         'email',
+         'number',
+         'password',
+     ];
     
     protected static function boot() {
         parent::boot();
