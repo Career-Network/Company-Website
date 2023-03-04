@@ -150,8 +150,8 @@ aside {
 /* Main Area */
 
 main {
-  /* background: #f6faff; */
-  background: red;
+  background: #f6faff;
+  /* background: red; */
   display: flex;
   flex-direction: column;
   flex: 3;
@@ -320,17 +320,20 @@ form input {
   justify-content: space-evenly;
 }
 
+.table{
+  font-size: 14px;
+}
 .profile {
   display: flex;
   align-items: center;
 
   margin-right: 0.5rem;
-  margin-left: 1.5rem;
+
 }
 
 .profile p {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 30px;
 
   color: #111111;
@@ -339,15 +342,38 @@ form input {
 }
 
 .profile-picture {
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
 
   border-radius: 100%;
 
-  margin-right: 0.8rem;
+  margin-right: 0.3rem;
 
   object-fit: cover;
 }
+
+.class-box{
+  display: flex;
+  margin-top: 1rem;
+}
+
+.row-mentor{
+  display: flex;
+}
+
+.image-class{
+  width: 32px;
+  height: 32px;
+
+  border-radius: 100%;
+margin-right: 0.5rem;
+  object-fit: cover;
+}
+
+.course-class{
+
+}
+
 
 /* NOTIFICATION SECTION ON HEADER */
 
@@ -719,6 +745,11 @@ textarea {
   margin-bottom: 41px;
 }
 
+// Custom CSS untuk lebar input search
+.dataTables_filter input {
+  width: 700px;
+}
+
 .header-schedule-section {
   display: flex;
   flex-direction: row;
@@ -820,10 +851,10 @@ textarea {
 
 .second-filter {
      background-color:orange;
-  display:flex;
-  flex-direction:row;
+    display:flex;
     padding:4px;
     width:60%;
+    margin-left: 28%;
 }
 .page-filter{
     background-color:brown;
@@ -850,7 +881,7 @@ textarea {
       background-color:red;
   display:flex;
   flex-direction:row;
-  width:40%;
+  width:70%;
 
 }
 
@@ -888,6 +919,53 @@ textarea {
   display:flex;
   width:100%;
   flex-direction:row;
+}
+
+.search-filter-title{
+  margin-right: 2%;
+}
+
+.search-filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative; /* menambahkan posisi relative untuk posisi button */
+}
+
+.search-filter-title{
+  margin-top: 2%;
+}
+
+.search-filter-input {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+  padding: 5px;
+  width: 300px;
+  box-shadow: none;
+}
+
+.search-filter-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+  outline: none;
+}
+
+.search-filter-btn {
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin-left: -40px;
+}
+
+.fa-search {
+  font-size: 18px;
+  color: black;
 }
 
 /* SCHEDULE CALENDAR SECTION */
@@ -1348,12 +1426,13 @@ form input {
 @media screen and (max-width: 620px) {
        main {
   /* background: #f6faff; */
-  background: brown;
+  /* background: brown; */
     }
   /* SIDEBAR */
   aside {
     display: none;
   }
+
 
   /* DETAIL BLOG */
 
@@ -1541,12 +1620,14 @@ form input {
   }
 }
 
+
+
 /* TABLET */
 @media (min-width: 620px) and (max-width: 950px) {
   /* SIDEBAR */
    main {
   /* background: #f6faff; */
-  background: pink;
+  /* background: pink; */
     }
   aside {
     flex: 0.2;
