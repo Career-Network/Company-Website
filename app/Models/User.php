@@ -20,16 +20,11 @@ class User extends Authenticatable
      * @var array<int, string>
      */
 
-    // protected $table = 'users';
-    // protected $keyType = 'string';
-    // public $incrementing = false;
+    protected $table = 'users';
+    protected $keyType = 'string';
+    public $incrementing = false;
     public $timestamps = false;
-   
-    protected $fillable = [
-        'role_name',
-        'username',
-        'password',
-    ];
+    protected $guarded = ['id'];
     
     // protected static function boot() {
     //     parent::boot();
@@ -59,13 +54,7 @@ class User extends Authenticatable
 
     ];
 
-    protected function getIdAttribute($value)
-    {
-        return 'RE' . str_pad($value, 3, '0', STR_PAD_LEFT);
-    }
-
-    public function blog()
-    {
+    public function blogs() {
         return $this->hasMany(Blog::class);
     }
 }

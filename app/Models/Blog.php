@@ -8,46 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Blog extends Model
 {
     use HasFactory;
+
+    protected $guarded = ['id'];
     public $timestamps = false;
-    protected $dateFormat = 'Y-m-d';
-
-    protected $fillable = [
-        'title',
-        'image',
-        'body',
-        'author',
-        'update_date',
-        'hastags',
-    ];
-
-    protected function getIdAttribute($value)
-    {
-        return 'BGS' . str_pad($value, 6, '0', STR_PAD_LEFT);
-    }
-
-    protected function getUserIdAttribute($value)
-    {
-        return 'RE' . str_pad($value, 3, '0', STR_PAD_LEFT);
-    }
-
-    protected function setUserIdAttribute($value)
-    {
-        $id = substr($value, 2);
-        $this->attributes['user_id'] = intval(ltrim($id, '0'));
-    }
-    
-    protected function getUpdateDateAttribute($value)
-    {
-        return date("d M Y",  strtotime($value));
-    }
-
-    public function user()
-    {
+    public function user() {
         return $this->belongsTo(User::class);
-    }
-
-    public function schedule()
-    {
-        return $this->hasOne(Schedule::class);
     }
 }

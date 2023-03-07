@@ -29,7 +29,7 @@
         </div>
 
         {{-- Header Calendar  --}}
-        <h2>Februari 2023</h2>
+        <h2>{{ date('F Y') }}</h2>
         {{-- End of Header Calendar  --}}
 
         <div class="btn-section">
@@ -115,7 +115,7 @@
         <h2>Artikel Draf</h2>
       </div>
 
-      <div class="articles-section empty-article draft-empty-article">
+      <div id="draftContainer" class="articles-section empty-article draft-empty-article">
         {{-- Content Empty --}}
         <img class="empty-article-illustration" src="{{ asset('assets/img/writer-system/calendar.png') }}" alt="Calendar Writer Illustration">
         <article class="desc-container">
@@ -125,6 +125,52 @@
         {{-- End of Content Empty --}}
       </div>
 
+      <section class="blogs mt-5" id="blogContainer">
+       {{-- @foreach ($blogs as $blog)
+          <div class="blog-card">
+            <div class="blog-content">
+                <div class="blog-thumbnail mb-16">
+                  <img alt="{{ $blog->title }}'s Image" src='{{ asset("storage/$blog->image") }}' class="blog-img" />
+                </div>
+
+                <div class="blog-desc">
+                  <p class="blog-author-date">{{ substr($blog->author, 0, 13) }}, {{ date('d F Y', strtotime($blog->update_date)) }}</p>
+                  <h1 class="blog-header-card mb-16">{{ substr($blog->title, 0, 30) }} ...</h1>
+                  <p class="blog-desc-card mb-16 mobile-desc">
+                    {!! (strip_tags(substr($blog->body, 0, 90))) !!}  ...
+                  </p>
+                  <p class="blog-desc-card mb-16">
+                   {!! strip_tags(substr($blog->body, 0, 150)) !!}  ...
+                  </p>
+                </div>
+            </div>
+            
+            <a href="/blog/uploaded/{{ $blog->id }}" class="blog-see-more-btn">
+              Lihat Selengkapnya
+            </a>
+          </div>
+       @endforeach --}}
+    </section>
+
     </div>
+
+<script>
+  const draftContainer = document.getElementById("draftContainer");
+  const blogContainer  = document.getElementById("blogContainer");
+
+  if(localStorage.getItem("drafts")) {
+    blogContainer.style.display  = "grid";
+    draftContainer.style.display = "none";
+
+    // loop through storage element
+    const drafts = JSON.parse(localStorage.getItem("drafts"));
+    drafts.map((draft, index) => {
+      
+    })
+  } else {
+    blogContainer.style.display  = "none";
+    draftContainer.style.display = "flex";
+  }
+</script>
 @endsection
     

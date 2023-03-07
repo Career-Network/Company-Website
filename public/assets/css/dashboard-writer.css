@@ -213,9 +213,6 @@ header {
 
   background: #f4f4f4;
 
-  display: flex;
-  align-items: center;
-
   border-radius: 12px;
 
   width: 40%;
@@ -1195,8 +1192,10 @@ form input {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  align-items: center;
 
   margin-bottom: 1rem;
+  padding-bottom: 1rem;
 
   border-bottom: 0.5px solid #d2d2d2;
 }
@@ -1243,10 +1242,10 @@ form input {
 .kelola-postingan .blogs {
   padding: 1.5rem 0;
 
-  grid-template-columns: repeat(4, auto);
+  /* grid-template-columns: repeat(3, auto); */
 }
 
-.kelola-postingan img {
+/* .kelola-postingan img {
   width: 100%;
   height: 150px;
 
@@ -1260,7 +1259,7 @@ form input {
 .kelola-postingan .blog-header-card,
 .kelola-postingan .blog-see-more-btn {
   font-size: 1rem;
-}
+} */
 
 .kelola-postingan .option-item {
   justify-content: center;
@@ -1373,6 +1372,7 @@ form input {
   .blog-img {
     width: 100px;
     height: 100px;
+    margin-top: 0.5rem;
   }
 
   .blogs .blog-author-date {
@@ -1382,14 +1382,18 @@ form input {
     margin-bottom: 0;
   }
 
-  .blogs .blog-header-card {
+  .blogs .blog-header-card,
+  .artikel-terbaik .card-blog-terdekat h1,
+  .jadwal-terdekat .card-blog-terdekat h1 {
     font-size: 14px;
     line-height: 21px;
 
     margin-bottom: 0;
   }
 
-  .blogs .blog-desc-card {
+  .blogs .blog-desc-card,
+  .artikel-terbaik .card-blog-terdekat p,
+  .jadwal-terdekat .card-blog-terdekat p {
     font-size: 12px;
     line-height: 18px;
   }
@@ -1452,11 +1456,11 @@ form input {
     flex-direction: column;
   }
 
-  .kelola-postingan .blogs {
+  /* .kelola-postingan .blogs {
     padding: 1.5rem 0;
 
     grid-template-columns: repeat(1, auto);
-  }
+  } */
 
   .artikel-kamu {
     flex-direction: column;
@@ -1513,7 +1517,7 @@ form input {
   /* BLOGS */
 
   .blogs {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
   }
 
   /* DETAIL BLOG */
@@ -1556,9 +1560,39 @@ form input {
     justify-content: flex-start;
   }
 
-  .kelola-postingan .blogs {
+  /* .kelola-postingan .blogs {
     padding: 1.5rem 0;
 
     grid-template-columns: repeat(2, auto);
-  }
+  } */
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.option-item.refresh-btn {
+  color: #000;
+}
+
+.refresh-btn:hover {
+  color: #000 !important;
+}
+
+.hapus-create {
+  transition: .8s;
+}
+
+.hapus-create a {
+  color: #ff5722;
+  width: 100%;
+}
+
+.hapus-create:hover {
+  background: #ff5722;
+}
+
+.hapus-create:hover a,
+.hapus-create a:hover {
+  color: #fff !important;
 }
