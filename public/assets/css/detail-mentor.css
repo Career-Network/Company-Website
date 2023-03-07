@@ -1756,7 +1756,39 @@ form input {
   color: #000;
 }
 
+.no-footer  .row {
+  background-color:red;
+  display:flex;
+  flex-direction:column;
+   gap:20px;
+}
 
+
+.row .col-md-6 {
+  width:100%;
+  padding:0px !important;
+ 
+}
+
+.row .col-md-6 .dataTables_length {
+    display:flex;
+  flex-direction:column;
+   margin:0;
+   gap:10px;
+
+}
+
+.row .col-md-6 .dataTables_length .form-select {
+  margin-left:0px !important;
+}
+
+.row .col-md-6 .dataTables_length,  .row .col-md-6  .datatable-detail-mentor_filter {
+  width:100%;
+  background-color:pink;
+  display:flex;
+  flex-direction:column;
+   
+}
 }
 
 
