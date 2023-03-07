@@ -43,7 +43,8 @@ Route::get('/educareer', [EducareerController::class, 'index'])->name(
     'educareer'
 );
 Route::get('/mentor', [EducareerController::class, 'mentor'])->name('mentor');
-Route::get('/kelas', [EducareerController::class, 'kelas'])->name('kelas');
+Route::get('/detail-kelas', [EducareerController::class, 'kelas'])->name('kelas');
+
 Route::get('/flap', [EducareerController::class, 'flap'])->name('flap');
 Route::get('/blog', [FeatureController::class, 'blog'])->name('blog');
 Route::get('/blog/detail-blog', [FeatureController::class, 'detailBlog'])->name('detail-blog');

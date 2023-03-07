@@ -10,14 +10,15 @@
     <section id="hero" class="py_40">
         <div class="container">
 
-            <div class="row align-items-center">
+            <div class="row align-items-center ">
+                <div class="col-md-6">
+                    <img src="assets/img/g7.png" class="img-fluid">
+            </div>
                 <div class="col-md-6">
                     <h2 class="h_2 fw_bold text_white">Belajar hal baru dengan biaya terjangkau dan berkualitas</h2>
                     <p class="bt_2 text_white mt-4">EduCareer hadir sebagai Paltform pelatihan dengan mentor berpengalaman</p>
                 </div>
-                <div class="col-md-6">
-                    <img src="assets/img/g7.png" class="img-fluid">
-                </div>
+
             </div>
         </div>
     </section>
@@ -35,7 +36,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="card" >
-                        <img src="{{ asset('assets/img/kelas-educareer/Human Resources.webp') }}" class="card-img-top" alt="">
+                        <img src="{{ asset('assets/img/kelas-educareer/HR.webp') }}" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="bt_1 fw_semibold">Human Resources</h5>
                             <p class="bt_4 text_dark_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
