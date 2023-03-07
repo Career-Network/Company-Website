@@ -8,7 +8,7 @@
 ]) 
 
 @section('content')
-<div class="blog-section">
+<div class="blog-section detail-page">
   <section class="header-blogs border-0 mb-0 pb-0">
     <h1 class="heading">Buat Artikel Baru</h1>
   </section>
@@ -46,31 +46,87 @@
       </div>
 
       <div class="button-section">
-        <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+        <a class="option-item preview mt-3" data-bs-toggle="modal" data-bs-target="#item-batalkan">
             <span>Batalkan</span>
-        </button>
-        <button href="" class="option-item create-blog mt-3" data-bs-dismiss="modal" aria-label="Close">
-            <span>Simpan Perubahan</span>
-        </button>
+        </a>
+        <a class="option-item create-blog mt-3" data-bs-toggle="modal" data-bs-target="#item-terbitkan">
+            <span>Terbitkan</span>
+        </a>
       </div>
   </form>
-</div>
 
-<!-- Modal -->
-<div class="modal fade" id="item-delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-head">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda yakin akan menghapus artikel ini?</h1>
-        <p>Semua data akan hilang</p>
-      </div>
+  <!-- Modal -->
+  <div class="modal fade" id="item-batalkan" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
       <div class="modal-content">
-         <button href="" class="option-item delete">
-            <span>Hapus</span>
-        </button>
-        <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-            <span>Batalkan</span>
-        </button>
+        <div class="modal-head">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan sebagai draf?</h1>
+          <p>Anda dapat melanjutkan di lain waktu tanpa menghapus</p>
+        </div>
+        <div class="modal-content">
+          <button href="" class="option-item save-modal-btn">
+              <span>Simpan Draf</span>
+          </button>
+          <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+              <span>Hapus</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+   <!-- Modal -->
+  <div class="modal fade" id="item-terbitkan" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-head">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Terbitkan Artikel?</h1>
+          <p>Terbitkan artikel anda secara langsung atau terjadwal</p>
+        </div>
+        <div class="modal-content">
+          <button href="" class="option-item save-modal-btn">
+              <span>Terbitkan Sekarang</span>
+          </button>
+          <button href="" class="option-item preview mt-3" data-bs-toggle="modal" data-bs-target="#item-jadwal">
+              <span>Jadwalkan Postingan</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="item-jadwal" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-head">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Pilih tanggal dan waktu untuk mempublikasikan artikel ini</h1>
+          <div class="buttons-modal">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Choose date</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+
+            <select class="form-select " aria-label="Default select example">
+              <option selected>Choose time</option>
+              <option value="1">12.00PM</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <hr >
+        <div class="modal-content buttons-2">
+          <button href="" class="option-item save-modal-btn">
+              <span>Jadwalkan</span>
+          </button>
+          <button href="" class="option-item preview" data-bs-toggle="modal" data-bs-target="#item-jadwal">
+              <span>Batalkan</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>

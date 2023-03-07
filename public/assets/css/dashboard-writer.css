@@ -272,6 +272,18 @@ header {
   margin-top: 88px;
 }
 
+#item-batalkan,
+#item-terbitkan,
+#item-jadwal {
+  text-align: center !important;
+}
+
+#item-batalkan h1,
+#item-terbitkan h1,
+#item-jadwal h1 {
+  margin-bottom: 1rem;
+}
+
 form input {
   margin-left: 1rem;
   margin-top: 4px;
@@ -576,6 +588,13 @@ form input {
   color: #fff;
 
   border: 1px solid #ef4444;
+}
+
+.save-modal-btn {
+  background: #ff5722;
+  color: #fff;
+
+  border: 1px solid #ff5722;
 }
 
 .edit {
@@ -944,6 +963,10 @@ textarea {
   text-align: left !important;
 }
 
+#item-batalkan .modal-head p {
+  text-align: center !important;
+}
+
 .detail-page .modal-content {
   width: 100%;
 
@@ -988,6 +1011,33 @@ form input {
   position: relative;
 
   font-weight: 400 !important;
+}
+
+#item-jadwal .modal-dialog {
+  width: 50%;
+}
+
+#item-jadwal .buttons-modal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 1rem;
+  gap: 10px !important;
+}
+
+#item-jadwal .buttons-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: -3rem;
+}
+
+#item-jadwal .buttons-modal .save-modal-btn {
+  margin-bottom: 0;
 }
 
 .input-container {
@@ -1209,8 +1259,8 @@ form input {
 }
 
 .btn-search {
-    cursor: pointer !important;
-  }
+  cursor: pointer !important;
+}
 
 /* MOBILE */
 @media screen and (max-width: 620px) {

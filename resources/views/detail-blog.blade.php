@@ -64,7 +64,9 @@
 
         <span>Hapus</span>
       </a>
-      {{-- End of Button Delete --}} {{-- Button Edit --}}
+      {{-- End of Button Delete --}} 
+      
+      {{-- Button Edit --}}
       <button class="option-item edit" id="edit">
         <svg
           width="24"
@@ -146,12 +148,12 @@
       </div>
 
       <div class="button-section">
-        <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+        <a class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
             <span>Batalkan</span>
-        </button>
-        <button href="" class="option-item create-blog mt-3" data-bs-dismiss="modal" aria-label="Close">
+        </a>
+        <a class="option-item create-blog mt-3" data-bs-toggle="modal" data-bs-target="#item-edit">
             <span>Simpan Perubahan</span>
-        </button>
+        </a>
       </div>
   </form>
 
@@ -166,6 +168,26 @@
         <div class="modal-content">
           <button href="" class="option-item delete">
               <span>Hapus</span>
+          </button>
+          <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+              <span>Batalkan</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="item-edit" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-head">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan Perubahan?</h1>
+          <p>Artikel yang sudah diubah tidak akan hilang ketika anda kembali</p>
+        </div>
+        <div class="modal-content">
+          <button href="" class="option-item save-modal-btn">
+              <span>Simpan</span>
           </button>
           <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
               <span>Batalkan</span>
