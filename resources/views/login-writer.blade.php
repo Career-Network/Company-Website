@@ -64,7 +64,7 @@
                 <div class="socials-link">    
                     <a href="https://www.linkedin.com/company/career-network-id/"><img alt="" src="{{ asset('assets/img/login-writer/socials/Linkedin.svg') }}" /></a>
                     <a href="https://www.instagram.com/careernetwork.id/"><img alt="" src="{{ asset('assets/img/login-writer/socials/Instagram.svg') }}" /></a>
-                    <a href=""><img alt="" src="{{ asset('assets/img/login-writer/socials/Tiktok.svg') }}" /></a>
+                    <a href="https://www.tiktok.com/@career.network"><img alt="" src="{{ asset('assets/img/login-writer/socials/Tiktok.svg') }}" /></a>
                     {{-- <a href=""><img alt="" src="{{ asset('assets/img/login-writer/socials/Facebook.svg') }}" /></a> --}}
                 </div>
             </div>
