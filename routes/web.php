@@ -82,7 +82,7 @@ Route::get('/blog/detail-mentor', [FeatureController::class, 'detailMentor'])->n
 
 Route::get('/slicing_blog', [EducareerController::class, 'slicing'])->name('slcing');
 
-//Login feature
+//Login feat ure
 Route::get('/login', [LoginController::class, 'index'])
     ->name('login')
     ->middleware('guest');

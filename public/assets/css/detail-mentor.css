@@ -311,6 +311,133 @@ form input {
   color: #000;
 }
 
+/* Modal Create Mentor */
+
+.form-header-mentor {
+  /* background-color:blue; */
+  width:100%;
+  display:flex;
+  flex-direction:column;
+
+}
+
+.modal-close {
+  top: 10rem !important;
+}
+
+.modal-img-error {
+
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-top:20px;
+}
+.modal-head-error {
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  padding: 1rem;
+  color:black;
+}
+
+.modal-head-error h1 {
+font-size: 22px;
+font-weight: 600;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: center;
+
+
+}
+
+.modal-head-error p {
+font-size: 16px;
+font-weight: 500;
+line-height: 30px;
+text-align: center;
+margin-bottom:25px;
+padding:10px 20px 12px 20px;
+}
+
+
+.modal-head-close h1 {
+
+font-size: 22px;
+font-weight: 600;
+line-height: 33px;
+text-align: left;
+margin-bottom:5px;
+
+}
+
+.modal-head-close p {
+font-weight: 500;
+text-align: left;
+margin-bottom:30px;
+
+}
+.modal-head-close {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding: 1rem;
+}
+
+.modal-head-close p, .modal-head-error {
+  text-align: left !important;
+
+}
+.modal-content-error {
+   padding:40px;
+   width: 100%;
+  margin-top: -1.5rem;
+
+  border: none !important;
+  outline: none;
+
+  padding: 1rem;
+}
+.modal-content-close {
+  width: 100%;
+
+  margin-top: -1.5rem;
+
+  border: none !important;
+  outline: none;
+
+  padding: 1rem;
+}
+.modal-content-error button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   background:#EF4444;
+  width: 100%;
+}
+.modal-content-error button span {
+  color:white;
+}
+.modal-content-close button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.modal-content-close button span, .modal-content-error button span  {
+  text-align: center !important;
+  
+}
+
+.orange {
+  background-color:#FF5722 !important;
+}
+
+
+
 /* PROFILE SECTION ON HEADER */
 
 .profile-section-container {
@@ -320,9 +447,7 @@ form input {
   justify-content: space-evenly;
 }
 
-.table{
-  font-size: 14px;
-}
+
 .profile {
   display: flex;
   align-items: center;
@@ -404,14 +529,12 @@ margin-right: 0.5rem;
 .options {
   display: flex;
   justify-content: space-between;
-
   margin-right: -0.5rem;
 }
 
 .option-item {
   display: flex;
   align-items: center;
-
   cursor: pointer;
   padding: 8px 24px 8px 24px;
 
@@ -1564,8 +1687,9 @@ form input {
   }
 
   .option-item {
-    font-size: 14px;
-    padding: 8px 16px;
+    font-size: 12px;
+    padding: 8px 8px;
+ 
   }
 
   .breadcrums {
@@ -1618,6 +1742,21 @@ form input {
   .artikel-kamu {
     flex-direction: column;
   }
+
+
+.heading-container p {
+  margin-top: -0.2rem;
+}
+
+.heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+
+  color: #000;
+}
+
+
 }
 
 
