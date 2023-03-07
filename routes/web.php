@@ -76,6 +76,11 @@ Route::get('/blog/career-network-telah-luncurkan-website-company', [
     FeatureController::class,
     'detail',
 ])->name('detail-blog-writer');
+
+Route::get('/blog/detail-mentor', [FeatureController::class, 'detailMentor'])->name(
+    'detail-mentor'
+);
+
 Route::get('/slicing_blog', [EducareerController::class, 'slicing'])->name('slcing');
 
 Route::get('/blog/classSchedule', [FeatureController::class, 'classSchedule'])->name(
@@ -86,6 +91,7 @@ Route::get('/blog/classSchedule/Create', [FeatureController::class, 'createClass
 );
 
 //Login feature
+//Login feat ure
 Route::get('/login', [LoginController::class, 'index'])
     ->name('login')
     ->middleware('guest');
