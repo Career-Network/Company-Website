@@ -28,6 +28,10 @@ main {
     transform: translate(-50%, 0);
 }
 
+#icon-text-sosmed{
+    display:inline-block;
+}
+
 @media (max-width: 768px) {
 #share-button-modal {
   display: none;
@@ -41,6 +45,9 @@ main {
   width: 70%;
   max-width: 500px;
   margin-top: 0;
+}
+#icon-text-sosmed{
+    display:none;
 }
 }
 
@@ -99,7 +106,7 @@ main {
 .modal-icon {
     /* background-color:yellow; */
     width:100%;
-    margin-bottom:-100px;
+    margin-bottom: 20%;
 }
 .modal-icon ul {
     display:flex;
@@ -108,8 +115,7 @@ main {
     /* border:2px solid black; */
     width:100%;
     padding:0px;
- 
-        justify-content:space-around;
+    justify-content:space-around;
 }
 
 .modal-icon ul li {
