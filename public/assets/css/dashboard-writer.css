@@ -1643,6 +1643,8 @@ form input {
 .notification__pop-up .notification__illustration {
   width: 88px;
   height: 142px;
+
+  margin-top: 0.8rem;
 }
 
 .coming-soon-notifications {
