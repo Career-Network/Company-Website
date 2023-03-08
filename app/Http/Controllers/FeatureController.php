@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Feature;
+use App\Models\User;
 use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -12,6 +13,9 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use League\CommonMark\Util\UrlEncoder;
 use Exception;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+use RealRashid\SweetAlert\Facades\Alert as FacadesAlert;
 
 use function PHPUnit\Framework\isEmpty;
 use function PHPUnit\Framework\isNull;
@@ -30,9 +34,42 @@ class FeatureController extends Controller
     {
         return view('login-writer');
     }
+    public function auth(Request $request)
+    {
+        $credentials = $request->validate([
+            'username' => 'required',
+            'password' => ['required'],
+        ]);
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()
+                ->route('dashboard-writer')
+                ->with([
+                    'success' => 'You are logging in dashboard successfully!',
+                ]);
+        } else {
+            return back()
+                ->withErrors([
+                    'username' =>
+                        'Identitas tersebut tidak cocok dengan data kami.',
+                ])
+                ->onlyInput('username');
+        }
+    }
+    public function logout()
+    {
+        Session::flush();
+        Auth::logout();
+        return redirect('blog/login');
+    }
     public function dashboard()
     {
-        $blogs = collect(Blog::where('user_id', '=', 1)->get());
+        $blogs = collect(
+            Blog::where('user_id', '=', Auth::user()->id)
+                ->orderBy('update_date', 'DESC')
+                ->get()
+        );
         return view('dashboard-writer', [
             'blogs' => $blogs,
         ]);
@@ -54,7 +91,7 @@ class FeatureController extends Controller
         ]);
 
         if ($validation->fails()) {
-            toast('Your blog does not uploaded!','error');
+            toast('Your blog does not uploaded!', 'error');
             return redirect()
                 ->back()
                 ->withInput()
@@ -67,7 +104,7 @@ class FeatureController extends Controller
         // store blog
         try {
             Blog::create([
-                'user_id' => 1,
+                'user_id' => Auth::user()->id,
                 'title' => $request->title,
                 'author' => $request->author,
                 'update_date' => $request->update_date,
@@ -76,16 +113,16 @@ class FeatureController extends Controller
                 'hastags' => $request->hastags,
             ]);
         } catch (Exception $e) {
-            toast('There is Internal Server Error!','error');
+            toast('There is Internal Server Error!', 'error');
             return redirect()
                 ->route('blog-writer')
                 ->with(['error' => 'Blog gagal diupload!']);
         }
 
-        toast('You\'ve Successfully Uploaded Your Blog!','success');
+        toast('You\'ve Successfully Uploaded Your Blog!', 'success');
         return redirect()
             ->route('blog-writer')
-            ->with(['error' => 'Blog gagal diupload!']);
+            ->with(['success' => 'Blog successfully uploaded!']);
     }
     public function destroyBlog(Request $request)
     {
@@ -99,13 +136,13 @@ class FeatureController extends Controller
             Storage::delete($blog->image);
             $blog->delete();
         } catch (Exception $e) {
-            toast('There is Internal Server Error!','error');
+            toast('There is Internal Server Error!', 'error');
             return redirect()
                 ->route('blog-writer')
                 ->with(['error' => 'Blog gagal dihapus!']);
         }
 
-        toast('You\'ve Successfully Deleted Your Blog!','success');
+        toast('You\'ve Successfully Deleted Your Blog!', 'success');
         return redirect()
             ->route('blog-writer')
             ->with(['success' => 'Blog successfully deleted!']);
@@ -126,7 +163,7 @@ class FeatureController extends Controller
         ]);
 
         if ($validation->fails()) {
-            toast('Your blog does not uploaded!','error');
+            toast('Your blog does not uploaded!', 'error');
             return redirect()
                 ->back()
                 ->withInput()
@@ -153,7 +190,7 @@ class FeatureController extends Controller
         // get blog
         try {
             Blog::where('id', '=', (int) $id)->update([
-                'user_id' => 1,
+                'user_id' => Auth::user()->id,
                 'title' => $request->title,
                 'author' => $request->author,
                 'update_date' => $request->update_date,
@@ -162,13 +199,13 @@ class FeatureController extends Controller
                 'hastags' => $request->hastags,
             ]);
         } catch (Exception $e) {
-            toast('There is Internal Server Error!','error');
+            toast('There is Internal Server Error!', 'error');
             return redirect()
                 ->route('blog-writer')
                 ->with(['error' => 'Blog berhasil diupload!']);
         }
 
-        toast('You\'ve Successfully Updated Your Blog!','success');
+        toast('You\'ve Successfully Updated Your Blog!', 'success');
         return redirect()
             ->route('blog-writer')
             ->with(['success' => 'Blog berhasil diupdate!']);
@@ -182,7 +219,11 @@ class FeatureController extends Controller
     }
     public function uploaded()
     {
-        $blogs = collect(Blog::where('user_id', '=', 1)->get());
+        $blogs = collect(
+            Blog::where('user_id', '=', Auth::user()->id)
+                ->orderBy('update_date', 'DESC')
+                ->get()
+        );
         return view('uploaded-writer', [
             'blogs' => $blogs,
         ]);
@@ -210,10 +251,12 @@ class FeatureController extends Controller
     {
         return view('privacy_policy');
     }
-    public function classSchedule() {
+    public function classSchedule()
+    {
         return view('classSchedule-writer');
     }
-    public function createClassSchedule() {
+    public function createClassSchedule()
+    {
         return view('create-classSchedule-writer');
     }
 }

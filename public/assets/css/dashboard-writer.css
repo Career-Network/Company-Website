@@ -1,5 +1,4 @@
 /* CSS Reset */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -1220,7 +1219,7 @@ form input {
 .kelola-postingan .blogs {
   padding: 1.5rem 0;
 
-  /* grid-template-columns: repeat(3, auto); */
+  grid-template-columns: repeat(4, auto);
 }
 
 /* .kelola-postingan img {
@@ -1614,6 +1613,7 @@ form input {
   justify-content: center;
 
   position: absolute;
+  z-index: 50;
   right: 2rem;
 
   padding: 28px 40px;

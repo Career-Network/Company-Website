@@ -15,11 +15,6 @@
 
   <form method="POST" action="{{ route('store-blog') }}" class="form-edit d-flex flex-column" enctype="multipart/form-data">
       @csrf
-      @error('title')
-            <div class="invalid-feedback">
-              Please choose a username.
-            </div>
-        @enderror
       <div class="input-container">
         <label class="form-check-label" for="judul">Judul Artikel</label>
         <input class="form-control @error('title') is-invalid @enderror" type="text" id="title" value="{{ old("title") }}" name="title">

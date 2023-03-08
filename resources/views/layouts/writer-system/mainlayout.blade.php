@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css">
+
 </head>
 
 <body>
 
+    @include('sweetalert::alert')
     @include('layouts.writer-system.sidebar')
 
     <main>
@@ -35,7 +37,7 @@
                     @endif
 
                     @if ($title === 'Dashboard')
-                        <h1 class="heading">Selamat Datang, Rifky Chirmansyah</h1>
+                        <h1 class="heading">Selamat Datang, {{ Auth::user()->username }}</h1>
                     @endif
 
                     @if ($title === 'Blogs')

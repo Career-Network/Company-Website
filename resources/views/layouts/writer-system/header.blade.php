@@ -48,9 +48,9 @@
                 </svg>
             </div>
 
-            <a class="profile" href="{{ route('login_writer') }}">
+            <a class="profile" href="{{ route('logout-dashboard') }}">
                 <img alt="" src="{{ asset('assets/img/profile.png') }}" class="profile-picture" />
-                <p>Rifky Chirmansyah</p>
+                <p>{{ Auth::user()->username }}</p>
             </a>
         </div>
     </section>

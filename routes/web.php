@@ -43,11 +43,15 @@ Route::get('/educareer', [EducareerController::class, 'index'])->name(
     'educareer'
 );
 Route::get('/mentor', [EducareerController::class, 'mentor'])->name('mentor');
-Route::get('/detail-kelas', [EducareerController::class, 'kelas'])->name('kelas');
+Route::get('/detail-kelas', [EducareerController::class, 'kelas'])->name(
+    'kelas'
+);
 
 Route::get('/flap', [EducareerController::class, 'flap'])->name('flap');
 Route::get('/blog', [FeatureController::class, 'blog'])->name('blog');
-Route::get('/blog/detail-blog', [FeatureController::class, 'detailBlog'])->name('detail-blog');
+Route::get('/blog/detail-blog', [FeatureController::class, 'detailBlog'])->name(
+    'detail-blog'
+);
 Route::get('/syarat-dan-ketentuan', [FeatureController::class, 'tnc'])->name(
     'TnC'
 );
@@ -57,41 +61,69 @@ Route::get('/kebijakan-privasi', [FeatureController::class, 'privacy'])->name(
 
 //Blog
 //Writer Login feature
-Route::get('/blog/login', [FeatureController::class, 'writer'])->name(
-    'login_writer'
-);
-Route::get('/blog/dashboard', [FeatureController::class, 'dashboard'])->name(
-    'dashboard-writer'
-);
-Route::get('/blog/uploaded', [FeatureController::class, 'uploaded'])->name(
-    'blog-writer'
-);
-Route::get('/blog/schedule', [FeatureController::class, 'schedule'])->name(
-    'schedule-writer'
-);
-Route::get('/blog/create', [FeatureController::class, 'create'])->name(
-    'create-writer'
-);
-Route::get('/blog/uploaded/{blogs:id}', [
-    FeatureController::class,
-    'detail',
-])->name('detail-blog-writer');
 
-Route::get('/blog/detail-mentor', [FeatureController::class, 'detailMentor'])->name(
-    'detail-mentor'
-);
+Route::group(['middleware' => ['auth', 'role:Admin,Writer']], function () {
+    Route::get('/blog/dashboard', [
+        FeatureController::class,
+        'dashboard',
+    ])->name('dashboard-writer');
+    Route::get('/blog/uploaded', [FeatureController::class, 'uploaded'])->name(
+        'blog-writer'
+    );
+    Route::post('/blog/uploaded', [
+        FeatureController::class,
+        'storeBlog',
+    ])->name('store-blog');
+    Route::get('/blog/schedule', [FeatureController::class, 'schedule'])->name(
+        'schedule-writer'
+    );
+    Route::get('/blog/create', [FeatureController::class, 'create'])->name(
+        'create-writer'
+    );
+    Route::post('/blog/uploaded/delete', [
+        FeatureController::class,
+        'destroyBlog',
+    ])->name('destroy-blog');
+    Route::get('/blog/uploaded/{blogs:id}', [
+        FeatureController::class,
+        'detail',
+    ])->name('detail-blog-writer');
+    Route::post('/blog/uploaded/update', [
+        FeatureController::class,
+        'updateBlog',
+    ])->name('update-blog');
+    Route::post('/blog/upload-image', [
+        FeatureController::class,
+        'uploadImage',
+    ]);
+    Route::get('/blog/logout', [FeatureController::class, 'logout'])->name(
+        'logout-dashboard'
+    );
+    Route::get('/blog/detail-mentor', [
+        FeatureController::class,
+        'detailMentor',
+    ])->name('detail-mentor');
+    Route::get('/blog/classSchedule', [
+        FeatureController::class,
+        'classSchedule',
+    ])->name('classSchedule-writer');
+    Route::get('/blog/classSchedule/Create', [
+        FeatureController::class,
+        'createClassSchedule',
+    ])->name('create-class-schedule-writer');
+});
 
-Route::get('/slicing_blog', [EducareerController::class, 'slicing'])->name('slicing');
-Route::post('/blog/uploaded', [FeatureController::class, 'storeBlog'])->name('store-blog');
-Route::post('/blog/uploaded/delete', [FeatureController::class, 'destroyBlog'])->name('destroy-blog');
-Route::post('/blog/uploaded/update', [FeatureController::class, 'updateBlog'])->name('update-blog');
-Route::post('/blog/upload-image', [FeatureController::class, 'uploadImage']);
+Route::group(['withoutMiddleware' => ['auth']], function () {
+    Route::get('/blog/login', [FeatureController::class, 'writer'])->name(
+        'login_writer'
+    );
+    Route::post('/blog/login', [FeatureController::class, 'auth'])->name(
+        'auth-writer'
+    );
+});
 
-Route::get('/blog/classSchedule', [FeatureController::class, 'classSchedule'])->name(
-    'classSchedule-writer'
-);
-Route::get('/blog/classSchedule/Create', [FeatureController::class, 'createClassSchedule'])->name(
-    'create-class-schedule-writer'
+Route::get('/slicing_blog', [EducareerController::class, 'slicing'])->name(
+    'slicing'
 );
 
 //Login feature
