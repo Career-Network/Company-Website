@@ -1,10 +1,12 @@
 /* CSS Reset */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 * {
   box-sizing: border-box;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', 'sans-serif';
   font-style: normal;
-  -webkit-font-family: Poppins, sans-serif;
+  -webkit-font-family: 'Poppins', 'sans-serif' !important;
   margin: 0;
   padding: 0;
 }
@@ -324,7 +326,7 @@ form input {
   font-weight: 600;
   font-size: 28px;
 
-  color: #27C6D9;
+  color: #27c6d9;
 }
 
 /* PROFILE SECTION ON HEADER */
@@ -1580,7 +1582,7 @@ form input {
 }
 
 .hapus-create {
-  transition: .8s;
+  transition: 0.8s;
 }
 
 .hapus-create a {
@@ -1595,4 +1597,25 @@ form input {
 .hapus-create:hover a,
 .hapus-create a:hover {
   color: #fff !important;
+}
+
+/*=============== NOTIFICATIONS ===============*/
+
+/*=============== BEST ARTICLE SECTION ===============*/
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-soon-illustration {
+  width: 300px;
+  height: 300px;
+}
+
+.coming-soon-text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
 }
