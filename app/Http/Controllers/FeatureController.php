@@ -202,6 +202,10 @@ class FeatureController extends Controller
     {
         return view('detail-mentor');
     }
+    public function testimoni()
+    {
+        return view('testimoni-writer');
+    }
     public function tnc()
     {
         return view('TnC');
