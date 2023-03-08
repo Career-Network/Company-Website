@@ -7,13 +7,13 @@
 @section('content')
     <div class="blog-section">
         <section class="header-blogs">
-            <h1 class="heading">Semua Mentor</h1>
+            <h1 class="heading ">Semua Mentor</h1>
         </section>
 
 
         <section class="schedule-section">
           <div class="table-responsive">
-            <table id="datatable-detail-mentor" class="table table-mentor table-striped" >
+            <table id="datatable-detail-mentor" class="table table-mentor " >
                 <thead>
                     <tr>
                         <th>Profile</th>
@@ -28,7 +28,7 @@
                   
                     {{-- row 1 --}}
                     <tr class="trow-mentor">
-                        <td>
+                        <td  class="tab-prof bg-white">
                             <div class="profile">
                                 <div class="profile-picture">
                                     <img src="{{ asset('assets/img/detail-mentor/mentor-1.png') }}" />
@@ -330,6 +330,7 @@
                         "targets": 5
                     }
                 ],
+    
                 "language": {
                     "lengthMenu": "_MENU_ entries per page",
                     "info": "Menampilkan halaman _PAGE_ dari _PAGES_",
@@ -340,10 +341,21 @@
             });
 
             // Tambahkan search input dengan lebar 500px
+            var labelSearch = $('.dataTables_filter label');
             var searchInput = $('.dataTables_filter input[type=search]');
+
+            searchInput.detach();
+            searchInput.appendTo(labelSearch);
+
             searchInput.attr('style',
                 'width: 80%; padding-right: 100px; background-image: url("/assets/img/detail-mentor/search-icon.svg"); background-repeat: no-repeat; background-position: right 10px center; background-size: 16px;'
             );
+
+
+            // var searchInput = $('.dataTables_filter input[type=search]');
+            // searchInput.attr('style',
+            //     'width: 80%; padding-right: 100px; background-image: url("/assets/img/detail-mentor/search-icon.svg"); background-repeat: no-repeat; background-position: right 10px center; background-size: 16px;'
+            // );
 
 
             // Tambahkan filter dropdown
