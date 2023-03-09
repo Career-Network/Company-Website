@@ -57,7 +57,7 @@
                 </div>
             </div>
             
-            <a href="/blog/uploaded/{{ $blog->id }}" class="blog-see-more-btn">
+            <a href="/dashboard/blogs/{{ $blog->id }}" class="blog-see-more-btn">
               Lihat Selengkapnya
             </a>
           </div>

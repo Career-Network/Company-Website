@@ -25,11 +25,21 @@ class FeatureController extends Controller
     private $blogs;
     public function blog()
     {
-        return view('blog');
+        $this->blogs = Blog::all();
+        return view('blog', [
+            'blogs' => $this->blogs,
+        ]);
     }
-    public function detailBlog()
+    public function detailBlog(Request $request)
     {
-        return view('detail-bigBlog');
+        $slug = $request->route('slug');
+        $title = ucwords(str_replace('-', ' ', $slug));
+
+        $blog = Blog::where('title', '=', $title)->first();
+
+        return view('detail-bigBlog', [
+            'blog' => $blog,
+        ]);
     }
     public function writer()
     {
@@ -71,7 +81,7 @@ class FeatureController extends Controller
         // );
         Session::flush();
         Auth::logout();
-        return redirect('blog/login');
+        return redirect('user/login');
     }
     public function dashboard()
     {
@@ -278,8 +288,7 @@ class FeatureController extends Controller
         return view('create-classSchedule-writer');
     }
 
-    public function scheduleBlog(Request $request) {
-        
+    public function scheduleBlog(Request $request)
+    {
     }
-    
 }

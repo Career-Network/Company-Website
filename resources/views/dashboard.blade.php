@@ -2,7 +2,7 @@
   'title'=>'Dashboard',
   'css'=>'assets/css/auth.css'
   ])
-  
+
 @section('content')
     <main>
       <div class="heading">

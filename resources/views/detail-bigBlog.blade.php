@@ -11,7 +11,7 @@
 
                   <div class="row title-container">
                 <div class="title-text">
-                <h2>Career Network telah luncurkan Website Company</h2>
+                <h2>{{ $blog->title }}</h2>
                 </div>
             </div>
           
@@ -20,7 +20,7 @@
         <section id="author-detail-blog">
                    <div class="share">
                             <div class="share-title">
-                                <h4>Falih Rahmat, 17 Mei 2022</h4>
+                                <h4>{{ $blog->author }}, {{ date('d F Y', strtotime($blog->update_date)) }}</h4>
                             </div>
                             <div class="share-button">
                                 <button class="share-button-bagikan" id="share-button-bagikan">
@@ -102,52 +102,8 @@
         <section id="information-detail-blog">
             {{-- <div class="container-information"> --}}
                     <div class="information-data row">
-                        <div class="image-paragraf">
-                            <img src="{{ asset('assets/img/detail-blog/Banner-Blog.png') }}" alt="gambar">
-                        </div>
-                        <div class="paragraf">
-                            <p>
-                                <b>Career Network</b> - Dalam pertama kali Career Network mengeluarkan website company resmi.
-                                Dengan mengusung tema “Accelerate your growth with us” memberikan sentuhan gabungan antara formal dan interaktif.
-                                Sehingga dapat beradaptasi dengan perkembangan zaman, terutama anak muda. Sebagai wujud komitmen terhadap client dan investor, 
-                                website company hadir untuk memberikan informasi perusahaan secara jelas, ringkas dan valid. Dengan harapan sebagai awalan untuk 
-                                meningkatkan promosi brand yang dikenal luas dan menjalin koneksi dengan client potensial.
-                            </p>
-                        </div>
-                        <div class="image-paragraf">
-                            <img src="{{ asset('assets/img/detail-blog/website-company.png') }}" alt="gambar">
-                        </div>
-                        <div class="paragraf">
-                            <p>
-                                Terdapat berbagai ilustrasi yang ada di website untuk membantu pengguna untuk memahami dan membayangkan suatu informasi agar lebih baik. 
-                                Selain itu, membangun daya tarik emosional yang kuat turut menjadi tujuan dalam membangun website. Ditambah keunikan warna yang selaras 
-                                antara orange yang menjadi identitas perusahaan dengan perpaduan warna biru.
-                                
-                            </p>
-                            <p class="second">
-                                Career Network memiliki dua produk, yaitu Career Network EduCareer untuk memberikan pelatihan online bagi 
-                                mahasiswa/i secara 1 on 1 dan kelompok dengan mentor yang expert di bidangnya dan kurikulum terstruktur. Selain itu, terdapat produk lain
-                                yaitu Career Network Sonic sebagai layanan pemesanan jasa Freelance untuk membantu kebutuhan masyarakat. Kedua produk ini masih pada tahap 
-                                pengembangan dan akan diluncurkan pada beberapa bulan kedepan. Stay tune!l.
-                            </p>
-                        </div>
-                        <div class="image-paragraf">
-                            <img src="{{ asset('assets/img/detail-blog/Our-Product.png') }}" alt="gambar">
-                        </div>
-                        <div class="paragraf">
-                            <p>
-                                Tertarik untuk berpartner bersama kami untuk masa depan?
-                                
-                            </p>
-                            <p class="third">
-                                Hubungi secara online ke dalam email atau 
-                                nomor telepon yang ada pada halaman company. 
-                                Bisa juga untuk datang secara langsung ke 
-                                alamat yang tertera. Tertarik dengan Cerita, 
-                                Hiburan, Informasi serta Promo menarik dari Career Network.
-                                Kunjungi saja blog Career Network untuk memperoleh update terbaru.
-                            </p>
-                        </div>
+                        <img src='@if(substr($blog->image, 0, 10) == "thumbnails") {{ asset("storage/$blog->image") }} @else {{ $blog->image }} @endif' class="thumbnail-detail" alt="{{ $blog->title }}'s Image">
+                        {!! $blog->body !!}
                     </div>
 
                     <div id="tagar-detail-blog">
@@ -157,16 +113,8 @@
                             </div>
                             <div class="hastag-list">
                                 <ul>
-                                    <li>#CareerNetwork</li>
-                                    <li>#Company</li>
-                                    <li>#Website</li>
-                                    <li>#WebsiteCompany</li>
-                                    <li>#Launching</li>
+                                    <li>{{ $blog->hastags }}</li>
                                 </ul>
-                                {{-- <p>#CareerNetwork</p>
-                                <p>#CareerNetwork</p>
-                                <p>#CareerNetwork</p>
-                                <p>#CareerNetwork</p> --}}
                             </div>
                         </div>
                      

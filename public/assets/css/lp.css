@@ -774,7 +774,11 @@
   font-size: 20px;
   line-height: 30px;
   color: #111111;
+
+  text-decoration: none;
+  cursor: pointer;
 }
+
 #des {
   font-family: 'Poppins';
   font-style: normal;

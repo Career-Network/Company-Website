@@ -49,7 +49,7 @@ Route::get('/detail-kelas', [EducareerController::class, 'kelas'])->name(
 
 Route::get('/flap', [EducareerController::class, 'flap'])->name('flap');
 Route::get('/blog', [FeatureController::class, 'blog'])->name('blog');
-Route::get('/blog/detail-blog', [FeatureController::class, 'detailBlog'])->name(
+Route::get('/blog/{slug}', [FeatureController::class, 'detailBlog'])->name(
     'detail-blog'
 );
 Route::get('/syarat-dan-ketentuan', [FeatureController::class, 'tnc'])->name(
@@ -59,24 +59,36 @@ Route::get('/kebijakan-privasi', [FeatureController::class, 'privacy'])->name(
     'privacy_policy'
 );
 
-//Blog
-//Writer Login feature
-
+/*
+|--------------------------------------------------------------------------
+| Routes System
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
 Route::group(['middleware' => ['auth', 'role:Admin,Writer']], function () {
-    Route::get('/blog/dashboard', [
-        FeatureController::class,
-        'dashboard',
-    ])->name('dashboard-writer');
-    Route::get('/blog/uploaded', [FeatureController::class, 'uploaded'])->name(
-        'blog-writer'
+    Route::get('/dashboard', [FeatureController::class, 'dashboard'])->name(
+        'dashboard-writer'
     );
-    Route::post('/blog/uploaded', [
+
+    Route::get('/dashboard/blogs', [
+        FeatureController::class,
+        'uploaded',
+    ])->name('blog-writer');
+
+    Route::get('/dashboard/schedules', [
+        FeatureController::class,
+        'schedule',
+    ])->name('schedule-writer');
+
+    Route::post('/dashboard/blogs', [
         FeatureController::class,
         'storeBlog',
     ])->name('store-blog');
-    Route::get('/blog/schedule', [FeatureController::class, 'schedule'])->name(
-        'schedule-writer'
-    );
+
     Route::get('/blog/create', [FeatureController::class, 'create'])->name(
         'create-writer'
     );
@@ -84,7 +96,7 @@ Route::group(['middleware' => ['auth', 'role:Admin,Writer']], function () {
         FeatureController::class,
         'destroyBlog',
     ])->name('destroy-blog');
-    Route::get('/blog/uploaded/{blogs:id}', [
+    Route::get('/dashboard/blogs/{blogs:id}', [
         FeatureController::class,
         'detail',
     ])->name('detail-blog-writer');
@@ -96,14 +108,14 @@ Route::group(['middleware' => ['auth', 'role:Admin,Writer']], function () {
         FeatureController::class,
         'uploadImage',
     ]);
-    Route::get('/blog/logout', [FeatureController::class, 'logout'])->name(
+    Route::get('/user/logout', [FeatureController::class, 'logout'])->name(
         'logout-dashboard'
     );
-    Route::get('/blog/detail-mentor', [
+    Route::get('/dashboard/mentors', [
         FeatureController::class,
         'detailMentor',
     ])->name('detail-mentor');
-    Route::get('/blog/classSchedule', [
+    Route::get('/dashboard/classes', [
         FeatureController::class,
         'classSchedule',
     ])->name('classSchedule-writer');
@@ -113,7 +125,7 @@ Route::group(['middleware' => ['auth', 'role:Admin,Writer']], function () {
     ])->name('create-class-schedule-writer');
 });
 
-Route::get('/blog/login', [FeatureController::class, 'writer'])
+Route::get('/user/login', [FeatureController::class, 'writer'])
     ->name('login_writer')
     ->middleware('guest');
 Route::post('/blog/login', [FeatureController::class, 'auth'])->name(
