@@ -117,7 +117,7 @@
 
         </div>
         <div class="d-grid gap-2 col-6 pb-4 mx-auto d-block d-sm-none" style="width:300px">
-            <button class="btn " type="button" style="background-color: #FF5722;color:#ffff">Button</button>
+            <button class="btn " type="button" style="background-color: #FF5722;color:#ffff">Lihat Selengkapnya </button>
 
         </div>
 
