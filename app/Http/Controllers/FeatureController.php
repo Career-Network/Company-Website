@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Feature;
+use App\Models\Schedule;
 use App\Models\User;
 use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Http\RedirectResponse;
@@ -278,8 +279,22 @@ class FeatureController extends Controller
         return view('create-classSchedule-writer');
     }
 
-    public function scheduleBlog(Request $request) {
-        
+    public function scheduleBlog(Request $request)
+    {
+        $setDate = $request->set_date . ' ' . $request->set_time;
+
+        try {
+            $query = Schedule::create([
+                'blog_id' => 4,
+                'set_date' => $setDate,
+                'status' => 'active',
+            ]);
+        } catch (Exception $e) {
+            dd($e);
+            toast('There is Internal Server Error!', 'error');
+            return redirect()
+                ->route('blog-writer')
+                ->with(['error' => 'Blog gagal diupload!']);
+        }
     }
-    
 }

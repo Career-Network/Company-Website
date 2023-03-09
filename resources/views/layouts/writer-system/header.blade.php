@@ -89,7 +89,7 @@
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">
                 <a class="profile" href="{{ route('login_writer') }}">
                     <img alt="" src="{{ asset('assets/img/profile.png') }}" class="profile-picture" />
-                    <p>Rifky Chirmansyah</p>
+                    <p>{{ Auth::user()->username }}</p>
                 </a>
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -123,6 +123,7 @@
                     <span class="menu-text {{ $active == "Schedule"? "active" : "" }}">Schedule</span>
                 </a>
 
+                @if(Auth::user()->role_name !== "Writer")
                 {{-- Kelas Schedule Menu --}}
                 <a href="{{ route('classSchedule-writer') }}" class="menu-item {{ $active == "Class_Schedule"? "active" : "" }}">
                     <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,7 +140,7 @@
 
                     <span class="menu-text {{ $active == "Mentors"? "active" : "" }}">Mentor</span>
                 </a>
-
+                @endif
 
             </div>
 

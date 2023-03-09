@@ -125,20 +125,24 @@
   <!-- Modal -->
   <div class="modal fade" id="item-jadwal" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
     <div class="modal-dialog">
-      <form class="modal-content" method="POST" action="{{ route('scheduleBlog') }}">
+      <form class="modal-content" method="POST" action="{{ route('schedule-blog') }}">
+        @csrf
+        <input class="form-control" type="hidden" name="titleSchedule">
+        <input class="form-control" type="hidden" name="authorSchedule">
+        <input class="form-control" type="hidden" name="hastagsSchedule">
+        <input class="form-control" type="hidden" name="thumbnailSchedule">
+        <input class="form-control" type="hidden" name="updateDateSchedule">
+        <input class="form-control" type="hidden" name="bodySchedule">
         <div class="modal-head">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Pilih tanggal dan waktu untuk mempublikasikan artikel ini</h1>
           <div class="buttons-modal">
             <div class="col-md-6">
-              <input type="date" class="form-control"  aria-label="Last name" name="update_date">
+              <input type="date" class="form-control"  aria-label="Last name" name="set_date">
             </div>
 
-            <select class="form-select " aria-label="Default select example">
-              <option selected>Choose time</option>
-              <option value="1">12.00PM</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
+            <div class="col-md-6">
+              <input type="time" class="form-control"  aria-label="Last name" name="set_time" min="00.00" max="23.59">
+            </div>
           </div>
         </div>
         <hr >

@@ -111,6 +111,9 @@ Route::group(['middleware' => ['auth', 'role:Admin,Writer']], function () {
         FeatureController::class,
         'createClassSchedule',
     ])->name('create-class-schedule-writer');
+    Route::post('/blog/schedule', [
+        FeatureController::class, 'scheduleBlog'
+    ])->name('schedule-blog');
 });
 
 Route::get('/blog/login', [FeatureController::class, 'writer'])

@@ -11,6 +11,7 @@ class Schedule extends Model
     public $timestamps = false;
 
     protected $fillable = [
+        'blog_id',
         'set_date',
         'status',
     ];
