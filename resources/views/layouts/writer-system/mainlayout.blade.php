@@ -147,8 +147,11 @@
         const notificationBtn = document.getElementById('notification-btn')
         const notificationPopUp = document.getElementById('notification-pop-up')
 
-        notificationBtn.addEventListener('click', () => {
-            notificationPopUp.classList.toggle('hide__pop-up')
+        notificationBtn.addEventListener('mouseenter', () => {
+            notificationPopUp.classList.remove('hide__pop-up')
+            notificationPopUp.addEventListener('mouseleave', () => {
+                notificationPopUp.classList.add('hide__pop-up')
+            })
         })
     </script>
 </body>
