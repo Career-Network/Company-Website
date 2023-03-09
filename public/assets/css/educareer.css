@@ -483,3 +483,64 @@ font-size: 12px;
 line-height: 18px;
 }
 }
+
+
+    @media only screen and (max-width: 576px) {
+
+.edu
+{
+background: #FF5722;
+border-radius: 20px;
+
+margin-top: 130px !important;
+
+margin-right: 33px;
+margin-bottom: 20px;
+width: 100px;
+}
+
+#kursus{
+
+font-weight: 600;
+font-size: 22px !important;
+line-height: 33px;
+text-align: center !important;
+justify-content: center !important;
+}
+
+.col{
+    width: 150px !important;
+}
+.card-img{
+    width: 160px !important;
+    margin-top: 20px !important;
+
+}
+#kartu{
+    width: 170px !important;
+    height: 300px !important;
+}
+#judul{
+
+font-weight: 700;
+font-size: 14px;
+line-height: 21px;
+width: 150px !important;
+
+}
+ p .card-text{
+
+font-weight: 400;
+font-size: 12px !important;
+line-height: 18px;
+text-align: justify;
+color: #7A7A7A !important;
+}
+.detail{
+
+font-size: 12px;
+line-height: 18px;
+margin-bottom: 20px !important;
+}
+
+}

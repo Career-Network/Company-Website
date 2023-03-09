@@ -9,7 +9,7 @@
 
 <body>
 
-    <section class="edu container">
+    <section class="edu container d-none d-sm-block">
         <div class="row align-items-center container ">
             <div class="col-md-6 justify-content-center">
                 <img src="assets/img/g7.png" class="img-fluid">
@@ -18,6 +18,27 @@
                 <h2 class="h_2 fw_bold text_white" id="h2">Belajar hal baru dengan biaya terjangkau dan berkualitas</h2>
                 <p class="bt_2 text_white mt-4" id="p">EduCareer hadir sebagai Platform pelatihan dengan mentor berpengalaman
                 </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="edu container d-block d-sm-none" style="width:350px;height:630px">
+        <div class="row align-items-center container ">
+
+            <div class="col-md-6">
+                <h2 class="h_2 fw_bold text_white" id="h2" style="
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 42px;">Belajar hal baru dengan biaya terjangkau dan berkualitas</h2>
+                <p class="bt_2 text_white mt-4" id="p" style="
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 30px;">EduCareer hadir sebagai Platform pelatihan dengan mentor berpengalaman
+                </p>
+            </div>
+            <div class="col-md-6 justify-content-center">
+                <img src="assets/img/g7.png" class="img-fluid" width="450px">
             </div>
 
         </div>
