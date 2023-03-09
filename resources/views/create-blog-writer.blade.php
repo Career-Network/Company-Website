@@ -125,7 +125,7 @@
   <!-- Modal -->
   <div class="modal fade" id="item-jadwal" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <form class="modal-content" method="POST" action="{{ route('scheduleBlog') }}">
         <div class="modal-head">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Pilih tanggal dan waktu untuk mempublikasikan artikel ini</h1>
           <div class="buttons-modal">
@@ -143,14 +143,14 @@
         </div>
         <hr >
         <div class="modal-content buttons-2">
-          <button href="" class="option-item save-modal-btn">
+          <button type="submit" class="option-item save-modal-btn">
               <span>Jadwalkan</span>
           </button>
           <button href="" class="option-item preview" data-bs-toggle="modal" data-bs-target="#item-jadwal">
               <span>Batalkan</span>
           </button>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </div>

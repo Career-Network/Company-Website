@@ -277,4 +277,9 @@ class FeatureController extends Controller
     {
         return view('create-classSchedule-writer');
     }
+
+    public function scheduleBlog(Request $request) {
+        
+    }
+    
 }
