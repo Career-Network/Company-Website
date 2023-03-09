@@ -505,7 +505,7 @@ form input {
 
 .blog-img {
   width: 100%;
-  height: 183px;
+  height: 200px;
 
   object-fit: cover;
 
@@ -1219,7 +1219,7 @@ form input {
 .kelola-postingan .blogs {
   padding: 1.5rem 0;
 
-  grid-template-columns: repeat(4, auto);
+  /* grid-template-columns: repeat(4, auto); */
 }
 
 /* .kelola-postingan img {

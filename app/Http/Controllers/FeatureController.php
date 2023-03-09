@@ -22,6 +22,7 @@ use function PHPUnit\Framework\isNull;
 
 class FeatureController extends Controller
 {
+    private $blogs;
     public function blog()
     {
         return view('blog');
@@ -43,6 +44,11 @@ class FeatureController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
+            $role = Auth::user()->role_name;
+            Alert::success(
+                'You\'ve Successfully Logged In!',
+                'You are an ' . strtolower($role) . '. Enjoy Your Dashboard'
+            );
             return redirect()
                 ->route('dashboard-writer')
                 ->with([
@@ -59,19 +65,27 @@ class FeatureController extends Controller
     }
     public function logout()
     {
+        // Alert::success(
+        //     'You\'ve Successfully Logged Out!',
+        //     'Thanks for using dashboard'
+        // );
         Session::flush();
         Auth::logout();
         return redirect('blog/login');
     }
     public function dashboard()
     {
-        $blogs = collect(
-            Blog::where('user_id', '=', Auth::user()->id)
-                ->orderBy('update_date', 'DESC')
-                ->get()
-        );
+        if (Auth::user()->role_name === 'Writer') {
+            $this->blogs = collect(
+                Blog::where('user_id', '=', Auth::user()->id)
+                    ->orderBy('update_date', 'DESC')
+                    ->get()
+            );
+        } else {
+            $this->blogs = collect(Blog::all());
+        }
         return view('dashboard-writer', [
-            'blogs' => $blogs,
+            'blogs' => $this->blogs,
         ]);
     }
     public function create()
@@ -219,13 +233,17 @@ class FeatureController extends Controller
     }
     public function uploaded()
     {
-        $blogs = collect(
-            Blog::where('user_id', '=', Auth::user()->id)
-                ->orderBy('update_date', 'DESC')
-                ->get()
-        );
+        if (Auth::user()->role_name === 'Writer') {
+            $this->blogs = collect(
+                Blog::where('user_id', '=', Auth::user()->id)
+                    ->orderBy('update_date', 'DESC')
+                    ->get()
+            );
+        } else {
+            $this->blogs = collect(Blog::all());
+        }
         return view('uploaded-writer', [
-            'blogs' => $blogs,
+            'blogs' => $this->blogs,
         ]);
     }
     public function schedule()

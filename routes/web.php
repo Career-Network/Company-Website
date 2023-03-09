@@ -113,14 +113,12 @@ Route::group(['middleware' => ['auth', 'role:Admin,Writer']], function () {
     ])->name('create-class-schedule-writer');
 });
 
-Route::group(['withoutMiddleware' => ['auth']], function () {
-    Route::get('/blog/login', [FeatureController::class, 'writer'])->name(
-        'login_writer'
-    );
-    Route::post('/blog/login', [FeatureController::class, 'auth'])->name(
-        'auth-writer'
-    );
-});
+Route::get('/blog/login', [FeatureController::class, 'writer'])
+    ->name('login_writer')
+    ->middleware('guest');
+Route::post('/blog/login', [FeatureController::class, 'auth'])->name(
+    'auth-writer'
+);
 
 Route::get('/slicing_blog', [EducareerController::class, 'slicing'])->name(
     'slicing'
