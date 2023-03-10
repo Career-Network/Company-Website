@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use League\CommonMark\Util\UrlEncoder;
 use Exception;
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 use RealRashid\SweetAlert\Facades\Alert as FacadesAlert;
 
@@ -282,19 +284,56 @@ class FeatureController extends Controller
     public function scheduleBlog(Request $request)
     {
         $setDate = $request->set_date . ' ' . $request->set_time;
+        // upload image
+        $image = $request->file('image')->store('thumbnails');
+        $blogID = (int) Str::random(15);
 
         try {
-            $query = Schedule::create([
-                'blog_id' => 4,
+            $data = Blog::create([
+                'id' => 21,
+                'user_id' => Auth::user()->id,
+                'title' => $request->titleSchedule,
+                'author' => $request->authorSchedule,
+                'update_date' => $request->updateDateSchedule,
+                'body' => $request->bodySchedule,
+                'image' => $image,
+                'hastags' => $request->hastagsSchedule,
+            ]);
+
+            // $schedule = new Schedule();
+            // $schedule->blog_id = $data->id;
+            // dd($schedule->blog_id);
+            // $schedule->set_date = $setDate;
+            // $schedule->status = 'active';
+
+            // $schedule->save();
+
+            Schedule::create([
+                'blog_id' => $data->id,
                 'set_date' => $setDate,
                 'status' => 'active',
             ]);
+            // dd($data->id);
+            // dd($data);
         } catch (Exception $e) {
             dd($e);
-            toast('There is Internal Server Error!', 'error');
-            return redirect()
-                ->route('blog-writer')
-                ->with(['error' => 'Blog gagal diupload!']);
         }
+
+        // try {
+
+        //     Schedule::create([
+        //         'blog_id' => $data->id,
+        //         'set_date' => $setDate,
+        //         'status' => 'active',
+        //     ]);
+        // } catch (Exception $e) {
+        //     dd($e);
+        //     toast('There is Internal Server Error!', 'error');
+        //     return redirect()
+        //         ->route('blog-writer')
+        //         ->with(['error' => 'Blog gagal diupload!']);
+        // }
+
+        dd('SUKSES');
     }
 }
