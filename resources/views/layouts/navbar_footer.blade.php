@@ -101,15 +101,14 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">My Profile</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="dropdown-item" href=" {{ route('dashboard') }}">Dashboard</a></li>
+                    <li><a class="dropdown-item" href="{{ route('dashboard-writer') }}">Dashboard</a></li>
                     <div class="dropdown-divider"></div>
                     <li>
-                        <form action="{{ route('logout') }}" method="post">
-                            @csrf
+                        <a href="{{ route('logout-dashboard') }}">
                             <button type="submit" class="dropdown-item">
                                Logout
                             </button>
-                        </form>       
+                        </a>       
                 </ul>
               </li>
               @else

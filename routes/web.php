@@ -108,7 +108,7 @@ Route::group(['middleware' => ['auth', 'role:Admin,Writer']], function () {
         FeatureController::class,
         'uploadImage',
     ]);
-    Route::get('/user/logout', [FeatureController::class, 'logout'])->name(
+    Route::get('/dashboard/logout', [FeatureController::class, 'logout'])->name(
         'logout-dashboard'
     );
     Route::get('/dashboard/mentors', [
@@ -125,7 +125,7 @@ Route::group(['middleware' => ['auth', 'role:Admin,Writer']], function () {
     ])->name('create-class-schedule-writer');
 });
 
-Route::get('/user/login', [FeatureController::class, 'writer'])
+Route::get('/dashboard/login', [FeatureController::class, 'writer'])
     ->name('login_writer')
     ->middleware('guest');
 Route::post('/blog/login', [FeatureController::class, 'auth'])->name(
