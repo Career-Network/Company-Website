@@ -542,7 +542,7 @@
         <div class="modal-dialog">
         <div class="modal-content modal-bs modal-content-close">
             <div class="modal-head modal-head-close">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda yakin akan menghapus mentor ini?</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda  yakin akan menghapus Kelas {Graphic Design}?</h1>
             <p>Semua data akan hilang</p>
             </div>
             <div class="modal-content modal-content-close">
@@ -563,7 +563,7 @@
             <div class="modal-head modal-head-close">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan Perubahan?</h1>
             <p>
-                Testimoni yang sudah diubah tidak akan hilang ketika anda kembali
+                Kelas yang sudah diubah tidak akan hilang ketika anda kembali
             </p>
             </div>
             <div class="modal-content modal-content-close">
@@ -612,8 +612,8 @@
                 <form action="" class="form-header-mentor">
                     <div class="d-flex">
                         <div class="input-container col-md-6">
-                            <label class="form-check-label" for="judul">Nama</label>
-                            <input class="form-control" type="text" id="judul" value="" placeholder="Nama">
+                            <label class="form-check-label" for="nama_kelas">Nama Kelas</label>
+                            <input class="form-control" type="text" id="nama_kelas" value="" placeholder="Nama">
                         </div>
                         <div class="input-container col-md-6">
                             <label class="form-check-label" for="thumbnail">Cover Kelas</label>
@@ -622,12 +622,12 @@
                     </div>
 
                     <div class="input-container">
-                        <label class="form-check-label" for="tagar">Harga Kelas</label>
-                        <input class="form-control" type="number" id="tagar" value="" placeholder="Rp.">
+                        <label class="form-check-label" for="harga">Harga Kelas</label>
+                        <input class="form-control" type="number" id="harga" value="" placeholder="Rp.">
                     </div>
 
                     <div class="input-container">
-                        <label class="form-check-label" for="tagar">Jadwal Kelas</label>
+                        <label class="form-check-label" for="jadwal">Jadwal Kelas</label>
                         <div class="d-flex">
                             {{-- <input class="form-control" type="date" id="tagar" value="" placeholder="Masukan Tanggal Mulai">
                             <input class="form-control" type="date" id="tagar" value="" placeholder="Masukan Tanggal akhir">
@@ -644,7 +644,7 @@
                     </div>
 
                     <div class="input-container">
-                    <label class="form-check-label" for="tagar">Lokasi Pembelajaran</label>
+                    <label class="form-check-label" for="lokasi">Lokasi Pembelajaran</label>
                     <select class="form-select" aria-label="Default select example">
                         <option selected>-- Pilih Lokasi Kelas --</option>
                         <option value="Online">Online</option>
@@ -663,7 +663,7 @@
                             <span>Batalkan</span>
                         </button>
                         <button href="" class="option-item create-blog mt-3" data-bs-dismiss="modal" aria-label="Close">
-                            <span>Upload Mentor</span>
+                            <span>Tambah Kelas</span>
                         </button>
                     </div>
                 </form>
