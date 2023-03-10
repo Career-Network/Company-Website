@@ -832,3 +832,38 @@ p.name {
   padding: 3rem 4rem !important;
   margin-top: 0;
 }
+
+
+/* slider testimonial*/
+#question{
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 54px;
+justify-content: center;
+text-align: center;
+
+
+
+color: #FF5722;
+}
+
+#kren{
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+
+align-items: center;
+text-align: center;
+
+color: #000000;
+}
+
+
