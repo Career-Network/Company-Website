@@ -85,7 +85,7 @@
                     </tr>
 
                     {{-- row 3 --}}
-                    {{-- <tr class="trow-mentor">
+                    <tr class="trow-mentor">
                         <td>
                         <div class="class-box">
                             <div class="class-img">
@@ -112,10 +112,10 @@
                                 <i class="fa-solid fa-gear"></i>
                             </button>
                         </td>
-                    </tr> --}}
+                    </tr>
 
                     {{-- row 4 --}}
-                    {{-- <tr class="trow-mentor">
+                    <tr class="trow-mentor">
                         <td>
                         <div class="class-box">
                             <div class="class-img">
@@ -142,10 +142,10 @@
                                 <i class="fa-solid fa-gear"></i>
                             </button>
                         </td>
-                    </tr> --}}
+                    </tr>
 
                     {{-- row 5 --}}
-                    {{-- <tr class="trow-mentor">
+                    <tr class="trow-mentor">
                         <td>
                         <div class="class-box">
                             <div class="class-img">
@@ -172,10 +172,10 @@
                                 <i class="fa-solid fa-gear"></i>
                             </button>
                         </td>
-                    </tr> --}}
+                    </tr>
 
                     {{-- row 6 --}}
-                    {{-- <tr class="trow-mentor">
+                    <tr class="trow-mentor">
                         <td>
                         <div class="class-box">
                             <div class="class-img">
@@ -202,10 +202,290 @@
                                 <i class="fa-solid fa-gear"></i>
                             </button>
                         </td>
-                    </tr> --}}
+                    </tr>
+                    <tr class="trow-mentor">
+                        <td>
+                        <div class="class-box">
+                            <div class="class-img">
+                                <img src="{{ asset('assets/img/kelas/finance.png') }}" />
+                            </div>
+                            <div class="class-name">
+                                Human Resources
+                            </div>
+                        </div>
+                        </td>
+                        <td>
+                            <p>Rp. 125.000</p>
+                        </td>
+                        <td>
+                            <p class="class-date">
+                                27 Februari - 4 Maret 2023
+                            </p>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="trow-mentor">
+                        <td>
+                        <div class="class-box">
+                            <div class="class-img">
+                                <img src="{{ asset('assets/img/kelas/finance.png') }}" />
+                            </div>
+                            <div class="class-name">
+                                Human Resources
+                            </div>
+                        </div>
+                        </td>
+                        <td>
+                            <p>Rp. 125.000</p>
+                        </td>
+                        <td>
+                            <p class="class-date">
+                                27 Februari - 4 Maret 2023
+                            </p>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="trow-mentor">
+                        <td>
+                        <div class="class-box">
+                            <div class="class-img">
+                                <img src="{{ asset('assets/img/kelas/finance.png') }}" />
+                            </div>
+                            <div class="class-name">
+                                Human Resources
+                            </div>
+                        </div>
+                        </td>
+                        <td>
+                            <p>Rp. 125.000</p>
+                        </td>
+                        <td>
+                            <p class="class-date">
+                                27 Februari - 4 Maret 2023
+                            </p>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="trow-mentor">
+                        <td>
+                        <div class="class-box">
+                            <div class="class-img">
+                                <img src="{{ asset('assets/img/kelas/finance.png') }}" />
+                            </div>
+                            <div class="class-name">
+                                Human Resources
+                            </div>
+                        </div>
+                        </td>
+                        <td>
+                            <p>Rp. 125.000</p>
+                        </td>
+                        <td>
+                            <p class="class-date">
+                                27 Februari - 4 Maret 2023
+                            </p>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="trow-mentor">
+                        <td>
+                        <div class="class-box">
+                            <div class="class-img">
+                                <img src="{{ asset('assets/img/kelas/finance.png') }}" />
+                            </div>
+                            <div class="class-name">
+                                Human Resources
+                            </div>
+                        </div>
+                        </td>
+                        <td>
+                            <p>Rp. 125.000</p>
+                        </td>
+                        <td>
+                            <p class="class-date">
+                                27 Februari - 4 Maret 2023
+                            </p>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="trow-mentor">
+                        <td>
+                        <div class="class-box">
+                            <div class="class-img">
+                                <img src="{{ asset('assets/img/kelas/finance.png') }}" />
+                            </div>
+                            <div class="class-name">
+                                Human Resources
+                            </div>
+                        </div>
+                        </td>
+                        <td>
+                            <p>Rp. 125.000</p>
+                        </td>
+                        <td>
+                            <p class="class-date">
+                                27 Februari - 4 Maret 2023
+                            </p>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="trow-mentor">
+                        <td>
+                        <div class="class-box">
+                            <div class="class-img">
+                                <img src="{{ asset('assets/img/kelas/finance.png') }}" />
+                            </div>
+                            <div class="class-name">
+                                Human Resources
+                            </div>
+                        </div>
+                        </td>
+                        <td>
+                            <p>Rp. 125.000</p>
+                        </td>
+                        <td>
+                            <p class="class-date">
+                                27 Februari - 4 Maret 2023
+                            </p>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="trow-mentor">
+                        <td>
+                        <div class="class-box">
+                            <div class="class-img">
+                                <img src="{{ asset('assets/img/kelas/finance.png') }}" />
+                            </div>
+                            <div class="class-name">
+                                Human Resources
+                            </div>
+                        </div>
+                        </td>
+                        <td>
+                            <p>Rp. 125.000</p>
+                        </td>
+                        <td>
+                            <p class="class-date">
+                                27 Februari - 4 Maret 2023
+                            </p>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="trow-mentor">
+                        <td>
+                        <div class="class-box">
+                            <div class="class-img">
+                                <img src="{{ asset('assets/img/kelas/finance.png') }}" />
+                            </div>
+                            <div class="class-name">
+                                Human Resources
+                            </div>
+                        </div>
+                        </td>
+                        <td>
+                            <p>Rp. 125.000</p>
+                        </td>
+                        <td>
+                            <p class="class-date">
+                                27 Februari - 4 Maret 2023
+                            </p>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="trow-mentor">
+                        <td>
+                        <div class="class-box">
+                            <div class="class-img">
+                                <img src="{{ asset('assets/img/kelas/finance.png') }}" />
+                            </div>
+                            <div class="class-name">
+                                Human Resources
+                            </div>
+                        </div>
+                        </td>
+                        <td>
+                            <p>Rp. 125.000</p>
+                        </td>
+                        <td>
+                            <p class="class-date">
+                                27 Februari - 4 Maret 2023
+                            </p>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                        </td>
+                    </tr>
 
                     {{-- row 7 --}}
-                    {{-- <tr class="trow-mentor">
+                    <tr class="trow-mentor">
                         <td>
                         <div class="class-box">
                             <div class="class-img">
@@ -232,7 +512,7 @@
                                 <i class="fa-solid fa-gear"></i>
                             </button>
                         </td>
-                    </tr> --}}
+                    </tr>
 
                     
 
@@ -321,28 +601,29 @@
 
 
 
-    <div class="modal fade" id="createClassScheduleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal modal-lg fade" id="createClassScheduleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Tambahkan Kelas Schedule</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Tambahkan Kelas</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form action="" class="form-header-mentor">
-                    <div class="input-container">
-                        <label class="form-check-label" for="judul">Nama</label>
-                        <input class="form-control" type="text" id="judul" value="" placeholder="Nama">
-                    </div>
-
-                    <div class="input-container">
-                        <label class="form-check-label" for="thumbnail">Photo Profile</label>
-                        <input class="form-control" type="file" id="thumbnail">
+                    <div class="d-flex">
+                        <div class="input-container col-md-6">
+                            <label class="form-check-label" for="judul">Nama</label>
+                            <input class="form-control" type="text" id="judul" value="" placeholder="Nama">
+                        </div>
+                        <div class="input-container col-md-6">
+                            <label class="form-check-label" for="thumbnail">Cover Kelas</label>
+                            <input class="form-control" type="file" id="thumbnail" placeholder="Masukan file foto">
+                        </div>
                     </div>
 
                     <div class="input-container">
                         <label class="form-check-label" for="tagar">Harga Kelas</label>
-                        <input class="form-control" type="numeric" id="tagar" value="">
+                        <input class="form-control" type="number" id="tagar" value="" placeholder="Rp.">
                     </div>
 
                     <div class="input-container">
@@ -352,7 +633,7 @@
                             <input class="form-control" type="date" id="tagar" value="" placeholder="Masukan Tanggal akhir">
                             <input class="form-control" type="time" id="tagar" value="" placeholder="Masukan Waktu"> --}}
                             <select class="form-select" aria-label="Default select example">
-                                <option selected visibility>-- Pilih tanggal mulai dan akhir --</option>
+                                <option selected >-- Pilih tanggal mulai dan akhir --</option>
                                 <option value="1 Januari 2020">1 Januari 2020</option>
                             </select>
                             <select class="form-select" aria-label="Default select example">
