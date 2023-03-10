@@ -87,8 +87,8 @@ Route::post('/blog/uploaded/delete', [FeatureController::class, 'destroyBlog'])-
 Route::post('/blog/uploaded/update', [FeatureController::class, 'updateBlog'])->name('update-blog');
 Route::post('/blog/upload-image', [FeatureController::class, 'uploadImage']);
 
-Route::get('/blog/classSchedule', [FeatureController::class, 'classSchedule'])->name(
-    'classSchedule-writer'
+Route::get('/blog/class-schedule', [FeatureController::class, 'classSchedule'])->name(
+    'class-schedule-writer'
 );
 Route::get('/blog/classSchedule/Create', [FeatureController::class, 'createClassSchedule'])->name(
     'create-class-schedule-writer'

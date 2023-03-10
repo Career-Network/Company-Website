@@ -137,69 +137,69 @@
     </div>
   <!-- modal -->
     <div class="modal modal-close fade" id="item-delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content modal-bs modal-content-close">
-        <div class="modal-head modal-head-close">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda yakin akan menghapus mentor ini?</h1>
-          <p>Semua data akan hilang</p>
+        <div class="modal-dialog">
+        <div class="modal-content modal-bs modal-content-close">
+            <div class="modal-head modal-head-close">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda yakin akan menghapus mentor ini?</h1>
+            <p>Semua data akan hilang</p>
+            </div>
+            <div class="modal-content modal-content-close">
+            <button href="" class="option-item delete" id="btn-action">
+                <span>Hapus</span>
+            </button>
+            <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+                <span>Batalkan</span>
+            </button>
+            </div>
         </div>
-        <div class="modal-content modal-content-close">
-          <button href="" class="option-item delete" id="btn-action">
-              <span>Hapus</span>
-          </button>
-          <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-              <span>Batalkan</span>
-          </button>
         </div>
-      </div>
     </div>
-  </div>
 
-   <div class="modal modal-close fade" id="item-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content modal-bs modal-content-close">
-        <div class="modal-head modal-head-close">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan Perubahan?</h1>
-          <p>
-            Testimoni yang sudah diubah tidak akan hilang ketika anda kembali
-          </p>
+    <div class="modal modal-close fade" id="item-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content modal-bs modal-content-close">
+            <div class="modal-head modal-head-close">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan Perubahan?</h1>
+            <p>
+                Testimoni yang sudah diubah tidak akan hilang ketika anda kembali
+            </p>
+            </div>
+            <div class="modal-content modal-content-close">
+            <button href="" class="option-item delete orange" id="btn-action-change">
+                <span>Simpan</span>
+            </button>
+            <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+                <span>Batalkan</span>
+            </button>
+            </div>
         </div>
-        <div class="modal-content modal-content-close">
-          <button href="" class="option-item delete orange" id="btn-action-change">
-              <span>Simpan</span>
-          </button>
-          <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-              <span>Batalkan</span>
-          </button>
         </div>
-      </div>
     </div>
-  </div>
 
-     <div class="modal modal-close fade" id="item-error" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog ">
-      <div class="modal-content modal-bs modal-content-error">
-        <div class="modal-head modal-img-error">
-            <img src="{{ asset('assets/img/detail-mentor/alert.png') }}" alt="gambar" />
+    <div class="modal modal-close fade" id="item-error" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+        <div class="modal-content modal-bs modal-content-error">
+            <div class="modal-head modal-img-error">
+                <img src="{{ asset('assets/img/detail-mentor/alert.png') }}" alt="gambar" />
+            </div>
+            <div class="modal-head modal-head-error">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Gagal melakukan tindakan!</h1>
+            <p>
+                Kesalahan dalam koneksi intenet, silahkan coba beberapa saat lagi
+            </p>
+            </div>
+            <div class="modal-content modal-content-error">
+            <button href="" id="btn-action-error" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+                <span>OK!</span>
+            </button>
+            </div>
         </div>
-        <div class="modal-head modal-head-error">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Gagal melakukan tindakan!</h1>
-          <p>
-            Kesalahan dalam koneksi intenet, silahkan coba beberapa saat lagi
-          </p>
         </div>
-        <div class="modal-content modal-content-error">
-          <button href="" id="btn-action-error" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-              <span>OK!</span>
-          </button>
-        </div>
-      </div>
     </div>
-  </div>
 
 
 
-      <div class="modal fade" id="createMentorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="createMentorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
