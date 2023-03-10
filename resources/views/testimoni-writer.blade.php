@@ -129,7 +129,9 @@
     <div class="modal-dialog">
       <div class="modal-content modal-bs modal-content-close">
         <div class="modal-head modal-head-close">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda yakin akan menghapus mentor ini?</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Apakah anda  yakin akan menghapus testimoni ini?
+          </h1>
           <p>Semua data akan hilang</p>
         </div>
         <div class="modal-content modal-content-close">
@@ -222,13 +224,21 @@
                         <option value="">3</option>
                         <option value="">4</option>
                       </select>
-                      {{-- <input class="form-control" type="text" id="tagar" value=""> --}}
                     </div>
 
                      <div class="input-container">
                       <label class="form-check-label" for="tagar">Display</label>
-                      <div class="form-checkbox-display">
-                         <input class="form-control font-bold" type="text" id="tagar" value="Mahasiswa">
+                      <div class="display-warna">
+                        <div class="display-item" >
+                            <input type="checkbox" class="form-check-input" id="itemInput" name="" value="">
+                             <label for="tagar"> Landing Page</label>
+                        </div>
+                        <div class="display-item-class" >
+                            <input type="checkbox" class="form-check-input" id="itemInput" name="" value="">
+                             <label for="tagar"> Class Page</label>
+                        </div>
+                
+                         {{-- <input class="form-control font-bold" type="text" id="tagar" value="Mahasiswa"> --}}
                       </div>
                      
                     </div>

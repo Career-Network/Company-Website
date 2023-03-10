@@ -24,6 +24,12 @@ a {
 a:hover {
   color: #fff !important;
 }
+//testimoni
+ #display-cek{
+ background-:red !important;
+ padding:20px;
+
+}
 
 .font-bold {
   color:black !important;
@@ -333,8 +339,68 @@ form input {
   flex-direction:column;
 
 }
+.display-warna {
+    /* background-color:blue; */
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    border-top:1px solid #CCCCCC;
+    margin-top:6px;
+}
 
-.modal-close {
+.display-item{
+    /* background-color:blue; */
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    width:50%;
+    padding:8px 6px 6px 6px;
+    justify-content:flex-start;
+      gap:6px;
+    
+}
+
+.display-item-class{
+    /* background-color:blue; */
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    width:50%;
+    justify-content:flex-start;
+    gap:6px;
+       padding:8px 6px 6px 6px;
+    
+}
+
+
+
+
+
+ .display-item input#itemInput, .display-item-class  input#itemInput  {
+  width:24px;
+  height:24px;
+  margin:0px;
+background-color:white;
+ }
+
+  .display-item input#itemInput:checked, .display-item-class  input#itemInput:checked {
+ background-color:#FF5722;
+ border:none;
+  }
+
+
+.display-item label, .display-item-class label {
+    /* background-color:brown; */
+
+font-size: 16px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+
+
+
+}
+.modal-close { 
   top: 10rem !important;
 }
 
@@ -379,7 +445,6 @@ padding:10px 20px 12px 20px;
 font-size: 22px;
 font-weight: 600;
 line-height: 33px;
-text-align: left;
 margin-bottom:5px;
 
 }
@@ -761,7 +826,7 @@ margin-right: 0.5rem;
 }
 
 .delete:hover {
-  color: #fff !important;
+  color: #fff !important;   
 }
 
 .delete-paragraph {
@@ -810,9 +875,10 @@ margin-right: 0.5rem;
 .form-blog input,
 textarea {
   background: #fff;
+
   border: 1px solid #ccc;
   border-radius: 12px;
-
+  
   display: flex;
   align-items: center;
 
@@ -1379,6 +1445,7 @@ form input {
 
   background: green;
     } */
+    
 }
 
 .btn-search,
@@ -1766,11 +1833,6 @@ padding: 8px 15px 8px 15px; */
 
 }
 
-//testimoni 
-.form-checkbox-display{
- background:red !important;
- padding:20px;
-}
 
 
 
@@ -1780,6 +1842,9 @@ padding: 8px 15px 8px 15px; */
   /* background: #f6faff; */
   /* background: brown; */
     }
+
+    
+
   /* SIDEBAR */
   aside {
     display: none;
@@ -2187,8 +2252,8 @@ table.dataTable.table-striped>tbody>tr.odd>* {
  }
 
     .table-mentor tbody .trow-mentor  td  {
-  
-    background-color:orange !important; 
+/*   
+    background-color:orange !important;  */
   display:flex !important;
   flex-direction:row !important;
   gap:10px;
@@ -2279,6 +2344,12 @@ top: 16px;
 border-radius: 0px;
 padding: 8px 15px 8px 15px; */
 
+}
+.display-item label, .display-item-class label {
+font-size: 12px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 0em;
 }
 
 }
@@ -2413,7 +2484,7 @@ color:#27C6D9;
             display:flex;
             flex-direction:row;
             justify-content:space-between;
-
+          /* background-color:red; */
 
     }
 
@@ -2446,7 +2517,7 @@ color:#27C6D9;
     .content .header-dynamic-options  .options .option-item {
             
               height: 40px;
-    width: 90%;
+    width: 98%;
     border-radius: 8px;
 
     margin:0 auto;
@@ -2454,7 +2525,7 @@ color:#27C6D9;
     flex-direction:row;
     justify-content:center;
     align-items:center;
-
+    /* background:brown !important; */
 
     }
 
@@ -2463,6 +2534,7 @@ color:#27C6D9;
     font-weight: 400;
     line-height: 18px;
     text-align:center;
+
     }
 
     .content .header-dynamic-options  .heading-container {
