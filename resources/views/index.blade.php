@@ -135,52 +135,56 @@
         </div>
     </section>
     <section style="background-color: #ffff">
-        <h2 id="question">Apa kata mereka?</h2>
+    <h2 id="question">Apa kata mereka?</h2>
         <p id="kren">Sangat senang belajar di career network!</p>
         <div class="row container">
-            <div class="col-md-2 bg-secondary">p</div>
-            <div class="col-md-8 "><div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="tcb-quote-carousel">
-                          <div class="carousel slide carousel-fade" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
-                                <!-- Carousel indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
-                                  <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
-                                </ol>
-                                <!-- Carousel items -->
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <div class="profile-circle"><img class="img-responsive " src="https://i.imgur.com/ctvpjSP.png" alt=""></div>
-                                        <blockquote>
-                                            <p>Welcome to Apex! <br> Now the site is running and open, we expect profiles to be done. There is a template you can fill in, instead of creating your own. Feel free to RP whenever, and start meeting people! </p>
-                                        </blockquote>
-                                    </div>
-                                    <div class="item">
-                                        <div class="profile-circle"><img class="img-responsive " src="https://i.imgur.com/hZFrbJJ.jpg" alt=""></div>
-                                        <blockquote>
-                                          <p> <I> Current Plot: </I>
-                                            <br>
-                                            Humans have been surviving against the animals ever since the first outbreak. Yet a cure has been found, and worked upon domestic dogs. This is the only species that is cured as for now. The cure is developing to spread across the whole animal kingdom and world. This is a slow process.</p>
-                                        </blockquote>
-                                    </div>
-                                    <div class="item">
-                                        <div class="profile-circle"><img class="img-responsive " src="https://i.imgur.com/e5TBLka.jpg" alt=""></div>
-                                        <blockquote>
-                                          <p><I> Bi-Weekly Challenge:</I>
-                                              <br> Moles have been getting into the underground system. Some areas are closed off due to weak or broken frame work. The community must find a way to remove of the moles and construct the buildings again. Points will be deducted, for any animals damaged, total points can be seen on the point page.</p>
-                                        </blockquote>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br />
-           </div></div>
-            <div class="col-md-2 bg-secondary">p</div>
+            <div class="col-md-3">
+                <div class="d-flex justify-content-start"><img src="{{ asset('assets/img/landing-page/tes1.webp') }}" id="testimonial_image"></div><br>
+                <div class="d-flex justify-content-end"><img src="{{ asset('assets/img/landing-page/tes1.webp') }}" id="testimonial_image"></div><br>
+                <div class="d-flex justify-content-center"><img src="{{ asset('assets/img/landing-page/tes1.webp') }}"id="testimonial_image" ></div>
+
+
+            </div>
+            <div class="col-md-6"><div class="slideshow-container">
+                <div class="mySlides">
+
+                  <blockquote class="text">Aspernatur modi quisquam autem illo sapiente reprehenderit. Tpsume dolor sit amet consectetur adipisicing elit. Consectetur voluptates sit consequuntur quasi eum veniam earum enim nam vitae dolore praesentium minima commodi. Voluptates sit consequuntur sit amet voluptates sit consequuntur.</blockquote>
+                  <img src="{{ asset('assets/img/landing-page/tes1.webp') }}">
+                  <p class="designation"> American talcum powder</p>
+                  <p id="status">Student</p>
+                </div> <!-- .mySlides -->
+                <div class="mySlides">
+
+                  <blockquote class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptates sit consequuntur quasi eum veniam aspernatur modi quisquam autem illo sapiente reprehenderit, earum enim nam vitae minima commodi dolore praesentium 💥</blockquote>
+                  <img src="{{ asset('assets/img/landing-page/tes1.webp') }}">
+                  <p class="designation">British talcum powder</p>
+                  <p id="status">Teacher</p>
+                </div> <!-- .mySlides -->
+                <div class="mySlides ">
+
+                  <blockquote class="text">Consectetur voluptates sit consequuntur quasi eum veniam aspernatur modi quisquam autem illo sapiente reprehenderit</blockquote>
+                  <img src="{{ asset('assets/img/landing-page/tes1.webp') }}">
+
+                  <p class="designation"> German talcum powder</p>
+                  <p id="status">Ceo</p>
+                </div> <!-- .mySlides -->
+                <a class="prev" onclick="plusSlides(-1)" style="text-decoration: none">❮</a>
+                <a class="next" onclick="plusSlides(1)" style="text-decoration: none">❯</a>
+              </div> <!-- .slideshow-container -->
+              <br>
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div></div>
+            <div class="col-md-3">
+                <div class="d-flex justify-content-end"><img src="{{ asset('assets/img/landing-page/tes1.webp') }}" id="testimonial_image" ></div><br>
+              <div class="d-flex justify-content-start"><img src="{{ asset('assets/img/landing-page/tes1.webp') }}" id="testimonial_image" ></div><br>
+
+                <div class="d-flex justify-content-center"><img src="{{ asset('assets/img/landing-page/tes1.webp') }}" id="testimonial_image"></div>
+            </div>
         </div>
+
     </section>
 
     <section id="berita" >
@@ -236,6 +240,34 @@
     });
 </script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 <script type="text/javascript">
   $('.main-carousel').flickity({
     // options
