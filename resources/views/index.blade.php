@@ -138,7 +138,7 @@
     <h2 id="question">Apa kata mereka?</h2>
         <p id="kren">Sangat senang belajar di career network!</p>
         <div class="row">
-            <div class="col-md-2 " >
+            <div class="col-md-2 d-none d-sm-block" >
                 <div class="d-flex justify-content-start"><img src="{{ asset('assets/img/landing-page/test2.webp') }}" id="testimonial_image"></div><br>
                 <div class="d-flex justify-content-end"><img src="{{ asset('assets/img/landing-page/test3.webp') }}" id="testimonial_image"></div><br>
                 <div class="d-flex justify-content-center"><img src="{{ asset('assets/img/landing-page/test4.webp') }}"id="testimonial_image" ></div>
@@ -163,8 +163,8 @@
                   <p class="designation"> German talcum powder</p>
                   <p id="status">Ceo</p>
                 </div> <!-- .mySlides -->
-                <a class="prev" onclick="plusSlides(-1)" style="text-decoration: none">❮</a>
-                <a class="next" onclick="plusSlides(1)" style="text-decoration: none">❯</a>
+                <a class="prev d-none d-sm-block" onclick="plusSlides(-1)" style="text-decoration: none">❮</a>
+                <a class="next d-none d-sm-block" onclick="plusSlides(1)" style="text-decoration: none">❯</a>
               </div>
                <!-- .slideshow-container -->
               <br>
@@ -173,7 +173,7 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
               </div></div>
-            <div class="col-md-2">
+            <div class="col-md-2 d-none d-sm-block">
                 <div class="d-flex justify-content-end"><img src="{{ asset('assets/img/landing-page/test5.webp') }}" id="testimonial_image" ></div><br>
               <div class="d-flex justify-content-start"><img src="{{ asset('assets/img/landing-page/test6.webp') }}" id="testimonial_image" ></div><br>
                 <div class="d-flex justify-content-center"><img src="{{ asset('assets/img/landing-page/test7.webp') }}" id="testimonial_image"></div>
