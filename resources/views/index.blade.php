@@ -137,51 +137,47 @@
     <section style="background-color: #ffff">
     <h2 id="question">Apa kata mereka?</h2>
         <p id="kren">Sangat senang belajar di career network!</p>
-        <div class="row container">
-            <div class="col-md-3">
-                <div class="d-flex justify-content-start"><img src="{{ asset('assets/img/landing-page/tes1.webp') }}" id="testimonial_image"></div><br>
-                <div class="d-flex justify-content-end"><img src="{{ asset('assets/img/landing-page/tes1.webp') }}" id="testimonial_image"></div><br>
-                <div class="d-flex justify-content-center"><img src="{{ asset('assets/img/landing-page/tes1.webp') }}"id="testimonial_image" ></div>
-
-
+        <div class="row">
+            <div class="col-md-2 " >
+                <div class="d-flex justify-content-start"><img src="{{ asset('assets/img/landing-page/test2.webp') }}" id="testimonial_image"></div><br>
+                <div class="d-flex justify-content-end"><img src="{{ asset('assets/img/landing-page/test3.webp') }}" id="testimonial_image"></div><br>
+                <div class="d-flex justify-content-center"><img src="{{ asset('assets/img/landing-page/test4.webp') }}"id="testimonial_image" ></div>
             </div>
-            <div class="col-md-6"><div class="slideshow-container">
+            <div class="col-md-8">
+                <div class="slideshow-container">
                 <div class="mySlides">
-
-                  <blockquote class="text">Aspernatur modi quisquam autem illo sapiente reprehenderit. Tpsume dolor sit amet consectetur adipisicing elit. Consectetur voluptates sit consequuntur quasi eum veniam earum enim nam vitae dolore praesentium minima commodi. Voluptates sit consequuntur sit amet voluptates sit consequuntur.</blockquote>
+                  <blockquote class="text"> Tpsume dolor sit amet consectetur adipisicing elit. Consectetur voluptates sit consequuntur quasi eum veniam earum enim nam vitae dolore praesentium minima commodi. Voluptates sit consequuntur sit amet voluptates sit consequuntur.</blockquote>
                   <img src="{{ asset('assets/img/landing-page/tes1.webp') }}">
                   <p class="designation"> American talcum powder</p>
                   <p id="status">Student</p>
                 </div> <!-- .mySlides -->
                 <div class="mySlides">
-
                   <blockquote class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptates sit consequuntur quasi eum veniam aspernatur modi quisquam autem illo sapiente reprehenderit, earum enim nam vitae minima commodi dolore praesentium 💥</blockquote>
                   <img src="{{ asset('assets/img/landing-page/tes1.webp') }}">
                   <p class="designation">British talcum powder</p>
                   <p id="status">Teacher</p>
                 </div> <!-- .mySlides -->
                 <div class="mySlides ">
-
                   <blockquote class="text">Consectetur voluptates sit consequuntur quasi eum veniam aspernatur modi quisquam autem illo sapiente reprehenderit</blockquote>
                   <img src="{{ asset('assets/img/landing-page/tes1.webp') }}">
-
                   <p class="designation"> German talcum powder</p>
                   <p id="status">Ceo</p>
                 </div> <!-- .mySlides -->
                 <a class="prev" onclick="plusSlides(-1)" style="text-decoration: none">❮</a>
                 <a class="next" onclick="plusSlides(1)" style="text-decoration: none">❯</a>
-              </div> <!-- .slideshow-container -->
+              </div>
+               <!-- .slideshow-container -->
               <br>
               <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
               </div></div>
-            <div class="col-md-3">
-                <div class="d-flex justify-content-end"><img src="{{ asset('assets/img/landing-page/tes1.webp') }}" id="testimonial_image" ></div><br>
-              <div class="d-flex justify-content-start"><img src="{{ asset('assets/img/landing-page/tes1.webp') }}" id="testimonial_image" ></div><br>
+            <div class="col-md-2">
+                <div class="d-flex justify-content-end"><img src="{{ asset('assets/img/landing-page/test5.webp') }}" id="testimonial_image" ></div><br>
+              <div class="d-flex justify-content-start"><img src="{{ asset('assets/img/landing-page/test6.webp') }}" id="testimonial_image" ></div><br>
 
-                <div class="d-flex justify-content-center"><img src="{{ asset('assets/img/landing-page/tes1.webp') }}" id="testimonial_image"></div>
+                <div class="d-flex justify-content-center"><img src="{{ asset('assets/img/landing-page/test7.webp') }}" id="testimonial_image"></div>
             </div>
         </div>
 
