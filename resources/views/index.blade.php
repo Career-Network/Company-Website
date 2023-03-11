@@ -176,7 +176,6 @@
             <div class="col-md-2">
                 <div class="d-flex justify-content-end"><img src="{{ asset('assets/img/landing-page/test5.webp') }}" id="testimonial_image" ></div><br>
               <div class="d-flex justify-content-start"><img src="{{ asset('assets/img/landing-page/test6.webp') }}" id="testimonial_image" ></div><br>
-
                 <div class="d-flex justify-content-center"><img src="{{ asset('assets/img/landing-page/test7.webp') }}" id="testimonial_image"></div>
             </div>
         </div>
