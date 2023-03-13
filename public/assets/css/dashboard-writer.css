@@ -1112,8 +1112,13 @@ form input {
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
+  display: block;
 
   color: #111111;
+}
+
+.heading-dashboard:hover {
+  color: #111 !important;
 }
 
 .heading-dashboard.jadwal {
@@ -1125,6 +1130,23 @@ form input {
   height: 200px;
 
   border-radius: 8px;
+
+  object-fit: cover;
+}
+
+.display-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-blog-terdekat .empty-terdekat {
+  width: 50%;
+  height: 150px;
+
+  border-radius: 8px;
+  margin-top: 1rem;
 
   object-fit: cover;
 }

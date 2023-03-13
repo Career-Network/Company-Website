@@ -1,5 +1,6 @@
-
+{{--================== HEADER ================= --}}
 <header>
+    
     {{-- Search & Profile Bar --}}
     <section class="search-profile-bar">
         {{-- Search Bar --}}
@@ -83,7 +84,7 @@
         </div>
     </div>
 
-
+    {{-- Sidebar Mobile --}}
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">

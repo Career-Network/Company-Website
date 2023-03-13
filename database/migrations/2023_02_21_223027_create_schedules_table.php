@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('schedules', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('blog_id')->nullable();
+            $table->unsignedBigInteger('blog_id')->index()->nullable();
             $table->timestamp('set_date');
             $table->enum('status', ['active', 'inactive']);
 
-            $table->foreign('blog_id')->references('id')->on('blogs');
+            $table->foreign('blog_id')->references('id')->on('blogs')->onDelete('CASCADE')->onUpdate('CASCADE');
         });
     }
 

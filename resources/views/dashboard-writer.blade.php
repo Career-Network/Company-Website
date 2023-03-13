@@ -36,13 +36,22 @@
           <h1 class="heading-dashboard jadwal">Jadwal Terdekat</h1>
 
           <div class="card-blog-terdekat">
-            <img src="{{ asset('assets/img/jadwal-terdekat.png') }}" alt="" class="card-blog-terdekat-img">
-            <div class="desc-blog-card-container mt-3">
-              <h1 class="heading-dashboard">Career Network telah luncurkan website...</h1>
-              <p>
-                13 Februari 2023 • 13.00 WIB
-              </p>
-            </div>
+            @if($nearest !== null)
+              <img src="{{ asset("storage/$nearest->image") }}" alt="" class="card-blog-terdekat-img">
+              <div class="desc-blog-card-container mt-3">
+                <a href="/blog/uploaded/{{ $nearest->id }}" class="heading-dashboard">{{ substr($nearest->title, 0, 27) }} ...</a>
+                <p>
+                  {{ date('d F Y', strtotime($nearest->update_date)) }} • {{ substr($time, 11, 16) }}
+                </p>
+              </div>
+            @else
+              <div class="display-flex">
+                <img class="empty-terdekat" src="{{ asset('assets/img/writer-system/calendar.png') }}" width="80px" height="80px" alt="Calendar Writer Illustration">
+                <p class="coming-soon-description mt-3">
+                    No Scheduling Blog.
+                </p>
+              </div>
+            @endif
           </div>
         </div>
       </div>
