@@ -13,7 +13,7 @@
 
         <section class="schedule-section">
           <div class="table-responsive">
-            <table id="datatable-detail-mentor" class="table table-mentor " >
+            <table  id="datatable-detail-mentor" class="table table-mentor w-auto " >
                 <thead>
                     <tr>
                         <th>Profile</th>
@@ -33,7 +33,7 @@
                                     <img src="{{ asset('assets/img/detail-mentor/mentor-1.png') }}" />
                                 </div>
                                 <div class="profile-name">
-                                    <p>Samantha Rachel</p>
+                                    <p> Rachel</p>
                                 </div>
                             </div>
                         </td>
@@ -74,7 +74,7 @@
                                   <img src="{{ asset('assets/img/detail-mentor/mentor-1.png') }}" />
                               </div>
                               <div class="profile-name">
-                                  <p>Samantha Rachel</p>
+                                  <p>Samantha</p>
                               </div>
                           </div>
                       </td>
@@ -310,31 +310,24 @@
 
 
             $('#datatable-detail-mentor').DataTable({
-                // "columnDefs": [{
-                //         "width": "15%",
-                //         "targets": 0
-                //     },
-                //     {
-                //         "width": "10%",
-                //         "targets": 1
-                //     },
-                //     {
-                //         "width": "15%",
-                //         "targets": 2
-                //     },
-                //     {
-                //         "width": "15%",
-                //         "targets": 3
-                //     },
-                //     {
-                //         "width": "15%",
-                //         "targets": 4
-                //     },
-                //     {
-                //         "width": "10%",
-                //         "targets": 5
-                //     }
-                // ],
+                "columnDefs": [{
+                        "targets": 0
+                      
+                         
+                    },
+                    {
+                        "targets": 1
+                    },
+                    {
+                        "targets": 2
+                    },
+                    {
+                        "targets": 3
+                    },
+                    {
+                        "targets": 4
+                    },
+                ],
     
                 "language": {
                     "lengthMenu": "_MENU_ entries per page",
@@ -376,10 +369,9 @@
 
             dropdown.append($('<option value="" selected disabled>Filter berdasarkan...</option>'));
             dropdown.append($('<option value="Profile">Profile</option>'));
-            dropdown.append($('<option value="Bidang">Bidang</option>'));
-            dropdown.append($('<option value="Pekerjaan">Pekerjaan</option>'));
+            dropdown.append($('<option value="Profesi">Profesi</option>'));
             dropdown.append($('<option value="Kelas">Kelas</option>'));
-            dropdown.append($('<option value="Deskripsi">Deskripsi</option>'));
+            dropdown.append($('<option value="Review">Review</option>'));
         });
     </script>
 @endsection
