@@ -7,8 +7,31 @@
     -webkit-font-family: Poppins, sans-serif;
     margin: 0;
     padding: 0;
+    
   }
-  
+  .table-mentor-head{
+    width:100% !important;
+  }
+  .table-mentor-body{
+    width:100% !important;
+  }
+  .table-responsive .table-mentor{
+    display:flex;
+    flex-direction: column;
+    width: 100% !important;
+    overflow-x: scroll;
+  }
+  .table-responsive {
+    display:flex;
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .table-mentor tbody, .table-mentor thead{
+    margin: auto; 
+    width: 100% !important;
+  }
+
+
   body {
     background: #f6faff;
   
@@ -320,6 +343,7 @@
     flex-direction:column;
   
   }
+
   
   .modal-close {
     top: 10rem !important;

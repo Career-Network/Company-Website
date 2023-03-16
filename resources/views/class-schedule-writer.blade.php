@@ -14,8 +14,8 @@
         
             <section class="class-schedule-section">
             <div class="table-responsive">
-            <table id="datatable-detail-mentor" class="table table-mentor table-striped display nowrap" >
-                <thead>
+            <table width='100px' id="datatable-detail-mentor" class="table table-mentor table-striped display nowrap " >
+                <thead class="table-mentor-head">
                     <tr>
                         <th>Nama Kelas</th>
                         <th>Harga Kelas</th>
@@ -23,7 +23,7 @@
                         <th>Aksi</th>
                     </tr>
                 </thead>
-                <tbody class="padding: 10px">
+                <tbody class="table-mentor-body">
                     
                     {{-- row 1 --}}
                     <tr class="trow-mentor">
@@ -748,7 +748,7 @@ tinymce.init({
                         "targets": 1
                     },
                     {
-                        "width": "15%",
+                        "width": "10%",
                         "targets": 2
                     },
                     {
