@@ -1000,11 +1000,15 @@ color: #1E1E1E;
     height: 15px;
     width: 15px;
     margin-bottom: 100px;
-    background-color: #d5d5d5;
+    background-color: #898785;
     border-radius: 50%;
     display: inline-block;
     -webkit-transition: background-color 0.6s ease;
     transition: background-color 0.6s ease;
+  }
+  .dot:hover {
+    background: #ff5722;
+    color: whitesmoke;
   }
 
 
