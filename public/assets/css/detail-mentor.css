@@ -25,6 +25,43 @@ a:hover {
   color: #fff !important;
 }
 
+  table {
+     margin: auto;
+     border-collapse: collapse;
+     overflow-x: scroll;
+     display: block;
+     width: 100%;
+     box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1);
+   }
+
+   td, th {
+     border: solid rgb(200, 200, 200) 1px;
+   }
+
+   th {
+     text-align: left;
+     background-color: rgb(190, 220, 250);
+     text-transform: uppercase;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+     border-bottom: rgb(50, 50, 100) solid 2px;
+     border-top: none;
+   }
+
+   td {
+     white-space: nowrap;
+     border-bottom: none;
+     color: rgb(20, 20, 20);
+   }
+
+   td:first-of-type, th:first-of-type {
+     border-left: none;
+   }
+
+   td:last-of-type, th:last-of-type {
+     border-right: none;
+   }
+
 #datatable-detail-mentor {
     background-color: white;
 }
@@ -2125,9 +2162,9 @@ color:#27C6D9;
   
 }
 
-.table-responsive .table-mentor {
+/* .table-responsive .table-mentor {
   width:100% !important;
-  /* background-color:yellow; */
+  background-color:yellow;
   display:flex;
   flex-direction:column;
  
@@ -2153,12 +2190,12 @@ table.dataTable.table-striped>tbody>tr.odd>* {
 
 
  .table-mentor tbody .trow-mentor {
-  /* padding:0px 0px 0px 10px !important; */
+  padding:0px 0px 0px 10px !important;
   width:100%;
    
   display:flex !important;
   padding:3px;
-  /* justify-content:space-between; */
+  justify-content:space-between;
   align-items:center;
   flex-direction:row;
   border-bottom:1px solid #CCCCCC;
@@ -2168,16 +2205,16 @@ table.dataTable.table-striped>tbody>tr.odd>* {
 
     .table-mentor tbody .trow-mentor  td  {
   
-    /* background-color:orange !important;  */
+    background-color:orange !important; 
   display:flex !important;
   flex-direction:row !important;
-  /* width:60rem; */
+  width:60rem;
  }
 
 
    .table-mentor tbody tr  td  {
-/*   
-    background-color:red !important;  */
+
+    background-color:red !important;  
   display:flex !important;
   flex-direction:row !important;
   justify-content:flex-start;
@@ -2188,7 +2225,7 @@ table.dataTable.table-striped>tbody>tr.odd>* {
 
 
   .table-mentor tbody tr  td .profile {
-        /* background-color:brown !important;  */
+        background-color:brown !important;  
   display:flex;
   flex-direction:row !important;
   justify-content:center;
@@ -2196,8 +2233,7 @@ table.dataTable.table-striped>tbody>tr.odd>* {
   }
  
   .table-mentor tbody tr  td .profile .profile-picture {
-             /* background-color:green !important;  */
-
+             
 
   }
 
@@ -2205,17 +2241,17 @@ table.dataTable.table-striped>tbody>tr.odd>* {
 
 
   width:100%;
-  }
-
+  } */
+/* 
   .table-mentor tbody tr  td .profile .profile-name {
-             /* background-color:yellow !important;  */
+           
              width:80%;
 
   }
 
    .table-mentor tbody tr  td .profile .profile-name p{
 font-size: 10px;
-             /* background-color:pink !important;  */
+           
 
 width:100%;
   }
@@ -2228,13 +2264,13 @@ width:100%;
 .table-mentor thead tr{
 padding:0px 0px 0px 10px !important;
   width:100%;
-  /* background:green; */
+
   display:flex;
   justify-content:space-between;
   align-items:center;
   flex-direction:row;
   gap:8rem;
-}
+} */
 
 .dataTables_paginate {
   /* background:red; */
@@ -2621,9 +2657,9 @@ padding: 8px 15px 8px 15px; */
   
 }
 
-.table-responsive .table-mentor {
+/* .table-responsive .table-mentor {
   width:100% !important;
-  /* background-color:yellow; */
+  background-color:yellow;
   display:flex;
   flex-direction:column;
  
@@ -2632,7 +2668,7 @@ padding: 8px 15px 8px 15px; */
 .table-mentor thead, .table-mentor tbody{
   width:100% !important;
    overflow-x:scroll;
-   /* overflow:auto; */
+   overflow:auto;
 }
 .table-mentor tbody {
   display:flex;
@@ -2643,7 +2679,7 @@ padding: 8px 15px 8px 15px; */
  .table-mentor tbody .trow-mentor {
   padding:0px 0px 0px 10px !important;
   width:100%;
-  /* background:yellow; */
+  background:yellow;
   display:flex !important;
   justify-content:space-between;
   align-items:center;
@@ -2655,7 +2691,7 @@ padding: 8px 15px 8px 15px; */
 
     .table-mentor thead tr th {
   
-    /* background-color:orange !important;  */
+    background-color:orange !important; 
   display:flex !important;
   flex-direction:row !important;
     border:none !important;
@@ -2665,7 +2701,7 @@ padding: 8px 15px 8px 15px; */
 
     .table-mentor tbody .trow-mentor  td  {
   
-    /* background-color:orange !important;  */
+    background-color:orange !important; 
   display:flex !important;
   flex-direction:row !important;
     border:none !important;
@@ -2674,7 +2710,7 @@ padding: 8px 15px 8px 15px; */
 
    .table-mentor tbody tr  td  {
   
-    /* background-color:red !important;  */
+    background-color:red !important; 
   display:flex !important;
   flex-direction:row !important;
 
@@ -2683,7 +2719,7 @@ padding: 8px 15px 8px 15px; */
 
 
   .table-mentor tbody tr  td .profile {
-        /* background-color:brown !important;  */
+       background-color:brown !important;  
   display:flex;
   flex-direction:row !important;
   justify-content:center;
@@ -2691,8 +2727,7 @@ padding: 8px 15px 8px 15px; */
   }
  
   .table-mentor tbody tr  td .profile .profile-picture {
-             /* background-color:green !important;  */
-
+            
 
   }
 
@@ -2703,7 +2738,7 @@ padding: 8px 15px 8px 15px; */
   }
 
   .table-mentor tbody tr  td .profile .profile-name {
-             /* background-color:yellow !important;  */
+          
              width:80%;
 
   }
@@ -2722,12 +2757,12 @@ font-size: 10px;
 .table-mentor thead tr{
 padding:0px 0px 0px 10px !important;
   width:100%;
-  /* background:blue !important; */
+  
   display:flex;
   justify-content:space-between;
   align-items:center;
   flex-direction:row;
   gap:2rem;
-}
+} */
 
 }
