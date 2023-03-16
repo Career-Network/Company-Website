@@ -47,8 +47,8 @@
             @else
               <div class="display-flex">
                 <img class="empty-terdekat" src="{{ asset('assets/img/writer-system/calendar.png') }}" width="80px" height="80px" alt="Calendar Writer Illustration">
-                <p class="coming-soon-description mt-3">
-                    No Scheduling Blog.
+                <p class="coming-soon-description mt-3" style="color: #000;">
+                    No Scheduling Blog
                 </p>
               </div>
             @endif
