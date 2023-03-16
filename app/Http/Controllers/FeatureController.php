@@ -103,7 +103,7 @@ class FeatureController extends Controller
             'author' => 'required',
             'body' => 'required',
             'update_date' => 'required',
-            'image' => 'required|image|mimes:webp,png,jpg|max:5000',
+            'image' => 'required|image|mimes:webp|max:5000',
             'hastags' => 'required',
         ]);
 
