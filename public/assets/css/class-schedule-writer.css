@@ -1,3 +1,4 @@
+
 /* CSS Reset */
 
 * {
@@ -9,28 +10,43 @@
     padding: 0;
     
   }
-  .table-mentor-head{
-    width:100% !important;
-  }
-  .table-mentor-body{
-    width:100% !important;
-  }
-  .table-responsive .table-mentor{
-    display:flex;
-    flex-direction: column;
-    width: 100% !important;
-    overflow-x: scroll;
-  }
-  .table-responsive {
-    display:flex;
-    flex-direction: column;
-    width: 100% !important;
-  }
-  .table-mentor tbody, .table-mentor thead{
-    margin: auto; 
-    width: 100% !important;
-  }
 
+  table {
+     margin: auto;
+     border-collapse: collapse;
+     overflow-x: scroll;
+     display: block;
+     width: 100%;
+     box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1);
+   }
+   
+   td, th {
+     border: solid rgb(200, 200, 200) 1px;
+   }
+   
+   th {
+     text-align: left;
+     background-color: rgb(190, 220, 250);
+     text-transform: uppercase;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+     border-bottom: rgb(50, 50, 100) solid 2px;
+     border-top: none;
+   }
+   
+   td {
+     white-space: nowrap;
+     border-bottom: none;
+     color: rgb(20, 20, 20);
+   }
+   
+   td:first-of-type, th:first-of-type {
+     border-left: none;
+   }
+   
+   td:last-of-type, th:last-of-type {
+     border-right: none;
+   }
 
   body {
     background: #f6faff;
