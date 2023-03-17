@@ -89,8 +89,8 @@ class FeatureController extends Controller
                 ->withErrors([
                     'username' =>
                         'Identitas tersebut tidak cocok dengan data kami.',
-                ])
-                ->onlyInput('username');
+                    'password' => 'Password yang anda masukkan salah.',
+                ]);
         }
     }
 

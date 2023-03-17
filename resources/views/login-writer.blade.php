@@ -42,7 +42,7 @@
                     <input type="username" class=" @error('username') is-invalid @enderror" name="username" id="username" placeholder="Ketik nama pengguna">
                     @error('username')
                         <div class="invalid-feedback">
-                        Username is not available.
+                        Identitas tersebut tidak cocok dengan data kami.
                         </div>
                     @enderror
                 </div>
@@ -54,7 +54,7 @@
                     </div>
                     @error('password')
                         <div class="invalid-feedback">
-                        Password is wrong.
+                        Password yang anda masukkan salah.
                         </div>
                     @enderror
                 </div>
