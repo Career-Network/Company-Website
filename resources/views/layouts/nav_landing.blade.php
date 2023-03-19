@@ -137,9 +137,10 @@
                 <a class="nav-link" href="{{ route('blog') }}">Blog</a>
               </li>
               <li class="nav-item auth-reg">
-                  <a class="nav-link btn-nav " href="#" id="primary">
+                  <a class="nav-link btn-nav " href="#" id="btn-primary">
                     Kontak Kami
                 </a>
+
               </li>
               {{-- <li class="nav-item">
               </li> --}}

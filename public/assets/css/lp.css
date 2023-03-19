@@ -1162,13 +1162,12 @@ color: #1E1E1E !important;
       }
   }
 
-  #primary{
+  #btn-primary{
     background-color: #FF5722;
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
+    background-size: cover;
     font-size: 16px;
-    line-height: 30px;
     color: #FFFFFF;
     ;
   }
