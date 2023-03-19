@@ -1,4 +1,4 @@
-@extends('layouts.navbar_footer',[
+@extends('layouts.nav_landing',[
   'title'=>'Career Network',
   'css'=>'assets/css/lp.css',
   'footer'=> true
@@ -138,12 +138,12 @@
     <h2 id="question">Apa kata mereka?</h2>
         <p id="kren">Sangat senang belajar di career network!</p>
         <div class="row">
-            <div class="col-md-2 d-none d-sm-block" >
-                <div class="d-flex justify-content-start"><img src="{{ asset('assets/img/landing-page/test2.webp') }}" id="testimonial_image"></div><br>
-                <div class="d-flex justify-content-end"><img src="{{ asset('assets/img/landing-page/test3.webp') }}" id="testimonial_image"></div><br>
-                <div class="d-flex justify-content-center"><img src="{{ asset('assets/img/landing-page/test4.webp') }}"id="testimonial_image" ></div>
+            <div class="col-md-3 d-none d-sm-block" id="img_side">
+                <div class="d-flex justify-content-start" id="d-flex"><img src="{{ asset('assets/img/landing-page/test2.webp') }}" id="testimonial_image"></div><br>
+                <div class="d-flex justify-content-end" id="d-flex"><img src="{{ asset('assets/img/landing-page/test3.webp') }}" id="testimonial_image"></div><br>
+                <div class="d-flex justify-content-center" id="d-flex"><img src="{{ asset('assets/img/landing-page/test4.webp') }}"id="testimonial_image" ></div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-6" id="img_center">
                 <div class="slideshow-container">
                 <div class="mySlides">
                   <blockquote class="text"> Tpsume dolor sit amet consectetur adipisicing elit. Consectetur voluptates sit consequuntur quasi eum veniam earum enim nam vitae dolore praesentium minima commodi. Voluptates sit consequuntur sit amet voluptates sit consequuntur.</blockquote>
@@ -166,15 +166,15 @@
 
               </div>
               <div  style="text-align:center;margin-bottom:0px">
-                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot active" onclick="currentS  lide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
               </div>
             </div>
-            <div class="col-md-2 d-none d-sm-block">
-                <div class="d-flex justify-content-end"><img src="{{ asset('assets/img/landing-page/test5.webp') }}" id="testimonial_image" ></div><br>
-              <div class="d-flex justify-content-start"><img src="{{ asset('assets/img/landing-page/test6.webp') }}" id="testimonial_image" ></div><br>
-                <div class="d-flex justify-content-center"><img src="{{ asset('assets/img/landing-page/test7.webp') }}" id="testimonial_image"></div>
+            <div class="col-md-3 d-none d-sm-block" id="img_side">
+                <div class="d-flex justify-content-end" id="d-flex"><img src="{{ asset('assets/img/landing-page/test5.webp') }}" id="testimonial_image" ></div><br>
+              <div class="d-flex justify-content-start" id="d-flex"><img src="{{ asset('assets/img/landing-page/test6.webp') }}" id="testimonial_image" ></div><br>
+                <div class="d-flex justify-content-center" id="d-flex"><img src="{{ asset('assets/img/landing-page/test7.webp') }}" id="testimonial_image"></div>
             </div>
         </div>
 
@@ -182,7 +182,7 @@
 
     <section id="berita" >
         <div class="row">
-            <div class="col-sm-5 px-5 center">
+            <div class="col-sm-5 px-5 center" >
                 <h2 class="h_3 fw_semibold mt-5">Blog Terkini</h2>
                 <p class="bt_3">Nikmati Cerita, Hiburan, Informasi serta Promo menarik dari  blog Career Network. </p>
                 <button><a href="{{ route('blog') }}" class="link">Lihat Lebih Banyak</a></button>

@@ -907,6 +907,7 @@ display: flex;
 align-items: center;
 text-align: center;
 color: #1E1E1E;
+
   }
   @media (min-width: 768px) {
     .slideshow-container .mySlides .text {
@@ -940,10 +941,16 @@ color: #1E1E1E;
     font-size: 18px;
 
   }
+  #d-flex{
+    width: 220px;
+    height: 80px;
+    margin: 10px;
+  }
+
   #testimonial_image{
     border-radius: 63px;
-    padding: 20px;
-    width:90px  ;
+    padding: 10px;
+    width:80px  ;
   }
   .slideshow-container .bg1 {
     background: #42378f;
@@ -1006,6 +1013,9 @@ color: #1E1E1E;
     -webkit-transition: background-color 0.6s ease;
     transition: background-color 0.6s ease;
   }
+  .dot:before{
+    background: #ffff;
+  }
   .dot:hover {
     background: #ff5722;
     color: whitesmoke;
@@ -1035,7 +1045,7 @@ color: #1E1E1E;
       opacity: 1;
     }
   }
-  @media only screen and (max-width: 300px) {
+  @media only screen and (max-width: 372px) {
     .prev, .next, .text {
       font-size: 11px;
     }
@@ -1044,15 +1054,29 @@ color: #1E1E1E;
   @media only screen and (max-width:991px){
     #testimonial_image{
         border-radius: 63px;
-        padding: 5px;
-        width:50px  ;
+        padding: 0px;
+        width: 57px;
+
+
+      }
+      #d-flex{
+        width: 150px;
+        height: 57px;
+
+
+      }
+      #img_center{
+        width:480px;
       }
     .slideshow-container{
         height: 359px;
       }
       .dot{
 
-        margin-bottom: 40px !important;
+        margin-bottom: 120px !important;
+      }
+      #img_side{
+        width: 170px !important;
       }
 
     #question{
@@ -1068,6 +1092,8 @@ color: #1E1E1E;
 
     font-size: 12px !important;
     line-height: 18px;
+    width: 420px;
+    padding: none;
 
       }
       .slideshow-container .mySlides img {
@@ -1103,31 +1129,46 @@ color: #000000;
 
         color: #000000;
       }
+    #kren{
+        font-size: 22px;
+    }
   }
 
   @media only screen and (max-width: 576px){
     #kren{
         width: 320px;
         align-items: center !important;
-        margin-left: 50px;
+        margin-left: 25px;
+
     }
     .slideshow-container{
         height: 280px;
       }
       .dot{
-        margin-top:24px;
+        margin-top:60px;
       }
       .text{
 
 font-family: 'Poppins';
 font-style: normal;
-font-weight: 400;
+font-weight: 400 !important;
 font-size: 14px !important;
 line-height: 21px;
-
+padding-left: 10px;
+padding-right: 10px;
 align-items: center;
 text-align: center;
-
-color: #1E1E1E;
+color: #1E1E1E !important;
       }
+  }
+
+  #primary{
+    background-color: #FF5722;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    ;
   }
