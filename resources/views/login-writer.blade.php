@@ -41,7 +41,7 @@
                     <p class="label-input">Nama Pengguna</p>
                     <input type="username" class=" @error('username') is-invalid @enderror" name="username" id="username" placeholder="Ketik nama pengguna">
                     @error('username')
-                        <div class="invalid-feedback">
+                        <div class="invalid-feedback" style="font-size: 13px; color: red;">
                         Identitas tersebut tidak cocok dengan data kami.
                         </div>
                     @enderror
@@ -53,7 +53,7 @@
                         <input class="input-edit" class=" @error('password') is-invalid @enderror" type="password" name="password" id="password" placeholder="Ketik kata sandi" ><i toggle="#password-field" class="icon-edit fa-solid fa-eye-slash"></i>
                     </div>
                     @error('password')
-                        <div class="invalid-feedback">
+                        <div class="invalid-feedback" style="font-size: 13px; color: red;">
                         Password yang anda masukkan salah.
                         </div>
                     @enderror
