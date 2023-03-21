@@ -215,9 +215,9 @@ class FeatureController extends Controller
         return view('privacy_policy');
     }
     public function classSchedule() {
-        return view('classSchedule-writer');
+        return view('class-schedule-writer');
     }
     public function createClassSchedule() {
-        return view('create-classSchedule-writer');
+        return view('create-class-schedule-writer');
     }
 }
