@@ -96,15 +96,44 @@
         {{-- End of List Date --}}
       </div>
 
-      <div class="articles-section empty-article calendar-empty-article">
-        {{-- Content Empty --}}
-        <img class="empty-article-illustration" src="{{ asset('assets/img/writer-system/calendar.png') }}" alt="Calendar Writer Illustration">
-        <article class="desc-container">
-          <h2>Jadwalkan Artikel Terbaru Anda</h2>
-          <p>Memudahkan aktivitas upload lebih efisien</p>
-        </article>
-        {{-- End of Content Empty --}}
-      </div>
+      @if (sizeof($blogs) == 0)
+        <div class="articles-section empty-article calendar-empty-article">
+          {{-- Content Empty --}}
+          <img class="empty-article-illustration" src="{{ asset('assets/img/writer-system/calendar.png') }}" alt="Calendar Writer Illustration">
+          <article class="desc-container">
+            <h2>Jadwalkan Artikel Terbaru Anda</h2>
+            <p>Memudahkan aktivitas upload lebih efisien</p>
+          </article>
+          {{-- End of Content Empty --}}
+        </div>
+      @else 
+        <section class="blogs mt-4">
+              @foreach ($blogs as $blog)
+                  <div class="blog-card">
+                    <div class="blog-content">
+                        <div class="blog-thumbnail mb-16">
+                          <img alt="{{ $blog->title }}'s Image" src='@if(substr($blog->image, 0, 10) == "thumbnails") {{ asset("storage/$blog->image") }} @else {{ $blog->image }} @endif' class="blog-img" />
+                        </div>
+
+                        <div class="blog-desc">
+                          <p class="blog-author-date">{{ substr($blog->author, 0, 13) }}, {{ date('d F Y', strtotime($blog->update_date)) }}</p>
+                          <h1 class="blog-header-card mb-16">{{ substr($blog->title, 0, 30) }} ...</h1>
+                          <p class="blog-desc-card mb-16 mobile-desc">
+                            {!! strip_tags(substr($blog->body, 0, 90)) !!}  ...
+                          </p>
+                          <p class="blog-desc-card mb-16" style="text-align: justify;">
+                            {!! strip_tags(substr($blog->body, 0, 100)) !!}  ...
+                          </p>
+                        </div>
+                    </div>
+                    
+                    <a href="/blog/uploaded/{{ $blog->id }}" class="blog-see-more-btn">
+                      Lihat Selengkapnya
+                    </a>
+                  </div>
+              @endforeach
+        </section>
+      @endif
 
     </section>
 

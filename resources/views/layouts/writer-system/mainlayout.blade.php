@@ -2,46 +2,68 @@
 <html lang="en">
 
 <head>
+
+    {{--=============== META TAGS =============== --}}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {{--================= TITLE ================= --}}
     <title>{{ $title }}</title>
 
+    {{--================== ICON ================= --}}
     <link href="{{ asset('assets/img/favico.png') }}" rel="icon" />
     <link href="{{ asset('assets/img/logo.png') }}" rel="apple-touch-icon" />
 
+    {{--================ MAIN CSS =============== --}}
     <link rel="stylesheet" href="{{ asset($css) }} " />
 
+    {{--================ VENDORS ================ --}}
     <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css">
+
 </head>
 
 <body>
 
+    {{--================ SWEETALERT ================ --}}
+    @include('sweetalert::alert')
+
+    {{--================== SIDEBAR ================= --}}
     @include('layouts.writer-system.sidebar')
 
     <main>
+
+        {{--================== HEADER ================= --}}
         @include('layouts.writer-system.header')
+
+        {{--=============== MAIN CONTENT ============== --}}
         <div class="content">
-            {{-- Header Dynamic & Menu Options --}}
+
+            {{--=============== HEADER AND BUTTON HEADER ============== --}}
             <section
                 class="header-dynamic-options {{ $title == 'Dashboard' ? 'dashboard-page' : '' }} {{ $title == 'Schedule' ? 'schedule-page' : '' }}">
+
                 {{-- Heading --}}
                 <div class="heading-container">
+                    {{-- Heading Schedule Page --}}
                     @if ($title === 'Schedule')
                         <h1 class="heading">Jadwal Postingan</h1>
                         <p>Anda dapat menjadwalkan setiap artikel yang dibuat melalui halaman ini</p>
                     @endif
 
+                    {{-- Heading Dashboard Page --}}
                     @if ($title === 'Dashboard')
-                        <h1 class="heading">Selamat Datang, Rifky Chirmansyah</h1>
+                        <h1 class="heading">Selamat Datang, {{ Auth::user()->username }}</h1>
                     @endif
 
+                    {{-- Heading Blog Page --}}
                     @if ($title === 'Blogs')
                         <h1 class="heading">Blog</h1>
                         <p>Semua Artikel</p>
                     @else
+                        {{-- Heading Detail Blog --}}
                         @if (isset($detail) && $detail)
                             <h1 class="heading">Blog</h1>
                             <div class="breadcrums">
@@ -64,10 +86,12 @@
 
                 </div>
 
+                {{-- Buttons --}}
                 @if ($title !== 'Create Blog')
                     <div class="options">
+                        {{-- Button Header in Schedule Page --}}
                         @if ($title === 'Schedule')
-                            <a href="" class="option-item create-blog">
+                            <a href="{{ route('create-writer') }}" class="option-item create-blog">
                                 <svg width="19" height="21" viewBox="0 0 19 21" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -78,6 +102,7 @@
                             </a>
                         @endif
 
+                        {{-- Button Header in Detail Page --}}
                         @if ($title !== 'Blogs' && isset($detail))
                             <a href="{{ route('create-writer') }}" class="option-item preview">
                                 <span>Preview</span>
@@ -96,6 +121,7 @@
                             </a>
                         @endif
 
+                        {{-- Button Header in Mentors Page --}}
                         @if ($title === 'Mentors')
                             <a href="#" class="option-item create-blog">
                                 <span data-bs-toggle="modal" data-bs-target="#createMentorModal">Create Mentor</span>
@@ -121,6 +147,7 @@
                         @endif
                         
 
+                        {{-- Button Header in Dashboard and Blogs Page --}}
                         @if (!isset($read))
                             @if ($title === 'Blogs' || ($title === 'Dashboard' && !isset($detail)))
                                 <a href="{{ route('create-writer') }}" class="option-item create-blog">
@@ -142,9 +169,11 @@
                     </span>
                 @endif
             </section>
+
+            {{--=============== CONTENT ============== --}}
             @yield('content')
 
-            {{--=============== NOTIFICATION POP UP ===============--}}
+            {{--=============== NOTIFICATION POP UP ============== --}}
             <section class="notification__pop-up hide__pop-up" id="notification-pop-up">
                 {{-- Notification Popup Header --}}
                 <div class="notification__header">Notifikasi</div>
@@ -161,10 +190,13 @@
                 </div>
 
                 {{-- Exist Notifications Condition --}}
+                {{-- Code goes here --}}
             </section>
         </div>
+
     </main>
 
+    {{--=============== JS ===============--}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
@@ -173,12 +205,14 @@
     <script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js"></script>
 
     @yield('js')
+
     <script src="{{ asset('assets/js/script.js') }}"></script>
 
     <script>
         // =============== NOTIFICATIONS ===============
         const notificationBtn = document.getElementById('notification-btn')
         const notificationPopUp = document.getElementById('notification-pop-up')
+        const body = document.querySelector('body');
 
         notificationBtn.addEventListener('mouseenter', () => {
             notificationPopUp.classList.remove('hide__pop-up')
