@@ -9,9 +9,12 @@ class Blog extends Model
 {
     use HasFactory;
 
-    protected $guarded = ['id'];
+    protected $guarded = [''];
     public $timestamps = false;
     public function user() {
         return $this->belongsTo(User::class);
+    }
+    public function schedule() {
+        return $this->hasOne(Schedule::class);
     }
 }

@@ -1,5 +1,6 @@
-
+{{--================== HEADER ================= --}}
 <header>
+    
     {{-- Search & Profile Bar --}}
     <section class="search-profile-bar">
         {{-- Search Bar --}}
@@ -40,7 +41,7 @@
                 <path d="M11.7422 10.3439C12.5329 9.2673 13 7.9382 13 6.5C13 2.91015 10.0899 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 10.0899 2.91015 13 6.5 13C7.93858 13 9.26801 12.5327 10.3448 11.7415L10.3439 11.7422C10.3734 11.7822 10.4062 11.8204 10.4424 11.8566L14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L11.8566 10.4424C11.8204 10.4062 11.7822 10.3734 11.7422 10.3439ZM12 6.5C12 9.53757 9.53757 12 6.5 12C3.46243 12 1 9.53757 1 6.5C1 3.46243 3.46243 1 6.5 1C9.53757 1 12 3.46243 12 6.5Z" fill="#212529"/>
             </svg>
 
-            <div class="notification-section">
+            <div class="notification-section" id="notification-btn">
                 <span class="notification-count">2</span>
                 <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.7773 22.5C13.2961 22.5 14.5273 21.2688 14.5273 19.75H9.02734C9.02734 21.2688 10.2586 22.5 11.7773 22.5Z" fill="#012970"/>
@@ -48,9 +49,9 @@
                 </svg>
             </div>
 
-            <a class="profile" href="{{ route('login_writer') }}">
+            <a class="profile" href="{{ route('logout-dashboard') }}">
                 <img alt="" src="{{ asset('assets/img/profile.png') }}" class="profile-picture" />
-                <p>Rifky Chirmansyah</p>
+                <p>{{ Auth::user()->username }}</p>
             </a>
         </div>
     </section>
@@ -83,13 +84,13 @@
         </div>
     </div>
 
-
+    {{-- Sidebar Mobile --}}
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">
                 <a class="profile" href="{{ route('login_writer') }}">
                     <img alt="" src="{{ asset('assets/img/profile.png') }}" class="profile-picture" />
-                    <p>Rifky Chirmansyah</p>
+                    <p>{{ Auth::user()->username }}</p>
                 </a>
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -123,6 +124,7 @@
                     <span class="menu-text {{ $active == "Schedule"? "active" : "" }}">Schedule</span>
                 </a>
 
+                @if(Auth::user()->role_name !== "Writer")
                 {{-- Kelas Schedule Menu --}}
                 <a href="{{ route('classSchedule-writer') }}" class="menu-item {{ $active == "Class_Schedule"? "active" : "" }}">
                     <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,10 +141,11 @@
 
                     <span class="menu-text {{ $active == "Mentors"? "active" : "" }}">Mentor</span>
                 </a>
-
+                @endif
 
             </div>
 
         </div>
     </div>
+
 </header>

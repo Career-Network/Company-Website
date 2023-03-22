@@ -19,7 +19,7 @@ return new class extends Migration
             $table->timestamp('set_date');
             $table->enum('status', ['active', 'inactive']);
 
-            $table->foreign('blog_id')->references('id')->on('blogs')->onDelete('CASCADE');
+            $table->foreign('blog_id')->references('id')->on('blogs')->onDelete('CASCADE')->onUpdate('CASCADE');
         });
     }
 

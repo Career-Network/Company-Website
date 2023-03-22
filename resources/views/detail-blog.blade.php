@@ -1,5 +1,5 @@
 @extends('layouts.writer-system.mainlayout',[ 
-  'title'=>'Career Network telah luncurkan Website Company', 
+  'title'=>$blog->title, 
   'css'=>'assets/css/dashboard-writer.css', 
   'cssblog' => 'assets/css/dashboard-blog-detail.css', 
   'active' => 'Blogs', 

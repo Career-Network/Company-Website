@@ -1,10 +1,11 @@
 /* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
   box-sizing: border-box;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', 'sans-serif';
   font-style: normal;
-  -webkit-font-family: Poppins, sans-serif;
+  -webkit-font-family: 'Poppins', 'sans-serif' !important;
   margin: 0;
   padding: 0;
 }
@@ -324,7 +325,7 @@ form input {
   font-weight: 600;
   font-size: 28px;
 
-  color: #27C6D9;
+  color: #27c6d9;
 }
 
 /* PROFILE SECTION ON HEADER */
@@ -366,30 +367,6 @@ form input {
 }
 
 /* NOTIFICATION SECTION ON HEADER */
-
-.notification-section {
-  position: relative;
-  cursor: pointer;
-}
-
-.notification-count {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 3px 6px;
-
-  color: #ffffff;
-
-  position: absolute;
-  width: 19px;
-  height: 24px;
-  left: 10px;
-  top: -0.6rem;
-
-  background: #16a6b7;
-  border-radius: 6px;
-}
 
 .options {
   display: flex;
@@ -528,7 +505,7 @@ form input {
 
 .blog-img {
   width: 100%;
-  height: 183px;
+  height: 200px;
 
   object-fit: cover;
 
@@ -1135,8 +1112,13 @@ form input {
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
+  display: block;
 
   color: #111111;
+}
+
+.heading-dashboard:hover {
+  color: #111 !important;
 }
 
 .heading-dashboard.jadwal {
@@ -1148,6 +1130,23 @@ form input {
   height: 200px;
 
   border-radius: 8px;
+
+  object-fit: cover;
+}
+
+.display-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-blog-terdekat .empty-terdekat {
+  width: 50%;
+  height: 150px;
+
+  border-radius: 8px;
+  margin-top: 1rem;
 
   object-fit: cover;
 }
@@ -1242,7 +1241,7 @@ form input {
 .kelola-postingan .blogs {
   padding: 1.5rem 0;
 
-  /* grid-template-columns: repeat(3, auto); */
+  /* grid-template-columns: repeat(4, auto); */
 }
 
 /* .kelola-postingan img {
@@ -1580,7 +1579,7 @@ form input {
 }
 
 .hapus-create {
-  transition: .8s;
+  transition: 0.8s;
 }
 
 .hapus-create a {
@@ -1595,4 +1594,128 @@ form input {
 .hapus-create:hover a,
 .hapus-create a:hover {
   color: #fff !important;
+}
+
+/*=============== NOTIFICATIONS ===============*/
+.notification-section {
+  position: relative;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.notification-count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 3px 6px;
+
+  color: #ffffff;
+  font-size: 0.938rem;
+
+  position: absolute;
+  width: 19px;
+  height: 24px;
+  left: 10px;
+  top: -0.6rem;
+
+  background: #16a6b7;
+  border-radius: 6px;
+}
+
+.notification__pop-up {
+  background: #fff;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  z-index: 50;
+  right: 2rem;
+
+  padding: 28px 40px;
+
+  width: 467px;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  transition: 1s;
+}
+
+.notification__empty__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification__header {
+  color: #000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.notification__pop-up .notification__illustration {
+  width: 88px;
+  height: 142px;
+
+  margin-top: 0.8rem;
+}
+
+.coming-soon-notifications {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #ff5722;
+}
+
+.coming-soon-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #666666;
+}
+
+/* Hide show pop-up */
+.hide__pop-up {
+  display: none;
+}
+
+/*=============== BEST ARTICLE SECTION ===============*/
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-soon-illustration {
+  width: 300px;
+  height: 300px;
+}
+
+.coming-soon-text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+
+/* ERRORS */
+
+.invalid-input {
+  color: red;
 }

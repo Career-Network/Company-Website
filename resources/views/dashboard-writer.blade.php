@@ -10,7 +10,7 @@
       <div class="artikel-kamu">
         <div class="artikel-terbaik">
           <h1 class="heading-dashboard mb-4">Artikel terbaik kamu</h1>
-          @foreach ($blogs as $blog)
+          {{-- @foreach ($blogs as $blog)
               <a href='{{ "/blog/uploaded/$blog->id" }}' class="card-blog-terdekat">
                 <img src='@if(substr($blog->image, 0, 10) == "thumbnails") {{ asset("storage/$blog->image") }} @else {{ $blog->image }} @endif' alt="" class="card-blog-terdekat-img">
                 <div class="desc-blog-card-container mt-3">
@@ -20,24 +20,38 @@
                   </p>
                 </div>
               </a>
-          @endforeach
+          @endforeach --}}
 
-          <a href="/blog/uploaded" class="blog-see-more-btn border-0 font-semibold justify-content-end">
+          <div class="coming-soon">
+            <img src="{{ asset('assets/img/writer-system/coming-soon-best-article.png') }}" alt="Coming Soon Iluustration" class="coming-soon-illustration" />
+            <p class="coming-soon-text">Coming Soon</p>
+          </div>
+
+          {{-- <a href="/blog/uploaded" class="blog-see-more-btn border-0 font-semibold justify-content-end">
                 Lihat Semua
-          </a>
+          </a> --}}
         </div>
 
         <div class="jadwal-terdekat">
           <h1 class="heading-dashboard jadwal">Jadwal Terdekat</h1>
 
           <div class="card-blog-terdekat">
-            <img src="{{ asset('assets/img/jadwal-terdekat.png') }}" alt="" class="card-blog-terdekat-img">
-            <div class="desc-blog-card-container mt-3">
-              <h1 class="heading-dashboard">Career Network telah luncurkan website...</h1>
-              <p>
-                13 Februari 2023 • 13.00 WIB
-              </p>
-            </div>
+            @if($nearest !== null)
+              <img src="{{ asset("storage/$nearest->image") }}" alt="" class="card-blog-terdekat-img">
+              <div class="desc-blog-card-container mt-3">
+                <a href="/blog/uploaded/{{ $nearest->id }}" class="heading-dashboard">{{ substr($nearest->title, 0, 27) }} ...</a>
+                <p>
+                  {{ date('d F Y', strtotime($nearest->update_date)) }} • {{ substr($time, 11, 16) }}
+                </p>
+              </div>
+            @else
+              <div class="display-flex">
+                <img class="empty-terdekat" src="{{ asset('assets/img/writer-system/calendar.png') }}" width="80px" height="80px" alt="Calendar Writer Illustration">
+                <p class="coming-soon-description mt-3" style="color: #000;">
+                    No Scheduling Blog
+                </p>
+              </div>
+            @endif
           </div>
         </div>
       </div>

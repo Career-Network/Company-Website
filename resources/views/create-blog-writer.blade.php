@@ -15,11 +15,6 @@
 
   <form method="POST" action="{{ route('store-blog') }}" class="form-edit d-flex flex-column" enctype="multipart/form-data">
       @csrf
-      @error('title')
-            <div class="invalid-feedback">
-              Please choose a username.
-            </div>
-        @enderror
       <div class="input-container">
         <label class="form-check-label" for="judul">Judul Artikel</label>
         <input class="form-control @error('title') is-invalid @enderror" type="text" id="title" value="{{ old("title") }}" name="title">
@@ -98,7 +93,7 @@
               <button type="submit" class="option-item save-modal-btn">
                   <span>Terbitkan Sekarang</span>
               </button>
-              <button type="button" class="option-item preview mt-3" data-bs-toggle="modal" data-bs-target="#item-jadwal">
+              <button type="button" id="btnJadwalkan" class="option-item preview mt-3" data-bs-toggle="modal" data-bs-target="#item-jadwal">
                   <span>Jadwalkan Postingan</span>
               </button>
             </div>
@@ -130,32 +125,36 @@
   <!-- Modal -->
   <div class="modal fade" id="item-jadwal" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <form class="modal-content form-schedule" method="POST" action="{{ route('schedule-blog') }}" enctype="multipart/form-data">
+        @csrf
+        <input class="form-control" type="hidden" id="titleSchedule" name="titleSchedule">
+        <input class="form-control" type="hidden" id="authorSchedule" name="authorSchedule">
+        <input class="form-control" type="hidden" id="hastagsSchedule" name="hastagsSchedule">
+        <input class="form-control" style="visibility:hidden" type="hidden" id="thumbnailSchedule" name="thumbnailSchedule">
+        <input class="form-control" type="hidden" id="updateDateSchedule" name="updateDateSchedule">
+        <input class="form-control" type="hidden" id="bodySchedule" name="bodySchedule">
         <div class="modal-head">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Pilih tanggal dan waktu untuk mempublikasikan artikel ini</h1>
           <div class="buttons-modal">
             <div class="col-md-6">
-              <input type="date" class="form-control"  aria-label="Last name" name="update_date">
+              <input type="date" class="form-control"  aria-label="Last name" name="set_date">
             </div>
 
-            <select class="form-select " aria-label="Default select example">
-              <option selected>Choose time</option>
-              <option value="1">12.00PM</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
+            <div class="col-md-6">
+              <input type="time" class="form-control"  aria-label="Last name" name="set_time" min="00.00" max="23.59">
+            </div>
           </div>
         </div>
         <hr >
         <div class="modal-content buttons-2">
-          <button href="" class="option-item save-modal-btn">
+          <button type="submit" class="option-item save-modal-btn">
               <span>Jadwalkan</span>
           </button>
           <button href="" class="option-item preview" data-bs-toggle="modal" data-bs-target="#item-jadwal">
               <span>Batalkan</span>
           </button>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </div>
@@ -168,6 +167,9 @@
   // Setting up thumbnail preview when uploading blog
   const thumbnail = document.getElementById("thumbnail");
   const thumbnailPreview = document.getElementById("thumbnailPreview");
+
+  // get value input
+    
 
   thumbnailPreview.style.display = "none";
   thumbnail.addEventListener('click', () => {
@@ -193,17 +195,38 @@
 
   const drafts = [];
 
-  // save as draft
-  const btnSaveDraft = document.getElementById("btnSaveDraft");
-  btnSaveDraft.addEventListener('click', () => {
-    // get value input
+  const btnJadwalkan = document.getElementById("btnJadwalkan")
+  btnJadwalkan.addEventListener('click', () => {
     const title      = document.getElementById("title").value;
     const author     = document.getElementById("author").value;
     const updateDate = document.getElementById("update_date").value;
     const hastags    = document.getElementById("hastags").value;
-    const image      = document.getElementById("thumbnail").value;
+    const image      = document.getElementById("thumbnail");
     const body       = document.getElementById("detail").value;
 
+     const formSchedule = document.querySelector(".form-schedule");
+     image.style.display = "none"
+     formSchedule.appendChild(image);
+
+    const titleSchedule      = document.getElementById("titleSchedule");
+    const authorSchedule     = document.getElementById("authorSchedule");
+    const updateDateSchedule = document.getElementById("updateDateSchedule");
+    const hastagsSchedule    = document.getElementById("hastagsSchedule");
+    const thumbnailSchedule  = document.getElementById("thumbnailSchedule");
+    const bodySchedule       = document.getElementById("bodySchedule");
+
+    titleSchedule.value = title
+    authorSchedule.value = author
+    updateDateSchedule.value = updateDate
+    hastagsSchedule.value = hastags
+    thumbnailSchedule.value = image
+    bodySchedule.value = body
+     console.log(thumbnailSchedule.value)
+  })
+
+  // save as draft
+  const btnSaveDraft = document.getElementById("btnSaveDraft");
+  btnSaveDraft.addEventListener('click', () => {
     // set value to draft object
     draft.title       = title;
     draft.author      = author;
