@@ -21,20 +21,27 @@ class User extends Authenticatable
      */
 
     protected $table = 'users';
+    protected $primaryKey = 'user_id';
     protected $keyType = 'string';
     public $incrementing = false;
-    public $timestamps = false;
-    protected $guarded = ['id'];
+   
+    protected $fillable = [
+        'user_id',
+        'name',
+        'email',
+        'number',
+        'password',
+    ];
     
-    // protected static function boot() {
-    //     parent::boot();
+    protected static function boot() {
+        parent::boot();
 
-    //     static::creating(function($model) {
-    //         if (empty($model->{$model->getKeyName()})) {
-    //             $model->{$model->getKeyName()} = Str::uuid();
-    //         };
-    //     });
-    // }
+        static::creating(function($model) {
+            if (empty($model->{$model->getKeyName()})) {
+                $model->{$model->getKeyName()} = Str::uuid();
+            };
+        });
+    }
 
     /**
      * The attributes that should be hidden for serialization.
@@ -53,8 +60,4 @@ class User extends Authenticatable
     protected $casts = [
 
     ];
-
-    public function blogs() {
-        return $this->hasMany(Blog::class);
-    }
 }

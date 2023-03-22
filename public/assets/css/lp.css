@@ -1,8 +1,6 @@
-/* Hero Section */
 
-#hero {
-  padding: 0 8rem;
-}
+
+/* Hero Section */
 
 .hero_text img {
   transform: translateY(-10px);
@@ -20,10 +18,7 @@
 .hero_ornament {
   position: absolute;
   transform: translate(-15px, -150px);
-}
 
-.hero_parag {
-  margin-top: 1rem;
 }
 
 /* About Us Section */
@@ -120,7 +115,7 @@
   width: 309px;
   height: 387px;
 
-  background: #ff5722;
+  background: #FF5722;
   border-radius: 8px;
 
   margin: 24px;
@@ -393,81 +388,86 @@
 
 /* strategi kami */
 .carousel {
-  width: 100%;
+
+
+  width:100%;
 }
 .carousel-item .carousel-caption {
-  height: 25%;
 
-  margin-bottom: 18rem;
-  width: 75%;
+  height:25%;
+
+  margin-bottom:18rem;
+  width:75%;
+
 }
 
 .carousel-item .carousel-title {
-  background-color: #27c6d9;
-  font-size: 30px;
-  width: 614px;
-  font-style: normal;
-  height: 74px;
-  font-weight: 600;
-  line-height: 54px;
-  text-align: left;
-  padding: 10px;
+background-color: #27C6D9;
+font-size:30px;
+width:614px;
+font-style: normal;
+height: 74px;
+font-weight:600;
+line-height:54px;
+text-align:left;
+padding:10px;
 }
 
 .carousel-item .carousel-text {
+
   line-height: 30px;
-  font-size: 30px;
-  font-weight: 400;
+  font-size:30px;
+  font-weight:400;
+
 }
 .carousel-item {
-  position: relative;
+  position:relative;
+
 }
 
 .ball-strategi {
-  position: absolute;
-  left: 0;
+  position:absolute;
+    left: 0;
   right: 0;
-  background-color: #ff5722;
+  background-color:#FF5722;
   width: 320px;
   height: 160px;
-  border-bottom-left-radius: 320px;
-  border-bottom-right-radius: 320px;
-  color: white;
-  font-weight: 400;
-  line-height: 2.5rem;
-  font-size: 2rem;
-  margin: auto;
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  border-bottom-left-radius:320px;
+   border-bottom-right-radius:320px;
+  color:white;
+  font-weight:400;
+  line-height:2.5rem;
+  font-size:2rem;
+  margin:auto;
+  padding:30px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
 }
-.ball-strategi p {
-  text-align: center;
-  margin-top: -40px;
+.ball-strategi p{
+  text-align:center;
+  margin-top:-40px;
+
 }
 /* ornament */
 
 @media only screen and (max-width: 1050px) {
   /*strategi kami */
 
-  #hero {
-    padding: 0 0;
-  }
 
-  .ball-strategi {
-    width: 160px;
-    height: 80px;
-    border-bottom-left-radius: 160px;
-    border-bottom-right-radius: 160px;
-    line-height: 2.5rem;
-    font-size: 0.875rem;
-  }
+    .ball-strategi {
+  width: 160px;
+  height: 80px;
+  border-bottom-left-radius:160px;
+   border-bottom-right-radius:160px;
+  line-height:2.5rem;
+  font-size:0.875rem;
+}
 
-  .ball-strategi p {
-    margin-top: 0;
-  }
+.ball-strategi p {
+  margin-top:0;
+}
 
   .hero_ornament {
     display: none;
@@ -479,6 +479,7 @@
 /* Tablet Resolution */
 @media only screen and (max-width: 991px) {
   /*strategi kami */
+
 
   /* ----------------------------------------- */
   /* Carousel */
@@ -576,9 +577,9 @@
     top: 179px;
   }
   /* strategi kami */
-  .carousel-item .mt-change {
-    margin-top: 10rem !important;
-  }
+  .carousel-item .mt-change{
+  margin-top:10rem!important;
+}
 
   /* ----------------------------------------- */
 }
@@ -729,106 +730,98 @@
     text-align: center;
   }
 
-  /*strategi kami */
-  .carousel-caption {
-    margin-bottom: 24rem !important;
-    width: 80% !important;
-  }
+ /*strategi kami */
+ .carousel-caption {
+  margin-bottom:24rem !important;
+  width:80% !important;
+ }
   .carousel-caption h3 {
-    font-size: 20px !important;
-    width: auto !important;
-    text-align: left !important;
-  }
+  font-size:20px !important;
+  width:auto !important;
+  text-align:left !important;
+}
 
-  .carousel-caption p {
-    font-size: 14px !important;
-    padding: 2px;
-  }
-  .carousel-item .mt-change {
-    margin-top: 8rem !important;
-  }
+.carousel-caption p {
+  font-size: 14px !important;
+  padding:2px;
+}
+.carousel-item .mt-change{
+  margin-top:8rem!important;
+}
 
-  .ball-strategi {
-    width: 120px;
-    height: 60px;
-    border-bottom-left-radius: 120px;
-    border-bottom-right-radius: 140px;
-    line-height: 2.5rem;
-    font-size: 10px;
-    padding: 0px;
-  }
-  #text {
+.ball-strategi {
+  width: 120px;
+  height: 60px;
+  border-bottom-left-radius:120px;
+   border-bottom-right-radius:140px;
+  line-height:2.5rem;
+  font-size:10px;
+  padding:0px;
+
+
+}
+#text{
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
     width: 346px;
-  }
+}
+
+
 
   /* ----------------------------------------- */
 }
 
-#judul {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  color: #111111;
+#judul{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+color: #111111;
 }
-#des {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  color: #7a7a7a;
-}
-.name {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ff5722;
-}
-.date {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  color: #111111;
-}
+#des{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+color: #7A7A7A;
 
-p.name {
-  margin-bottom: 5px;
+}
+.name{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+color: #FF5722;
+
+}
+.date{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+color: #111111;
 }
 
 .pagination {
-  display: inline-block;
-  margin-top: -1rem;
-  padding-bottom: 1.5rem;
-}
+    display: inline-block;
+  }
 
-.pagination a {
-  color: #ff5722;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 5px;
-}
+  .pagination a {
+    color: #FF5722;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
 
-.pagination a.active {
-  background: #ff5722;
-  color: white;
-}
+  .pagination a.active {
+    background: #FF5722;
+    color: white;
+  }
 
-.pagination a:hover:not(.active) {
-  background: #ff5722;
-  color: whitesmoke;
-}
-
-.container-cards {
-  padding: 3rem 4rem !important;
-  margin-top: 0;
-}
+  .pagination a:hover:not(.active) {background: #FF5722;color:whitesmoke;}

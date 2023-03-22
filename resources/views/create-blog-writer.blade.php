@@ -8,153 +8,69 @@
 ]) 
 
 @section('content')
-<div class="blog-section detail-page">
+<div class="blog-section">
   <section class="header-blogs border-0 mb-0 pb-0">
     <h1 class="heading">Buat Artikel Baru</h1>
   </section>
 
-  <form method="POST" action="{{ route('store-blog') }}" class="form-edit d-flex flex-column" enctype="multipart/form-data">
-      @csrf
-      @error('title')
-            <div class="invalid-feedback">
-              Please choose a username.
-            </div>
-        @enderror
+  <form method="" action="" class="form-edit d-flex flex-column">
       <div class="input-container">
         <label class="form-check-label" for="judul">Judul Artikel</label>
-        <input class="form-control @error('title') is-invalid @enderror" type="text" id="title" value="{{ old("title") }}" name="title">
-        @error('title')
-            <div class="invalid-feedback">
-              Please fill the title for your blog.
-            </div>
-        @enderror
+        <input class="form-control" type="text" id="judul" value="">
       </div>
 
       <div class="row input-container justify-content-between">
         <div class="col mr-3">
           <label class="form-check-label" for="author">Author</label>
-          <input type="text" class="form-control @error('author') is-invalid @enderror" id="author" aria-label="First name" value="{{ old("author") }}" name="author"> 
-          @error('author')
-            <div class="invalid-feedback">
-              Please fill the author of the blog.
-            </div>
-          @enderror
+          <input type="text" class="form-control" id="author" aria-label="First name" value=""> 
         </div>
         <div class="col">
-          <label class="form-check-label" for="tanggal_update">Tanggal Upload</label>
-          <input type="date" class="form-control @error('update_date') is-invalid @enderror" value="{{ old("update_date") }}" aria-label="Last name" id="update_date" name="update_date">
-          @error('update_date')
-            <div class="invalid-feedback">
-              Please fill the date uploaded for your blog.
-            </div>
-          @enderror
+          <label class="form-check-label" for="tanggal_update">Tanggal Update</label>
+          <input type="date" class="form-control"  aria-label="Last name">
         </div>
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="tagar">Tagar</label>
-        <input placeholder="#self-improvement #extraordinary" class="form-control @error('hastags') is-invalid @enderror" type="text" id="hastags" value="{{ old("hastags") }}" name="hastags">
-        @error('hastags')
-            <div class="invalid-feedback">
-              Please fill the hastags uploaded for your blog.
-            </div>
-        @enderror
+        <input class="form-control" type="text" id="tagar" value="">
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="thumbnail">Thumbnail</label>
-        <img src="#" id="thumbnailPreview" class="thumbnail-detail" alt="Image Preview" />
-        <input class="form-control @error('image') is-invalid @enderror" type="file" id="thumbnail" value="{{ old("image") }}" name="image">
-        @error('image')
-            <div class="invalid-feedback">
-              Please upload the thumbnail for your blog.
-            </div>
-        @enderror
+        <input class="form-control" type="file" id="thumbnail">
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="detail">Detail Artikel</label>
-        <textarea id="detail" name="body">{{ old("body") }}</textarea>
+        <textarea id="detail"></textarea>
       </div>
 
       <div class="button-section">
-        <a class="option-item preview mt-3" data-bs-toggle="modal" data-bs-target="#item-batalkan">
+        <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
             <span>Batalkan</span>
-        </a>
-        <a class="option-item create-blog mt-3" data-bs-toggle="modal" data-bs-target="#item-terbitkan">
-            <span>Terbitkan</span>
-        </a>
+        </button>
+        <button href="" class="option-item create-blog mt-3" data-bs-dismiss="modal" aria-label="Close">
+            <span>Simpan Perubahan</span>
+        </button>
       </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="item-terbitkan" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-head">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Terbitkan Artikel?</h1>
-              <p>Terbitkan artikel anda secara langsung atau terjadwal</p>
-            </div>
-            <div class="modal-content">
-              <button type="submit" class="option-item save-modal-btn">
-                  <span>Terbitkan Sekarang</span>
-              </button>
-              <button type="button" class="option-item preview mt-3" data-bs-toggle="modal" data-bs-target="#item-jadwal">
-                  <span>Jadwalkan Postingan</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> 
   </form>
+</div>
 
-  <!-- Modal -->
-  <div class="modal fade" id="item-batalkan" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-head">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan sebagai draf?</h1>
-          <p>Anda dapat melanjutkan di lain waktu tanpa menghapus</p>
-        </div>
-        <div class="modal-content">
-          <button id="btnSaveDraft" class="option-item save-modal-btn">
-              <span>Simpan Draf</span>
-          </button>
-          <button class="option-item preview mt-3 hapus-create">
-              <a href="{{ route('dashboard-writer') }}">Hapus</a>
-          </button>
-        </div>
+<!-- Modal -->
+<div class="modal fade" id="item-delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-head">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda yakin akan menghapus artikel ini?</h1>
+        <p>Semua data akan hilang</p>
       </div>
-    </div>
-  </div> 
-
-  <!-- Modal -->
-  <div class="modal fade" id="item-jadwal" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-head">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Pilih tanggal dan waktu untuk mempublikasikan artikel ini</h1>
-          <div class="buttons-modal">
-            <div class="col-md-6">
-              <input type="date" class="form-control"  aria-label="Last name" name="update_date">
-            </div>
-
-            <select class="form-select " aria-label="Default select example">
-              <option selected>Choose time</option>
-              <option value="1">12.00PM</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-        </div>
-        <hr >
-        <div class="modal-content buttons-2">
-          <button href="" class="option-item save-modal-btn">
-              <span>Jadwalkan</span>
-          </button>
-          <button href="" class="option-item preview" data-bs-toggle="modal" data-bs-target="#item-jadwal">
-              <span>Batalkan</span>
-          </button>
-        </div>
+         <button href="" class="option-item delete">
+            <span>Hapus</span>
+        </button>
+        <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+            <span>Batalkan</span>
+        </button>
       </div>
     </div>
   </div>
@@ -165,109 +81,29 @@
 </style>
 <script src="https://cdn.tiny.cloud/1/zhf194pj9ma6yja8lros9l6orpka9f1dvnj5zhbtfk3m26lf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
-  // Setting up thumbnail preview when uploading blog
-  const thumbnail = document.getElementById("thumbnail");
-  const thumbnailPreview = document.getElementById("thumbnailPreview");
-
-  thumbnailPreview.style.display = "none";
-  thumbnail.addEventListener('click', () => {
-    thumbnailPreview.style.display = "block";
-  })
-
-  thumbnail.onchange = evt => {
-    const [file] = thumbnail.files
-    if (file) {
-      thumbnailPreview.src = URL.createObjectURL(file)
-    }
-  }
-
-  // draft default variable
-  const draft = {
-    title: "Title",
-    author: "Author",
-    update_date: "Update Date",
-    hastags: "Hastags",
-    image: [],
-    body: "Body Blog",
-  };
-
-  const drafts = [];
-
-  // save as draft
-  const btnSaveDraft = document.getElementById("btnSaveDraft");
-  btnSaveDraft.addEventListener('click', () => {
-    // get value input
-    const title      = document.getElementById("title").value;
-    const author     = document.getElementById("author").value;
-    const updateDate = document.getElementById("update_date").value;
-    const hastags    = document.getElementById("hastags").value;
-    const image      = document.getElementById("thumbnail").value;
-    const body       = document.getElementById("detail").value;
-
-    // set value to draft object
-    draft.title       = title;
-    draft.author      = author;
-    draft.update_date = updateDate;
-    draft.hastags     = hastags;
-    draft.image       = image;
-    draft.body        = body;
-
-    // save to localstorage
-    if(localStorage.getItem("drafts")) {
-      const draftStorage = JSON.parse(localStorage.getItem("drafts"));
-      draftStorage.push(draft);
-      localStorage.setItem("drafts", JSON.stringify(draftStorage));
-      window.location.href = "/blog/schedule";
-    } else {
-      drafts.push(draft);
-      localStorage.setItem("drafts", JSON.stringify(drafts));
-      window.location.href = "/blog/schedule";
-    }
-  })
-
-  // Initialize tinymce editor
   tinymce.init({
-            selector: 'textarea',
-            height: 300,
-            setup: function (editor) {
-                editor.on('init change', function () {
-                    editor.save();
-                });
-            },
-            plugins: [
+    selector: 'textarea',
+    height: 300,
+    plugins: [
       'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
       'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
       'insertdatetime', 'media', 'table', 'help', 'wordcount', 'image code'
     ],
-            toolbar: 'undo redo | blocks | ' +
+    toolbar: 'undo redo | blocks | ' +
     'bold italic backcolor | alignleft aligncenter ' +
     'alignright alignjustify | bullist numlist outdent indent | ' +
-    'removeformat | help | image code | insertfile undo redo',
-            image_title: true,
-            automatic_uploads: true,
-            images_upload_url: '/blog/upload-image',
-            file_picker_types: 'image',
-            file_picker_callback: function(cb, value, meta) {
-                var input = document.createElement('input');
-                input.setAttribute('type', 'file');
-                input.setAttribute('accept', 'image/*');
-                input.onchange = function() {
-                    var file = this.files[0];
+    'removeformat | help | image code',
+    /* without images_upload_url set, Upload tab won't show up*/
+    images_upload_url: 'postAcceptor.php',
 
-                    var reader = new FileReader();
-                    reader.readAsDataURL(file);
-                    reader.onload = function () {
-                        var id = 'blobid' + (new Date()).getTime();
-                        var blobCache =  tinymce.activeEditor.editorUpload.blobCache;
-                        var base64 = reader.result.split(',')[1];
-                        var blobInfo = blobCache.create(id, file, base64);
-                        blobCache.add(blobInfo);
-                        cb(blobInfo.blobUri(), { title: file.name });
-                    };
-                };
-                input.click();
-            },
-            content_style: 'body { font-family:Poppins,Arial,sans-serif; font-size:16px }'
-        });
+    /* we override default upload handler to simulate successful upload*/
+    images_upload_handler: function (blobInfo, success, failure) {
+      setTimeout(function () {
+        /* no matter what you upload, we will turn it into TinyMCE logo :)*/
+        success('http://moxiecode.cachefly.net/tinymce/v9/images/logo.png');
+      }, 2000);
+    },
+    content_style: 'body { font-family:Poppins,Arial,sans-serif; font-size:16px }'
+  });
 </script>
 @endsection

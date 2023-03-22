@@ -14,7 +14,7 @@
 
     <div class="btn-section">
       {{-- Button Refresh --}}
-      <a href="" class="option-item refresh-btn">
+      <span class="option-item refresh-btn">
         <span>Segarkan</span>
         <svg
           width="17"
@@ -42,7 +42,7 @@
             stroke-linejoin="round"
           />
         </svg>
-      </a>
+      </span>
       {{-- End of Button Refresh --}} 
       
       {{-- Button Delete --}}
@@ -64,9 +64,7 @@
 
         <span>Hapus</span>
       </a>
-      {{-- End of Button Delete --}} 
-      
-      {{-- Button Edit --}}
+      {{-- End of Button Delete --}} {{-- Button Edit --}}
       <button class="option-item edit" id="edit">
         <svg
           width="24"
@@ -99,142 +97,75 @@
   </section>
 
   <section class="blogs-detail">
-    <h1 class="title-blog">{{ $blog->title }}</h1>
-    <p class="blog-author-date">{{ $blog->author }}, {{ date('d F Y', strtotime($blog->update_date)) }} </p>
+    <h1 class="title-blog">Career Network telah luncurkan Website Company</h1>
+    <p class="blog-author-date">Indah Mariana, 17 Desember 2025 </p>
 
-    <img src='@if(substr($blog->image, 0, 10) == "thumbnails") {{ asset("storage/$blog->image") }} @else {{ $blog->image }} @endif' class="thumbnail-detail" alt="{{ $blog->title }}'s Image">
+    <img src="{{ asset('assets/img/thumbnail-detail.png') }}" class="thumbnail-detail" alt="">
 
     <div class="content-blog">
-      {!! html_entity_decode($blog->body) !!}
+      <span class="bold">Career Network</span> - Dalam pertama kali Career Network mengeluarkan website company resmi. Dengan mengusung tema “Accelerate your growth with us” memberikan sentuhan gabungan antara formal dan interaktif. Sehingga dapat beradaptasi dengan perkembangan zaman, terutama anak muda. Sebagai wujud komitmen terhadap client dan investor, website company hadir untuk memberikan informasi perusahaan secara jelas, ringkas dan valid. Dengan harapan sebagai awalan untuk meningkatkan promosi brand yang dikenal luas dan menjalin koneksi dengan client potensial. <br /><br />
+      Terdapat berbagai ilustrasi yang ada di website untuk membantu pengguna untuk memahami dan membayangkan suatu informasi agar lebih baik. Selain itu, membangun daya tarik emosional yang kuat turut menjadi tujuan dalam membangun website. Ditambah keunikan warna yang selaras antara orange yang menjadi identitas perusahaan dengan perpaduan warna biru. <br /><br />
+      Career Network memiliki dua produk, yaitu Career Network EduCareer untuk memberikan pelatihan online bagi mahasiswa/i secara 1 on 1 dan kelompok dengan mentor yang expert di bidangnya dan kurikulum terstruktur. Selain itu, terdapat produk lain yaitu Career Network Sonic sebagai layanan pemesanan jasa Freelance untuk membantu kebutuhan masyarakat. Kedua produk ini masih pada tahap pengembangan dan akan diluncurkan pada beberapa bulan kedepan. Stay tune!l.</p>
     </div>
   </section>
   
-  <form method="POST" action="{{ route('update-blog') }}" class="form-edit" enctype="multipart/form-data">
-      @csrf
+  <form method="" action="" class="form-edit">
       <div class="input-container">
         <label class="form-check-label" for="judul">Judul Artikel</label>
-        <input class="form-control @error('title') is-invalid @enderror" name="title" type="text" id="judul" value="{{ $blog->title }}">
-        @error('title')
-            <div class="invalid-feedback">
-              Please fill the title for your blog.
-            </div>
-        @enderror
+        <input class="form-control" type="text" id="judul" value="Career Network telah Luncurkan Website Company">
       </div>
 
       <div class="row input-container justify-content-between">
         <div class="col mr-3">
           <label class="form-check-label" for="author">Author</label>
-          <input type="text" name="author" class="form-control @error('author') is-invalid @enderror" id="author" aria-label="First name" value="{{ $blog->author }}"> 
-          @error('author')
-            <div class="invalid-feedback">
-              Please fill the author of the blog.
-            </div>
-          @enderror
+          <input type="text" class="form-control" id="author" aria-label="First name" value="Indah Mariana"> 
         </div>
         <div class="col">
           <label class="form-check-label" for="tanggal_update">Tanggal Update</label>
-          <input type="date" name="update_date" class="form-control @error('update_date') is-invalid @enderror"  aria-label="Last name" value="{{ $blog->update_date }}">
-          @error('update_date')
-            <div class="invalid-feedback">
-              Please fill the date uploaded for your blog.
-            </div>
-          @enderror
+          <input type="date" class="form-control"  aria-label="Last name">
         </div>
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="tagar">Tagar</label>
-        <input class="form-control @error('hastags') is-invalid @enderror" name="hastags" type="text" id="tagar" value="{{ $blog->hastags }}">
-        @error('hastags')
-            <div class="invalid-feedback">
-              Please fill the hastags uploaded for your blog.
-            </div>
-        @enderror
+        <input class="form-control" type="text" id="tagar" value="#CareerNetwork">
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="thumbnail">Thumbnail</label>
-        <img src='@if(substr($blog->image, 0, 10) == "thumbnails") {{ asset("storage/$blog->image") }} @else {{ $blog->image }} @endif' id="thumbnailPreview" class="thumbnail-detail" alt="{{ $blog->title }}'s Image">
-        <input type="hidden" name="imageOld" value="{{ $blog->image }}">
-        <input class="form-control @error('image') is-invalid @enderror" type="file" name="image" id="thumbnail" value='{{ asset("assets/img/$blog->image") }}'>
-        @error('image')
-            <div class="invalid-feedback">
-              Please upload the thumbnail for your blog.
-            </div>
-        @enderror
+        <input class="form-control" type="file" id="thumbnail">
       </div>
 
       <div class="input-container">
         <label class="form-check-label" for="detail">Detail Artikel</label>
-        <textarea id="detail" name="body">
-         {{ $blog->body }}
+        <textarea id="detail">
+          <b>Career Network</b> - Dalam pertama kali Career Network mengeluarkan website company resmi. Dengan mengusung tema “Accelerate your growth with us” memberikan sentuhan gabungan antara formal dan interaktif. Sehingga dapat beradaptasi dengan perkembangan zaman, terutama anak muda. Sebagai wujud komitmen terhadap client dan investor, website company hadir untuk memberikan informasi perusahaan secara jelas, ringkas dan valid. Dengan harapan sebagai awalan untuk meningkatkan promosi brand yang dikenal luas dan menjalin koneksi dengan client potensial. <br /><br />
+          Terdapat berbagai ilustrasi yang ada di website untuk membantu pengguna untuk memahami dan membayangkan suatu informasi agar lebih baik. Selain itu, membangun daya tarik emosional yang kuat turut menjadi tujuan dalam membangun website. Ditambah keunikan warna yang selaras antara orange yang menjadi identitas perusahaan dengan perpaduan warna biru. <br /><br />
+          Career Network memiliki dua produk, yaitu Career Network EduCareer untuk memberikan pelatihan online bagi mahasiswa/i secara 1 on 1 dan kelompok dengan mentor yang expert di bidangnya dan kurikulum terstruktur. Selain itu, terdapat produk lain yaitu Career Network Sonic sebagai layanan pemesanan jasa Freelance untuk membantu kebutuhan masyarakat. Kedua produk ini masih pada tahap pengembangan dan akan diluncurkan pada beberapa bulan kedepan. Stay tune!l.
         </textarea>
       </div>
 
       <div class="button-section">
-        <a href="{{ "/blog/uploaded/$blog->id" }}" class="option-item preview mt-3">
+        <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
             <span>Batalkan</span>
-        </a>
-        <a class="option-item create-blog mt-3" data-bs-toggle="modal" data-bs-target="#item-edit">
+        </button>
+        <button href="" class="option-item create-blog mt-3" data-bs-dismiss="modal" aria-label="Close">
             <span>Simpan Perubahan</span>
-        </a>
-      </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="item-edit" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-head">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan Perubahan?</h1>
-              <p>Artikel yang sudah diubah tidak akan hilang ketika anda kembali</p>
-            </div>
-            <div class="modal-content">
-              <input type="hidden" name="id" value="{{ $blog->id }}">
-              <button type="submit" class="option-item save-modal-btn">
-                  <span>Simpan</span>
-              </button>
-              <button type="button" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-                  <span>Batalkan</span>
-              </button>
-            </div>
-          </div>
-        </div>
+        </button>
       </div>
   </form>
 
   <!-- Modal -->
   <div class="modal fade" id="item-delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <form method="POST" action="{{ route('destroy-blog') }}" class="modal-content">
-        @csrf
+      <div class="modal-content">
         <div class="modal-head">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda yakin akan menghapus artikel ini?</h1>
           <p>Semua data akan hilang</p>
         </div>
-        <input type="hidden" name="id" value="{{ $blog->id }}">
         <div class="modal-content">
-          <button type="submit" class="option-item delete">
+          <button href="" class="option-item delete">
               <span>Hapus</span>
-          </button>
-          <button type="button" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-              <span>Batalkan</span>
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="item-edit" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-head">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan Perubahan?</h1>
-          <p>Artikel yang sudah diubah tidak akan hilang ketika anda kembali</p>
-        </div>
-        <div class="modal-content">
-          <button href="" class="option-item save-modal-btn">
-              <span>Simpan</span>
           </button>
           <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
               <span>Batalkan</span>
@@ -250,58 +181,27 @@
 </style>
 <script src="https://cdn.tiny.cloud/1/zhf194pj9ma6yja8lros9l6orpka9f1dvnj5zhbtfk3m26lf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
-  // Setting up thumbnail preview when uploading blog
-  const thumbnail = document.getElementById("thumbnail");
-  const thumbnailPreview = document.getElementById("thumbnailPreview");
-
-  thumbnail.onchange = evt => {
-    const [file] = thumbnail.files
-    if (file) {
-      thumbnailPreview.src = URL.createObjectURL(file)
-    }
-  }
-
   tinymce.init({
-      selector: 'textarea',
-      height: 300,
-      setup: function (editor) {
-            editor.on('init change', function () {
-            editor.save();
-          });
-      },
-      plugins: [
-        'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
-        'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
-        'insertdatetime', 'media', 'table', 'help', 'wordcount', 'image code'
-      ],
+    selector: 'textarea',
+    height: 500,
+    plugins: [
+      'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
+      'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+      'insertdatetime', 'media', 'table', 'help', 'wordcount', 'image code'
+    ],
     toolbar: 'undo redo | blocks | ' +
-      'bold italic backcolor | alignleft aligncenter ' +
-      'alignright alignjustify | bullist numlist outdent indent | ' +
-      'removeformat | help | image code | insertfile undo redo',
-    image_title: true,
-    automatic_uploads: true,
-    images_upload_url: '/blog/upload-image',
-    file_picker_types: 'image',
-    file_picker_callback: function(cb, value, meta) {
+    'bold italic backcolor | alignleft aligncenter ' +
+    'alignright alignjustify | bullist numlist outdent indent | ' +
+    'removeformat | help | image code',
+    /* without images_upload_url set, Upload tab won't show up*/
+    images_upload_url: 'postAcceptor.php',
 
-      var input = document.createElement('input');
-      input.setAttribute('type', 'file');
-      input.setAttribute('accept', 'image/*');
-      input.onchange = function() {
-        var file = this.files[0];
-
-        var reader = new FileReader();
-        reader.readAsDataURL(file);
-        reader.onload = function () {
-          var id = 'blobid' + (new Date()).getTime();
-          var blobCache =  tinymce.activeEditor.editorUpload.blobCache;
-          var base64 = reader.result.split(',')[1];
-          var blobInfo = blobCache.create(id, file, base64);
-          blobCache.add(blobInfo);
-          cb(blobInfo.blobUri(), { title: file.name });
-        };
-      };
-      input.click();
+    /* we override default upload handler to simulate successful upload*/
+    images_upload_handler: function (blobInfo, success, failure) {
+      setTimeout(function () {
+        /* no matter what you upload, we will turn it into TinyMCE logo :)*/
+        success('http://moxiecode.cachefly.net/tinymce/v9/images/logo.png');
+      }, 2000);
     },
     content_style: 'body { font-family:Poppins,Arial,sans-serif; font-size:16px }'
   });

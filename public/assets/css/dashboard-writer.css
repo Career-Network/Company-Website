@@ -213,6 +213,9 @@ header {
 
   background: #f4f4f4;
 
+  display: flex;
+  align-items: center;
+
   border-radius: 12px;
 
   width: 40%;
@@ -269,18 +272,6 @@ header {
   margin-top: 88px;
 }
 
-#item-batalkan,
-#item-terbitkan,
-#item-jadwal {
-  text-align: center !important;
-}
-
-#item-batalkan h1,
-#item-terbitkan h1,
-#item-jadwal h1 {
-  margin-bottom: 1rem;
-}
-
 form input {
   margin-left: 1rem;
   margin-top: 4px;
@@ -317,14 +308,6 @@ form input {
   font-size: 28px;
 
   color: #000;
-}
-
-.heading-kelas {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-
-  color: #27C6D9;
 }
 
 /* PROFILE SECTION ON HEADER */
@@ -593,13 +576,6 @@ form input {
   color: #fff;
 
   border: 1px solid #ef4444;
-}
-
-.save-modal-btn {
-  background: #ff5722;
-  color: #fff;
-
-  border: 1px solid #ff5722;
 }
 
 .edit {
@@ -968,10 +944,6 @@ textarea {
   text-align: left !important;
 }
 
-#item-batalkan .modal-head p {
-  text-align: center !important;
-}
-
 .detail-page .modal-content {
   width: 100%;
 
@@ -1016,33 +988,6 @@ form input {
   position: relative;
 
   font-weight: 400 !important;
-}
-
-#item-jadwal .modal-dialog {
-  width: 50%;
-}
-
-#item-jadwal .buttons-modal {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  border-bottom: 1px solid #cccccc;
-  padding-bottom: 1rem;
-  gap: 10px !important;
-}
-
-#item-jadwal .buttons-2 {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-between;
-
-  margin-top: -3rem;
-}
-
-#item-jadwal .buttons-modal .save-modal-btn {
-  margin-bottom: 0;
 }
 
 .input-container {
@@ -1192,10 +1137,8 @@ form input {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  align-items: center;
 
   margin-bottom: 1rem;
-  padding-bottom: 1rem;
 
   border-bottom: 0.5px solid #d2d2d2;
 }
@@ -1242,10 +1185,10 @@ form input {
 .kelola-postingan .blogs {
   padding: 1.5rem 0;
 
-  /* grid-template-columns: repeat(3, auto); */
+  grid-template-columns: repeat(4, auto);
 }
 
-/* .kelola-postingan img {
+.kelola-postingan img {
   width: 100%;
   height: 150px;
 
@@ -1259,15 +1202,15 @@ form input {
 .kelola-postingan .blog-header-card,
 .kelola-postingan .blog-see-more-btn {
   font-size: 1rem;
-} */
+}
 
 .kelola-postingan .option-item {
   justify-content: center;
 }
 
 .btn-search {
-  cursor: pointer !important;
-}
+    cursor: pointer !important;
+  }
 
 /* MOBILE */
 @media screen and (max-width: 620px) {
@@ -1372,7 +1315,6 @@ form input {
   .blog-img {
     width: 100px;
     height: 100px;
-    margin-top: 0.5rem;
   }
 
   .blogs .blog-author-date {
@@ -1382,18 +1324,14 @@ form input {
     margin-bottom: 0;
   }
 
-  .blogs .blog-header-card,
-  .artikel-terbaik .card-blog-terdekat h1,
-  .jadwal-terdekat .card-blog-terdekat h1 {
+  .blogs .blog-header-card {
     font-size: 14px;
     line-height: 21px;
 
     margin-bottom: 0;
   }
 
-  .blogs .blog-desc-card,
-  .artikel-terbaik .card-blog-terdekat p,
-  .jadwal-terdekat .card-blog-terdekat p {
+  .blogs .blog-desc-card {
     font-size: 12px;
     line-height: 18px;
   }
@@ -1456,11 +1394,11 @@ form input {
     flex-direction: column;
   }
 
-  /* .kelola-postingan .blogs {
+  .kelola-postingan .blogs {
     padding: 1.5rem 0;
 
     grid-template-columns: repeat(1, auto);
-  } */
+  }
 
   .artikel-kamu {
     flex-direction: column;
@@ -1517,7 +1455,7 @@ form input {
   /* BLOGS */
 
   .blogs {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
   }
 
   /* DETAIL BLOG */
@@ -1560,39 +1498,9 @@ form input {
     justify-content: flex-start;
   }
 
-  /* .kelola-postingan .blogs {
+  .kelola-postingan .blogs {
     padding: 1.5rem 0;
 
     grid-template-columns: repeat(2, auto);
-  } */
-}
-
-.text-justify {
-  text-align: justify !important;
-}
-
-.option-item.refresh-btn {
-  color: #000;
-}
-
-.refresh-btn:hover {
-  color: #000 !important;
-}
-
-.hapus-create {
-  transition: .8s;
-}
-
-.hapus-create a {
-  color: #ff5722;
-  width: 100%;
-}
-
-.hapus-create:hover {
-  background: #ff5722;
-}
-
-.hapus-create:hover a,
-.hapus-create a:hover {
-  color: #fff !important;
+  }
 }
