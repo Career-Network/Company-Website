@@ -110,6 +110,25 @@
                 @endif
             </section>
             @yield('content')
+
+            {{--=============== NOTIFICATION POP UP ===============--}}
+            <section class="notification__pop-up hide__pop-up" id="notification-pop-up">
+                {{-- Notification Popup Header --}}
+                <div class="notification__header">Notifikasi</div>
+
+                {{-- Empty Notifications Condition --}}
+                <div class="notification__empty__content">
+                    <img src="{{ asset('assets/img/writer-system/coming-soon-notification.png') }}" alt="Empty Notification's Illustration" class="notification__illustration">
+                    <h1 class="coming-soon-notifications">Segera Hadir!</h1>
+                    <p class="coming-soon-description">
+                        {{-- Development Condition --}}
+                        Developer kami sedang mengupayakan secepat mungkin agar fitur ini segera hadir, harap bersabar ya.
+                        {{-- Empty Condition --}}
+                    </p>
+                </div>
+
+                {{-- Exist Notifications Condition --}}
+            </section>
         </div>
     </main>
 
@@ -122,6 +141,19 @@
 
     @yield('js')
     <script src="{{ asset('assets/js/script.js') }}"></script>
+
+    <script>
+        // =============== NOTIFICATIONS ===============
+        const notificationBtn = document.getElementById('notification-btn')
+        const notificationPopUp = document.getElementById('notification-pop-up')
+
+        notificationBtn.addEventListener('mouseenter', () => {
+            notificationPopUp.classList.remove('hide__pop-up')
+            notificationPopUp.addEventListener('mouseleave', () => {
+                notificationPopUp.classList.add('hide__pop-up')
+            })
+        })
+    </script>
 </body>
 
 </html>
