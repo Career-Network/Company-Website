@@ -10,6 +10,7 @@
     <link href="{{ asset('assets/img/favico.png') }}" rel="icon" />
     <link href="{{ asset('assets/img/logo.png') }}" rel="apple-touch-icon" />
 
+    {{-- <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.css') }}" /> --}}
     <link rel="stylesheet" href="{{ asset('assets/css/login_writer.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
@@ -17,6 +18,8 @@
     <title>
         Login Writer | Blog
     </title>
+
+    @include('sweetalert::alert')
 </head>
 <body>
     {{-- Login Container --}}
@@ -31,20 +34,29 @@
                 <p class="sub-header">Selamat datang di Career Network! </p>
             </div>
             {{-- Form --}}
-            <!-- <form action="" method="post"> -->
-            <!-- get method only for temporary integration, change to post to develope -->
-            <form action="/blog/dashboard" method="get">
-                {{-- Email --}}
+            <form method="POST" action="{{ route('auth-writer') }}" autocomplete="off">
+                @csrf
+                {{-- Username --}}
                 <div class="form-input">
                     <p class="label-input">Nama Pengguna</p>
-                    <input type="username" name="username" id="username" placeholder="Ketik nama pengguna">
+                    <input type="username" class=" @error('username') is-invalid @enderror" name="username" id="username" placeholder="Ketik nama pengguna">
+                    @error('username')
+                        <div class="invalid-feedback">
+                        Username is not available.
+                        </div>
+                    @enderror
                 </div>
                 {{-- Password --}}
                 <div class="form-input">
                     <p class="label-input">Kata Sandi</p>
                     <div class="password-input">
-                        <input class="input-edit" type="password" name="password" id="password" placeholder="Ketik kata sandi" ><i toggle="#password-field" class="icon-edit fa-solid fa-eye-slash"></i>
+                        <input class="input-edit" class=" @error('password') is-invalid @enderror" type="password" name="password" id="password" placeholder="Ketik kata sandi" ><i toggle="#password-field" class="icon-edit fa-solid fa-eye-slash"></i>
                     </div>
+                    @error('password')
+                        <div class="invalid-feedback">
+                        Password is wrong.
+                        </div>
+                    @enderror
                 </div>
                 {{-- Remember Me --}}
                 {{-- <div class="remember-me">
@@ -52,7 +64,7 @@
                     <a href="">Forgot Password?</a>
                 </div> --}}
                 {{-- Login Button --}}
-                <button class="login-btn">
+                <button type="submit" class="login-btn">
                     Masuk
                 </button>
             </form>
@@ -87,10 +99,7 @@
     </div>
 </body>
 
-<script>
-    
-
-    
+<script>    
     $(".icon-edit").click(function(){
         $(".icon-edit").toggleClass("fa-eye fa-eye-slash");
         var input = $("#password");

@@ -34,76 +34,19 @@
     </section>
     <section class="container-cards-wrapper" style="background-color: white">
         <div class="row container container-cards">
-            <div class="col-sm p-3">
-                <div class="card shadow rounded">
-                    <img src="{{ asset('assets/img/landing-page/s-1.webp') }}" class="card-img-top" alt="...">
-                    <div class="card-body" style="width: 280px; height: 215px;">
-                      <h5 class="card-title" id="judul">Perbedaan Bekerja di Startup dan Corporate</h5>
-                      <p class="card-text" id="des">Networkers sudah tidak asing lagi dengan istilah Startup dan Corporate. Ditambah, saat ini sedang hits...</p>
-                      <p class="name">Falih Rahmat</p>
-                      <p class="date">21 Mei 2022</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-sm p-3">
-                <div class="card shadow">
-                    <img src="{{ asset('assets/img/landing-page/s-2.webp') }}" class="card-img-top" alt="...">
-                    <div class="card-body" style="width: 280px; height: 215px;">
-
-                      <h5 class="card-title" id="judul">Berbagai Profesi Dunia Data dan Analitik</h5>
-                      <p class="card-text" id="des">Networkers sudah tidak asing lagi dengan istilah Startup dan Corporate. Ditambah, saat ini sedang hits...</p>
-                      <p class="name">Toni Sembiring</p>
-                      <p class="date">23 Mei 2022</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-sm p-3">
-                <div class="card shadow">
-                    <img src="{{ asset('assets/img/landing-page/s-3.webp') }}" class="card-img-top" alt="...">
-                    <div class="card-body" style="width: 280px; height: 215px;">
-                      <h5 class="card-title" id="judul">Career Network telah luncurkan Website baru</h5>
-                      <p class="card-text" id="des">TNetworkers sudah tidak asing lagi dengan istilah Startup dan Corporate. Ditambah, saat ini sedang hits...</p>
-                      <p class="name">Falih Rahmat</p>
-                      <p class="date">17 Mei 2022</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        <div class="row container container-cards">
-            <div class="col-sm p-3">
-                <div class="card shadow rounded">
-                    <img src="{{ asset('assets/img/landing-page/s-1.webp') }}" class="card-img-top" alt="...">
-                    <div class="card-body" style="width: 280px; height: 215px;">
-                      <h5 class="card-title" id="judul">Perbedaan Bekerja di Startup dan Corporate</h5>
-                      <p class="card-text" id="des">Networkers sudah tidak asing lagi dengan istilah Startup dan Corporate. Ditambah, saat ini sedang hits...</p>
-                      <p class="name">Falih Rahmat</p>
-                      <p class="date">21 Mei 2022</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-sm p-3">
-                <div class="card shadow">
-                    <img src="{{ asset('assets/img/landing-page/s-2.webp') }}" class="card-img-top" alt="...">
-                    <div class="card-body" style="width: 280px; height: 215px;">
-
-                      <h5 class="card-title" id="judul">Berbagai Profesi Dunia Data dan Analitik</h5>
-                      <p class="card-text" id="des">Networkers sudah tidak asing lagi dengan istilah Startup dan Corporate. Ditambah, saat ini sedang hits...</p>
-                      <p class="name">Toni Sembiring</p>
-                      <p class="date">23 Mei 2022</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-sm p-3">
-                <div class="card shadow">
-                    <img src="{{ asset('assets/img/landing-page/s-3.webp') }}" class="card-img-top" alt="...">
-                    <div class="card-body" style="width: 280px; height: 215px;">
-                      <h5 class="card-title" id="judul">Career Network telah luncurkan Website baru</h5>
-                      <p class="card-text" id="des">TNetworkers sudah tidak asing lagi dengan istilah Startup dan Corporate. Ditambah, saat ini sedang hits...</p>
-                      <p class="name">Falih Rahmat</p>
-                      <p class="date">17 Mei 2022</p>
-                    </div>
-                  </div>
-            </div>
+            @foreach ($blogs as $blog)
+                <div class="col-sm p-3">
+                    <div class="card shadow rounded">
+                        <img src='@if(substr($blog->image, 0, 10) == "thumbnails") {{ asset("storage/$blog->image") }} @else {{ $blog->image }} @endif' class="card-img-top" alt="...">
+                        <div class="card-body" style="width: 280px; height: 215px;">
+                          <a class="card-title" href="/blog/{{ preg_replace('/[\s_]+/', '-', trim(preg_replace('/[^a-z0-9-_\s]+/', '' ,strtolower($blog->title)), '-')) }}" id="judul">{{ substr($blog->title, 0, 35) }} ...</a>
+                          <p class="card-text" id="des">{!! strip_tags(substr($blog->body, 0, 110)) !!}  ...</p>
+                          <p class="name">{{ $blog->author }}</p>
+                          <p class="date">{{ date('d F Y', strtotime($blog->update_date)) }}</p>
+                        </div>
+                      </div>
+                </div>
+            @endforeach
         </div>
         <div class="pagination justify-content-center pb-3">
             <a href="#"><</a>

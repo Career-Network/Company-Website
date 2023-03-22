@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css">
+
 </head>
 
 <body>
 
+    @include('sweetalert::alert')
     @include('layouts.writer-system.sidebar')
 
     <main>
@@ -35,7 +37,7 @@
                     @endif
 
                     @if ($title === 'Dashboard')
-                        <h1 class="heading">Selamat Datang, Rifky Chirmansyah</h1>
+                        <h1 class="heading">Selamat Datang, {{ Auth::user()->username }}</h1>
                     @endif
 
                     @if ($title === 'Blogs')
@@ -110,6 +112,25 @@
                 @endif
             </section>
             @yield('content')
+
+            {{--=============== NOTIFICATION POP UP ===============--}}
+            <section class="notification__pop-up hide__pop-up" id="notification-pop-up">
+                {{-- Notification Popup Header --}}
+                <div class="notification__header">Notifikasi</div>
+
+                {{-- Empty Notifications Condition --}}
+                <div class="notification__empty__content">
+                    <img src="{{ asset('assets/img/writer-system/coming-soon-notification.png') }}" alt="Empty Notification's Illustration" class="notification__illustration">
+                    <h1 class="coming-soon-notifications">Segera Hadir!</h1>
+                    <p class="coming-soon-description">
+                        {{-- Development Condition --}}
+                        Developer kami sedang mengupayakan secepat mungkin agar fitur ini segera hadir, harap bersabar ya.
+                        {{-- Empty Condition --}}
+                    </p>
+                </div>
+
+                {{-- Exist Notifications Condition --}}
+            </section>
         </div>
     </main>
 
@@ -122,6 +143,16 @@
 
     @yield('js')
     <script src="{{ asset('assets/js/script.js') }}"></script>
+
+    <script>
+        // =============== NOTIFICATIONS ===============
+        const notificationBtn = document.getElementById('notification-btn')
+        const notificationPopUp = document.getElementById('notification-pop-up')
+
+        notificationBtn.addEventListener('click', () => {
+            notificationPopUp.classList.toggle('hide__pop-up')
+        })
+    </script>
 </body>
 
 </html>

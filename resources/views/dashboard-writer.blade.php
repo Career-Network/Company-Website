@@ -10,7 +10,7 @@
       <div class="artikel-kamu">
         <div class="artikel-terbaik">
           <h1 class="heading-dashboard mb-4">Artikel terbaik kamu</h1>
-          @foreach ($blogs as $blog)
+          {{-- @foreach ($blogs as $blog)
               <a href='{{ "/blog/uploaded/$blog->id" }}' class="card-blog-terdekat">
                 <img src='@if(substr($blog->image, 0, 10) == "thumbnails") {{ asset("storage/$blog->image") }} @else {{ $blog->image }} @endif' alt="" class="card-blog-terdekat-img">
                 <div class="desc-blog-card-container mt-3">
@@ -20,11 +20,16 @@
                   </p>
                 </div>
               </a>
-          @endforeach
+          @endforeach --}}
 
-          <a href="/blog/uploaded" class="blog-see-more-btn border-0 font-semibold justify-content-end">
+          <div class="coming-soon">
+            <img src="{{ asset('assets/img/writer-system/coming-soon-best-article.png') }}" alt="Coming Soon Iluustration" class="coming-soon-illustration" />
+            <p class="coming-soon-text">Coming Soon</p>
+          </div>
+
+          {{-- <a href="/blog/uploaded" class="blog-see-more-btn border-0 font-semibold justify-content-end">
                 Lihat Semua
-          </a>
+          </a> --}}
         </div>
 
         <div class="jadwal-terdekat">
@@ -72,7 +77,7 @@
                       </div>
                   </div>
                   
-                  <a href="/blog/uploaded/{{ $blog->id }}" class="blog-see-more-btn">
+                  <a href="/dashboard/blogs/{{ $blog->id }}" class="blog-see-more-btn">
                     Lihat Selengkapnya
                   </a>
                 </div>
