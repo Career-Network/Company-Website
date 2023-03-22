@@ -198,10 +198,6 @@ class FeatureController extends Controller
             'blog' => $blog,
         ]);
     }
-    public function detailMentor()
-    {
-        return view('detail-mentor');
-    }
     public function tnc()
     {
         return view('TnC');
@@ -209,11 +205,5 @@ class FeatureController extends Controller
     public function privacy()
     {
         return view('privacy_policy');
-    }
-    public function classSchedule() {
-        return view('classSchedule-writer');
-    }
-    public function createClassSchedule() {
-        return view('create-classSchedule-writer');
     }
 }

@@ -43,8 +43,7 @@ Route::get('/educareer', [EducareerController::class, 'index'])->name(
     'educareer'
 );
 Route::get('/mentor', [EducareerController::class, 'mentor'])->name('mentor');
-Route::get('/detail-kelas', [EducareerController::class, 'kelas'])->name('kelas');
-
+Route::get('/kelas', [EducareerController::class, 'kelas'])->name('kelas');
 Route::get('/flap', [EducareerController::class, 'flap'])->name('flap');
 Route::get('/blog', [FeatureController::class, 'blog'])->name('blog');
 Route::get('/blog/detail-blog', [FeatureController::class, 'detailBlog'])->name('detail-blog');
@@ -76,26 +75,13 @@ Route::get('/blog/uploaded/{blogs:id}', [
     FeatureController::class,
     'detail',
 ])->name('detail-blog-writer');
-
-Route::get('/blog/detail-mentor', [FeatureController::class, 'detailMentor'])->name(
-    'detail-mentor'
-);
-
 Route::get('/slicing_blog', [EducareerController::class, 'slicing'])->name('slicing');
 Route::post('/blog/uploaded', [FeatureController::class, 'storeBlog'])->name('store-blog');
 Route::post('/blog/uploaded/delete', [FeatureController::class, 'destroyBlog'])->name('destroy-blog');
 Route::post('/blog/uploaded/update', [FeatureController::class, 'updateBlog'])->name('update-blog');
 Route::post('/blog/upload-image', [FeatureController::class, 'uploadImage']);
 
-Route::get('/blog/classSchedule', [FeatureController::class, 'classSchedule'])->name(
-    'classSchedule-writer'
-);
-Route::get('/blog/classSchedule/Create', [FeatureController::class, 'createClassSchedule'])->name(
-    'create-class-schedule-writer'
-);
-
 //Login feature
-//Login feat ure
 Route::get('/login', [LoginController::class, 'index'])
     ->name('login')
     ->middleware('guest');

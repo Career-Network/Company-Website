@@ -223,26 +223,6 @@
       </form>
     </div>
   </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="item-edit" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-head">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan Perubahan?</h1>
-          <p>Artikel yang sudah diubah tidak akan hilang ketika anda kembali</p>
-        </div>
-        <div class="modal-content">
-          <button href="" class="option-item save-modal-btn">
-              <span>Simpan</span>
-          </button>
-          <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-              <span>Batalkan</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 
 <style>

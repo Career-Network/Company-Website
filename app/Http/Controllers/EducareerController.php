@@ -8,15 +8,15 @@ class EducareerController extends Controller
 {
     public function index()
     {
-        return view('educareer_listclass');
+        return view('list_class');
     }
     public function mentor()
     {
-        return view('educareer_mentor');
+        return view('pilih_mentor');
     }
     public function kelas()
     {
-        return view('educareer_detail_kelas');
+        return view('detail-class');
     }
     public function flap()
     {

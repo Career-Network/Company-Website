@@ -26,15 +26,15 @@ class User extends Authenticatable
     public $timestamps = false;
     protected $guarded = ['id'];
     
-    // protected static function boot() {
-    //     parent::boot();
+    protected static function boot() {
+        parent::boot();
 
-    //     static::creating(function($model) {
-    //         if (empty($model->{$model->getKeyName()})) {
-    //             $model->{$model->getKeyName()} = Str::uuid();
-    //         };
-    //     });
-    // }
+        static::creating(function($model) {
+            if (empty($model->{$model->getKeyName()})) {
+                $model->{$model->getKeyName()} = Str::uuid();
+            };
+        });
+    }
 
     /**
      * The attributes that should be hidden for serialization.
