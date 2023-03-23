@@ -69,7 +69,6 @@
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
                             <a href="#" class="detail">Lihat Detail &#8594; </a>
                         </div>
-
                     </div>
                 </div>
             <div class="col-md-4">

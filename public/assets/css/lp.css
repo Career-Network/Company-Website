@@ -1013,14 +1013,18 @@ color: #1E1E1E;
     -webkit-transition: background-color 0.6s ease;
     transition: background-color 0.6s ease;
   }
-  .dot:before{
-    background: #ffff;
-  }
-  .dot:hover {
-    background: #ff5722;
-    color: whitesmoke;
-  }
 
+ .dot:active:before{
+    background-color: rgba(255, 0, 0, 0.5);
+    z-index: -1;
+ }
+
+ .dot:active:after{
+
+    background-color: #09c6f9;
+    z-index: -1;
+
+ }
 
   /* Fading animation */
   .fade {
@@ -1037,6 +1041,7 @@ color: #1E1E1E;
       opacity: 1;
     }
   }
+
   @keyframes fade {
     from {
       opacity: .4;
@@ -1171,3 +1176,4 @@ color: #1E1E1E !important;
     color: #FFFFFF;
     ;
   }
+

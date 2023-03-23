@@ -56,7 +56,7 @@
      <section id="caraousel" class="">
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="border-radius:50%;width:18px;height:20px"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="border-radius:50%;width:18px;height:20px;"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" style="border-radius:50%;width:18px;height:20px"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" style="border-radius:50%;width:18px;height:20px"></button>
         </div>
@@ -166,7 +166,7 @@
 
               </div>
               <div  style="text-align:center;margin-bottom:0px">
-                <span class="dot active" onclick="currentS  lide(1)"></span>
+                <span class="dot" onclick="currentS  lide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
               </div>
@@ -261,6 +261,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+
+
+
 <script type="text/javascript">
   $('.main-carousel').flickity({
     // options
@@ -269,4 +272,5 @@ function showSlides(n) {
     freeScroll: true
   });
 </script>
+
 @endsection
