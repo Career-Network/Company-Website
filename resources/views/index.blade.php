@@ -144,28 +144,26 @@
                 <div class="d-flex justify-content-center" id="d-flex"><img src="{{ asset('assets/img/landing-page/test4.webp') }}"id="testimonial_image" ></div>
             </div>
             <div class="col-md-6" id="img_center">
+                <div class="slideran">
+                    <div class="sli active">
+                      <h1>Slide 1</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="sli">
+                      <h1>Slide 2</h1>
+                      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="sli">
+                      <h1>Slide 3</h1>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    </div>
+                  </div>
 
-    <div class="slideran">
-        <div class="slide active">
-          <h1>Slide 1</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="slide">
-          <h1>Slide 2</h1>
-          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="slide">
-          <h1>Slide 3</h1>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-        </div>
-      </div>
-
-      <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-
+                  <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
             </div>
             <div class="col-md-3 d-none d-sm-block" id="img_side">
                 <div class="d-flex justify-content-end" id="d-flex"><img src="{{ asset('assets/img/landing-page/test5.webp') }}" id="testimonial_image" ></div><br>
@@ -222,45 +220,7 @@
             </div>
         </div>
 </main>
-<script>
-     const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
-let currentSlide = 0;
 
-// show first slide and dot
-slides[currentSlide].classList.add('active');
-dots[currentSlide].classList.add('active');
-
-// add event listeners to dots
-dots.forEach((dot, index) => {
-  dot.addEventListener('click', () => {
-    // remove active class from current slide and dot
-    slides[currentSlide].classList.remove('active');
-    dots[currentSlide].classList.remove('active');
-    // update current slide
-    currentSlide = index;
-    // add active class to new slide and dot
-    slides[currentSlide].classList.add('active');
-    dots[currentSlide].classList.add('active');
-  });
-});
-
-// set up automatic slide change
-setInterval(() => {
-  // remove active class from current slide and dot
-  slides[currentSlide].classList.remove('active');
-  dots[currentSlide].classList.remove('active');
-  // update current slide
-  currentSlide++;
-  if (currentSlide >= slides.length) {
-    currentSlide = 0;
-  }
-  // add active class to new slide and dot
-  slides[currentSlide].classList.add('active');
-  dots[currentSlide].classList.add('active');
-}, 5000); // change slide every 5 seconds
-
-</script>
 <script type="text/javascript">
     $('.slider').owlCarousel({
         autoWidth:true,
@@ -275,5 +235,45 @@ setInterval(() => {
     freeScroll: true
   });
 </script>
+
+<script>
+    const slides = document.querySelectorAll('.sli');
+const dots = document.querySelectorAll('.dot');
+let currentSlide = 0;
+
+// show first slide and dot
+slides[currentSlide].classList.add('active');
+dots[currentSlide].classList.add('active');
+
+// add event listeners to dots
+dots.forEach((dot, index) => {
+dot.addEventListener('click', () => {
+// remove active class from current slide and dot
+slides[currentSlide].classList.remove('active');
+dots[currentSlide].classList.remove('active');
+// update current slide
+currentSlide = index;
+// add active class to new slide and dot
+slides[currentSlide].classList.add('active');
+dots[currentSlide].classList.add('active');
+});
+});
+
+// set up automatic slide change
+setInterval(() => {
+// remove active class from current slide and dot
+slides[currentSlide].classList.remove('active');
+dots[currentSlide].classList.remove('active');
+// update current slide
+currentSlide++;
+if (currentSlide >= slides.length) {
+currentSlide = 0;
+}
+// add active class to new slide and dot
+slides[currentSlide].classList.add('active');
+dots[currentSlide].classList.add('active');
+}, 3000); // change slide every 5 seconds
+
+  </script>
 
 @endsection

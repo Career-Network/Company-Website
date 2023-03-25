@@ -1177,13 +1177,13 @@ color: #1E1E1E !important;
     ;
   }
 /*testi*/
-.slideran    {
+.slideran {
     position: relative;
     height: 300px;
     overflow: hidden;
   }
 
-  .slide {
+  .sli {
     position: absolute;
     top: 0;
     left: 0;
@@ -1193,25 +1193,25 @@ color: #1E1E1E !important;
     transition: opacity 0.5s ease-in-out;
   }
 
-  .slide.active {
+  .sli.active {
     opacity: 1;
   }
 
-  .slide h1, .slide p {
+  .sli h1, .slide p {
     margin: 0;
     padding: 20px;
     color: #fff;
   }
 
-  .slide:nth-child(1) {
+  .sli:nth-child(1) {
     background-color: #f44336;
   }
 
-  .slide:nth-child(2) {
+  .sli:nth-child(2) {
     background-color: #4caf50;
   }
 
-  .slide:nth-child(3) {
+  .sli:nth-child(3) {
     background-color: #2196f3;
   }
 
