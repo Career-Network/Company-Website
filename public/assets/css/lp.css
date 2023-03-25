@@ -1204,15 +1204,15 @@ color: #1E1E1E !important;
   }
 
   .sli:nth-child(1) {
-    background-color: #f44336;
+    background-color: #ffffff;
   }
 
   .sli:nth-child(2) {
-    background-color: #4caf50;
+    background-color: #ffffff;
   }
 
   .sli:nth-child(3) {
-    background-color: #2196f3;
+    background-color: #ffffff;
   }
 
   .dots {
@@ -1233,3 +1233,44 @@ color: #1E1E1E !important;
   .dot.active {
     background-color: #FF5722;
   }
+
+  /*setv image*/
+  #test_des{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+padding-top:60px;
+align-items: center;
+text-align: center;
+color: #1E1E1E;
+
+  }
+  .test_name{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+align-items: center;
+text-align: center;
+color: #000000;
+  }
+
+#test_status{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+.test_image{
+    border-radius: 65px;
+    width: 75px;
+    margin-left: 280px;
+    max-width: 100%;
+}

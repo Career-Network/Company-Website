@@ -145,17 +145,25 @@
             </div>
             <div class="col-md-6" id="img_center">
                 <div class="slideran">
-                    <div class="sli active">
-                      <h1>Slide 1</h1>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="sli active ">
+                     <p class="text-center" id="test_des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                     <img src="{{ asset('assets/img/landing-page/tes1.webp') }}" class="test_image"/>
+                     <h4 class="test_name">Edward Panjaitan</h4>
+                     <p id="test_status">Student</p>
                     </div>
                     <div class="sli">
-                      <h1>Slide 2</h1>
-                      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                      <p class="text-center"  id="test_des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <img src="{{ asset('assets/img/landing-page/tes1.webp') }}" class="test_image" />
+                      <h4 class="test_name">Edward Panjaitan</h4>
+                      <p id="test_status">Student</p>
                     </div>
                     <div class="sli">
-                      <h1>Slide 3</h1>
-                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+
+                      <p class="text-center"  id="test_des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <img src="{{ asset('assets/img/landing-page/tes1.webp') }}"  class="test_image"/>
+                      <h4 class="test_name">Edward Panjaitan</h4>
+                      <p id="test_status">Student</p>
                     </div>
                   </div>
 
