@@ -31,6 +31,14 @@
 
         <img src="{{ asset('assets/img/landing-page/o.png') }}" class="hero_ornament" alt="">
     </section>
+    <section style="background-color: #ffff">
+        <div class="row">
+            <div class="col-sm-3 mt-5 text-center " id="col1"><img src="{{ asset('assets/img/landing-page/asp.webp')}}" alt="" id="brand1"></div>
+            <div class="col-sm-3 mt-5 text-center" id="col1"><img src="{{ asset('assets/img/landing-page/nic.webp')}}" alt="" id="brand2"></div>
+            <div class="col-sm-3 mt-5 text-center" id="col1"><img src="{{ asset('assets/img/landing-page/nic.webp')}}" alt="" id="brand3"></div>
+            <div class="col-sm-3 mt-5 text-center" id="col1"><img src="{{ asset('assets/img/landing-page/ohs.webp')}}" alt="" id="brand4"></div>
+        </div>
+    </section>
 
     <section id="about">
         <div class="container">
