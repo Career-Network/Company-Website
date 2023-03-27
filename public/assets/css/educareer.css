@@ -544,3 +544,29 @@ margin-bottom: 20px !important;
 }
 
 }
+
+/*card mentor*/
+
+#mentor_card{
+     background-image: url(../img//mentor/talita.webp);
+     background-size:cover;
+     height:500px;
+     border-radius: 5px;
+}
+#mentor_status{
+    padding-bottom: 300px;
+    position: relative;
+    margin-left: 35px;
+    /* */
+}
+#mentor_posisi{
+    text-align: center;
+
+}
+#mentor_name{
+    text-align: center;
+
+}
+#mentor_job{
+    text-align: center;
+}

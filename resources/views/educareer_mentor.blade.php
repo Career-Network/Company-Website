@@ -86,28 +86,17 @@
         align-items: center;
         color: #111111;">Mentor untuk kursus ini</h3>
         <div class="row">
-            <div class="col-md-4">
-                <img src="{{ asset('assets/img/mentor/talita.webp') }}" alt="" id="gambar">
-                <p style="position:absolute;top:700px;left:90px;background: linear-gradient(98.25deg, rgba(255, 255, 255, 0.5) 19.65%, rgba(255, 255, 255, 0.2) 92.72%);
-                backdrop-filter: blur(10px);width: 97px;
-height: 21px;text-align:center;
-                border-radius: 10px;"> Available</p>
-                <div class="data text-center">
-                <p style="font-weight: 600;
-                font-size: 22px;
-                line-height: 33px;">Talita Zulmi</p>
-                <p style="font-weight: 400;
-                font-size: 16px;
-                line-height: 30px;">CEO Bicara HR</p>
-                <p style="font-weight: 600;
-                font-size: 16px;
-                line-height: 30px">Human Resources</p></div>
+            <div class="col-md-4 " id="mentor_card">
+                <p id="mentor_status">Aviable</p>
+                <p  id="mentor_name">Talita Zulmi</p>
+                <p id="mentor_posisi">CEO</p>
+                <p id="mentor_job">Human Resources</p>
             </div>
             <div class="col-md-4">
-                <img src="{{ asset('assets/img/mentor/hilman.webp') }}" alt=""  id="gambar">
+                <p>p</p>
             </div>
             <div class="col-md-4">
-                <img src="{{ asset('assets/img/mentor/arya.webp') }}" alt=""  id="gambar">
+<p>p</p>
             </div>
         </div>
         <br>
