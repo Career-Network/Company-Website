@@ -1,19 +1,19 @@
 @extends('layouts.writer-system.mainlayout', [
     'title' => 'Mentors',
-    'css' => 'assets/css/dashboard-writer.css',
+    'css' => 'assets/css/detail-mentor.css',
     'active' => 'Mentors',
 ])
 
 @section('content')
     <div class="blog-section">
         <section class="header-blogs">
-            <h1 class="heading ">Semua Mentor</h1>
+            <h1 class="heading">Semua Mentor</h1>
         </section>
 
 
         <section class="schedule-section">
           <div class="table-responsive">
-            <table id="datatable-detail-mentor" class="table table-mentor " >
+            <table id="datatable-detail-mentor" class="table table-mentor table-striped" >
                 <thead>
                     <tr>
                         <th>Profile</th>
@@ -28,7 +28,7 @@
                   
                     {{-- row 1 --}}
                     <tr class="trow-mentor">
-                        <td  class="tab-prof bg-white">
+                        <td>
                             <div class="profile">
                                 <div class="profile-picture">
                                     <img src="{{ asset('assets/img/detail-mentor/mentor-1.png') }}" />
@@ -137,69 +137,69 @@
     </div>
   <!-- modal -->
     <div class="modal modal-close fade" id="item-delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content modal-bs modal-content-close">
-            <div class="modal-head modal-head-close">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda yakin akan menghapus mentor ini?</h1>
-            <p>Semua data akan hilang</p>
-            </div>
-            <div class="modal-content modal-content-close">
-            <button href="" class="option-item delete" id="btn-action">
-                <span>Hapus</span>
-            </button>
-            <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-                <span>Batalkan</span>
-            </button>
-            </div>
+    <div class="modal-dialog">
+      <div class="modal-content modal-bs modal-content-close">
+        <div class="modal-head modal-head-close">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda yakin akan menghapus mentor ini?</h1>
+          <p>Semua data akan hilang</p>
         </div>
+        <div class="modal-content modal-content-close">
+          <button href="" class="option-item delete" id="btn-action">
+              <span>Hapus</span>
+          </button>
+          <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+              <span>Batalkan</span>
+          </button>
         </div>
+      </div>
     </div>
+  </div>
 
-    <div class="modal modal-close fade" id="item-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content modal-bs modal-content-close">
-            <div class="modal-head modal-head-close">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan Perubahan?</h1>
-            <p>
-                Testimoni yang sudah diubah tidak akan hilang ketika anda kembali
-            </p>
-            </div>
-            <div class="modal-content modal-content-close">
-            <button href="" class="option-item delete orange" id="btn-action-change">
-                <span>Simpan</span>
-            </button>
-            <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-                <span>Batalkan</span>
-            </button>
-            </div>
+   <div class="modal modal-close fade" id="item-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content modal-bs modal-content-close">
+        <div class="modal-head modal-head-close">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Simpan Perubahan?</h1>
+          <p>
+            Testimoni yang sudah diubah tidak akan hilang ketika anda kembali
+          </p>
         </div>
+        <div class="modal-content modal-content-close">
+          <button href="" class="option-item delete orange" id="btn-action-change">
+              <span>Simpan</span>
+          </button>
+          <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+              <span>Batalkan</span>
+          </button>
         </div>
+      </div>
     </div>
+  </div>
 
-    <div class="modal modal-close fade" id="item-error" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog ">
-        <div class="modal-content modal-bs modal-content-error">
-            <div class="modal-head modal-img-error">
-                <img src="{{ asset('assets/img/detail-mentor/alert.png') }}" alt="gambar" />
-            </div>
-            <div class="modal-head modal-head-error">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Gagal melakukan tindakan!</h1>
-            <p>
-                Kesalahan dalam koneksi intenet, silahkan coba beberapa saat lagi
-            </p>
-            </div>
-            <div class="modal-content modal-content-error">
-            <button href="" id="btn-action-error" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-                <span>OK!</span>
-            </button>
-            </div>
+     <div class="modal modal-close fade" id="item-error" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content modal-bs modal-content-error">
+        <div class="modal-head modal-img-error">
+            <img src="{{ asset('assets/img/detail-mentor/alert.png') }}" alt="gambar" />
         </div>
+        <div class="modal-head modal-head-error">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Gagal melakukan tindakan!</h1>
+          <p>
+            Kesalahan dalam koneksi intenet, silahkan coba beberapa saat lagi
+          </p>
         </div>
+        <div class="modal-content modal-content-error">
+          <button href="" id="btn-action-error" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+              <span>OK!</span>
+          </button>
+        </div>
+      </div>
     </div>
+  </div>
 
 
 
-    <div class="modal fade" id="createMentorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="createMentorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
@@ -257,7 +257,9 @@
             </div>
         </div>
     </div>
+@endsection
 
+@section('js')
 <script src="https://cdn.tiny.cloud/1/zhf194pj9ma6yja8lros9l6orpka9f1dvnj5zhbtfk3m26lf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>  
     <script>
  tinymce.init({
@@ -328,7 +330,6 @@
                         "targets": 5
                     }
                 ],
-    
                 "language": {
                     "lengthMenu": "_MENU_ entries per page",
                     "info": "Menampilkan halaman _PAGE_ dari _PAGES_",
@@ -339,21 +340,10 @@
             });
 
             // Tambahkan search input dengan lebar 500px
-            var labelSearch = $('.dataTables_filter label');
             var searchInput = $('.dataTables_filter input[type=search]');
-
-            searchInput.detach();
-            searchInput.appendTo(labelSearch);
-
             searchInput.attr('style',
                 'width: 80%; padding-right: 100px; background-image: url("/assets/img/detail-mentor/search-icon.svg"); background-repeat: no-repeat; background-position: right 10px center; background-size: 16px;'
             );
-
-
-            // var searchInput = $('.dataTables_filter input[type=search]');
-            // searchInput.attr('style',
-            //     'width: 80%; padding-right: 100px; background-image: url("/assets/img/detail-mentor/search-icon.svg"); background-repeat: no-repeat; background-position: right 10px center; background-size: 16px;'
-            // );
 
 
             // Tambahkan filter dropdown
@@ -375,5 +365,4 @@
             dropdown.append($('<option value="Deskripsi">Deskripsi</option>'));
         });
     </script>
-@endsection
 @endsection
