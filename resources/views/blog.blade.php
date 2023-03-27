@@ -35,7 +35,7 @@
     <section class="container-cards-wrapper" style="background-color: white">
         <div class="row container container-cards">
             @foreach ($blogs as $blog)
-                <div class="col-sm p-3">
+                <div class="col-md-4 p-3">
                     <div class="card shadow rounded">
                         <img src='@if(substr($blog->image, 0, 10) == "thumbnails") {{ asset("storage/$blog->image") }} @else {{ $blog->image }} @endif' class="card-img-top" alt="...">
                         <div class="card-body" style="width: 280px; height: 215px;">
