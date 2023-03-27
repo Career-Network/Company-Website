@@ -546,27 +546,259 @@ margin-bottom: 20px !important;
 }
 
 /*card mentor*/
+#mentor_row{
+    object-position: center;
+    margin-left: 40px;
+}
 
-#mentor_card{
+#mentor_card1{
      background-image: url(../img//mentor/talita.webp);
      background-size:cover;
      height:500px;
      border-radius: 5px;
+     margin: 10px;
+     width: 350px;
+
+}
+#mentor_card2{
+    background-image: url(../img//mentor/hilman.webp);
+    background-size:cover;
+    height:500px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 350px;
+}
+#mentor_card3{
+    background-image: url(../img//mentor/arya.webp);
+    background-size:cover;
+    height:500px;
+    border-radius: 5px;
+    margin:10px;
+    width: 350px;
+
 }
 #mentor_status{
-    padding-bottom: 300px;
+
+ padding-bottom: 300px;
     position: relative;
+    color: #ffffff;
     margin-left: 35px;
+
     /* */
 }
 #mentor_posisi{
     text-align: center;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: #ffffff;
 
 }
 #mentor_name{
+
     text-align: center;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 33px;
+color: #ffffff;
 
 }
 #mentor_job{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 30px;
+color: #ffffff;
     text-align: center;
+}
+
+@media only screen and (max-width:991px){
+    #mentor_row{
+        object-position: center;
+        margin-left: 60px;
+    }
+
+#mentor_card1{
+    background-image: url(../img//mentor/talita.webp);
+    background-size:cover;
+    height:500px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 310px;
+
+}
+#mentor_card2{
+   background-image: url(../img//mentor/hilman.webp);
+   background-size:cover;
+   height:500px;
+   border-radius: 5px;
+   margin: 10px;
+   width: 340px;
+}
+#mentor_card3{
+   background-image: url(../img//mentor/arya.webp);
+   background-size:cover;
+   height:500px;
+   border-radius: 5px;
+   margin:10px;
+   width: 330px;
+
+}
+#mentor_kursus{
+    margin-left: 20px;
+    position: relative;
+}
+#mentor_status{
+
+padding-bottom: 300px;
+   position: relative;
+   color: #ffffff;
+   margin-left: 35px;
+
+   /* */
+}
+#mentor_posisi{
+   text-align: center;
+   font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: #ffffff;
+
+}
+#mentor_name{
+
+   text-align: center;
+   font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 33px;
+color: #ffffff;
+
+}
+#mentor_job{
+   font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 30px;
+color: #ffffff;
+   text-align: center;
+}
+
+}
+
+@media only screen and (max-width:576px){
+
+#mentor_card1{
+    background-image: url(../img//mentor/talita.webp);
+    background-size:cover;
+    height:500px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 340px;
+
+}
+#mentor_card2{
+   background-image: url(../img//mentor/hilman.webp);
+   background-size:cover;
+   height:500px;
+   border-radius: 5px;
+   margin: 10px;
+   width: 340px;
+}
+#mentor_card3{
+   background-image: url(../img//mentor/arya.webp);
+   background-size:cover;
+   height:500px;
+   border-radius: 5px;
+   margin:10px;
+   width: 340px;
+
+}
+#mentor_status{
+
+padding-bottom: 300px;
+   position: relative;
+   color: #ffffff;
+   margin-left: 35px;
+
+   /* */
+}
+#mentor_posisi{
+   text-align: center;
+   font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: #ffffff;
+
+}
+#mentor_name{
+
+   text-align: center;
+   font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 33px;
+color: #ffffff;
+
+}
+#mentor_job{
+   font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 30px;
+color: #ffffff;
+   text-align: center;
+}
+#mentor_kursus{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 22px !important;
+line-height: 33px;
+align-items: center;
+text-align: center;
+margin-left: 115px;
+width: 300px;
+/* identical to box height */
+
+
+/* Style Lama/Orange */
+
+color: #FF5722 !important;
+}
+#mentor_go{
+    width: 300px;
+    text-align: left;
+    margin-left: 130px;
+    position: relative;
+    padding-bottom: 20px;
+}
+#mentor_judul{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px !important;
+position: relative;
+line-height: 33px;
+color: #FF5722;
+margin-left: 115px;
+width: 298px;
+position: relative;
+
+
+}
+
 }

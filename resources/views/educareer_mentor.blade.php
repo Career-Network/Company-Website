@@ -15,7 +15,7 @@
 
 
             <!-- Grid row -->
-            <div class="row">
+            {{-- <div class="row">
 
                 <!-- Grid column -->
                 <div class="col-md-12">
@@ -37,7 +37,7 @@
                         </div>
                     </div>
 
-                </div>
+                </div> --}}
                 <!-- Grid column -->
 
             </div>
@@ -52,12 +52,12 @@
     <div class="row container">
         <div class="col-md-6 container">
             <img src="{{ asset('assets/img/ui.webp') }}" width="500px"  class="rounded mx-auto d-block" id="ui">
-            <h4 id="judul_course">UI/UX Design Mastery</h4>
-            <p id="company">Career Network</p>
+            {{-- <h4 id="judul_course">UI/UX Design Mastery</h4> --}}
+                {{-- <p id="company">Career Network</p> --}}
         </div>
         <div class="col-md-6" id="desk">
-            <h4 id="course_name">UI/UX Designer</h4>
-            <p id="des_course">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
+            {{-- <h4 id="course_name">UI/UX Designer</h4> --}}
+                {{-- <p id="des_course">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p> --}}
         </div>
 
 
@@ -68,13 +68,14 @@
             font-style: normal;
             font-weight: 700;
             font-size: 48px;
-            line-height: 72px;" >Pilih Mentormu Disini!</h2>
+            line-height: 72px;" id="mentor_judul">Pilih Mentormu Disini!</h2>
             <p style="font-family: 'Poppins';
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
             line-height: 30px;
-            color: #111111;">Silakan pilih mentor yang sesuai dengan kriteriamu.</p>
+            color: #111111;"
+            id="mentor_go">Silakan pilih mentor yang sesuai dengan kriteriamu.</p>
         </div>
     <div class="container">
         <h3 style="font-family: 'Poppins';
@@ -84,23 +85,32 @@
         line-height: 111%;
         display: flex;
         align-items: center;
-        color: #111111;">Mentor untuk kursus ini</h3>
-        <div class="row">
-            <div class="col-md-4 " id="mentor_card">
+        color: #111111;" id="mentor_kursus">Mentor untuk kursus ini</h3></div>
+        <div class="row container" id="mentor_row">
+            <div class="col-md-4 " id="mentor_card1">
+                <br>
                 <p id="mentor_status">Aviable</p>
                 <p  id="mentor_name">Talita Zulmi</p>
                 <p id="mentor_posisi">CEO</p>
                 <p id="mentor_job">Human Resources</p>
             </div>
-            <div class="col-md-4">
-                <p>p</p>
+            <div class="col-md-4" id="mentor_card2">
+                <br>
+                <p id="mentor_status">Aviable</p>
+                <p  id="mentor_name">Talita Zulmi</p>
+                <p id="mentor_posisi">CEO</p>
+                <p id="mentor_job">Human Resources</p>
             </div>
-            <div class="col-md-4">
-<p>p</p>
+            <div class="col-md-4" id="mentor_card3">
+                <br>
+                <p id="mentor_status">Aviable</p>
+                <p  id="mentor_name">Talita Zulmi</p>
+                <p id="mentor_posisi">CEO</p>
+                <p id="mentor_job">Human Resources</p>
             </div>
         </div>
         <br>
-    </div>
+
 <body>
 
     @endsection
