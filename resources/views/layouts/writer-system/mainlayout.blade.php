@@ -72,7 +72,7 @@
 
                         @if ($title !== 'Blogs' && isset($detail))
                             <a href="{{ route('create-writer') }}" class="option-item preview">
-                                <span>Preview</span>
+                                <span>Preview Artikel</span>
                             </a>
                         @endif
 
