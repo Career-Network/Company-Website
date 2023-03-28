@@ -1,6 +1,9 @@
 /* CSS Reset */
+<<<<<<< HEAD
+=======
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+>>>>>>> backup/notifications
 
 * {
   box-sizing: border-box;
@@ -1597,122 +1600,4 @@ form input {
 .hapus-create:hover a,
 .hapus-create a:hover {
   color: #fff !important;
-}
-
-/*=============== NOTIFICATIONS ===============*/
-.notification-section {
-  position: relative;
-  cursor: pointer;
-
-  transition: 0.3s;
-}
-
-.notification-count {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  padding: 3px 6px;
-
-  color: #ffffff;
-  font-size: 0.938rem;
-
-  position: absolute;
-  width: 19px;
-  height: 24px;
-  left: 10px;
-  top: -0.6rem;
-
-  background: #16a6b7;
-  border-radius: 6px;
-}
-
-.notification__pop-up {
-  background: #fff;
-  border-radius: 8px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  position: absolute;
-  z-index: 50;
-  right: 2rem;
-
-  padding: 28px 40px;
-
-  width: 467px;
-
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
-  transition: 1s;
-}
-
-.notification__empty__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.notification__header {
-  color: #000;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-}
-
-.notification__illustration {
-  width: 88px;
-  height: 142px;
-
-  margin-top: 0.8rem;
-}
-
-.coming-soon-notifications {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-
-  color: #ff5722;
-}
-
-.coming-soon-description {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-
-  color: #666666;
-}
-
-/* Hide show pop-up */
-.hide__pop-up {
-  display: none;
-}
-
-/*=============== BEST ARTICLE SECTION ===============*/
-.coming-soon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.coming-soon-illustration {
-  width: 300px;
-  height: 300px;
-}
-
-.coming-soon-text {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 33px;
 }
