@@ -145,6 +145,7 @@
                         <span>Preview</span>
                     </span>
                 @endif
+            @endif
             </section>
             @yield('content')
 
