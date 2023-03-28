@@ -261,6 +261,7 @@
 
 @section('js')
 <script src="https://cdn.tiny.cloud/1/zhf194pj9ma6yja8lros9l6orpka9f1dvnj5zhbtfk3m26lf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>  
+
     <script>
  tinymce.init({
     selector: 'textarea',
@@ -365,4 +366,5 @@
             dropdown.append($('<option value="Deskripsi">Deskripsi</option>'));
         });
     </script>
+
 @endsection
