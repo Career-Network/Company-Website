@@ -90,9 +90,7 @@ Route::post('/blog/upload-image', [FeatureController::class, 'uploadImage']);
 Route::get('/blog/class-schedule', [FeatureController::class, 'classSchedule'])->name(
     'class-schedule-writer'
 );
-Route::get('/blog/classSchedule/Create', [FeatureController::class, 'createClassSchedule'])->name(
-    'create-class-schedule-writer'
-);
+
 
 //Login feature
 //Login feat ure
