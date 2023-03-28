@@ -84,6 +84,22 @@
     </div>
 
 
+                {{-- Empty Notifications Condition --}}
+                <div class="notification__empty__content">
+                    <img src="{{ asset('assets/img/writer-system/coming-soon-notification.png') }}" alt="Empty Notification's Illustration" class="notification__illustration">
+                    <h1 class="coming-soon-notifications">Segera Hadir!</h1>
+                    <p class="coming-soon-description">
+                        {{-- Development Condition --}}
+                        Developer kami sedang mengupayakan secepat mungkin agar fitur ini segera hadir, harap bersabar ya.
+                        {{-- Empty Condition --}}
+                    </p>
+                </div>
+
+                {{-- Exist Notifications Condition --}}
+            </div>
+        </div>
+    </div>
+
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">
