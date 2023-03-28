@@ -1280,6 +1280,9 @@ color: #000000;
     .test_image{
         margin-left: 200px;
     }
+    #btn-primary{
+        width: 200px !important;
+    }
 }
 
 @media only screen and (max-width: 576px){
