@@ -1031,7 +1031,7 @@
   }
   
   .menu-filter{
-      background-color:pink;
+      /* background-color:pink; */
     display:flex;
     flex-direction:row;
     width:70%;
@@ -1041,7 +1041,7 @@
   }
   
   .menu-title-filter {
-        background-color:red;
+        /* background-color:red; */
     display:flex;
     flex-direction:row;
     width:70%;
@@ -1797,7 +1797,7 @@
   }
   
   .no-footer  .row {
-    background-color:red;
+    /* background-color:red; */
     display:flex;
     flex-direction:column;
      gap:20px;
@@ -1813,8 +1813,8 @@
   .row .col-md-6 .dataTables_length {
       display:flex;
     flex-direction:column;
-     margin:0;
-     gap:10px;
+    margin:0;
+    gap:10px;
   
   }
   
@@ -1824,10 +1824,9 @@
   
   .row .col-md-6 .dataTables_length,  .row .col-md-6  .datatable-detail-mentor_filter {
     width:100%;
-    background-color:pink;
+    background-color:white;
     display:flex;
     flex-direction:column;
-     
   }
   }
   
