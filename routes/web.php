@@ -81,6 +81,11 @@ Route::post('/blog/uploaded/delete', [FeatureController::class, 'destroyBlog'])-
 Route::post('/blog/uploaded/update', [FeatureController::class, 'updateBlog'])->name('update-blog');
 Route::post('/blog/upload-image', [FeatureController::class, 'uploadImage']);
 
+Route::get('/blog/class-schedule', [FeatureController::class, 'classSchedule'])->name(
+    'class-schedule-writer'
+);
+
+
 //Login feature
 Route::get('/login', [LoginController::class, 'index'])
     ->name('login')
