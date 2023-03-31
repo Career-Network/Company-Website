@@ -13,8 +13,8 @@
 
         <section class="schedule-section">
           <div class="table-responsive">
-            <table  id="datatable-detail-mentor" class="table table-mentor w-auto  " >
-                <thead >
+            <table  id="datatable-detail-mentor" class="table table-mentor w-auto w-100 " >
+                <thead class="mw-100">
                     <tr>
                         <th>
                            <div class="px-5 py-3 ">
@@ -72,21 +72,20 @@
                                 </div>
                             </div>
                         </td>
-                        <td>
-                             <div class="text-wrap class-break-word">
+                        <td class="profile nopadding nomargin">
+                             <div class="profile-name class-break-word text-wrap">
                              
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </div>
-                           
-                        
+
                                
                         </td>
                         <td>
                             <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                 <i class="fas fa-trash-alt"></i>
                             </button>
-                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
+                            <button class="btn btn-warning text-white" data-bs-toggle="modal" data-bs-target="#item-edit">
                                 <i class="fa-solid fa-gear"></i>
                             </button>
                         </td>
@@ -122,8 +121,8 @@
                               </div>
                           </div>
                       </td>
-                      <td>
-                          <div class="class-break-word text-wrap ">
+                      <td  class="profile nopadding nomargin">
+                          <div class="profile-name class-break-word text-wrap ">
                        
                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -137,7 +136,7 @@
                           <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                               <i class="fas fa-trash-alt"></i></button>
  
-                          <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
+                          <button class="btn btn-warning text-white" data-bs-toggle="modal" data-bs-target="#item-edit">
                               <i class="fa-solid fa-gear"></i>
                           </button>
                       </td>
@@ -332,6 +331,8 @@
 
 
         $(document).ready(function() {
+
+
             $('#btn-action').click(function(){
                $('#item-error').modal('show');
             });
