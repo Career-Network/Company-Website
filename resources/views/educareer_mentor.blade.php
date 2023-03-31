@@ -49,16 +49,28 @@
     </main>
 
 </body>
-    <div class="row container">
-        <div class="col-md-6 container">
-            <img src="{{ asset('assets/img/ui.webp') }}" width="500px"  class="rounded mx-auto d-block" id="ui">
-            {{-- <h4 id="judul_course">UI/UX Design Mastery</h4> --}}
-                {{-- <p id="company">Career Network</p> --}}
+    <div class="row container" id="card_kelas_detail">
+        <div class="col-md-7 container" id="card_image">
+            {{-- <img src="{{ asset('assets/img/ui.webp') }}" width="500px"  class="rounded mx-auto d-block" id="ui"> --}}
+            <div class="row " id="card_ux">
+
+                <div class="col-md-6" id="top_card">UI/UX Design Mastery</div>
+                <div class="col-md-6" >
+                    <div class="top_card text-center justify-content-center"><p id="tp2">Career Network</p></div>
+
+                </div>
+
+            </div>
+
+
+
         </div>
-        <div class="col-md-6" id="desk">
-            {{-- <h4 id="course_name">UI/UX Designer</h4> --}}
-                {{-- <p id="des_course">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p> --}}
+        <div class="col-md-5">
+            <div class="text_card">
+            <p id="text_card">UI / UX Designer</p>
+            <p id="des_text_card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A facilisi tincidunt quam turpis quis et pulvinar.</p>
         </div>
+    </div>
 
 
     </div>

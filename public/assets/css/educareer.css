@@ -155,29 +155,6 @@ line-height: 111%;color: #111111;
     padding: 7px;
     color: #FFFFFF;
 }
-
-#course_name{
-    position: absolute;
-    bottom: 160px;
-    background: #EBFDFF;
-    color: #268E9B;
-    width: 180px;
-height: 48px;
-padding: 10px;
-border-radius: 10px;
-}
-#des_course{
-    position: absolute;
-    bottom: 100px;
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-text-align: justify;
-color: #111111;
-width: 500px;
-}
-
 .data
 {
     position: absolute;
@@ -800,5 +777,122 @@ position: relative;
 
 
 }
+
+}
+
+/*mentor top*/
+    #card_kelas_detail{
+        margin-left: 30px;
+    }
+
+#card_image{
+    padding: 30px;
+}
+
+#card_ux
+{
+    background-image: url('../img/ui.webp');
+    background-size: cover;
+    border-radius: 10px;
+    height: 300px;
+
+}
+#top_card{
+    padding-top: 160px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 60px;
+
+/* Style Lama/White */
+
+color: #FFFFFF;
+
+
+}
+.top_card{
+    padding-top: 200px;
+}
+#tp2{
+    width: 200px;
+    height: 40px;
+    background: #FF5722;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+.text_card{
+    margin-top: 160px;
+}
+#text_card{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 40px;
+background: #EBFDFF;
+border-radius: 25px;
+width: 230px;
+text-align: center;
+color: #268E9B;
+
+}
+
+#des_text_card{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 40px;
+/* or 167% */
+
+text-align: justify;
+
+/* Style Lama/Black */
+
+color: #111111;
+}
+
+/*tablet*/
+@media only screen and (max-width:991px){
+    #card_ux{
+        height: 200px;
+
+    }
+    #top_card{
+        font-size: 20px;
+        font-weight: 400px;
+        line-height: 30px;
+        padding-top: 130px;
+
+
+    }
+    .top_card{
+        padding-top:140px;
+    }
+    #tp2{
+        font-size: 14px !important;
+        height: 35px;
+        width: 140px;
+
+
+    }
+    .text_card{
+        margin-top: 80px;
+    }
+    #text_card{
+        font-size: 16px;
+        width: 170px;
+
+    }
+    #des_text_card{
+        font-size: 16px !important;
+        line-height: 25px;
+    }
+
 
 }
