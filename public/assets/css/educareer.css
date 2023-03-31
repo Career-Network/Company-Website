@@ -525,7 +525,7 @@ margin-bottom: 20px !important;
 /*card mentor*/
 #mentor_row{
     object-position: center;
-    margin-left: 40px;
+    margin-left: 20px !important;
 }
 
 #mentor_card1{
@@ -896,3 +896,5 @@ color: #111111;
 
 
 }
+
+/*mobile top*/
