@@ -75,13 +75,7 @@ Route::get('/blog/uploaded/{blogs:id}', [
     FeatureController::class,
     'detail',
 ])->name('detail-blog-writer');
-Route::get('/blog/detail-mentor', [FeatureController::class, 'detailMentor'])->name(
-    'detail-mentor'
-);
 
-Route::get('/blog/testimoni-writer', [FeatureController::class, 'testimoni'])->name(
-    'testimoni-writer'
-);
 Route::get('/slicing_blog', [EducareerController::class, 'slicing'])->name('slicing');
 Route::post('/blog/uploaded', [FeatureController::class, 'storeBlog'])->name('store-blog');
 Route::post('/blog/uploaded/delete', [FeatureController::class, 'destroyBlog'])->name('destroy-blog');
@@ -90,6 +84,13 @@ Route::post('/blog/upload-image', [FeatureController::class, 'uploadImage']);
 
 Route::get('/blog/class-schedule', [FeatureController::class, 'classSchedule'])->name(
     'class-schedule-writer'
+);
+Route::get('/blog/detail-mentor', [FeatureController::class, 'detailMentor'])->name(
+    'detail-mentor'
+);
+
+Route::get('/blog/testimoni-writer', [FeatureController::class, 'testimoni'])->name(
+    'testimoni-writer'
 );
 
 
