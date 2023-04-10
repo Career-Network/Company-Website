@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id('id_mentor');
             $table->string('mentor_name');
             $table->string('current_job');
+            $table->string('expertise');
             $table->text('mentor_about');
             $table->string('mentor_pic')->nullable();
             $table->string('id_class');

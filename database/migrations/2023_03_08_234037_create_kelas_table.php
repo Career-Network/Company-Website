@@ -15,10 +15,13 @@ return new class extends Migration
     {
         Schema::create('kelas', function (Blueprint $table) {
             $table->string('id_class')->primary();
+            $table->string('class_cover');
             $table->string('class_category');
             $table->text('description');
             $table->string('class_title');
             $table->text('class_about');
+            $table->integer('class_price');
+            $table->string('class_loc');
             $table->dateTime('start_date');
             $table->dateTime('end_date');
             $table->text('syllabus');
