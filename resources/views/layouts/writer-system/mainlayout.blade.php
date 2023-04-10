@@ -29,7 +29,7 @@
 
   <body>
 
-    @include('sweetalert::alert')
+    {{-- @include('sweetalert::alert') --}}
 
     @include('layouts.writer-system.sidebar')
 
