@@ -195,129 +195,19 @@
         </div>
     </main>
 
-    <script src="https://cdn.tiny.cloud/1/zhf194pj9ma6yja8lros9l6orpka9f1dvnj5zhbtfk3m26lf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>  
-    <script>
- tinymce.init({
-    selector: 'textarea',
-    height: 300,
-    plugins: [
-      'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
-      'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
-      'insertdatetime', 'media', 'table', 'help', 'wordcount', 'image code'
-    ],
-    toolbar: 'undo redo | blocks | ' +
-    'bold italic backcolor | alignleft aligncenter ' +
-    'alignright alignjustify | bullist numlist outdent indent | ' +
-    'removeformat | help | image code',
-    /* without images_upload_url set, Upload tab won't show up*/
-    images_upload_url: 'postAcceptor.php',
-
-    /* we override default upload handler to simulate successful upload*/
-    images_upload_handler: function (blobInfo, success, failure) {
-      setTimeout(function () {
-        /* no matter what you upload, we will turn it into TinyMCE logo :)*/
-        success('http://moxiecode.cachefly.net/tinymce/v9/images/logo.png');
-      }, 2000);
-    },
-    content_style: 'body { font-family:Poppins,Arial,sans-serif; font-size:16px }'
-  });
-
-
-  
-        $(document).ready(function() {
-
-
-            $('#btn-action').click(function(){
-               $('#item-error').modal('show');
-            });
-
-             $('#btn-action-change').click(function(){
-               $('#item-error').modal('show');
-            });
-
-
-            $('#item-error').on('shown.bs.modal', function () {
-               $('#item-delete').modal('hide');
-                $('#item-edit').modal('hide');
-            })
-
-
-            $('#datatable-detail-mentor').DataTable({
-                "columnDefs": [{
-                        "targets": 0
-                      
-                         
-                    },
-                    {
-                        "targets": 1
-                    },
-                    {
-                        "targets": 2
-                    },
-                    {
-                        "targets": 3
-                    },
-                    {
-                        "targets": 4
-                    },
-                ],
-    
-                "language": {
-                    "lengthMenu": "_MENU_ entries per page",
-                    "info": "Menampilkan halaman _PAGE_ dari _PAGES_",
-                    "infoEmpty": "Data tidak tersedia",
-                    "infoFiltered": "(filtered from _MAX_ total records)",
-                },
-                "dom": '<"row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>tp'
-            });
-
-            // Tambahkan search input dengan lebar 500px
-            var labelSearch = $('.dataTables_filter label');
-            var searchInput = $('.dataTables_filter input[type=search]');
-
-            searchInput.detach();
-            searchInput.appendTo(labelSearch);
-
-            searchInput.attr('style',
-                'width: 80%; padding-right: 100px; background-image: url("/assets/img/detail-mentor/search-icon.svg"); background-repeat: no-repeat; background-position: right 10px center; background-size: 16px;'
-            );
-
-
-            // var searchInput = $('.dataTables_filter input[type=search]');
-            // searchInput.attr('style',
-            //     'width: 80%; padding-right: 100px; background-image: url("/assets/img/detail-mentor/search-icon.svg"); background-repeat: no-repeat; background-position: right 10px center; background-size: 16px;'
-            // );
-
-
-            // Tambahkan filter dropdown
-            var dropdown = $('<select></select>')
-                .appendTo('.dataTables_length')
-                .addClass('form-select form-select-sm')
-                .attr('aria-controls', 'datatable-detail-mentor')
-                .on('change', function() {
-                    var value = $(this).val();
-                    $('#datatable-detail-mentor').DataTable().page.len(value).draw();
-                })
-                .attr('style', 'margin-left: 10px;');;
-
-            dropdown.append($('<option value="" selected disabled>Filter berdasarkan...</option>'));
-            dropdown.append($('<option value="Profile">Profile</option>'));
-            dropdown.append($('<option value="Profesi">Profesi</option>'));
-            dropdown.append($('<option value="Kelas">Kelas</option>'));
-            dropdown.append($('<option value="Review">Review</option>'));
-        });
-
-    </script>
-
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js"></script>
 
+    @yield('js')
     <script src="{{ asset('assets/js/script.js') }}"></script>
 
+  
     <script>
         
 
