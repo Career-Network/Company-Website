@@ -26,13 +26,13 @@
                 </div>
 
                 {{-- <div class="btn-wrapper" data-bs-toggle="modal" data-bs-target="#searchModal"> --}}
-                    <div class="notification-section btn-wrapper" id="notification-btn" data-bs-toggle="modal" data-bs-target="#notificationModal">
+                    {{-- <div class="notification-section btn-wrapper" id="notification-btn" data-bs-toggle="modal" data-bs-target="#notificationModal">
                         <span class="notification-count">2</span>
                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.7773 22.5C13.2961 22.5 14.5273 21.2688 14.5273 19.75H9.02734C9.02734 21.2688 10.2586 22.5 11.7773 22.5Z" fill="#3A3F44"/>
                             <path d="M11.7773 3.13759L10.6812 3.35897C8.16869 3.8664 6.27737 6.08887 6.27737 8.75C6.27737 9.61326 6.09262 11.7712 5.64643 13.8955C5.42493 14.95 5.12859 16.048 4.73472 17H18.82C18.4261 16.048 18.1298 14.95 17.9083 13.8955C17.4621 11.7712 17.2774 9.61325 17.2774 8.75C17.2774 6.08885 15.386 3.86637 12.8735 3.35896L11.7773 3.13759ZM20.3289 17C20.6359 17.6152 20.9919 18.1014 21.4023 18.375H2.15234C2.56282 18.1014 2.91883 17.6152 3.22581 17C4.46127 14.5241 4.90237 9.95885 4.90237 8.75C4.90237 5.42159 7.26762 2.64562 10.409 2.01118C10.4046 1.96638 10.4023 1.92096 10.4023 1.875C10.4023 1.11561 11.018 0.5 11.7773 0.5C12.5367 0.5 13.1523 1.11561 13.1523 1.875C13.1523 1.92095 13.1501 1.96638 13.1457 2.01117C16.2871 2.64558 18.6524 5.42157 18.6524 8.75C18.6524 9.95885 19.0934 14.5241 20.3289 17Z" fill="#3A3F44"/>
                         </svg>
-                    </div>
+                    </div> --}}
                 {{-- </div> --}}
 
                 <div class="btn-wrapper btn-aside" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
