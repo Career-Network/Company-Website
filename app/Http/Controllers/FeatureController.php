@@ -209,5 +209,13 @@ class FeatureController extends Controller
     public function classSchedule() {
         return view('class-schedule-writer');
     }
+
+
+
     
+    public function detailMentor()
+    {
+        return view('detail-mentor');
+    }
+  
 }
