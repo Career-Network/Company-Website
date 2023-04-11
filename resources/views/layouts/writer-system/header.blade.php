@@ -26,13 +26,13 @@
                 </div>
 
                 {{-- <div class="btn-wrapper" data-bs-toggle="modal" data-bs-target="#searchModal"> --}}
-                    <div class="notification-section btn-wrapper" id="notification-btn" data-bs-toggle="modal" data-bs-target="#notificationModal">
+                    {{-- <div class="notification-section btn-wrapper" id="notification-btn" data-bs-toggle="modal" data-bs-target="#notificationModal">
                         <span class="notification-count">2</span>
                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.7773 22.5C13.2961 22.5 14.5273 21.2688 14.5273 19.75H9.02734C9.02734 21.2688 10.2586 22.5 11.7773 22.5Z" fill="#3A3F44"/>
                             <path d="M11.7773 3.13759L10.6812 3.35897C8.16869 3.8664 6.27737 6.08887 6.27737 8.75C6.27737 9.61326 6.09262 11.7712 5.64643 13.8955C5.42493 14.95 5.12859 16.048 4.73472 17H18.82C18.4261 16.048 18.1298 14.95 17.9083 13.8955C17.4621 11.7712 17.2774 9.61325 17.2774 8.75C17.2774 6.08885 15.386 3.86637 12.8735 3.35896L11.7773 3.13759ZM20.3289 17C20.6359 17.6152 20.9919 18.1014 21.4023 18.375H2.15234C2.56282 18.1014 2.91883 17.6152 3.22581 17C4.46127 14.5241 4.90237 9.95885 4.90237 8.75C4.90237 5.42159 7.26762 2.64562 10.409 2.01118C10.4046 1.96638 10.4023 1.92096 10.4023 1.875C10.4023 1.11561 11.018 0.5 11.7773 0.5C12.5367 0.5 13.1523 1.11561 13.1523 1.875C13.1523 1.92095 13.1501 1.96638 13.1457 2.01117C16.2871 2.64558 18.6524 5.42157 18.6524 8.75C18.6524 9.95885 19.0934 14.5241 20.3289 17Z" fill="#3A3F44"/>
                         </svg>
-                    </div>
+                    </div> --}}
                 {{-- </div> --}}
 
                 <div class="btn-wrapper btn-aside" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
@@ -93,19 +93,19 @@
         </div>
     </div>
 
-
-                {{-- Empty Notifications Condition --}}
+{{-- 
+                 Empty Notifications Condition
                 <div class="notification__empty__content">
                     <img src="{{ asset('assets/img/writer-system/coming-soon-notification.png') }}" alt="Empty Notification's Illustration" class="notification__illustration">
                     <h1 class="coming-soon-notifications">Segera Hadir!</h1>
                     <p class="coming-soon-description">
-                        {{-- Development Condition --}}
+                       Development Condition
                         Developer kami sedang mengupayakan secepat mungkin agar fitur ini segera hadir, harap bersabar ya.
-                        {{-- Empty Condition --}}
+                         Empty Condition
                     </p>
                 </div>
 
-                {{-- Exist Notifications Condition --}}
+                 Exist Notifications Condition  --}}
             </div>
         </div>
     </div>
@@ -140,6 +140,16 @@
                     <span class="menu-text {{ $active == "Blogs"? "active" : "" }}">Blog</span>
                 </a>
 
+                    {{-- Testimoni Menu --}}
+                <a href="{{ route('testimoni-writer') }}" class="menu-item {{ $active == "Testimoni"? "active" : "" }}">
+                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.92574 14.39H11.3119C11.7178 14.39 12.0545 14.05 12.0545 13.64C12.0545 13.23 11.7178 12.9 11.3119 12.9H5.92574C5.5198 12.9 5.18317 13.23 5.18317 13.64C5.18317 14.05 5.5198 14.39 5.92574 14.39ZM9.27228 7.9H5.92574C5.5198 7.9 5.18317 8.24 5.18317 8.65C5.18317 9.06 5.5198 9.39 5.92574 9.39H9.27228C9.67822 9.39 10.0149 9.06 10.0149 8.65C10.0149 8.24 9.67822 7.9 9.27228 7.9ZM16.3381 7.02561C16.5708 7.02292 16.8242 7.02 17.0545 7.02C17.302 7.02 17.5 7.22 17.5 7.47V15.51C17.5 17.99 15.5099 20 13.0545 20H5.17327C2.59901 20 0.5 17.89 0.5 15.29V4.51C0.5 2.03 2.5 0 4.96535 0H10.2525C10.5099 0 10.7079 0.21 10.7079 0.46V3.68C10.7079 5.51 12.203 7.01 14.0149 7.02C14.4381 7.02 14.8112 7.02316 15.1377 7.02593C15.3917 7.02809 15.6175 7.03 15.8168 7.03C15.9578 7.03 16.1405 7.02789 16.3381 7.02561ZM16.6111 5.566C15.7972 5.569 14.8378 5.566 14.1477 5.559C13.0527 5.559 12.1507 4.648 12.1507 3.542V0.906C12.1507 0.475 12.6685 0.261 12.9646 0.572C13.5004 1.13476 14.2368 1.90834 14.9699 2.67837C15.7009 3.44632 16.4286 4.21074 16.9507 4.759C17.2398 5.062 17.0279 5.565 16.6111 5.566Z" fill="#D2D2D2" class="menu-text {{ $active == "Testimoni"? "active" : "" }}" />
+                    </svg>
+
+                    <span class="menu-text {{ $active == "Testimoni"? "active" : "" }}">Testimoni</span>
+                </a>
+
+
                 {{-- Schedule Menu --}}
                 <a href="{{ route('schedule-writer') }}" class="menu-item {{ $active == "Schedule"? "active" : "" }}">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,6 +158,9 @@
 
                     <span class="menu-text {{ $active == "Schedule"? "active" : "" }}">Schedule</span>
                 </a>
+
+              
+                
             </div>
         </div>
     </div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,28 +9,26 @@
     <link href="{{ asset('assets/img/favico.png') }}" rel="icon" />
     <link href="{{ asset('assets/img/logo.png') }}" rel="apple-touch-icon" />
 
-    <link rel="stylesheet" href="{{ asset($css) }} "/>
-    
-    <link
-      rel="stylesheet"
-      href="{{ asset('assets/vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}"
-    />
+    <link rel="stylesheet" href="{{ asset($css) }} " />
 
-    <style>
+    <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css">
+
+       <style>
       .swal2-confirm.swal2-styled {
         background: #ff5722 !important;
       }
     </style>
 
-  </head>
+    
+</head>
+
 
   <body>
 
-    @include('sweetalert::alert')
+    {{-- @include('sweetalert::alert') --}}
 
     @include('layouts.writer-system.sidebar')
 
@@ -44,6 +43,12 @@
                     <h1 class="heading">Jadwal Postingan</h1>
                     <p>Anda dapat menjadwalkan setiap artikel yang dibuat melalui halaman ini</p>
                 @endif
+
+              
+
+                     @if ($title === 'Testimoni')
+                        <h1 class="heading">Testimoni</h1>
+                    @endif
 
                 @if ($title === "Dashboard")
                     <h1 class="heading">Selamat Datang, Rifky Chirmansyah</h1>
@@ -95,6 +100,7 @@
 
                 @if ($title !== 'Create Blog')
                     <div class="options">
+                        
                         @if ($title === 'Schedule')
                             <a href="" class="option-item create-blog">
                                 <svg width="19" height="21" viewBox="0 0 19 21" fill="none"
@@ -125,6 +131,19 @@
                             </a>
                         @endif
 
+                             @if ($title === 'Testimoni')
+                            <a href="#" class="option-item create-blog">
+                                <span data-bs-toggle="modal" data-bs-target="#createMentorModal">Create Testimoni</span>
+                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13 8.99805H8V13.998C8 14.2633 7.89464 14.5176 7.70711 14.7052C7.51957 14.8927 7.26522 14.998 7 14.998C6.73478 14.998 6.48043 14.8927 6.29289 14.7052C6.10536 14.5176 6 14.2633 6 13.998V8.99805H1C0.734784 8.99805 0.48043 8.89269 0.292893 8.70515C0.105357 8.51762 0 8.26326 0 7.99805C0 7.73283 0.105357 7.47848 0.292893 7.29094C0.48043 7.1034 0.734784 6.99805 1 6.99805H6V1.99805C6 1.73283 6.10536 1.47848 6.29289 1.29094C6.48043 1.1034 6.73478 0.998047 7 0.998047C7.26522 0.998047 7.51957 1.1034 7.70711 1.29094C7.89464 1.47848 8 1.73283 8 1.99805V6.99805H13C13.2652 6.99805 13.5196 7.1034 13.7071 7.29094C13.8946 7.47848 14 7.73283 14 7.99805C14 8.26326 13.8946 8.51762 13.7071 8.70515C13.5196 8.89269 13.2652 8.99805 13 8.99805Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        @endif
+
+
                         @if (!isset($read))
                             @if ($title === 'Blogs' || ($title === 'Dashboard' && !isset($detail)))
                                 <a href="{{ route('create-writer') }}" class="option-item create-blog">
@@ -150,35 +169,44 @@
             @yield('content')
 
             {{--=============== NOTIFICATION POP UP ===============--}}
-            <section class="notification__pop-up hide__pop-up" id="notification-pop-up">
-                {{-- Notification Popup Header --}}
+           
+          
+           {{-- <section class="notification__pop-up hide__pop-up" id="notification-pop-up">
+               Notification Popup Header 
                 <div class="notification__header">Notifikasi</div>
 
-                {{-- Empty Notifications Condition --}}
+                Empty Notifications Condition 
                 <div class="notification__empty__content">
                     <img src="{{ asset('assets/img/writer-system/coming-soon-notification.png') }}" alt="Empty Notification's Illustration" class="notification__illustration">
                     <h1 class="coming-soon-notifications">Segera Hadir!</h1>
                     <p class="coming-soon-description">
-                        {{-- Development Condition --}}
+                       Development Condition
                         Developer kami sedang mengupayakan secepat mungkin agar fitur ini segera hadir, harap bersabar ya.
-                        {{-- Empty Condition --}}
+                       Empty Condition 
                     </p>
                 </div>
 
-                {{-- Exist Notifications Condition --}}
-            </section>
+              Exist Notifications Condition 
+            </section>  --}}
+        
         </div>
     </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js"></script>
 
+    @yield('js')
     <script src="{{ asset('assets/js/script.js') }}"></script>
 
-    <script>
+
+    {{-- <script>
+        
+
+
         // =============== NOTIFICATIONS ===============
         const notificationBtn = document.getElementById('notification-btn')
         const notificationPopUp = document.getElementById('notification-pop-up')
@@ -189,7 +217,7 @@
                 notificationPopUp.classList.add('hide__pop-up')
             })
         })
-    </script>
+    </script> --}}
 </body>
 
 </html>
