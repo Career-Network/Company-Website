@@ -2282,8 +2282,10 @@ tbody tr td {
 }
 .class-break-word {
   /* background:green; */
-  white-space:wrap;
-  width:2000px !important;
+   white-space:wrap;
+  width:1000px !important;
+  margin-left:12px;
+  padding:0px !important;
 
 }
 
@@ -2568,7 +2570,7 @@ letter-spacing: 0em;
   }
 
   .search-profile-bar {
- 
+ justify-content: flex-end;
     padding: 0.8rem;
   }
   .profile-section-container {
@@ -2656,13 +2658,12 @@ font-size: 20px !important;
 font-weight: 600;
 line-height: 30px;
 letter-spacing: 0em;
-text-align: left;
 color:#27C6D9;
 }
 
 .header-blogs {
   margin-bottom:0rem 1.5rem 0.5rem 1.5rem!important;
-     padding:1rem 0 0 2rem !important;
+     padding:1rem 0 0 1rem !important;
   /* background-color:yellow; */
 }
 
@@ -2737,9 +2738,12 @@ color:#27C6D9;
   .dataTables_wrapper  .row {
   /* background-color:purple; */
   display:flex;
-  flex-direction:row !important;
+    flex-direction:column;
+   gap:20px;
+   padding:10px;
+  /* flex-direction:row !important;
 
-  padding-right:20px !important;
+  padding-right:20px !important; */
    /* gap:20px; */
    /* padding:10px; */
 }
@@ -2764,16 +2768,20 @@ tbody tr td {
   /* background:green; */
   white-space:wrap;
   width:2000px !important;
+  margin-left:18px;
+  padding:0px !important;
 
 }
 
 
 .row .col-md-6 {
-   width:45% !important; 
+    width:100%;
   padding:0px !important;
-  /* background-color:pink; */
+   /* width:45% !important; 
+  padding:0px !important;
+
   display:flex;
-  justify-content:space-between !important;
+  justify-content:space-between !important; */
   
  
  
@@ -2782,54 +2790,64 @@ tbody tr td {
 .row .col-md-6 .dataTables_length {
     display:flex;
   flex-direction:column;
-  width:60% !important;
+    margin:0;
+   gap:15px;
+
+  /* width:60% !important;
   display:flex;
    margin:0;
-   /* background:red; */
+
       align-self:flex-end !important;
 
-       margin-left:-4px !important;
+       margin-left:-4px !important; */
 
 
 }
 
 .row .col-md-6  .dataTables_filter{
-  /* margin-top:16px !important; */
-  display:flex !important;
-   /* background:yellow; */
+    margin-top:16px !important;
+    margin-left:0px !important;
 
-  margin-left:30px !important;
+  /* display:flex !important;
+  margin-left:30px !important; */
 
 }
 
  .row .col-md-6  .dataTables_filter label {
-    /* width:100%; */
-   /* background-color:green;  */
-  display:flex;
+    width:100%;
+      display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  gap:10px;
+  
+  /* display:flex;
   flex-direction:row !important;
   justify-content:flex-end;
     align-items:center;
-   gap:10px; 
+   gap:10px;  */
   
  }
 .row .col-md-6 .dataTables_length label {
-    /* width:100%; */
-  display:none;
+    width:100%;
+    display:flex;
   flex-direction:row;
   align-items:center;
+  gap:10px;
+  /* display:none;
+  flex-direction:row;
+  align-items:center; */
 
 }
  
 
 
 .row .col-md-6 .dataTables_length .form-select  {
-  /* padding-top:5px;
-  padding-bottom:5px; */
+  padding-top:10px;
+  padding-bottom:10px;
   display:flex;
   flex-direction:row;
-  /* background-color:blue; */
-    height:46px;
-  width:204px !important;
+    /* height:46px;
+  width:204px !important; */
   
 
 }
@@ -2837,15 +2855,15 @@ tbody tr td {
 
 
   .row .col-md-6  .dataTables_filter label input {
-        /* width:100% !important; */
+        width:100% !important;
        margin:0px !important;
   /* background-color:pink; */
-  /* display:flex;
-  align-items:start; */
-     /* padding-top:40px !important;
-  padding-bottom:40px !important; */
-  height:46px;
-  width:204px !important;
+  display:flex;
+  align-items:start; 
+  padding-top:10px !important;
+  padding-bottom:10px !important; 
+  /* height:46px;
+  width:204px !important; */
 
 
   }
@@ -2926,10 +2944,10 @@ padding: 8px 15px 8px 15px;  */
  .row .col-md-6  .dataTables_filter label {
     width:100%;
 
-  /* display:flex;
+  display:flex;
   flex-direction:column;
   justify-content:flex-start;
-  gap:10px; */
+  gap:10px;
   
  }
 
@@ -2937,15 +2955,23 @@ padding: 8px 15px 8px 15px;  */
      
        margin:0px !important;
   /* background-color:blue; */
+    display:flex;
+/* 
+  padding:0px !important; */
+  align-items:start;
 
-
-  padding:0px !important; 
  
   }
 .row .col-md-6 .dataTables_length .form-select {
   margin-left:0px !important;
 }
-
+.row .col-md-6 .dataTables_length,  .row .col-md-6  .dataTables_filter {
+  width:100%;
+  /* background-color:pink; */
+  display:flex;
+  flex-direction:column;
+  
+}
 /* .row .col-md-6 .dataTables_length {
   width:100%;
   background-color:pink; 
