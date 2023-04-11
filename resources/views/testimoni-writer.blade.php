@@ -302,9 +302,9 @@
 @endsection
 
 @section('js')
-   <script src="https://cdn.tiny.cloud/1/zhf194pj9ma6yja8lros9l6orpka9f1dvnj5zhbtfk3m26lf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>  
-<script>
-     tinymce.init({
+<script src="https://cdn.tiny.cloud/1/zhf194pj9ma6yja8lros9l6orpka9f1dvnj5zhbtfk3m26lf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>  
+    <script>
+ tinymce.init({
     selector: 'textarea',
     height: 300,
     plugins: [
@@ -330,8 +330,6 @@
   });
 
 
-  
-  
         $(document).ready(function() {
 
 
@@ -414,5 +412,5 @@
             dropdown.append($('<option value="Kelas">Kelas</option>'));
             dropdown.append($('<option value="Review">Review</option>'));
         });
-</script>
+    </script>
 @endsection

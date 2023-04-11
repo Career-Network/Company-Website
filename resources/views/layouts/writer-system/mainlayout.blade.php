@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,24 +9,22 @@
     <link href="{{ asset('assets/img/favico.png') }}" rel="icon" />
     <link href="{{ asset('assets/img/logo.png') }}" rel="apple-touch-icon" />
 
-    <link rel="stylesheet" href="{{ asset($css) }} "/>
-    
-    <link
-      rel="stylesheet"
-      href="{{ asset('assets/vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}"
-    />
+    <link rel="stylesheet" href="{{ asset($css) }} " />
 
-    <style>
+    <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css">
+
+       <style>
       .swal2-confirm.swal2-styled {
         background: #ff5722 !important;
       }
     </style>
 
-  </head>
+    
+</head>
+
 
   <body>
 
