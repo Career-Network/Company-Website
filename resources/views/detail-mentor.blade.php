@@ -82,7 +82,7 @@
                                     <img src="{{ asset('assets/img/detail-mentor/kelas-1.png') }}" />
                                 </div>
                                 <div class="class-name">
-                                    Digital Marketing
+                                    Project Manager 
                                 </div>
                             </div>
                         </td>
@@ -252,7 +252,7 @@
         <div class="modal-dialog">
             <div class="modal-content px-4 py-3 align-items-center">
             <div class="modal-header px-0 py-3 w-100">
-                <h1 class="modal-title font-24 px-0 fs-5" id="exampleModalLabel">Create Testimoni</h1>
+                <h1 class="modal-title font-24 px-0 fs-5" id="exampleModalLabel">Create Mentor</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body px-0  w-100">
@@ -264,12 +264,22 @@
 
                      <div class="input-container">
                       <label class="form-check-label font-16" for="photoProfile">Photo Profile</label>
-                      <input class="form-control" type="file" id="photoProfile">
+                      <input class="form-control" type="file" id="photoProfile" value="Samantha.jpg">
                     </div>
 
                     <div class="input-container">
-                      <label class="form-check-label font-16" for="profesi">Profesi</label>
-                      <input class="form-control font-bold" type="text" id="profesi" value="Mahasiswa">
+                      <label class="form-check-label font-16" for="keahlian">Bidang Keahlian</label>
+                      <input class="form-control font-bold" type="text" id="keahlian" value="UI/UX Desain">
+                    </div>
+
+                    <div class="input-container">
+                      <label class="form-check-label font-16" for="profesi">Pekerjaan Saat Ini</label>
+                      <input class="form-control font-bold" type="text" id="profesi" value="Associate UI/UX Desain Trainer">
+                    </div>
+
+                    <div class="input-container">
+                      <label class="form-check-label font-16" for="sosmed">Link Media Sosial(Linkedin)</label>
+                      <input class="form-control font-bold" type="text" id="sosmed" value="www.linkedin.com/">
                     </div>
 
 
@@ -286,26 +296,9 @@
 
                     </div>
 
-                     <div class="input-container">
-                      <label class="form-check-label font-16" for="display">Display</label>
-                      <div class="display-warna">
-                        <div class="display-item" >
-                            <input type="checkbox" class="form-check-input" id="itemInput" name="" value="">
-                             <label for="tagar font-16"> Landing Page</label>
-                        </div>
-                        <div class="display-item-class" >
-                            <input type="checkbox" class="form-check-input" id="itemInput" name="" value="">
-                             <label for="tagar font-16"> Class Page</label>
-                        </div>
-                
-                
-                      </div>
-                     
-                    </div>
-
 
                           <div class="input-container">
-                            <label class="form-check-label" for="detail">Review</label>
+                            <label class="form-check-label" for="detail">Deskripsi</label>
                             <textarea id="detail"></textarea>
                           </div>
 
@@ -314,7 +307,7 @@
                               <span>Batalkan</span>
                           </button>
                           <button href="" class="option-item create-blog mt-3" data-bs-dismiss="modal" aria-label="Close">
-                              <span>Upload Testimoni</span>
+                              <span>Upload Mentor</span>
                           </button>
                      </div>
                 </form>
