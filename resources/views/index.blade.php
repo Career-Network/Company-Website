@@ -31,6 +31,14 @@
 
         <img src="{{ asset('assets/img/landing-page/o.png') }}" class="hero_ornament" alt="">
     </section>
+    <section style="background-color: #ffff">
+        <div class="row">
+            <div class="col-sm-3 mt-5 text-center " id="col1"><img src="{{ asset('assets/img/landing-page/asp.webp')}}" alt="" id="brand1"></div>
+            <div class="col-sm-3 mt-5 text-center" id="col1"><img src="{{ asset('assets/img/landing-page/nic.webp')}}" alt="" id="brand2"></div>
+            <div class="col-sm-3 mt-5 text-center" id="col1"><img src="{{ asset('assets/img/landing-page/nic.webp')}}" alt="" id="brand3"></div>
+            <div class="col-sm-3 mt-5 text-center" id="col1"><img src="{{ asset('assets/img/landing-page/ohs.webp')}}" alt="" id="brand4"></div>
+        </div>
+    </section>
 
     <section id="about">
         <div class="container">
@@ -56,14 +64,14 @@
      <section id="caraousel" class="">
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="border-radius:50%;width:18px;height:20px"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="border-radius:50%;width:18px;height:20px;"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" style="border-radius:50%;width:18px;height:20px"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" style="border-radius:50%;width:18px;height:20px"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="ball-strategi"><p>Strategi Kami</p></div>
-            <img src="{{asset('assets/img/landing-page/B-1.webp')}}" class="d-block w-100" height="900px" alt="...">
+                <img src="{{asset('assets/img/landing-page/B-1.webp')}}" class="d-block w-100" height="900px" alt="...">
                   <div class="carousel-caption">
               <h3 class="carousel-title" class="text-start" id="text" >Strategi kami untuk perusahaan</h3>
               <p class="carousel-text text-start" style="font-family: 'Poppins';font-weight: 400;font-size: 16px;line-height: 30px;">Kami berkomitmen untuk membangun masa depan pengguna dengan pendekatan </p>
@@ -144,32 +152,34 @@
                 <div class="d-flex justify-content-center" id="d-flex"><img src="{{ asset('assets/img/landing-page/test4.webp') }}"id="testimonial_image" ></div>
             </div>
             <div class="col-md-6" id="img_center">
-                <div class="slideshow-container">
-                <div class="mySlides">
-                  <blockquote class="text"> Tpsume dolor sit amet consectetur adipisicing elit. Consectetur voluptates sit consequuntur quasi eum veniam earum enim nam vitae dolore praesentium minima commodi. Voluptates sit consequuntur sit amet voluptates sit consequuntur.</blockquote>
-                  <img src="{{ asset('assets/img/landing-page/tes1.webp') }}">
-                  <p class="designation"> American talcum powder</p>
-                  <p id="status">Student</p>
-                </div> <!-- .mySlides -->
-                <div class="mySlides">
-                  <blockquote class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptates sit consequuntur quasi eum veniam aspernatur modi quisquam autem illo sapiente reprehenderit, earum enim nam vitae minima commodi dolore praesentium 💥</blockquote>
-                  <img src="{{ asset('assets/img/landing-page/tes1.webp') }}">
-                  <p class="designation">British talcum powder</p>
-                  <p id="status">Teacher</p>
-                </div> <!-- .mySlides -->
-                <div class="mySlides ">
-                  <blockquote class="text">Consectetur voluptates sit consequuntur quasi eum veniam aspernatur modi quisquam autem illo sapiente reprehenderit</blockquote>
-                  <img src="{{ asset('assets/img/landing-page/tes1.webp') }}">
-                  <p class="designation"> German talcum powder</p>
-                  <p id="status">Ceo</p>
-                </div> <!-- .mySlides -->
+                <div class="slideran">
+                    <div class="sli active ">
+                     <p class="text-center" id="test_des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                     <img src="{{ asset('assets/img/landing-page/tes1.webp') }}" class="test_image"/>
+                     <h4 class="test_name">Edward Panjaitan</h4>
+                     <p id="test_status">Student</p>
+                    </div>
+                    <div class="sli">
 
-              </div>
-              <div  style="text-align:center;margin-bottom:0px">
-                <span class="dot active" onclick="currentS  lide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-              </div>
+                      <p class="text-center"  id="test_des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <img src="{{ asset('assets/img/landing-page/tes1.webp') }}" class="test_image" />
+                      <h4 class="test_name">Edward Panjaitan</h4>
+                      <p id="test_status">Student</p>
+                    </div>
+                    <div class="sli">
+
+                      <p class="text-center"  id="test_des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <img src="{{ asset('assets/img/landing-page/tes1.webp') }}"  class="test_image"/>
+                      <h4 class="test_name">Edward Panjaitan</h4>
+                      <p id="test_status">Student</p>
+                    </div>
+                  </div>
+
+                  <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
             </div>
             <div class="col-md-3 d-none d-sm-block" id="img_side">
                 <div class="d-flex justify-content-end" id="d-flex"><img src="{{ asset('assets/img/landing-page/test5.webp') }}" id="testimonial_image" ></div><br>
@@ -233,34 +243,6 @@
     });
 </script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script>
-    let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
 <script type="text/javascript">
   $('.main-carousel').flickity({
     // options
@@ -269,4 +251,45 @@ function showSlides(n) {
     freeScroll: true
   });
 </script>
+
+<script>
+    const slides = document.querySelectorAll('.sli');
+const dots = document.querySelectorAll('.dot');
+let currentSlide = 0;
+
+// show first slide and dot
+slides[currentSlide].classList.add('active');
+dots[currentSlide].classList.add('active');
+
+// add event listeners to dots
+dots.forEach((dot, index) => {
+dot.addEventListener('click', () => {
+// remove active class from current slide and dot
+slides[currentSlide].classList.remove('active');
+dots[currentSlide].classList.remove('active');
+// update current slide
+currentSlide = index;
+// add active class to new slide and dot
+slides[currentSlide].classList.add('active');
+dots[currentSlide].classList.add('active');
+});
+});
+
+// set up automatic slide change
+setInterval(() => {
+// remove active class from current slide and dot
+slides[currentSlide].classList.remove('active');
+dots[currentSlide].classList.remove('active');
+// update current slide
+currentSlide++;
+if (currentSlide >= slides.length) {
+currentSlide = 0;
+}
+// add active class to new slide and dot
+slides[currentSlide].classList.add('active');
+dots[currentSlide].classList.add('active');
+}, 3000); // change slide every 5 seconds
+
+  </script>
+
 @endsection
