@@ -13,6 +13,10 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EducareerController;
 use App\Http\Controllers\ForgotPasswordController;
+use App\Http\Controllers\KelasController;
+use App\Http\Controllers\MentorController;
+use App\Http\Controllers\TestimoniController;
+use App\Http\Controllers\BlogController;
 use App\Models\Feature;
 
 /*
