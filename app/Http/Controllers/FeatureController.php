@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Kelas;
+use App\Models\Mentor;
+use App\Models\Testimony;
 use App\Models\Feature;
 use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Http\RedirectResponse;
@@ -198,6 +201,24 @@ class FeatureController extends Controller
             'blog' => $blog,
         ]);
     }
+    public function detailMentor()
+    {
+        $kelas = Kelas::get();
+        $mentor = Mentor::with('kelas')->get();
+        return view('detail-mentor', [
+            'kelas' => $kelas,
+            'mentor' => $mentor,
+        ]);
+    }
+    public function testimoni()
+    {
+        $testimoni = Testimony::with('kelas')->get();
+        $kelas = Kelas::get();
+        return view('testimoni-writer', [
+            'testimoni' => $testimoni,
+            'kelas' => $kelas,
+        ]);
+    }
     public function tnc()
     {
         return view('TnC');
@@ -207,11 +228,12 @@ class FeatureController extends Controller
         return view('privacy_policy');
     }
     public function classSchedule() {
-        return view('class-schedule-writer');
+        $kelas = Kelas::get();
+        return view('classSchedule-writer', [
+            'kelas' => $kelas,
+        ]);
     }
- 
-    public function testimoni()
-    {
-        return view('testimoni-writer');
+    public function createClassSchedule() {
+        return view('create-classSchedule-writer');
     }
 }
