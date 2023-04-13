@@ -13,7 +13,6 @@
 
     <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-5.2.0-beta1-dist/css/bootstrap.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/vendor/fontawesome-free-6.4.0-web/css/all.min.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css">
 </head>
@@ -52,7 +51,7 @@
                     @endif
 
                     @if ($title === 'Kelas')
-                        <h1 class="heading">Daftar Kelas</h1>
+                        <h1 class="heading" style="font-size: 20px">Daftar Kelas</h1>
                     @endif
 
                     @if ($title === 'Mentors')

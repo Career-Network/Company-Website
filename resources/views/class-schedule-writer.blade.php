@@ -9,7 +9,7 @@
     <div class="blog-section">
         <section class="schedule-section">
             <section class="header-blogs">
-            <h1 class="heading">Semua Kelas</h1>
+            <h1 class="heading" style="font-size: 20px">Semua Kelas</h1>
             </section>
         
             <section class="class-schedule-section">
@@ -598,8 +598,8 @@
 
 @section('js')
 <script src="https://cdn.tiny.cloud/1/zhf194pj9ma6yja8lros9l6orpka9f1dvnj5zhbtfk3m26lf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>  
-    <script>
-tinymce.init({
+<script>
+    tinymce.init({
     selector: 'textarea',
     height: 300,
     plugins: [
@@ -684,7 +684,8 @@ tinymce.init({
                     var value = $(this).val();
                     $('#datatable-detail-mentor').DataTable().page.len(value).draw();
                 })
-                .attr('style', 'margin-left: 10px;');;
+                .attr('style', 'margin-left: 10px;').css("color", "#A9A9A9");;
+                
 
             dropdown.append($('<option value="" selected disabled>Filter berdasarkan...</option>'));
             dropdown.append($('<option value="Nama Kelas">Nama Kelas</option>'));
