@@ -19,6 +19,7 @@
                         <tr>
                             <th>Nama Kelas</th>
                             <th>Harga Kelas</th>
+                            <th>Jadwal Kelas</th>
                             <th>Lokasi Belajar</th>
                             <th>Aksi</th>
                         </tr>
@@ -28,13 +29,13 @@
                         {{-- row 1 --}}
                         <tr class="trow-mentor">
                             <td>
-                            <div class="class-box">
-                                <div class="class-img">
-                                    <img src="{{ asset('assets/img/detail-mentor/kelas-1.png') }}" />&nbsp
-                                        Digital Marketing
+                                <div class="class-box">
+                                    <div class="class-img">
+                                        <img src="{{ asset('assets/img/detail-mentor/kelas-1.png') }}" />&nbsp
+                                            Digital Marketing
+                                    </div>
+                                    
                                 </div>
-                                
-                            </div>
                             </td>
                             <td>
                                 <p>Rp. 125.000</p>
@@ -45,11 +46,17 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    {{-- <i class="fa-regular fa-gear" ></i> --}}
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -75,11 +82,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -105,11 +117,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -135,11 +152,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -165,11 +187,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -195,11 +222,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -223,11 +255,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -251,11 +288,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -279,11 +321,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -307,11 +354,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p class='aligncenter'>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -335,11 +387,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>                      
@@ -370,7 +427,7 @@
         <div class="modal-dialog">
         <div class="modal-content modal-bs modal-content-close">
             <div class="modal-head modal-head-close">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda  yakin akan menghapus Kelas {Graphic Design}?</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda  yakin akan menghapus Kelas Graphic Design?</h1>
             <p>Semua data akan hilang</p>
             </div>
             <div class="modal-content modal-content-close">
@@ -457,17 +514,17 @@
                     <div class="input-container">
                         <label class="form-check-label" for="jadwal">Jadwal Kelas</label>
                         <div class="d-flex">
-                            {{-- <input class="form-control" type="date" id="start-date" name="start-date" placeholder="Masukan Tanggal Mulai"  min="1945-01-01" max="2100-12-31">
+                            <input class="form-control" type="date" id="start-date" name="start-date" placeholder="Masukan Tanggal Mulai"  min="1945-01-01" max="2100-12-31">
                             <input class="form-control" type="date" id="end-date" name="end-date" placeholder="Masukan Tanggal akhir" min="1945-01-01" max="2100-12-31">
-                            <input class="form-control" type="time" id="time-date" name="time-date" placeholder="Masukan Waktu"> --}}
-                            <select class="form-select" aria-label="Default select example">
+                            <input class="form-control" type="time" id="time-date" name="time-date" placeholder="Masukan Waktu">
+                            {{-- <select class="form-select" aria-label="Default select example">
                                 <option selected >Pilih tanggal mulai dan akhir</option>
                                 <option value="1 Januari 2020">1 Januari 2020</option>
-                            </select>
-                            <select class="form-select" aria-label="Default select example">
+                            </select> --}}
+                            {{-- <select class="form-select" aria-label="Default select example">
                                 <option selected>Tentukan Jam kelas</option>
                                 <option value="23:01">23:01</option>
-                            </select>
+                            </select> --}}
                         </div>
                     </div>
 
