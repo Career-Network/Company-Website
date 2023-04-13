@@ -1587,7 +1587,7 @@
   
   /* MOBILE */
   @media screen and (max-width: 620px) {
-         main {
+    main {
     /* background: #f6faff; */
     /* background: brown; */
       }
@@ -1729,9 +1729,8 @@
     .option-item {
       font-size: 12px;
       padding: 8px 8px;
-   
+
     }
-  
     .breadcrums {
       display: block;
     }
@@ -1827,6 +1826,21 @@
     background-color:white;
     display:flex;
     flex-direction:column;
+  }
+
+  .dataTables_wrapper .dataTables_filter label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* display: none; */
+  }
+  
+  /* Ubah lebar input pencarian */
+  .dataTables_wrapper .dataTables_filter input[type=search] {
+    width: 5000 px;
+    max-width: 100%;
+    padding-right: 0;
+    background-image: none;
   }
   }
   
