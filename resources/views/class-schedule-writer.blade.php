@@ -19,6 +19,7 @@
                         <tr>
                             <th>Nama Kelas</th>
                             <th>Harga Kelas</th>
+                            <th>Jadwal Kelas</th>
                             <th>Lokasi Belajar</th>
                             <th>Aksi</th>
                         </tr>
@@ -45,11 +46,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -75,11 +81,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -105,11 +116,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -135,11 +151,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -165,11 +186,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -195,11 +221,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -223,11 +254,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -251,11 +287,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -279,11 +320,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -307,11 +353,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
                         </tr>
@@ -335,12 +386,16 @@
                                 </p>
                             </td>
                             <td>
+                                <p>
+                                Online
+                                </p>
+                            </td>
+                            <td>
                                 <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
                                 <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear"></i>
-                                </button>
+                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                             </td>
                         </tr>                      
 
@@ -441,7 +496,7 @@
                     <div class="d-flex">
                         <div class="input-container col-md-6">
                             <label class="form-check-label" for="nama_kelas">Nama Kelas</label>
-                            <input class="form-control" type="text" id="nama_kelas" value="" placeholder="Nama">
+                            <input class="form-control" type="text" id="nama_kelas" value="" placeholder="Masukkan Nama Kelas disini">
                         </div>
                         <div class="input-container col-md-6">
                             <label class="form-check-label" for="thumbnail">Cover Kelas</label>
@@ -451,30 +506,30 @@
 
                     <div class="input-container">
                         <label class="form-check-label" for="harga">Harga Kelas</label>
-                        <input class="form-control" type="number" id="harga" name="harga" value="" placeholder="Rp." step="1" min="0" max="100" value="50">
+                        <input class="form-control" type="number" id="harga" name="harga" value="" placeholder="Rp. xxxxxxx" step="1" min="0" max="100" value="50">
                     </div>
 
                     <div class="input-container">
                         <label class="form-check-label" for="jadwal">Jadwal Kelas</label>
                         <div class="d-flex">
-                            {{-- <input class="form-control" type="date" id="start-date" name="start-date" placeholder="Masukan Tanggal Mulai"  min="1945-01-01" max="2100-12-31">
-                            <input class="form-control" type="date" id="end-date" name="end-date" placeholder="Masukan Tanggal akhir" min="1945-01-01" max="2100-12-31">
-                            <input class="form-control" type="time" id="time-date" name="time-date" placeholder="Masukan Waktu"> --}}
-                            <select class="form-select" aria-label="Default select example">
+                            <input class="form-control" type="date" id="start-date" name="start-date" placeholder="Pilih Tanggal Mulai"  min="1945-01-01" max="2100-12-31">
+                            <input class="form-control" type="date" id="end-date" name="end-date" placeholder="Pilih Tanggal Akhir" min="1945-01-01" max="2100-12-31">
+                            <input class="form-control" type="time" id="time-date" name="time-date" placeholder="Tentukan Jam kelas">
+                            {{-- <select class="form-select" aria-label="Default select example">
                                 <option selected >Pilih tanggal mulai dan akhir</option>
                                 <option value="1 Januari 2020">1 Januari 2020</option>
-                            </select>
-                            <select class="form-select" aria-label="Default select example">
+                            </select> --}}
+                            {{-- <select class="form-select" aria-label="Default select example">
                                 <option selected>Tentukan Jam kelas</option>
                                 <option value="23:01">23:01</option>
-                            </select>
+                            </select> --}}
                         </div>
                     </div>
 
                     <div class="input-container">
                         <label class="form-check-label" for="kategori">Kategori Kelas</label>
                         <select class="form-select" aria-label="Default select example">
-                            <option selected>Pilih kategori kelas yang ingin ditambahkan</option>
+                            <option selected class="style = color: #CCCCCC;">Pilih kategori kelas yang ingin ditambahkan</option>
                             <option value="example1">example1</option>
                             <option value="example2">example2</option>
                         </select>
@@ -483,7 +538,7 @@
                     <div class="input-container">
                         <label class="form-check-label" for="bidang">Bidang Keahlian</label>
                         <select class="form-select" aria-label="Default select example">
-                            <option selected>Pilih Lokasi bidang kehlian kelas</option>
+                            <option selected class="style=color: #CCCCCC;">Pilih Lokasi bidang kehlian kelas</option>
                             <option value="example1">example1</option>
                             <option value="example2">example2</option>
                         </select>
