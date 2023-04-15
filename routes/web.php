@@ -94,6 +94,10 @@ Route::get('/blog/testimoni-writer', [FeatureController::class, 'testimoni'])->n
     'testimoni-writer'
 );
 
+Route::get('/blog/detail-mentor', [FeatureController::class, 'detailMentor'])->name(
+    'detail-mentor'
+);
+
 
 //Login feature
 Route::get('/login', [LoginController::class, 'index'])

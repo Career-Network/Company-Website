@@ -49,6 +49,10 @@
                 @if ($title === 'Testimoni')
                     <h1 class="heading">Testimoni</h1>
                 @endif
+                
+                @if ($title === 'Mentor')
+                    <h1 class="heading">Mentor</h1>
+                @endif
 
                 @if ($title === 'Kelas')
                     <h1 class="heading" style="font-style: bold; ">Kelas</h1>
