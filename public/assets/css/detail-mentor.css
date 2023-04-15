@@ -2539,7 +2539,7 @@ letter-spacing: 0em;
   /* background: pink; */
     }
   aside {
-    flex: 0.2;
+   display:none;
   }
 .mobile-section-header img {
     height: 40px !important;
@@ -2922,6 +2922,9 @@ padding: 8px 15px 8px 15px;  */
     display: none;
   } 
 
+   aside {
+   display:none;
+  }
 
 .dataTables_wrapper  .row {
 
