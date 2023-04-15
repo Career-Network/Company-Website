@@ -2519,9 +2519,12 @@ letter-spacing: 0em;
   /* background: #f6faff; */
   /* background: pink; */
     }
-  aside {
-    flex: 0.2;
+      aside {
+    display:none;
   }
+  /* aside {
+    flex: 0.2;
+  } */
 .mobile-section-header img {
     height: 40px !important;
     width: 90px !important;
@@ -2883,6 +2886,9 @@ padding: 8px 15px 8px 15px;  */
 
 
 @media (max-width: 768px) {
+  aside {
+    display:none;
+  }
  aside img.company-logo {
     display: none;
   } 
