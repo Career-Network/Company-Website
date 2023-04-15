@@ -13,11 +13,11 @@ class MentorController extends Controller
     public function store(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            'mentor_name' => 'required',
-            'current_job' => 'required',
-            'expertise' => 'required',
-            'mentor_about' => 'required',
-            'mentor_pic' => 'image|mimes:webp,png,jpg|max:5000',
+            'mentor_name'   => 'required',
+            'current_job'   => 'required',
+            'expertise'     => 'required',
+            'mentor_about'  => 'required',
+            'mentor_pic'    => 'image|mimes:webp|max:5000',
         ]);
 
         if ($validation->fails()) {
@@ -28,12 +28,12 @@ class MentorController extends Controller
         }
 
         $testData = Mentor::create([
-            'mentor_name' => $request->mentor_name,
-            'current_job' => $request->current_job,
-            'expertise' => $request->expertise,
+            'mentor_name'  => $request->mentor_name,
+            'current_job'  => $request->current_job,
+            'expertise'    => $request->expertise,
             'mentor_about' => $request->mentor_about,
-            'mentor_pic' => $request->file('mentor_pic') == null ? 'null' : $request->file('mentor_pic')->store('public/mentor'),
-            'kelas_id' => $request->kelas_id,
+            'mentor_pic'   => $request->file('mentor_pic') == null ? 'null' : $request->file('mentor_pic')->store('public/mentor'),
+            'kelas_id'     => $request->kelas_id,
         ]);
 
         return redirect()->route('detail-mentor');
@@ -42,11 +42,11 @@ class MentorController extends Controller
     public function update(Request $request, $id)
     {
         $validation = Validator::make($request->all(), [
-            'mentor_name' => 'required',
-            'current_job' => 'required',
-            'expertise' => 'required',
+            'mentor_name'  => 'required',
+            'current_job'  => 'required',
+            'expertise'    => 'required',
             'mentor_about' => 'required',
-            'mentor_pic' => 'image|mimes:webp,png,jpg|max:5000',
+            'mentor_pic'   => 'image|mimes:webp|max:5000',
         ]);
 
         if ($validation->fails()) {
@@ -66,12 +66,12 @@ class MentorController extends Controller
         }
 
         $mentor->update([
-            'mentor_name' => $request->mentor_name,
-            'current_job' => $request->current_job,
-            'expertise' => $request->expertise,
+            'mentor_name'  => $request->mentor_name,
+            'current_job'  => $request->current_job,
+            'expertise'    => $request->expertise,
             'mentor_about' => $request->mentor_about,
-            'mentor_pic' => $image,
-            'kelas_id' => $request->kelas_id,
+            'mentor_pic'   => $image,
+            'kelas_id'     => $request->kelas_id,
         ]);
 
         return redirect()->route('detail-mentor');

@@ -14,10 +14,10 @@ class TestimoniController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'participant_name' => 'required',
-            'class_name' => 'required',
-            'testimonial' => 'required',
-            'participant_pic' => 'image|mimes:webp,png,jpg|max:5000',
-            // 'participant_prof' => 'required',
+            'class_name'       => 'required',
+            'testimonial'      => 'required',
+            'participant_pic'  => 'image|mimes:webp,png,jpg|max:5000',
+            'participant_prof' => 'required',
         ]);
 
         if ($validation->fails()) {
@@ -28,14 +28,14 @@ class TestimoniController extends Controller
         }
 
         Testimony::create([
-            'participant_name' => $request->participant_name,
-            'class_name' => $request->class_name,
-            'testimonial' => $request->testimonial,
-            'participant_pic' => $request->file('participant_pic') == null ? 'null' : $request->file('participant_pic')->store('public/testimoni'),
-            'kelas_id' => $request->kelas_id,
+            'participant_name'      => $request->participant_name,
+            'class_name'            => $request->class_name,
+            'testimonial'           => $request->testimonial,
+            'participant_pic'       => $request->file('participant_pic') == null ? 'null' : $request->file('participant_pic')->store('public/testimoni'),
+            'kelas_id'              => $request->kelas_id,
             'featured_landing_page' => $request->featured_landing_page == null ? '0' : $request->featured_landing_page,
-            'featured_class_page' => $request->featured_class_page == null ? '0' : $request->featured_class_page,
-            'participant_prof' => 'testing data',
+            'featured_class_page'   => $request->featured_class_page == null ? '0' : $request->featured_class_page,
+            'participant_prof'      => $request->participant_prof,
         ]);
 
         return redirect()->route('testimoni-writer')->with(['success' => 'success message']);
@@ -45,10 +45,10 @@ class TestimoniController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'participant_name' => 'required',
-            'class_name' => 'required',
-            'testimonial' => 'required',
-            'participant_pic' => 'image|mimes:webp,png,jpg|max:5000',
-            // 'participant_prof' => 'required',
+            'class_name'       => 'required',
+            'testimonial'      => 'required',
+            'participant_pic'  => 'image|mimes:webp,png,jpg|max:5000',
+            'participant_prof' => 'required',
         ]);
 
         if ($validation->fails()) {
@@ -69,13 +69,13 @@ class TestimoniController extends Controller
         }
 
         $testimoni->update([
-            'participant_name' => $request->participant_name,
-            'class_name' => $request->class_name,
-            'testimonial' => $request->testimonial,
-            'participant_pic' => $image,
+            'participant_name'      => $request->participant_name,
+            'class_name'            => $request->class_name,
+            'testimonial'           => $request->testimonial,
+            'participant_pic'       => $image,
             'featured_landing_page' => $request->featured_landing_page == null ? '0' : $request->featured_landing_page,
-            'featured_class_page' => $request->featured_class_page == null ? '0' : $request->featured_class_page,
-            'participant_prof' => 'testing data',
+            'featured_class_page'   => $request->featured_class_page == null ? '0' : $request->featured_class_page,
+            'participant_prof'      => $request->participant_prof,
         ]);
 
         return redirect()->route('testimoni-writer');

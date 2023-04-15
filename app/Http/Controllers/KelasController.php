@@ -12,16 +12,16 @@ class KelasController extends Controller
     public function store(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            'kelas_cover' => 'image|mimes:webp,png,jpg|max:5000',
+            'kelas_cover'    => 'image|mimes:webp|max:5000',
             'kelas_category' => 'required',
-            'description' => 'required',
-            'kelas_title' => 'required',
-            'kelas_about' => 'required',
-            'kelas_price' => 'required',
-            'kelas_loc' => 'required',
-            'start_date' => 'required',
-            'end_date' => 'required',
-            'syllabus' => 'required',
+            'description'    => 'required',
+            'kelas_title'    => 'required',
+            'kelas_about'    => 'required',
+            'kelas_price'    => 'required',
+            'kelas_loc'      => 'required',
+            'start_date'     => 'required',
+            'end_date'       => 'required',
+            'syllabus'       => 'required',
         ]);
 
         if ($validation->fails()) {
@@ -32,16 +32,16 @@ class KelasController extends Controller
         }
 
         $testData = Kelas::create([
-            'kelas_cover' => $request->file('kelas_cover') == null ? 'null' : $request->file('kelas_cover')->store('public/kelas'),
+            'kelas_cover'    => $request->file('kelas_cover') == null ? 'null' : $request->file('kelas_cover')->store('public/kelas'),
             'kelas_category' => $request->kelas_category,
-            'description' => $request->description,
-            'kelas_title' => $request->kelas_title,
-            'kelas_about' => $request->kelas_about,
-            'kelas_price' => $request->kelas_price,
-            'kelas_loc' => $request->kelas_loc,
-            'start_date' => $request->start_date,
-            'end_date' => $request->end_date,
-            'syllabus' => $request->syllabus,
+            'description'    => $request->description,
+            'kelas_title'    => $request->kelas_title,
+            'kelas_about'    => $request->kelas_about,
+            'kelas_price'    => $request->kelas_price,
+            'kelas_loc'      => $request->kelas_loc,
+            'start_date'     => $request->start_date,
+            'end_date'       => $request->end_date,
+            'syllabus'       => $request->syllabus,
         ]);
 
         return redirect()->route('classSchedule-writer');
@@ -50,16 +50,16 @@ class KelasController extends Controller
     public function update(Request $request, $id)
     {
         $validation = Validator::make($request->all(), [
-            'kelas_cover' => 'image|mimes:webp,png,jpg|max:5000',
+            'kelas_cover'    => 'image|mimes:webp|max:5000',
             'kelas_category' => 'required',
-            'description' => 'required',
-            'kelas_title' => 'required',
-            'kelas_about' => 'required',
-            'kelas_price' => 'required',
-            'kelas_loc' => 'required',
-            'start_date' => 'required',
-            'end_date' => 'required',
-            'syllabus' => 'required',
+            'description'    => 'required',
+            'kelas_title'    => 'required',
+            'kelas_about'    => 'required',
+            'kelas_price'    => 'required',
+            'kelas_loc'      => 'required',
+            'start_date'     => 'required',
+            'end_date'       => 'required',
+            'syllabus'       => 'required',
         ]);
 
         if ($validation->fails()) {
@@ -79,16 +79,16 @@ class KelasController extends Controller
         }
 
         $kelas->update([
-            'kelas_cover' => $image,
+            'kelas_cover'    => $image,
             'kelas_category' => $request->kelas_category,
-            'description' => $request->description,
-            'kelas_title' => $request->kelas_title,
-            'kelas_about' => $request->kelas_about,
-            'kelas_price' => $request->kelas_price,
-            'kelas_loc' => $request->kelas_loc,
-            'start_date' => $request->start_date,
-            'end_date' => $request->end_date,
-            'syllabus' => $request->syllabus,
+            'description'    => $request->description,
+            'kelas_title'    => $request->kelas_title,
+            'kelas_about'    => $request->kelas_about,
+            'kelas_price'    => $request->kelas_price,
+            'kelas_loc'      => $request->kelas_loc,
+            'start_date'     => $request->start_date,
+            'end_date'       => $request->end_date,
+            'syllabus'       => $request->syllabus,
         ]);
         
         return redirect()->route('classSchedule-writer');
