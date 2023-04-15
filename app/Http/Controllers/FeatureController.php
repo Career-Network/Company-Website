@@ -229,7 +229,7 @@ class FeatureController extends Controller
     }
     public function classSchedule() {
         $kelas = Kelas::get();
-        return view('classSchedule-writer', [
+        return view('class-schedule-writer', [
             'kelas' => $kelas,
         ]);
     }
