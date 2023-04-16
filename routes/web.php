@@ -98,6 +98,9 @@ Route::delete('/blog/class-schedule/{id}', [KelasController::class, 'destroy'])-
 Route::get('/blog/testimoni-writer', [FeatureController::class, 'testimoni'])->name(
     'testimoni-writer'
 );
+Route::post('/blog/testimoni', [TestimoniController::class, 'store'])->name('store-testimoni');
+Route::put('/blog/testimoni/{id}', [TestimoniController::class, 'update'])->name('update-testimoni');
+Route::delete('/blog/testimoni/{id}', [TestimoniController::class, 'destroy'])->name('destroy-testimoni');
 
 // Mentor
 Route::get('/blog/detail-mentor', [FeatureController::class, 'detailMentor'])->name(

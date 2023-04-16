@@ -35,7 +35,6 @@
                     </thead>
                     <tbody class="table-mentor-body">
                         
-                        {{-- row 1 --}}
                         @foreach($kelas as $data)
                         <tr class="trow-mentor">
                             <td>
@@ -431,13 +430,13 @@ tinymce.init({
 
 
         $(document).ready(function() {
-            $('#btn-action').click(function(){
-               $('#item-error').modal('show');
-            });
+            // $('#btn-action').click(function(){
+            //    $('#item-error').modal('show');
+            // });
 
-             $('#btn-action-change').click(function(){
-               $('#item-error').modal('show');
-            });
+            //  $('#btn-action-change').click(function(){
+            //    $('#item-error').modal('show');
+            // });
 
 
             $('#item-error').on('shown.bs.modal', function () {

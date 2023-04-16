@@ -5,6 +5,15 @@
 ])
 
 @section('content')
+@if(count($errors) > 0)
+    <div class="alert alert-danger" id="alert-danger">
+        error input form please check again.
+    </div>
+@elseif(session()->has('success'))
+    <div class="alert alert-success" id="alert-danger">
+        {{ session('success') }}
+    </div>
+ @endif
     <div class="blog-section">
         <section class="header-blogs">
             <h1 class="heading ">Semua Testimoni</h1>
@@ -45,102 +54,177 @@
                 </thead>
                 <tbody class="mw-100">
                   
-                    {{-- row 1 --}}
+                    @foreach($testimoni as $data)
                     <tr class="trow-mentor">
                         <td  class="bg-white tab-prof">
                             <div class="profile">
                                 <div class="profile-picture  ">
-                                    <img  src="{{ asset('assets/img/detail-mentor/mentor-1.png') }}" />
+                                    <img  src="{{ asset(Storage::url($data->participant_pic)) }}" width="48" height="48"/>
                                 </div>
                                 <div class="profile-name">
-                                     Rachel Samatnha
+                                     {{$data->participant_name}}
                                 </div>
                             </div>
                         </td>
                         <td>
                             <div class="class-box">
-                                Mahasiswa
+                                {{$data->participant_prof}}
                             </div>
                         </td>
                         <td>
                             <div class="class-box gap-2">
-                                <div class="class-img">
-                                    <img src="{{ asset('assets/img/detail-mentor/kelas-1.png') }}" />
+                                <div class="class-img" style="margin-top:-1rem;">
+                                    <img src="{{ asset('assets/img/detail-mentor/kelas-1.png') }}" width="48" height="48"/>
                                 </div>
                                 <div class="class-name">
-                                    Digital Marketing
+                                    {{$data->class_name}}
                                 </div>
                             </div>
                         </td>
                         <td class="profile nopadding nomargin">
                              <div class="profile-name class-break-word text-wrap">
                              
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                              {!! (strip_tags(substr($data->testimonial, 0, 90))) !!}  ...
                             </div>
 
                                
                         </td>
                         <td>
-                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete{{$data->id}}">
                                 <i class="fas fa-trash-alt"></i>
                             </button>
-                            <button class="btn btn-warning text-white" data-bs-toggle="modal" data-bs-target="#item-edit">
+                            <button class="btn btn-warning text-white" data-bs-toggle="modal" data-bs-target="#item-edit{{$data->id}}">
                                 <i class="fa-solid fa-gear"></i>
                             </button>
                         </td>
                     </tr>
 
-                    {{-- row 2 --}}
-                    <tr class="trow-mentor">
-                      <td>
-                          <div class="profile">
-                              <div class="profile-picture">
-                                  <img src="{{ asset('assets/img/detail-mentor/mentor-1.png') }}" />
-                              </div>
-                              <div class="profile-name">
-                                  Samantha Racgel
-                              </div>
-                          </div>
-                      </td>
-                      <td>
-                          <div class="class-box">
-                                Mahasiswa
+                      <!-- Modal Delete -->
+                      <div class="modal modal-close fade" id="item-delete{{$data->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content modal-bs modal-content-close">
+                            <div class="modal-head modal-head-close">
+                              <h1 class="modal-title fs-5 font-22" id="exampleModalLabel">
+                                Apakah anda  yakin akan menghapus testimoni ini?
+                              </h1>
+                              <p>Semua data akan hilang</p>
                             </div>
-                     
-                      </td>
-                      
-                             
-                      <td>
-                          <div class="class-box gap-2">
-                              <div class="class-img">
-                                  <img src="{{ asset('assets/img/detail-mentor/kelas-1.png') }}" />
-                              </div>
-                              <div class="class-name">
-                                  Digital Marketing
-                              </div>
-                          </div>
-                      </td>
-                      <td  class="profile nopadding nomargin">
-                          <div class="profile-name class-break-word text-wrap ">
-                       
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                       
-                            
+                            <div class="modal-content modal-content-close">
+                              <form class="form-header-mentor" method="POST" action="{{ route('destroy-testimoni', $data->id) }}" >
+                              @csrf
+                              @method('delete')
+                                <button type="submit" class="option-item delete" id="btn-action">
+                                    <span>Hapus</span>
+                                </button>
+                              </form>
+                                <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+                                    <span>Batalkan</span>
+                                </button>
                             </div>
-                     
-                       
-                      </td>
-                      <td>
-                          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
-                              <i class="fas fa-trash-alt"></i></button>
- 
-                          <button class="btn btn-warning text-white" data-bs-toggle="modal" data-bs-target="#item-edit">
-                              <i class="fa-solid fa-gear"></i>
-                          </button>
-                      </td>
-                  </tr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Modal Edit -->
+                      <div class="modal fade" id="item-edit{{$data->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content px-4 py-3 align-items-center">
+                            <div class="modal-header px-0 py-3 w-100">
+                                <h1 class="modal-title font-24 px-0 fs-5" id="exampleModalLabel">Update Testimoni</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body px-0  w-100">
+                                <form class="form-header-mentor" method="POST" action="{{ route('update-testimoni', $data->id) }}" enctype="multipart/form-data">
+                                  @csrf
+                                  @method('put')
+                                       <div class="input-container">
+                                      <label class="form-check-label font-16" for="nama">Nama</label>
+                                      <input class="form-control @error('participant_name') is-invalid @enderror" type="text" name="participant_name" id="nama" value="{{ $data->participant_name }}" placeholder="Nama">
+                                        @error('participant_name')
+                                            <div class="invalid-feedback">
+                                              {{$message}}
+                                            </div>
+                                        @enderror
+                                    </div>
+
+                                     <div class="input-container">
+                                      <label class="form-check-label font-16" for="photoProfile">Photo Profile</label>
+                                      <input class="form-control @error('participant_pic') is-invalid @enderror" name="participant_pic" type="file" id="photoProfile" accept="image/webp">
+                                        @error('participant_pic')
+                                            <div class="invalid-feedback">
+                                              {{$message}}
+                                            </div>
+                                        @enderror
+                                    </div>
+
+                                    <div class="input-container">
+                                      <label class="form-check-label font-16" for="profesi">Profesi</label>
+                                      <input class="form-control font-bold @error('participant_prof') is-invalid @enderror" type="text" name="participant_prof" id="profesi" value="{{$data->participant_prof}}">
+                                        @error('participant_prof')
+                                            <div class="invalid-feedback">
+                                              {{$message}}
+                                            </div>
+                                        @enderror
+                                    </div>
+
+
+                                     <div class="input-container">
+                                      <label class="form-check-label font-16" for="kelas">Kelas</label>
+                                        <select class="form-select form-control font-grey @error('class_name') is-invalid @enderror" aria-label="Default select example" name="class_name">
+                                             <option value="" selected disabled>Pilih Kelas</option>
+                                              @foreach($kelas as $dataKelas)
+                                              <option value="{{$dataKelas->kelas_title}}" {{ $dataKelas->kelas_title == $data->class_name ? 'selected' : '' }}>{{$dataKelas->kelas_title}}</option>
+                                              @endforeach
+                                      </select>
+                                        @error('class_name')
+                                            <div class="invalid-feedback">
+                                            {{$message}}
+                                            </div>
+                                        @enderror
+                                    </div>
+
+                                     <div class="input-container">
+                                      <label class="form-check-label font-16" for="display">Display</label>
+                                      <div class="display-warna">
+                                        <div class="display-item" >
+                                            <input type="checkbox" class="form-check-input" id="itemInput" name="featured_landing_page" value="1" {{ $data->featured_landing_page == 1 ? 'checked' : '' }}>
+                                             <label for="tagar font-16"> Landing Page</label>
+                                        </div>
+                                        <div class="display-item-class" >
+                                            <input type="checkbox" class="form-check-input" id="itemInput" name="featured_class_page" value="1" {{ $data->featured_class_page == 1 ? 'checked' : '' }}>
+                                             <label for="tagar font-16"> Class Page</label>
+                                        </div>
+                                
+                                
+                                      </div>
+                                     
+                                    </div>
+
+
+                                          <div class="input-container">
+                                            <label class="form-check-label" for="detail">Review</label>
+                                            <textarea class="@error('testimonial') is-invalid @enderror" id="detail" name="testimonial">{{$data->testimonial}}</textarea>
+                                            @error('testimonial')
+                                                <div class="invalid-feedback">
+                                                {{$message}}
+                                                </div>
+                                            @enderror
+                                          </div>
+
+                                       <div class="button-section">
+                                          <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+                                              <span>Batalkan</span>
+                                          </button>
+                                          <button type="submit" class="option-item create-blog mt-3">
+                                              <span>Update Testimoni</span>
+                                          </button>
+                                     </div>
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
 
                 </tbody>
                 {{-- <tfoot>
@@ -159,27 +243,6 @@
 
 
     </div>
-  <!-- modal -->
-    <div class="modal modal-close fade" id="item-delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content modal-bs modal-content-close">
-        <div class="modal-head modal-head-close">
-          <h1 class="modal-title fs-5 font-22" id="exampleModalLabel">
-            Apakah anda  yakin akan menghapus testimoni ini?
-          </h1>
-          <p>Semua data akan hilang</p>
-        </div>
-        <div class="modal-content modal-content-close">
-          <button href="" class="option-item delete" id="btn-action">
-              <span>Hapus</span>
-          </button>
-          <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-              <span>Batalkan</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
 
    <div class="modal modal-close fade" id="item-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -233,45 +296,63 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body px-0  w-100">
-                <form action="" class="form-header-mentor">
+                <form class="form-header-mentor" method="POST" action="{{ route('store-testimoni') }}" enctype="multipart/form-data">
+                    @csrf
                        <div class="input-container">
                       <label class="form-check-label font-16" for="nama">Nama</label>
-                      <input class="form-control" type="text" id="nama" value="" placeholder="Nama">
+                      <input class="form-control @error('participant_name') is-invalid @enderror" type="text" name="participant_name" id="nama" value="{{ old('participant_name') }}" placeholder="Nama">
+                        @error('participant_name')
+                            <div class="invalid-feedback">
+                              {{$message}}
+                            </div>
+                        @enderror
                     </div>
 
                      <div class="input-container">
                       <label class="form-check-label font-16" for="photoProfile">Photo Profile</label>
-                      <input class="form-control" type="file" id="photoProfile">
+                      <input class="form-control @error('participant_pic') is-invalid @enderror" name="participant_pic" type="file" id="photoProfile" accept="image/webp">
+                        @error('participant_pic')
+                            <div class="invalid-feedback">
+                              {{$message}}
+                            </div>
+                        @enderror
                     </div>
 
                     <div class="input-container">
                       <label class="form-check-label font-16" for="profesi">Profesi</label>
-                      <input class="form-control font-bold" type="text" id="profesi" value="Mahasiswa">
+                      <input class="form-control font-bold @error('participant_prof') is-invalid @enderror" type="text" name="participant_prof" id="profesi" value="{{ old('participant_prof') }}">
+                        @error('participant_prof')
+                            <div class="invalid-feedback">
+                              {{$message}}
+                            </div>
+                        @enderror
                     </div>
 
 
                      <div class="input-container">
                       <label class="form-check-label font-16" for="kelas">Kelas</label>
-                        <select class="form-select form-control font-grey" aria-label="Default select example">
-                             <option selected >Pilih kelas</option>
-                                 <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
+                        <select class="form-select form-control font-grey @error('class_name') is-invalid @enderror" aria-label="Default select example" name="class_name">
+                             <option value="" selected disabled>Pilih Kelas</option>
+                              @foreach($kelas as $data)
+                              <option {{ old('class_name') == $data->kelas_title ? "selected" : "" }} value="{{$data->kelas_title}}">{{$data->kelas_title}}</option>
+                              @endforeach
                       </select>
-
-
+                        @error('class_name')
+                            <div class="invalid-feedback">
+                            {{$message}}
+                            </div>
+                        @enderror
                     </div>
 
                      <div class="input-container">
                       <label class="form-check-label font-16" for="display">Display</label>
                       <div class="display-warna">
                         <div class="display-item" >
-                            <input type="checkbox" class="form-check-input" id="itemInput" name="" value="">
+                            <input type="checkbox" class="form-check-input" id="itemInput" name="featured_landing_page" value="1">
                              <label for="tagar font-16"> Landing Page</label>
                         </div>
                         <div class="display-item-class" >
-                            <input type="checkbox" class="form-check-input" id="itemInput" name="" value="">
+                            <input type="checkbox" class="form-check-input" id="itemInput" name="featured_class_page" value="1">
                              <label for="tagar font-16"> Class Page</label>
                         </div>
                 
@@ -283,14 +364,19 @@
 
                           <div class="input-container">
                             <label class="form-check-label" for="detail">Review</label>
-                            <textarea id="detail"></textarea>
+                            <textarea class="@error('testimonial') is-invalid @enderror" id="detail" name="testimonial"></textarea>
+                            @error('testimonial')
+                                <div class="invalid-feedback">
+                                {{$message}}
+                                </div>
+                            @enderror
                           </div>
 
                        <div class="button-section">
                           <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
                               <span>Batalkan</span>
                           </button>
-                          <button href="" class="option-item create-blog mt-3" data-bs-dismiss="modal" aria-label="Close">
+                          <button type="submit" class="option-item create-blog mt-3">
                               <span>Upload Testimoni</span>
                           </button>
                      </div>
@@ -333,13 +419,13 @@
         $(document).ready(function() {
 
 
-            $('#btn-action').click(function(){
-               $('#item-error').modal('show');
-            });
+            // $('#btn-action').click(function(){
+            //    $('#item-error').modal('show');
+            // });
 
-             $('#btn-action-change').click(function(){
-               $('#item-error').modal('show');
-            });
+            //  $('#btn-action-change').click(function(){
+            //    $('#item-error').modal('show');
+            // });
 
 
             $('#item-error').on('shown.bs.modal', function () {
@@ -412,5 +498,33 @@
             dropdown.append($('<option value="Kelas">Kelas</option>'));
             dropdown.append($('<option value="Review">Review</option>'));
         });
+
+        $(".alert").delay(4000).slideUp(200, function() {
+            $(this).alert('close');
+        });
+
+        $("input[data-type='currency']").keyup(function(event) {
+            if(event.which >= 37 && event.which <= 40) return;
+            $(this).val(function(index, value) {
+            return value
+            .replace(/\D/g, "")
+            .replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+            ;
+            });
+        });
     </script>
+    @if(count($errors) > 0 && session()->has('update'))
+    <script>
+      var idModal = "{{ Session::get('update') }}"
+      $(document).ready(function() {
+        $('#'+idModal).modal('show')
+      });
+    </script>
+    @elseif(count($errors) > 0)
+    <script>
+      $(document).ready(function() {
+        $('#createMentorModal').modal('show')
+      });
+    </script>
+    @endif
 @endsection
