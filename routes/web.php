@@ -86,14 +86,20 @@ Route::post('/blog/uploaded/delete', [FeatureController::class, 'destroyBlog'])-
 Route::post('/blog/uploaded/update', [FeatureController::class, 'updateBlog'])->name('update-blog');
 Route::post('/blog/upload-image', [FeatureController::class, 'uploadImage']);
 
+// Kelas
 Route::get('/blog/class-schedule', [FeatureController::class, 'classSchedule'])->name(
     'class-schedule-writer'
 );
+Route::post('/blog/class-schedule', [KelasController::class, 'store'])->name('store-kelas');
+Route::put('/blog/class-schedule/{id}', [KelasController::class, 'update'])->name('update-kelas');
+Route::delete('/blog/class-schedule/{id}', [KelasController::class, 'destroy'])->name('destroy-kelas');
 
+// Testomoni
 Route::get('/blog/testimoni-writer', [FeatureController::class, 'testimoni'])->name(
     'testimoni-writer'
 );
 
+// Mentor
 Route::get('/blog/detail-mentor', [FeatureController::class, 'detailMentor'])->name(
     'detail-mentor'
 );

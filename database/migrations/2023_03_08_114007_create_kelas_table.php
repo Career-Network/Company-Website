@@ -20,7 +20,7 @@ return new class extends Migration
             $table->longText('description');
             $table->string('kelas_title');
             $table->string('kelas_about');
-            $table->decimal('kelas_price', 6, 3);
+            $table->char('kelas_price');
             $table->string('kelas_loc');
             $table->date('start_date');
             $table->date('end_date');

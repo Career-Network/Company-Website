@@ -5,6 +5,15 @@
 ])
 
 @section('content')
+@if(count($errors) > 0)
+    <div class="alert alert-danger" id="alert-danger">
+        error input form please check again.
+    </div>
+@elseif(session()->has('success'))
+    <div class="alert alert-success" id="alert-danger">
+        {{ session('success') }}
+    </div>
+ @endif
     {{-- CALENDAR SECTION --}}
     <div class="blog-section">
         <section class="schedule-section">
@@ -27,379 +36,177 @@
                     <tbody class="table-mentor-body">
                         
                         {{-- row 1 --}}
+                        @foreach($kelas as $data)
                         <tr class="trow-mentor">
                             <td>
                             <div class="class-box">
-                                <div class="class-img">
-                                    <img src="{{ asset('assets/img/detail-mentor/kelas-1.png') }}" />&nbsp
-                                        Digital Marketing
+                                <div class="class-img" style="margin-top:-1rem;">
+                                    <img src="{{ asset(Storage::url($data->kelas_cover)) }}" width="48" height="48"/>&nbsp
+                                        {{$data->kelas_title}}
                                 </div>
                                 
                             </div>
                             </td>
                             <td>
-                                <p>Rp. 125.000</p>
+                                <p>Rp. {{$data->kelas_price}}</p>
                             </td>
                             <td>
                                 <p>
-                                27 Februari - 4 Maret 2023
+                                {{ date('j M', strtotime($data->start_date)) }} - {{ date('j M Y', strtotime($data->end_date)) }}
                                 </p>
                             </td>
                             <td>
                                 <p>
-                                Online
+                                {{$data->kelas_loc}}
                                 </p>
                             </td>
                             <td>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
+                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete{{$data->id}}">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
+                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit{{$data->id}}">
                                     <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
                                 </button>
                             </td>
-                        </tr>
+                        </tr>                  
 
-                        {{-- row 2 --}}
-                        <tr class="trow-mentor">
-                            <td>
-                            <div class="class-box">
-                                <div class="class-img">
-                                    <img src="{{ asset('assets/img/kelas/grapic.png') }}"/>
+                        <!-- Modal Delete -->
+                        <div class="modal modal-close fade" id="item-delete{{$data->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content modal-bs modal-content-close">
+                                <div class="modal-head modal-head-close">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda  yakin akan menghapus Kelas {{$data->kelas_title}}?</h1>
+                                <p>Semua data akan hilang</p>
                                 </div>
-                                <div class="class-name">
-                                    &nbsp; Graphic Design
+                                <div class="modal-content modal-content-close">
+                                    <form class="form-header-mentor" method="POST" action="{{ route('destroy-kelas', $data->id) }}" >
+                                        @csrf
+                                        @method('delete')
+                                        <button type="submit" class="option-item delete" id="btn-action">
+                                            <span>Hapus</span>
+                                        </button>
+                                    </form>
+                                    <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+                                        <span>Batalkan</span>
+                                    </button>
                                 </div>
                             </div>
-                            </td>
-                            <td>
-                                <p>Rp. 125.000</p>
-                            </td>
-                            <td>
-                                <p class="class-date">
-                                    4 Maret - 12 Maret 2023
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                Online
-                                </p>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
-                                </button>
-                            </td>
-                        </tr>
+                            </div>
+                        </div>
 
-                        {{-- row 3 --}}
-                        <tr class="trow-mentor">
-                            <td>
-                            <div class="class-box">
-                                <div class="class-img">
-                                    <img src="{{ asset('assets/img/kelas/ms.png') }}" />
+                        <!-- Modal Edit -->
+                        <div class="modal modal-lg fade" id="item-edit{{$data->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Ubah Kelas</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="class-name">
-                                    &nbsp; Microsoft Office Excel
-                                </div>
-                            </div>
-                            </td>
-                            <td>
-                                <p>Rp. 125.000</p>
-                            </td>
-                            <td>
-                                <p class="class-date">
-                                27 Februari - 4 Maret 2023
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                Online
-                                </p>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
-                                </button>
-                            </td>
-                        </tr>
+                                <div class="modal-body">
+                                    <form class="form-header-mentor" method="POST" action="{{ route('update-kelas', $data->id) }}" enctype="multipart/form-data">
+                                        @csrf
+                                        @method('put')
+                                        <div class="d-flex">
+                                            <div class="input-container col-md-6">
+                                                <label class="form-check-label" for="nama_kelas">Nama Kelas</label>
+                                                <input class="form-control @if(session()->has('update')) @error('kelas_title') is-invalid @enderror @endif" type="text" name="kelas_title" id="nama_kelas" value="{{ $data->kelas_title }}" placeholder="Masukkan Nama Kelas disini">
+                                                @error('kelas_title')
+                                                <div class="invalid-feedback">
+                                                    {{$message}}
+                                                </div>
+                                                @enderror
+                                            </div>
+                                            <div class="input-container col-md-6">
+                                                <label class="form-check-label" for="thumbnail">Cover Kelas</label>
+                                                <input class="form-control @if(session()->has('update')) @error('kelas_cover') is-invalid @enderror @endif" type="file" name="kelas_cover" value="{{ $data->kelas_cover }}" id="thumbnail" placeholder="Masukan file foto" accept="image/webp">
+                                                @error('kelas_cover')
+                                                <div class="invalid-feedback">
+                                                    {{$message}}
+                                                </div>
+                                                @enderror
+                                            </div>
+                                        </div>
 
-                        {{-- row 4 --}}
-                        <tr class="trow-mentor">
-                            <td>
-                            <div class="class-box">
-                                <div class="class-img">
-                                    <img src="{{ asset('assets/img/kelas/uiux.png') }}" />
-                                </div>
-                                <div class="class-name">
-                                    &nbsp; UI/UX Designer
-                                </div>
-                            </div>
-                            </td>
-                            <td>
-                                <p>Rp. 125.000</p>
-                            </td>
-                            <td>
-                                <p class="class-date">
-                                    4 Maret - 12 Maret 2023
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                Online
-                                </p>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
-                                </button>
-                            </td>
-                        </tr>
+                                        <div class="input-container">
+                                            <label class="form-check-label" for="harga">Harga Kelas</label>
+                                            <input class="form-control @if(session()->has('update')) @error('kelas_price') is-invalid @enderror @endif" data-type="currency" name="kelas_price" id="harga" name="harga" value="{{ $data->kelas_price }}" placeholder="Rp. xxxxxxx" value="">
+                                            @error('kelas_price')
+                                                <div class="invalid-feedback">
+                                                {{$message}}
+                                                </div>
+                                            @enderror
+                                        </div>
 
-                        {{-- row 5 --}}
-                        <tr class="trow-mentor">
-                            <td>
-                            <div class="class-box">
-                                <div class="class-img">
-                                    <img src="{{ asset('assets/img/kelas/export.png') }}" />
-                                </div>
-                                <div class="class-name">
-                                    &nbsp; Export/Import
-                                </div>
-                            </div>
-                            </td>
-                            <td>
-                                <p>Rp. 125.000</p>
-                            </td>
-                            <td>
-                                <p class="class-date">
-                                    4 Maret - 12 Maret 2023
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                Online
-                                </p>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
-                                </button>
-                            </td>
-                        </tr>
+                                        <div class="input-container">
+                                            <label class="form-check-label" for="jadwal">Jadwal Kelas</label>
+                                            <div class="d-flex">
+                                                <input class="form-control @if(session()->has('update')) @error('start_date') is-invalid @enderror @endif" type="date" id="start-date" name="start_date" value="{{ $data->start_date }}" placeholder="Pilih Tanggal Mulai"  min="1945-01-01" max="2100-12-31">
+                                                <input class="form-control @if(session()->has('update')) @error('end_date') is-invalid @enderror @endif" type="date" id="end-date" name="end_date" value="{{ $data->end_date }}" placeholder="Pilih Tanggal Akhir" min="1945-01-01" max="2100-12-31">
+                                                {{-- <input class="form-control" type="time" id="time-date" name="time-date" placeholder="Tentukan Jam kelas"> --}}
+                                                {{-- <select class="form-select" aria-label="Default select example">
+                                                    <option selected >Pilih tanggal mulai dan akhir</option>
+                                                    <option value="1 Januari 2020">1 Januari 2020</option>
+                                                </select> --}}
+                                                {{-- <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Tentukan Jam kelas</option>
+                                                    <option value="23:01">23:01</option>
+                                                </select> --}}
+                                            </div>
+                                        </div>
 
-                        {{-- row 6 --}}
-                        <tr class="trow-mentor">
-                            <td>
-                            <div class="class-box">
-                                <div class="class-img">
-                                    <img src="{{ asset('assets/img/kelas/finance.png') }}" />
-                                </div>
-                                <div class="class-name">
-                                    &nbsp; Human Resources
-                                </div>
-                            </div>
-                            </td>
-                            <td>
-                                <p>Rp. 125.000</p>
-                            </td>
-                            <td>
-                                <p class="class-date">
-                                    27 Februari - 4 Maret 2023
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                Online
-                                </p>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="trow-mentor">
-                            <td>
-                            <div class="class-box">
-                                <div class="class-img">
-                                    <img src="{{ asset('assets/img/kelas/finance.png') }}" />
-                                </div>
-                                <div class="class-name">
-                                    &nbsp; Human Resources
-                                </div>
-                            </div>
-                            </td>
-                            <td>
-                                <p>Rp. 125.000</p>
-                            </td>
-                            <td>
-                                <p class="class-date">
-                                    27 Februari - 4 Maret 2023
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                Online
-                                </p>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="trow-mentor">
-                            <td>
-                            <div class="class-box">
-                                <div class="class-img">
-                                    <img src="{{ asset('assets/img/kelas/finance.png') }}" />
-                                </div>
-                                <div class="class-name">
-                                    &nbsp; Human Resources
-                                </div>
-                            </div>
-                            </td>
-                            <td>
-                                <p>Rp. 125.000</p>
-                            </td>
-                            <td>
-                                <p class="class-date">
-                                    27 Februari - 4 Maret 2023
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                Online
-                                </p>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="trow-mentor">
-                            <td>
-                            <div class="class-box">
-                                <div class="class-img">
-                                    <img src="{{ asset('assets/img/kelas/finance.png') }}" />
-                                </div>
-                                <div class="class-name">
-                                    &nbsp; Human Resources
-                                </div>
-                            </div>
-                            </td>
-                            <td>
-                                <p>Rp. 125.000</p>
-                            </td>
-                            <td>
-                                <p class="class-date">
-                                    27 Februari - 4 Maret 2023
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                Online
-                                </p>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="trow-mentor">
-                            <td>
-                            <div class="class-box">
-                                <div class="class-img">
-                                    <img src="{{ asset('assets/img/kelas/finance.png') }}" />
-                                </div>
-                                <div class="class-name">
-                                    &nbsp; Human Resources
-                                </div>
-                            </div>
-                            </td>
-                            <td>
-                                <p>Rp. 125.000</p>
-                            </td>
-                            <td>
-                                <p class="class-date">
-                                    27 Februari - 4 Maret 2023
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                Online
-                                </p>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="trow-mentor">
-                            <td>
-                            <div class="class-box">
-                                <div class="class-img">
-                                    <img src="{{ asset('assets/img/kelas/finance.png') }}" />
-                                </div>
-                                <div class="class-name">
-                                    &nbsp; Human Resources
-                                </div>
-                            </div>
-                            </td>
-                            <td>
-                                <p>Rp. 125.000</p>
-                            </td>
-                            <td>
-                                <p class="class-date">
-                                    27 Februari - 4 Maret 2023
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                Online
-                                </p>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#item-delete">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#item-edit">
-                                    <i class="fa-solid fa-gear" style="color: #F8FAFC;"></i>
-                            </td>
-                        </tr>                      
+                                        <div class="input-container">
+                                            <label class="form-check-label" for="kategori">Kategori Kelas</label>
+                                            <select class="form-select @if(session()->has('update')) @error('kelas_category') is-invalid @enderror @endif" aria-label="Default select example" name="kelas_category">
+                                                <option selected class="style = color: #CCCCCC;" disabled>Pilih kategori kelas yang ingin ditambahkan</option>
+                                                <option {{ $data->kelas_category == 'example1' ? "selected" : "" }} value="example1">example1</option>
+                                                <option {{ $data->kelas_category == 'example2' ? "selected" : "" }} value="example2">example2</option>
+                                            </select>
+                                            @error('kelas_category')
+                                                <div class="invalid-feedback">
+                                                {{$message}}
+                                                </div>
+                                            @enderror
+                                        </div>
 
-                        
+                                        <div class="input-container">
+                                        <label class="form-check-label" for="lokasi">Lokasi Pembelajaran</label>
+                                        <select class="form-select @if(session()->has('update')) @error('kelas_loc') is-invalid @enderror @endif" aria-label="Default select example" name="kelas_loc">
+                                            <option selected disabled>Online/Offline</option>
+                                            <option {{ $data->kelas_loc == 'Online' ? "selected" : "" }} value="Online">Online</option>
+                                            <option {{ $data->kelas_loc == 'Offline' ? "selected" : "" }} value="Offline">Offline</option>
+                                        </select>
+                                        @error('kelas_loc')
+                                            <div class="invalid-feedback">
+                                            {{$message}}
+                                            </div>
+                                        @enderror
+                                        {{-- <input class="form-control" type="text" id="tagar" value=""> --}}
+                                        </div>
+
+                                        <div class="input-container">
+                                        <label class="form-check-label" for="detail">Deskripsi</label>
+                                        <textarea class="@if(session()->has('update')) @error('description') is-invalid @enderror @endif" id="detail" name="description">{{ $data->description }}</textarea>
+                                        @error('description')
+                                            <div class="invalid-feedback">
+                                            {{$message}}
+                                            </div>
+                                        @enderror
+                                        </div>
+
+                                        <div class="button-section">
+                                            <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
+                                                <span>Batalkan</span>
+                                            </button>
+                                            <button type="submit" class="option-item create-blog mt-3">
+                                                <span>Update Kelas</span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
 
                     </tbody>
                     {{-- <tfoot>
@@ -416,28 +223,6 @@
             </div>
             </section>
         </section>
-    </div>
-
-    <!-- modal -->
-
-
-    <div class="modal modal-close fade" id="item-delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content modal-bs modal-content-close">
-            <div class="modal-head modal-head-close">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah anda  yakin akan menghapus Kelas {Graphic Design}?</h1>
-            <p>Semua data akan hilang</p>
-            </div>
-            <div class="modal-content modal-content-close">
-            <button href="" class="option-item delete" id="btn-action">
-                <span>Hapus</span>
-            </button>
-            <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
-                <span>Batalkan</span>
-            </button>
-            </div>
-        </div>
-        </div>
     </div>
 
     <div class="modal modal-close fade" id="item-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -492,29 +277,45 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="" class="form-header-mentor">
+                <form class="form-header-mentor" method="POST" action="{{ route('store-kelas') }}" enctype="multipart/form-data">
+                    @csrf
                     <div class="d-flex">
                         <div class="input-container col-md-6">
                             <label class="form-check-label" for="nama_kelas">Nama Kelas</label>
-                            <input class="form-control" type="text" id="nama_kelas" value="" placeholder="Masukkan Nama Kelas disini">
+                            <input class="form-control @error('kelas_title') is-invalid @enderror" type="text" name="kelas_title" id="nama_kelas" value="{{ old('kelas_title') }}" placeholder="Masukkan Nama Kelas disini">
+                            @error('kelas_title')
+                              <div class="invalid-feedback">
+                                {{$message}}
+                              </div>
+                            @enderror
                         </div>
                         <div class="input-container col-md-6">
                             <label class="form-check-label" for="thumbnail">Cover Kelas</label>
-                            <input class="form-control" type="file" id="thumbnail" placeholder="Masukan file foto">
+                            <input class="form-control @error('kelas_cover') is-invalid @enderror" type="file" name="kelas_cover" value="{{ old('kelas_cover') }}" id="thumbnail" placeholder="Masukan file foto" accept="image/webp">
+                            @error('kelas_cover')
+                              <div class="invalid-feedback">
+                                {{$message}}
+                              </div>
+                            @enderror
                         </div>
                     </div>
 
                     <div class="input-container">
                         <label class="form-check-label" for="harga">Harga Kelas</label>
-                        <input class="form-control" type="number" id="harga" name="harga" value="" placeholder="Rp. xxxxxxx" step="1" min="0" max="100" value="50">
+                        <input class="form-control @error('kelas_price') is-invalid @enderror" data-type="currency" name="kelas_price" id="harga" name="harga" value="{{ old('kelas_price') }}" placeholder="Rp. xxxxxxx" value="">
+                        @error('kelas_price')
+                            <div class="invalid-feedback">
+                            {{$message}}
+                            </div>
+                        @enderror
                     </div>
 
                     <div class="input-container">
                         <label class="form-check-label" for="jadwal">Jadwal Kelas</label>
                         <div class="d-flex">
-                            <input class="form-control" type="date" id="start-date" name="start-date" placeholder="Pilih Tanggal Mulai"  min="1945-01-01" max="2100-12-31">
-                            <input class="form-control" type="date" id="end-date" name="end-date" placeholder="Pilih Tanggal Akhir" min="1945-01-01" max="2100-12-31">
-                            <input class="form-control" type="time" id="time-date" name="time-date" placeholder="Tentukan Jam kelas">
+                            <input class="form-control @error('start_date') is-invalid @enderror" type="date" id="start-date" name="start_date" value="{{ old('start_date') }}" placeholder="Pilih Tanggal Mulai"  min="1945-01-01" max="2100-12-31">
+                            <input class="form-control @error('end_date') is-invalid @enderror" type="date" id="end-date" name="end_date" value="{{ old('end_date') }}" placeholder="Pilih Tanggal Akhir" min="1945-01-01" max="2100-12-31">
+                            {{-- <input class="form-control" type="time" id="time-date" name="time-date" placeholder="Tentukan Jam kelas"> --}}
                             {{-- <select class="form-select" aria-label="Default select example">
                                 <option selected >Pilih tanggal mulai dan akhir</option>
                                 <option value="1 Januari 2020">1 Januari 2020</option>
@@ -528,42 +329,48 @@
 
                     <div class="input-container">
                         <label class="form-check-label" for="kategori">Kategori Kelas</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected class="style = color: #CCCCCC;">Pilih kategori kelas yang ingin ditambahkan</option>
-                            <option value="example1">example1</option>
-                            <option value="example2">example2</option>
+                        <select class="form-select @error('kelas_category') is-invalid @enderror" aria-label="Default select example" name="kelas_category">
+                            <option selected class="style = color: #CCCCCC;" disabled>Pilih kategori kelas yang ingin ditambahkan</option>
+                            <option {{ old('kelas_category') == 'example1' ? "selected" : "" }} value="example1">example1</option>
+                            <option {{ old('kelas_category') == 'example2' ? "selected" : "" }} value="example2">example2</option>
                         </select>
-                    </div>
-
-                    <div class="input-container">
-                        <label class="form-check-label" for="bidang">Bidang Keahlian</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected class="style=color: #CCCCCC;">Pilih Lokasi bidang kehlian kelas</option>
-                            <option value="example1">example1</option>
-                            <option value="example2">example2</option>
-                        </select>
+                        @error('kelas_category')
+                            <div class="invalid-feedback">
+                            {{$message}}
+                            </div>
+                        @enderror
                     </div>
 
                     <div class="input-container">
                     <label class="form-check-label" for="lokasi">Lokasi Pembelajaran</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Online/Offline</option>
-                        <option value="Online">Online</option>
-                        <option value="Offline">Offline</option>
+                    <select class="form-select @error('kelas_loc') is-invalid @enderror" aria-label="Default select example" name="kelas_loc">
+                        <option selected disabled>Online/Offline</option>
+                        <option {{ old('kelas_loc') == 'Online' ? "selected" : "" }} value="Online">Online</option>
+                        <option {{ old('kelas_loc') == 'Offline' ? "selected" : "" }} value="Offline">Offline</option>
                     </select>
+                    @error('kelas_loc')
+                        <div class="invalid-feedback">
+                        {{$message}}
+                        </div>
+                    @enderror
                     {{-- <input class="form-control" type="text" id="tagar" value=""> --}}
                     </div>
 
                     <div class="input-container">
                     <label class="form-check-label" for="detail">Deskripsi</label>
-                    <textarea id="detail"></textarea>
+                    <textarea class="@error('description') is-invalid @enderror" id="detail" name="description">{{ old('description') }}</textarea>
+                    @error('description')
+                        <div class="invalid-feedback">
+                        {{$message}}
+                        </div>
+                    @enderror
                     </div>
 
                     <div class="button-section">
                         <button href="" class="option-item preview mt-3" data-bs-dismiss="modal" aria-label="Close">
                             <span>Batalkan</span>
                         </button>
-                        <button href="" class="option-item create-blog mt-3" data-bs-dismiss="modal" aria-label="Close">
+                        <button type="submit" class="option-item create-blog mt-3">
                             <span>Tambah Kelas</span>
                         </button>
                     </div>
@@ -689,6 +496,34 @@ tinymce.init({
             dropdown.append($('<option value="Harga Kelas">Harga Kelas</option>'));
             dropdown.append($('<option value="Lokasi Belajar">Lokasi Belajar</option>'));
         });
+
+        $(".alert").delay(4000).slideUp(200, function() {
+            $(this).alert('close');
+        });
+
+        $("input[data-type='currency']").keyup(function(event) {
+            if(event.which >= 37 && event.which <= 40) return;
+            $(this).val(function(index, value) {
+            return value
+            .replace(/\D/g, "")
+            .replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+            ;
+            });
+        });
     </script>
+    @if(count($errors) > 0 && session()->has('update'))
+    <script>
+      var idModal = "{{ Session::get('update') }}"
+      $(document).ready(function() {
+        $('#'+idModal).modal('show')
+      });
+    </script>
+    @elseif(count($errors) > 0)
+    <script>
+      $(document).ready(function() {
+        $('#createClassScheduleModal1').modal('show')
+      });
+    </script>
+    @endif
 @endsection
     

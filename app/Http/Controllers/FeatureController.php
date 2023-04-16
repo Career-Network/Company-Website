@@ -228,7 +228,7 @@ class FeatureController extends Controller
         return view('privacy_policy');
     }
     public function classSchedule() {
-        $kelas = Kelas::get();
+        $kelas = Kelas::orderBy('id', 'DESC')->get();
         return view('class-schedule-writer', [
             'kelas' => $kelas,
         ]);
