@@ -139,7 +139,7 @@
                                   @method('put')
                                        <div class="input-container">
                                       <label class="form-check-label font-16" for="nama">Nama</label>
-                                      <input class="form-control @error('participant_name') is-invalid @enderror" type="text" name="participant_name" id="nama" value="{{ $data->participant_name }}" placeholder="Nama">
+                                      <input class="form-control @if(session()->has('update')) @error('participant_name') is-invalid @enderror @endif" type="text" name="participant_name" id="nama" value="{{ $data->participant_name }}" placeholder="Nama">
                                         @error('participant_name')
                                             <div class="invalid-feedback">
                                               {{$message}}
@@ -149,7 +149,7 @@
 
                                      <div class="input-container">
                                       <label class="form-check-label font-16" for="photoProfile">Photo Profile</label>
-                                      <input class="form-control @error('participant_pic') is-invalid @enderror" name="participant_pic" type="file" id="photoProfile" accept="image/webp">
+                                      <input class="form-control @if(session()->has('update')) @error('participant_pic') is-invalid @enderror @endif" name="participant_pic" type="file" id="photoProfile" accept="image/webp">
                                         @error('participant_pic')
                                             <div class="invalid-feedback">
                                               {{$message}}
@@ -159,7 +159,7 @@
 
                                     <div class="input-container">
                                       <label class="form-check-label font-16" for="profesi">Profesi</label>
-                                      <input class="form-control font-bold @error('participant_prof') is-invalid @enderror" type="text" name="participant_prof" id="profesi" value="{{$data->participant_prof}}">
+                                      <input class="form-control font-bold @if(session()->has('update')) @error('participant_prof') is-invalid @enderror @endif" type="text" name="participant_prof" id="profesi" value="{{$data->participant_prof}}">
                                         @error('participant_prof')
                                             <div class="invalid-feedback">
                                               {{$message}}
@@ -170,7 +170,7 @@
 
                                      <div class="input-container">
                                       <label class="form-check-label font-16" for="kelas">Kelas</label>
-                                        <select class="form-select form-control font-grey @error('class_name') is-invalid @enderror" aria-label="Default select example" name="class_name">
+                                        <select class="form-select form-control font-grey @if(session()->has('update')) @error('class_name') is-invalid @enderror @endif" aria-label="Default select example" name="class_name">
                                              <option value="" selected disabled>Pilih Kelas</option>
                                               @foreach($kelas as $dataKelas)
                                               <option value="{{$dataKelas->kelas_title}}" {{ $dataKelas->kelas_title == $data->class_name ? 'selected' : '' }}>{{$dataKelas->kelas_title}}</option>
@@ -203,7 +203,7 @@
 
                                           <div class="input-container">
                                             <label class="form-check-label" for="detail">Review</label>
-                                            <textarea class="@error('testimonial') is-invalid @enderror" id="detail" name="testimonial">{{$data->testimonial}}</textarea>
+                                            <textarea class="@if(session()->has('update')) @error('testimonial') is-invalid @enderror @endif" id="detail" name="testimonial">{{$data->testimonial}}</textarea>
                                             @error('testimonial')
                                                 <div class="invalid-feedback">
                                                 {{$message}}
