@@ -14,31 +14,7 @@
         <div class="" >
 
 
-            <!-- Grid row -->
-            {{-- <div class="row">
 
-                <!-- Grid column -->
-                <div class="col-md-12">
-
-                    <div class="card p-3"style=" background: #FFEBE5;
-                    backdrop-filter: blur(5px);" >
-                        <div class="card-block" >
-                            <div class="bc-icons-2"style="color: #FF5722;" >
-
-                                <ol class="breadcrumb container indigo lighten-4">
-                                    <li class="breadcrumb-item" ><a class="black-text" href="#" style="color: #FF5722;text-decoration:none;">Home</a><i class="fa fa-caret-right mx-2" aria-hidden="true"></i></li>
-                                    <li class="breadcrumb-item" style="color: #FF5722;"><a class="black-text" href="#" style="color: #FF5722;text-decoration:none;">Library</a><i class="fa fa-caret-right mx-2" aria-hidden="true"></i></li>
-                                    <li class="breadcrumb-item active" style="color: #FF5722;">Data</li>
-                                </ol>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div> --}}
-                <!-- Grid column -->
 
             </div>
 
@@ -51,7 +27,6 @@
 </body>
     <div class="row container" id="card_kelas_detail">
         <div class="col-md-7 container" id="card_image">
-            {{-- <img src="{{ asset('assets/img/ui.webp') }}" width="500px"  class="rounded mx-auto d-block" id="ui"> --}}
             <div class="row " id="card_ux">
 
                 <div class="col-md-6" id="top_card">UI/UX Design Mastery</div>

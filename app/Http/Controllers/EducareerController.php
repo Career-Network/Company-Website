@@ -8,11 +8,11 @@ class EducareerController extends Controller
 {
     public function index()
     {
-        return view('list_class');
+        return view('educareer_listclass');
     }
     public function mentor()
     {
-        return view('pilih_mentor');
+        return view('educareer_mentor');
     }
     public function kelas()
     {
