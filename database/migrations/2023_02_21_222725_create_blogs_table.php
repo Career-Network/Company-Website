@@ -1,4 +1,4 @@
-<?php
+x   <?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('author', 100);
             $table->date('update_date');
             $table->string('hastags');
-            
+
             $table->foreign('user_id')->references('id')->on('users')->onDelete('CASCADE');
         });
     }
