@@ -204,7 +204,7 @@ class FeatureController extends Controller
     public function detailMentor()
     {
         $kelas = Kelas::get();
-        $mentor = Mentor::with('kelas')->get();
+        $mentor = Mentor::with('kelas')->orderBy('id', 'DESC')->get();
         return view('detail-mentor', [
             'kelas' => $kelas,
             'mentor' => $mentor,
@@ -212,7 +212,7 @@ class FeatureController extends Controller
     }
     public function testimoni()
     {
-        $testimoni = Testimony::with('kelas')->get();
+        $testimoni = Testimony::with('kelas')->orderBy('id', 'DESC')->get();
         $kelas = Kelas::get();
         return view('testimoni-writer', [
             'testimoni' => $testimoni,

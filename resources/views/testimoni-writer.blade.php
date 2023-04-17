@@ -329,7 +329,7 @@
                     </div>
 
 
-                     <div class="input-container">
+                    <div class="input-container">
                       <label class="form-check-label font-16" for="kelas">Kelas</label>
                         <select class="form-select form-control font-grey @error('class_name') is-invalid @enderror" aria-label="Default select example" name="class_name">
                              <option value="" selected disabled>Pilih Kelas</option>
@@ -364,7 +364,7 @@
 
                           <div class="input-container">
                             <label class="form-check-label" for="detail">Review</label>
-                            <textarea class="@error('testimonial') is-invalid @enderror" id="detail" name="testimonial"></textarea>
+                            <textarea class="@error('testimonial') is-invalid @enderror" id="detail" name="testimonial">{{ old('testimonial') }}</textarea>
                             @error('testimonial')
                                 <div class="invalid-feedback">
                                 {{$message}}
@@ -377,7 +377,7 @@
                               <span>Batalkan</span>
                           </button>
                           <button type="submit" class="option-item create-blog mt-3">
-                              <span>Upload Testimoni</span>
+                              <span>Tambah Testimoni</span>
                           </button>
                      </div>
                 </form>
@@ -503,15 +503,6 @@
             $(this).alert('close');
         });
 
-        $("input[data-type='currency']").keyup(function(event) {
-            if(event.which >= 37 && event.which <= 40) return;
-            $(this).val(function(index, value) {
-            return value
-            .replace(/\D/g, "")
-            .replace(/\B(?=(\d{3})+(?!\d))/g, ".")
-            ;
-            });
-        });
     </script>
     @if(count($errors) > 0 && session()->has('update'))
     <script>

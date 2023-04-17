@@ -17,7 +17,8 @@ class MentorController extends Controller
             'current_job'   => 'required',
             'expertise'     => 'required',
             'mentor_about'  => 'required',
-            'mentor_pic'    => 'image|mimes:webp|max:5000',
+            'mentor_pic'    => 'required|image|mimes:webp|max:5000',
+            'kelas_id'      => 'required',
         ]);
 
         if ($validation->fails()) {
@@ -32,11 +33,11 @@ class MentorController extends Controller
             'current_job'  => $request->current_job,
             'expertise'    => $request->expertise,
             'mentor_about' => $request->mentor_about,
-            'mentor_pic'   => $request->file('mentor_pic') == null ? 'null' : $request->file('mentor_pic')->store('public/mentor'),
+            'mentor_pic'   => $request->file('mentor_pic')->store('public/mentor'),
             'kelas_id'     => $request->kelas_id,
         ]);
 
-        return redirect()->route('detail-mentor');
+        return redirect()->route('detail-mentor')->with(['success' => 'Mentor berhasil ditambah']);
     }
 
     public function update(Request $request, $id)
@@ -52,6 +53,7 @@ class MentorController extends Controller
         if ($validation->fails()) {
             return redirect()
                 ->back()
+                ->with('update', 'item-edit'.$id)
                 ->withInput()
                 ->withErrors($validation);
         }
@@ -74,7 +76,7 @@ class MentorController extends Controller
             'kelas_id'     => $request->kelas_id,
         ]);
 
-        return redirect()->route('detail-mentor');
+        return redirect()->route('detail-mentor')->with(['success' => 'Mentor berhasil diubah']);
     }
 
     public function destroy($id)
@@ -84,6 +86,6 @@ class MentorController extends Controller
         Storage::delete($mentor->mentor_pic);
         $mentor->delete();
 
-        return redirect()->route('detail-mentor');
+        return redirect()->route('detail-mentor')->with(['success' => 'Mentor berhasil dihapus']);
     }
 }

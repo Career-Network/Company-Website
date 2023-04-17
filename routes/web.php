@@ -106,6 +106,9 @@ Route::delete('/blog/testimoni/{id}', [TestimoniController::class, 'destroy'])->
 Route::get('/blog/detail-mentor', [FeatureController::class, 'detailMentor'])->name(
     'detail-mentor'
 );
+Route::post('/mentor', [MentorController::class, 'store'])->name('store-mentor');
+Route::put('/mentor/{id}', [MentorController::class, 'update'])->name('update-mentor');
+Route::delete('/mentor/{id}', [MentorController::class, 'destroy'])->name('destroy-mentor');
 
 
 //Login feature
