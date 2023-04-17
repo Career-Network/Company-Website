@@ -74,10 +74,10 @@
                         <td>
                             <div class="class-box gap-2">
                                 <div class="class-img" style="margin-top:-1rem;">
-                                    <img src="{{ asset('assets/img/detail-mentor/kelas-1.png') }}" width="48" height="48"/>
+                                    <img src="{{ asset(Storage::url($data->kelas->kelas_cover)) }}" width="48" height="48"/>
                                 </div>
                                 <div class="class-name">
-                                    {{$data->class_name}}
+                                    {{$data->kelas->kelas_title}}
                                 </div>
                             </div>
                         </td>
@@ -170,13 +170,13 @@
 
                                      <div class="input-container">
                                       <label class="form-check-label font-16" for="kelas">Kelas</label>
-                                        <select class="form-select form-control font-grey @if(session()->has('update')) @error('class_name') is-invalid @enderror @endif" aria-label="Default select example" name="class_name">
+                                        <select class="form-select form-control font-grey @if(session()->has('update')) @error('kelas_id') is-invalid @enderror @endif" aria-label="Default select example" name="kelas_id">
                                              <option value="" selected disabled>Pilih Kelas</option>
                                               @foreach($kelas as $dataKelas)
-                                              <option value="{{$dataKelas->kelas_title}}" {{ $dataKelas->kelas_title == $data->class_name ? 'selected' : '' }}>{{$dataKelas->kelas_title}}</option>
+                                              <option value="{{$dataKelas->id}}" {{ $dataKelas->id == $data->kelas_id ? 'selected' : '' }}>{{$dataKelas->kelas_title}}</option>
                                               @endforeach
-                                      </select>
-                                        @error('class_name')
+                                        </select>
+                                        @error('kelas_id')
                                             <div class="invalid-feedback">
                                             {{$message}}
                                             </div>
@@ -331,13 +331,13 @@
 
                     <div class="input-container">
                       <label class="form-check-label font-16" for="kelas">Kelas</label>
-                        <select class="form-select form-control font-grey @error('class_name') is-invalid @enderror" aria-label="Default select example" name="class_name">
+                        <select class="form-select form-control font-grey @error('kelas_id') is-invalid @enderror" aria-label="Default select example" name="kelas_id">
                              <option value="" selected disabled>Pilih Kelas</option>
                               @foreach($kelas as $data)
-                              <option {{ old('class_name') == $data->kelas_title ? "selected" : "" }} value="{{$data->kelas_title}}">{{$data->kelas_title}}</option>
+                              <option {{ old('kelas_id') == $data->id ? "selected" : "" }} value="{{$data->id}}">{{$data->kelas_title}}</option>
                               @endforeach
-                      </select>
-                        @error('class_name')
+                        </select>
+                        @error('kelas_id')
                             <div class="invalid-feedback">
                             {{$message}}
                             </div>

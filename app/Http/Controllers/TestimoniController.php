@@ -14,7 +14,7 @@ class TestimoniController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'participant_name' => 'required',
-            'class_name'       => 'required',
+            'kelas_id'         => 'required',
             'testimonial'      => 'required',
             'participant_pic'  => 'required|image|mimes:webp|max:5000',
             'participant_prof' => 'required',
@@ -29,7 +29,7 @@ class TestimoniController extends Controller
 
         Testimony::create([
             'participant_name'      => $request->participant_name,
-            'class_name'            => $request->class_name,
+            'kelas_id'              => $request->kelas_id,
             'testimonial'           => $request->testimonial,
             'participant_pic'       => $request->file('participant_pic')->store('public/testimoni'),
             'kelas_id'              => $request->kelas_id,
@@ -45,7 +45,7 @@ class TestimoniController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'participant_name' => 'required',
-            'class_name'       => 'required',
+            'kelas_id'         => 'required',
             'testimonial'      => 'required',
             'participant_pic'  => 'image|mimes:webp|max:5000',
             'participant_prof' => 'required',
@@ -70,7 +70,7 @@ class TestimoniController extends Controller
 
         $testimoni->update([
             'participant_name'      => $request->participant_name,
-            'class_name'            => $request->class_name,
+            'kelas_id'              => $request->kelas_id,
             'testimonial'           => $request->testimonial,
             'participant_pic'       => $image,
             'featured_landing_page' => $request->featured_landing_page == null ? '0' : $request->featured_landing_page,

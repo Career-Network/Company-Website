@@ -48,6 +48,7 @@ class MentorController extends Controller
             'expertise'    => 'required',
             'mentor_about' => 'required',
             'mentor_pic'   => 'image|mimes:webp|max:5000',
+            'kelas_id'     => 'required',
         ]);
 
         if ($validation->fails()) {
