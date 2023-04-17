@@ -17,11 +17,31 @@
                 <table width="100%" id="datatable-detail-mentor" class=" table table-mentor table-striped display nowrap " >
                     <thead class="table-mentor-head">
                         <tr>
-                            <th>Nama Kelas</th>
-                            <th>Harga Kelas</th>
-                            <th>Jadwal Kelas</th>
-                            <th>Lokasi Belajar</th>
-                            <th>Aksi</th>
+                            <th>
+                               <div class="px-5 py-3 ">
+                                Nama Kelas
+                                </div>
+                            </th>
+                            <th>
+                                <div class="px-3 py-3">
+                                    Harga Kelas
+                                </div>
+                            </th>
+                            <th>
+                                   <div class="px-3 py-3">
+                                    Jadwal Kelas
+                                </div>
+                            </th>
+                            <th>
+                                   <div class="px-3 py-3">
+                                    Lokasi Belajar
+                                </div>
+                            </th>
+                            <th>
+                                   <div class="px-3 py-3">
+                                    Aksi
+                                </div>
+                            </th>
                         </tr>
                     </thead>
                     <tbody class="table-mentor-body">
